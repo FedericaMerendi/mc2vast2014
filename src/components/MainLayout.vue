@@ -1,42 +1,50 @@
 <template>
-<div>
-  <p> Hello There!</p>
-  <b-container>
-    <b-row id="firstRow" >
-      <b-col id="userData">
-        User data is going here
-      </b-col>
-      <b-col id="map">
-        The map is going here
-      </b-col>
-      <b-list-group class="personList">
-        <b-list-group-item v-for="p in persons" :key="p.id">
-          {{p.lastName}},{{p.firstName}},{{p.carID}}, {{p.currentEmploymentTitle}}, {{p.currentEmploymentType}}
-        </b-list-group-item>
-      </b-list-group>
+  <div>
+    <p> Hello There!</p>
+    <b-container>
+      <b-row id="firstRow" >
+        <b-col id="userData">
+          <Employee v-bind:cars="cars"></Employee>
+        </b-col>
+        <b-col class="map">
+          <h3> Map</h3>
+          <div style="height:500px">
+            <AbilaMap> Hello</AbilaMap>
+          </div>
+        </b-col>
 
-    </b-row>
-  </b-container>
-</div>
+      </b-row>
+    </b-container>
+  </div>
 </template>
 
 <script>
 const d3 = require('d3');
+import crossfilter from 'crossfilter2';
+import AbilaMap from "./AbilaMap";
+import Employee from "./Employee";
+
+let cfCars;
+let cars;
 
 export default {
   name: "MainLayout",
+  components: {
+    AbilaMap,
+    Employee,
+  },
   data(){
     return {
-      persons: [],
-      loyalty_card: [],
-      credit_card: [],
+      cars: [],
+      loyalty_cards: [],
+      credit_cards: [],
       gps: [],
     }
   },
   mounted() {
     d3.csv('/data/car-assignments-ids.csv')
         .then((rows) => {
-          const persons = rows
+          cars = rows
               .map((row) => {
                 return {
                   id: row.PersonID,
@@ -47,8 +55,9 @@ export default {
                   currentEmploymentTitle: row.CurrentEmploymentTitle
                 };
               });
-          //console.log(persons);
-          this.persons = persons;
+          cfCars = crossfilter(cars);
+          console.log(cfCars.groupAll().reduceCount().value());
+          this.cars = cars;
         });
 
     d3.csv('/data/loyalty_data.csv')
@@ -64,7 +73,7 @@ export default {
                 };
               });
           //console.log(lc);
-          this.loyalty_card = lc;
+          this.loyalty_cards = lc;
         });
 
     d3.csv('/data/cc_data.csv')
@@ -80,24 +89,24 @@ export default {
                 };
               });
           //console.log(cc);
-          this.credit_card = cc;
+          this.credit_cards = cc;
         });
 
-    /* d3.csv('/data/gps.csv')
+    d3.csv('/data/reduced_gps.csv')
         .then((rows) => {
           const gps = rows
               .map((row) => {
                 return {
-                  timestamp: new Date(row.timestamp),
+                  timestamp: new Date(row.Timestamp),
                   carID: +row.id,
-                  lat: +row.lat,
-                  long: +row.long,
+                  lat: row.lat,
+                  long: row.long,
                 };
               });
           //console.log(gps);
           this.gps = gps;
         });
-     */
+
   },
 }
 
