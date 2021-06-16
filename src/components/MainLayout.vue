@@ -1,16 +1,24 @@
 <template>
   <div>
-    <p> Hello There!</p>
+    <p> Hello There! </p>
     <b-container>
       <b-row id="firstRow" >
         <b-col id="userData">
-          <Employee v-bind:cars="cars"></Employee>
+          <Employee v-bind:data="data"
+                    v-bind:encoding="encoding"></Employee>
         </b-col>
-        <b-col class="map">
-          <h3> Map</h3>
-          <div style="height:500px">
-            <AbilaMap> Hello</AbilaMap>
-          </div>
+        <b-col class="right_viz">
+          <b-row>
+            <div class="map">
+              <h3> Map </h3>
+              <AbilaMap></AbilaMap>
+            </div>
+          </b-row>
+          <b-row>
+            <div class="filters">
+              <h3> Filters </h3>
+            </div>
+          </b-row>
         </b-col>
 
       </b-row>
@@ -24,8 +32,11 @@ import crossfilter from 'crossfilter2';
 import AbilaMap from "./AbilaMap";
 import Employee from "./Employee";
 
-let cfCars;
 let cars;
+let loyalty_cards;
+let credit_cards;
+let dLocationLC;
+let gps;
 
 export default {
   name: "MainLayout",
@@ -39,6 +50,14 @@ export default {
       loyalty_cards: [],
       credit_cards: [],
       gps: [],
+      data: [],
+      dLocationLC: [],
+      encoding: {
+        x: {field:'timestamp', type: 'temporal'},
+        y: {field:'lastName', type: 'nominal'},
+        size: {field:'price', type:'quantitative'},
+        color: {field: "location", type: "nominal"},
+      },
     }
   },
   mounted() {
@@ -55,14 +74,18 @@ export default {
                   currentEmploymentTitle: row.CurrentEmploymentTitle
                 };
               });
-          cfCars = crossfilter(cars);
-          console.log(cfCars.groupAll().reduceCount().value());
+         /* let cfCars = crossfilter(cars);
+          dEmployment = cfCars.dimension((d) =>{ return d.currentEmploymentType});
+          console.log(dEmployment.group().all());
+          dSubject = cfCars.dimension((d) => {return d.lastName + " " + d.firstName});
+          console.log(dSubject.group().all());
+*/
           this.cars = cars;
         });
 
     d3.csv('/data/loyalty_data.csv')
         .then((rows) => {
-          const lc = rows
+          loyalty_cards = rows
               .map((row) => {
                 return {
                   day: new Date(row.timestamp),
@@ -72,13 +95,17 @@ export default {
                   lastName: row.LastName,
                 };
               });
-          //console.log(lc);
-          this.loyalty_cards = lc;
+          let cfLC = crossfilter(loyalty_cards);
+          dLocationLC = cfLC.dimension((d) => {return d.location;});
+          // console.log(dLocationLC.group().all());
+
+          this.dLocationLC = dLocationLC;
+          this.loyalty_cards = loyalty_cards;
         });
 
     d3.csv('/data/cc_data.csv')
         .then((rows) => {
-          const cc = rows
+          credit_cards = rows
               .map((row) => {
                 return {
                   timestamp: new Date(row.timestamp),
@@ -88,13 +115,13 @@ export default {
                   lastName: row.LastName,
                 };
               });
-          //console.log(cc);
-          this.credit_cards = cc;
+          this.credit_cards = credit_cards;
+          this.data = credit_cards;
         });
 
     d3.csv('/data/reduced_gps.csv')
         .then((rows) => {
-          const gps = rows
+          gps = rows
               .map((row) => {
                 return {
                   timestamp: new Date(row.Timestamp),
@@ -106,15 +133,14 @@ export default {
           //console.log(gps);
           this.gps = gps;
         });
-
   },
 }
 
 </script>
 
 <style scoped>
-#map, #userData {
-  background-color: bisque;
+.filters, .map, #userData {
+  background-color: beige;
   margin: 1px;
 }
 </style>
