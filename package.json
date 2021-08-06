@@ -13,8 +13,10 @@
     "core-js": "^3.6.5",
     "crossfilter2": "^1.5.4",
     "d3": "^6.7.0",
+    "leaflet": "^1.7.1",
     "vue": "^2.6.13",
-    "vue-vega": "^1.0.0-alpha.13"
+    "vue-vega": "^1.0.0-alpha.13",
+    "vue2-leaflet": "^2.7.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

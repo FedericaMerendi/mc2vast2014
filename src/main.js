@@ -5,6 +5,7 @@ import { BootstrapVue } from 'bootstrap-vue'
 // Import Bootstrap an BootstrapVue CSS files (order is important)
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'leaflet/dist/leaflet.css';
 
 import VueVega from 'vue-vega'
 
