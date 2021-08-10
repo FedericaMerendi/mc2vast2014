@@ -1,17 +1,21 @@
 <template>
   <div>
     <p> Hello There! </p>
-    <b-container>
+    <b-container fluid>
       <b-row id="firstRow" >
-        <b-col id="userData">
-          <Employee v-bind:data="data"
-                    v-bind:encoding="encoding"></Employee>
+        <b-col cols="7" id="userData">
+          <!-- <Employee v-bind:data="data"
+                    v-bind:encoding="encoding"
+                    @get-employee-name="getName"/>-->
+
+          <Employee :dataEmployees="dataEmployees"
+                    @get-employee-name="getName"/>
         </b-col>
-        <b-col class="right_viz">
+        <b-col cols="5" class="right_viz">
           <b-row>
             <div class="map">
               <h3> Map </h3>
-              <AbilaMap></AbilaMap>
+              <AbilaMap :dataGPS="dataGPS"/>
             </div>
           </b-row>
           <b-row>
@@ -27,16 +31,23 @@
 </template>
 
 <script>
+
 const d3 = require('d3');
 import crossfilter from 'crossfilter2';
 import AbilaMap from "./AbilaMap";
 import Employee from "./Employee";
 
-let cars;
+let employee;
 let loyalty_cards;
 let credit_cards;
 let dLocationLC;
-let gps;
+let dEmployeeID;
+
+let cfGPS;
+var dGPSCarID;
+var dGPSDay;
+
+//let dSubject;
 
 export default {
   name: "MainLayout",
@@ -46,12 +57,11 @@ export default {
   },
   data(){
     return {
-      cars: [],
+      dataEmployees: [],
       loyalty_cards: [],
       credit_cards: [],
-      gps: [],
+      dataGPS: [],
       data: [],
-      dLocationLC: [],
       encoding: {
         x: {field:'timestamp', type: 'temporal'},
         y: {field:'lastName', type: 'nominal'},
@@ -60,13 +70,34 @@ export default {
       },
     }
   },
+  methods: {
+    getCarID(id){
+      console.log('car', id)
+      dGPSCarID.filter(id.toString());
+      this.dataGPS = dGPSCarID.top(Infinity);
+    },
+    getName(id){
+      dEmployeeID.filter(id);
+      var personCarID = dEmployeeID.top(Infinity)[0]['carID'];
+      this.getCarID(personCarID);
+    },
+    getDay(day) {
+      console.log('day', day)
+      if (day == 'All') {
+        dGPSDay.filterAll();
+      } else {
+        dGPSDay.filter(day);
+      }
+      this.dataGPS = dGPSDay.top(Infinity);
+    }
+  },
   mounted() {
     d3.csv('/data/car-assignments-ids.csv')
         .then((rows) => {
-          cars = rows
+          employee = rows
               .map((row) => {
                 return {
-                  id: row.PersonID,
+                  id: row.EmployeeID,
                   lastName: row.LastName,
                   firstName: row.FirstName,
                   carID: +row.CarID,
@@ -74,13 +105,14 @@ export default {
                   currentEmploymentTitle: row.CurrentEmploymentTitle
                 };
               });
-         /* let cfCars = crossfilter(cars);
-          dEmployment = cfCars.dimension((d) =>{ return d.currentEmploymentType});
-          console.log(dEmployment.group().all());
-          dSubject = cfCars.dimension((d) => {return d.lastName + " " + d.firstName});
-          console.log(dSubject.group().all());
-*/
-          this.cars = cars;
+          let cfEmp = crossfilter(employee);
+          //dEmployment = cfEmp.dimension((d) =>{ return d.currentEmploymentType});
+          //this.dEmployment = dEmployment;
+
+          dEmployeeID = cfEmp.dimension((d) => {return d.id});
+
+          //console.log(dName.filter('Hennie Osvaldo').top(5))
+          this.dataEmployees = dEmployeeID.top(Infinity);
         });
 
     d3.csv('/data/loyalty_data.csv')
@@ -121,7 +153,7 @@ export default {
 
     d3.csv('/data/reduced_gps.csv')
         .then((rows) => {
-          gps = rows
+          const gps = rows
               .map((row) => {
                 return {
                   timestamp: new Date(row.Timestamp),
@@ -130,8 +162,13 @@ export default {
                   long: row.long,
                 };
               });
-          //console.log(gps);
-          this.gps = gps;
+          cfGPS = crossfilter(gps);
+          dGPSCarID = cfGPS.dimension((d) => d.carID);
+          dGPSDay = cfGPS.dimension((d) => d.timestamp.getDate());
+          //var dGPSTime = cfGPS.dimension((d) => d.timestamp.getTime());
+          //console.log(dGPSDay.top(Infinity));
+          //console.log(dGPSTime.top(Infinity));
+          this.dataGPS = dGPSCarID.top(Infinity);
         });
   },
 }
@@ -141,6 +178,5 @@ export default {
 <style scoped>
 .filters, .map, #userData {
   background-color: beige;
-  margin: 1px;
-}
+ }
 </style>

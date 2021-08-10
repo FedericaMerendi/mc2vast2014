@@ -11,7 +11,15 @@
           :options="options"
           :options-style="styleFunction"
       />
-      <!--<l-marker :lat-lng="marker" /> -->
+      <l-polyline
+          ref='polyline'
+          :color="polyline.color"
+          :lat-lngs="latLngLine(dataGPS)"
+      />
+      <!--<l-marker :key="index"
+                v-for="(c,index) in gps"
+                :lat-lng="latLng(c.lat, c.long)"
+      /> -->
     </l-map>
 
   </div>
@@ -19,11 +27,19 @@
 </template>
 
 <script>
-import L from 'leaflet';
-import { LMap, LGeoJson } from 'vue2-leaflet';
+//import L from 'leaflet';
+import { LMap, LPolyline, LGeoJson } from 'vue2-leaflet';
 
 export default {
   name: "AbilaMap",
+  props: {
+    dataGPS: Array,
+  },
+  components: {
+    LMap,
+    LPolyline,
+    LGeoJson,
+  },
   data() {
     return {
       loading: false,
@@ -32,13 +48,22 @@ export default {
       zoom: 13,
       center: [36.0700, 24.8670],
       geojson: null,
-      fillColor: "#e4ce7f",
-      marker: L.latLng(36.0700, 24.8670)
+      polyline: {
+        color: 'green',
+      },
     };
   },
-  components: {
-    LMap,
-    LGeoJson,
+  methods: {
+    latLngLine: function(gps) {
+      var coor = []
+      for (var i = 0; i < gps.length; i++) {
+        //if (gps[i].carID == car) {
+        var arr = [gps[i].lat,gps[i].long]
+        coor.push(arr);
+        //}
+      }
+      return coor;
+    },
   },
   computed: {
     options() {
@@ -47,14 +72,13 @@ export default {
       };
     },
     styleFunction() {
-      const fillColor = this.fillColor; // important! need touch fillColor in computed for re-calculate when change fillColor
+     // const fillColor = this.fillColor; // important! need touch fillColor in computed for re-calculate when change fillColor
       return () => {
         return {
-          weight: 2,
-          color: "#ECEFF1",
+          weight: 1,
+          color: "orange",
           opacity: 1,
-          fillColor: fillColor,
-          fillOpacity: 1
+          pane: 'mapPane',
         };
       };
     },
@@ -64,8 +88,8 @@ export default {
       }
       return (feature, layer) => {
         layer.bindTooltip(
-            "<div>" + feature.properties.FETYPE + ' ' +
-            feature.properties.FENAME +
+            "<div>" + feature.properties.FENAME + ' ' +
+            feature.properties.FETYPE +
             "</div>",
             { permanent: false, sticky: true }
         );
@@ -84,7 +108,7 @@ export default {
 
 <style scoped>
 .map{
-  height: 60vh;
+  height: 500px;
   width: 100%;
 }
 </style>
