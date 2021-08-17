@@ -5,9 +5,9 @@
       <b-row id="firstRow" >
         <b-col cols="7" id="userData">
           <ButtonsDay @get-day="getSelectedDay" ></ButtonsDay>
+          <EventTimeline :dataCC="dataCC"
+                         :dataEmployees="dataEmployees"></EventTimeline>
 
-          <Employee :dataEmployees="dataEmployees"
-                    @get-employee-name="getName"/>
         </b-col>
         <b-col cols="5" class="right_viz">
           <b-row>
@@ -30,8 +30,8 @@
 
 <script>
 import AbilaMap from "./AbilaMap";
-import Employee from "./Employee";
 import ButtonsDay from "./ButtonsDay";
+import EventTimeline from "./EventTimeline";
 
 const d3 = require('d3');
 import crossfilter from 'crossfilter2';
@@ -47,9 +47,9 @@ var dGPSDay;
 export default {
   name: "MainLayout",
   components: {
+    EventTimeline,
     ButtonsDay,
     AbilaMap,
-    Employee,
   },
   data(){
     return {
