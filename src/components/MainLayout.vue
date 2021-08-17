@@ -5,9 +5,6 @@
       <b-row id="firstRow" >
         <b-col cols="7" id="userData">
           <ButtonsDay @get-day="getSelectedDay" ></ButtonsDay>
-          <!-- <Employee v-bind:data="data"
-                    v-bind:encoding="encoding"
-                    @get-employee-name="getName"/>-->
 
           <Employee :dataEmployees="dataEmployees"
                     @get-employee-name="getName"/>
@@ -32,23 +29,16 @@
 </template>
 
 <script>
-
-import ButtonsDay from "./ButtonsDay";
-const d3 = require('d3');
-import crossfilter from 'crossfilter2';
 import AbilaMap from "./AbilaMap";
 import Employee from "./Employee";
+import ButtonsDay from "./ButtonsDay";
 
-let employee;
-let loyalty_cards;
+const d3 = require('d3');
+import crossfilter from 'crossfilter2';
 
-let credit_cards;
+
 let dCCDay;
-
-let dLocationLC;
-
-let dEmployeeID;
-
+let dEmpID;
 var dGPSCarID;
 var dGPSDay;
 
@@ -64,16 +54,10 @@ export default {
   data(){
     return {
       dataEmployees: [],
-      loyalty_cards: [],
-      credit_cards: [],
+      dataLC: [],
+      dataCC: [],
       dataGPS: [],
       selectedDay: '6',
-      encoding: {
-        x: {field:'timestamp', type: 'temporal'},
-        y: {field:'lastName', type: 'nominal'},
-        size: {field:'price', type:'quantitative'},
-        color: {field: "location", type: "nominal"},
-      },
     }
   },
   methods: {
@@ -92,74 +76,72 @@ export default {
       this.dataGPS = dGPSCarID.top(Infinity);
     },
     getName(id){
-      dEmployeeID.filter(id);
-      var personCarID = dEmployeeID.top(Infinity)[0]['carID'];
+      dEmpID.filter(id);
+      var personCarID = dEmpID.top(Infinity)[0]['carID'];
       this.getCarID(personCarID);
     },
   },
   mounted() {
-    d3.csv('/data/car-assignments-ids.csv')
+    d3.csv('/data/cars-assignments-fullname.csv')
         .then((rows) => {
-          employee = rows
+          const employee = rows
               .map((row) => {
                 return {
-                  id: row.EmployeeID,
-                  lastName: row.LastName,
-                  firstName: row.FirstName,
+                  employeeID: +row.EmployeeID,
+                  fullName: row.FullName,
                   carID: +row.CarID,
-                  currentEmploymentType: row.CurrentEmploymentType,
-                  currentEmploymentTitle: row.CurrentEmploymentTitle
+                  currentEmpType: row.CurrentEmploymentType,
+                  currentEmpTitle: row.CurrentEmploymentTitle
                 };
               });
           let cfEmp = crossfilter(employee);
           //dEmployment = cfEmp.dimension((d) =>{ return d.currentEmploymentType});
           //this.dEmployment = dEmployment;
 
-          dEmployeeID = cfEmp.dimension((d) => {return d.id});
+          dEmpID = cfEmp.dimension((d) => {return d.employeeID});
 
           //console.log(dName.filter('Hennie Osvaldo').top(5))
-          this.dataEmployees = dEmployeeID.top(Infinity);
+          this.dataEmployees = dEmpID.top(Infinity);
         });
 
-    d3.csv('/data/loyalty_data.csv')
+    d3.csv('/data/loyalty-data-fullname.csv')
         .then((rows) => {
-          loyalty_cards = rows
+          const loyalty_cards = rows
               .map((row) => {
                 return {
                   day: new Date(row.timestamp),
                   location: row.location,
                   price: +row.price,
-                  firstName: row.FirstName,
-                  lastName: row.LastName,
+                  fullName: row.FullName,
                 };
               });
-          let cfLC = crossfilter(loyalty_cards);
-          dLocationLC = cfLC.dimension((d) => {return d.location;});
+          //let cfLC = crossfilter(loyalty_cards);
+          //dLocationLC = cfLC.dimension((d) => {return d.location;});
           // console.log(dLocationLC.group().all());
 
-          this.dLocationLC = dLocationLC;
-          this.loyalty_cards = loyalty_cards;
+          //this.dLocationLC = dLocationLC;
+          this.dataLC = loyalty_cards;
         });
 
-    d3.csv('/data/cc_data.csv')
+    d3.csv('/data/cc-data-fullname.csv')
         .then((rows) => {
-          credit_cards = rows
+          const credit_cards = rows
               .map((row) => {
                 return {
                   timestamp: new Date(row.timestamp),
                   location: row.location,
                   price: +row.price,
-                  firstName: row.FirstName,
-                  lastName: row.LastName,
+                  fullName: row.FullName,
                 };
               });
           let cfCC = crossfilter(credit_cards);
           dCCDay = cfCC.dimension(d => { return d.timestamp.getDate()});
-          this.credit_cards = dCCDay.filter(this.selectedDay).top(Infinity);
+
+          this.dataCC = dCCDay.filter(this.selectedDay).top(Infinity);
 
         });
 
-    d3.csv('/data/reduced_gps.csv')
+    d3.csv('/data/gps-fullname.csv')
         .then((rows) => {
           const gps = rows
               .map((row) => {
@@ -168,8 +150,10 @@ export default {
                   carID: +row.id,
                   lat: row.lat,
                   long: row.long,
+                  fullName: row.fullName,
                 };
               });
+
           let cfGPS = crossfilter(gps);
           dGPSCarID = cfGPS.dimension((d) => d.carID);
           dGPSDay = cfGPS.dimension((d) => d.timestamp.getDate());

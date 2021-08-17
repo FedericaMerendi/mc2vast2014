@@ -7,9 +7,9 @@
 -->
   <b-list-group class="employeeList">
     <b-list-group-item v-for="p in dataEmployees"
-                       :key="p.id"
-                       @click="selectedEmployee(p.id)">
-      {{p.id}}, {{p.lastName}},{{p.firstName}},{{p.carID}}, {{p.currentEmploymentTitle}}, {{p.currentEmploymentType}}
+                       :key="p.employeeID"
+                       @click="selectedEmployee(p.employeeID)">
+      {{p.employeeID}},{{p.fullName}},{{p.carID}}, {{p.currentEmpTitle}}, {{p.currentEmpType}}
     </b-list-group-item>
   </b-list-group>
 </div>
