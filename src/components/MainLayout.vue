@@ -4,6 +4,7 @@
     <b-container fluid>
       <b-row id="firstRow" >
         <b-col cols="7" id="userData">
+          <ButtonsDay @get-day="getSelectedDay" ></ButtonsDay>
           <!-- <Employee v-bind:data="data"
                     v-bind:encoding="encoding"
                     @get-employee-name="getName"/>-->
@@ -32,6 +33,7 @@
 
 <script>
 
+import ButtonsDay from "./ButtonsDay";
 const d3 = require('d3');
 import crossfilter from 'crossfilter2';
 import AbilaMap from "./AbilaMap";
@@ -39,11 +41,14 @@ import Employee from "./Employee";
 
 let employee;
 let loyalty_cards;
+
 let credit_cards;
+let dCCDay;
+
 let dLocationLC;
+
 let dEmployeeID;
 
-let cfGPS;
 var dGPSCarID;
 var dGPSDay;
 
@@ -52,6 +57,7 @@ var dGPSDay;
 export default {
   name: "MainLayout",
   components: {
+    ButtonsDay,
     AbilaMap,
     Employee,
   },
@@ -61,7 +67,7 @@ export default {
       loyalty_cards: [],
       credit_cards: [],
       dataGPS: [],
-      data: [],
+      selectedDay: '6',
       encoding: {
         x: {field:'timestamp', type: 'temporal'},
         y: {field:'lastName', type: 'nominal'},
@@ -71,6 +77,15 @@ export default {
     }
   },
   methods: {
+    getSelectedDay(day) {
+      console.log('Selected day:', day);
+      this.selectedDay = day;
+      //console.log('app',dCCDay.filter(this.selectedDay).top(Infinity));
+
+      this.credit_cards = dCCDay.filter(this.selectedDay).top(Infinity);
+      this.dataGPS = dGPSDay.filter(this.selectedDay).top(Infinity);
+      //this.loyalty_card = dLCDay.filter(this.selectedDay).top(Infinity);
+    },
     getCarID(id){
       console.log('car', id)
       dGPSCarID.filter(id.toString());
@@ -81,15 +96,6 @@ export default {
       var personCarID = dEmployeeID.top(Infinity)[0]['carID'];
       this.getCarID(personCarID);
     },
-    getDay(day) {
-      console.log('day', day)
-      if (day == 'All') {
-        dGPSDay.filterAll();
-      } else {
-        dGPSDay.filter(day);
-      }
-      this.dataGPS = dGPSDay.top(Infinity);
-    }
   },
   mounted() {
     d3.csv('/data/car-assignments-ids.csv')
@@ -147,8 +153,10 @@ export default {
                   lastName: row.LastName,
                 };
               });
-          this.credit_cards = credit_cards;
-          this.data = credit_cards;
+          let cfCC = crossfilter(credit_cards);
+          dCCDay = cfCC.dimension(d => { return d.timestamp.getDate()});
+          this.credit_cards = dCCDay.filter(this.selectedDay).top(Infinity);
+
         });
 
     d3.csv('/data/reduced_gps.csv')
@@ -162,13 +170,13 @@ export default {
                   long: row.long,
                 };
               });
-          cfGPS = crossfilter(gps);
+          let cfGPS = crossfilter(gps);
           dGPSCarID = cfGPS.dimension((d) => d.carID);
           dGPSDay = cfGPS.dimension((d) => d.timestamp.getDate());
           //var dGPSTime = cfGPS.dimension((d) => d.timestamp.getTime());
           //console.log(dGPSDay.top(Infinity));
           //console.log(dGPSTime.top(Infinity));
-          this.dataGPS = dGPSCarID.top(Infinity);
+          this.dataGPS = dGPSCarID.filter(this.selectedDay).top(Infinity);
         });
   },
 }
