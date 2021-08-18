@@ -4,27 +4,53 @@
         class='timechart'
         transform="translate(0,0)"
         :viewBox="viewBox">
-      <g :transform="`translate(0, 0)`">
+      <g :transform="`translate(0, 0)`" >
         <g class="x-axis"
-           :transform="`translate(${margin.left }, ${margin.top})`"></g>
+           :transform="`translate(${margin.left}, ${margin.top})`"></g>
         <g class="y-axis"
-           :transform="`translate(${margin.left }, ${margin.top})`"></g>
-
-        <g :transform="`translate(${margin.left}, ${margin.top})`">
-          <rect
-              :transform="`translate(0, 0)`"
-              v-for="(cc, i) in dataCC"
-              :key="i"
-              height="6"
-              width="6"
-              :x="valueScaleX(cc.timestamp)"
-              :y="valueScaleY(cc.fullName)"
-              @click="getInfoCC(cc)"></rect>
-        </g>
+           :transform="`translate(${margin.left }, ${margin.top + r})`"></g>
 
         <g>
           <g class="x-grid grid" :transform="`translate(${margin.left}, ${margin.top})`"></g>
           <g class="y-grid grid" :transform="`translate(${margin.left}, ${margin.top})`"></g>
+        </g>
+
+        <g :transform="`translate(${margin.left}, ${margin.top})`">
+          <rect
+              :transform="`translate(0, 0)`"
+              v-for="(p, i) in dataPaths"
+              :key="i"
+              :height="r"
+              fill="red"
+              :width="valueScaleX(p.maxTimestamp) - valueScaleX(p.minTimestamp)"
+              :x="valueScaleX(p.minTimestamp)"
+              :y="valueScaleY(p.fullName)"></rect>
+        </g>
+
+        <!--  -->
+        <g :transform="`translate(${margin.left}, ${margin.top + r})`">
+          <rect
+              :transform="`translate(0, 0)`"
+              v-for="(cc, i) in dataCC"
+              :key="i"
+              :height="r"
+              :width="r"
+              :x="valueScaleX(cc.timestamp)"
+              :y="valueScaleY(cc.fullName)"
+              fill="pink"
+              @click="getInfoCC(cc)"></rect>
+        </g>
+
+        <g :transform="`translate(${margin.left}, ${margin.top + r})`">
+          <circle
+              :transform="`translate(0, 0)`"
+              v-for="(lc, i) in dataLC"
+              :key="i"
+              :r="r/2"
+              cx="10"
+              :cy="valueScaleY(lc.fullName)"
+              fill="blue"
+              @click="getInfoCC(lc)"></circle>
         </g>
 
       </g>
@@ -39,20 +65,25 @@ export default {
   name: "EventTimeline",
   props: {
     dataCC: Array,
+    dataLC: Array,
+    dataGPS: Array,
     dataEmployees: Array,
+    dataPaths: Array,
+    selectedDay: String,
   },
   data () {
     return {
       width: 1000,
-      height: 1000,
+      height: 800,
       padding: 10,
       margin: {
-        left: 100,
+        left: 155,
         right:10,
         top:20,
         bottom:10
       },
-      namesList: null,
+      r: 8,
+      namesList: this.getListEmployees(),
     }
   },
   computed: {
@@ -69,6 +100,12 @@ export default {
     },
   },
   methods: {
+    getTimeDomain() {
+      var day = new Date(2014,0,parseInt(this.selectedDay));
+      var init_time = day.setHours(0, 0, 0, 1);
+      var end_time = day.setHours(23, 59, 59, 59);
+      return [new Date(init_time), new Date(end_time)]
+    },
     scaleX() {
       const x = d3.scaleTime()
           .domain(this.getTimeDomain())
@@ -78,44 +115,30 @@ export default {
     },
     valueScaleX(d) {
       const x = this.scaleX();
-      return x(d)
+      return x(d) - this.r/2
     },
-    getTimeDomain() {
-      var day = new Date(this.dataCC[1].timestamp);
-      var init_time = day.setHours(0, 0, 0, 1);
-      var end_time = day.setHours(23, 59, 59, 59);
-      return [new Date(init_time), new Date(end_time)]
-    },
-    valueScaleY(d) {
-      const y = this.scaleY();
-      return y(d)
+    getListEmployees() {
+      var namesList = []
+      for (let i = 0; i < this.dataEmployees.length; i++) {
+        var name = this.dataEmployees[i].fullName;
+        namesList.push(name)
+      }
+      return namesList;
     },
     scaleY() {
-      const y = d3.scaleBand()
-          .domain(this.getListEmployees())
+      const y = d3.scalePoint()
+          .domain(this.namesList)
           .range(this.rangeY);
       //d3.axisTop(x).ticks(24).tickFormat( d3.utcFormat("%H:%M"));
       return y
     },
-    getListEmployees() {
-      var namesList = []
-      for (let i = 0; i < this.dataCC.length; i++) {
-        var name = this.dataCC[i].fullName;
-        if (namesList.includes(name)) {
-          //do nothing
-        } else {
-          namesList.push(name);
-        }
-      }
-      this.namesList = namesList;
-      return namesList;
-    },
-    getInfoCC(cc) {
-      console.log(cc.fullName, cc.timestamp, cc.price, cc.location);
+    valueScaleY(d) {
+      const y = this.scaleY();
+      return y(d) - this.r/2
     },
     renderAxes() {
       d3.select('.x-axis')
-          .call(d3.axisTop(this.scaleX()).ticks(24).tickFormat(d3.utcFormat("%H:%M")))
+          .call(d3.axisTop(this.scaleX()).ticks(24).tickFormat(d3.timeFormat("%H:%M")))
           .selectAll('.tick line')
           .attr('stroke', 'black')
           .attr('stroke-opacity', '1');
@@ -151,8 +174,8 @@ export default {
           .call(yGrid)
           .selectAll("line")
           .attr("stroke", "black")
-          .attr("stroke-opacity", "0.2")
-          .attr("stroke-width", "1px");
+          .attr("stroke-opacity", "0.7")
+          .attr("stroke-width", "0.8px");
 
       d3.select(".y-grid path").attr("stroke-opacity", "0");
       d3.select(".x-grid path").attr("stroke-opacity", "0");
@@ -169,7 +192,8 @@ export default {
           .selectAll("line")
           .attr("stroke", "black")
           .attr("stroke-opacity", "0.2")
-          .attr("stroke-width", "1px");
+          .attr("stroke-width", "0.8px")
+          .style("stroke-dasharray", "5 5");
 
       d3.select(".y-grid path").attr("stroke-opacity", "0");
       d3.select(".x-grid path").attr("stroke-opacity", "0");
@@ -178,7 +202,10 @@ export default {
       this.renderYGrid();
       this.renderXGrid();
       this.renderAxes();
-    }
+    },
+    getInfoCC(cc) {
+      console.log(cc.fullName, cc.timestamp, cc.price, cc.location);
+    },
   },
   watch: {
     dataCC:  function (){

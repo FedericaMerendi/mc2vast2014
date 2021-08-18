@@ -1,24 +1,30 @@
 <template>
   <div>
-    <p> Hello There! </p>
+    <h2> GAStech employees analysis </h2>
     <b-container fluid>
       <b-row id="firstRow" >
         <b-col cols="7" id="userData">
+          <h5> Select a day </h5>
           <ButtonsDay @get-day="getSelectedDay" ></ButtonsDay>
+          <h5> Daily employees timeline</h5>
           <EventTimeline :dataCC="dataCC"
-                         :dataEmployees="dataEmployees"></EventTimeline>
+                         :dataEmployees="dataEmployees"
+                         :dataLC="dataLC"
+                         :dataGPS="dataGPS"
+                         :dataPaths="dataPaths"
+                         :selectedDay="selectedDay"></EventTimeline>
 
         </b-col>
         <b-col cols="5" class="right_viz">
           <b-row>
             <div class="map">
-              <h3> Map </h3>
+              <h5> Map </h5>
               <AbilaMap :dataGPS="dataGPS"/>
             </div>
           </b-row>
           <b-row>
             <div class="filters">
-              <h3> Filters </h3>
+              <h5> Filters </h5>
             </div>
           </b-row>
         </b-col>
@@ -37,10 +43,12 @@ const d3 = require('d3');
 import crossfilter from 'crossfilter2';
 
 
-let dCCDay;
-let dEmpID;
+var dCCDay;
+var dEmpID;
 var dGPSCarID;
 var dGPSDay;
+var dLCDay;
+let dPathsDay
 
 //let dSubject;
 
@@ -57,6 +65,7 @@ export default {
       dataLC: [],
       dataCC: [],
       dataGPS: [],
+      dataPaths: [],
       selectedDay: '6',
     }
   },
@@ -66,8 +75,10 @@ export default {
       this.selectedDay = day;
       //console.log('app',dCCDay.filter(this.selectedDay).top(Infinity));
 
-      this.credit_cards = dCCDay.filter(this.selectedDay).top(Infinity);
+      this.dataCC = dCCDay.filter(this.selectedDay).top(Infinity);
       this.dataGPS = dGPSDay.filter(this.selectedDay).top(Infinity);
+      this.dataPaths = dPathsDay.filter(this.selectedDay).top(Infinity);
+
       //this.loyalty_card = dLCDay.filter(this.selectedDay).top(Infinity);
     },
     getCarID(id){
@@ -82,26 +93,25 @@ export default {
     },
   },
   mounted() {
-    d3.csv('/data/cars-assignments-fullname.csv')
+    d3.csv('/data/employees-fullname.csv')
         .then((rows) => {
           const employee = rows
               .map((row) => {
                 return {
-                  employeeID: +row.EmployeeID,
                   fullName: row.FullName,
                   carID: +row.CarID,
                   currentEmpType: row.CurrentEmploymentType,
                   currentEmpTitle: row.CurrentEmploymentTitle
                 };
               });
-          let cfEmp = crossfilter(employee);
+          //let cfEmp = crossfilter(employee);
           //dEmployment = cfEmp.dimension((d) =>{ return d.currentEmploymentType});
           //this.dEmployment = dEmployment;
 
-          dEmpID = cfEmp.dimension((d) => {return d.employeeID});
+          //dEmpID = cfEmp.dimension((d) => {return d.employeeID});
 
           //console.log(dName.filter('Hennie Osvaldo').top(5))
-          this.dataEmployees = dEmpID.top(Infinity);
+          this.dataEmployees = employee //dEmpID.top(Infinity);
         });
 
     d3.csv('/data/loyalty-data-fullname.csv')
@@ -109,18 +119,18 @@ export default {
           const loyalty_cards = rows
               .map((row) => {
                 return {
-                  day: new Date(row.timestamp),
+                  timestamp: new Date(row.timestamp),
                   location: row.location,
                   price: +row.price,
                   fullName: row.FullName,
                 };
               });
-          //let cfLC = crossfilter(loyalty_cards);
+          let cfLC = crossfilter(loyalty_cards);
           //dLocationLC = cfLC.dimension((d) => {return d.location;});
           // console.log(dLocationLC.group().all());
+          dLCDay = cfLC.dimension(d => { return d.timestamp.getDate()});
 
-          //this.dLocationLC = dLocationLC;
-          this.dataLC = loyalty_cards;
+          this.dataLC = dLCDay.filter(this.selectedDay).top(Infinity);
         });
 
     d3.csv('/data/cc-data-fullname.csv')
@@ -162,6 +172,28 @@ export default {
           //console.log(dGPSTime.top(Infinity));
           this.dataGPS = dGPSCarID.filter(this.selectedDay).top(Infinity);
         });
+    d3.csv('/data/paths_united.csv')
+        .then((rows) => {
+          const paths = rows
+              .map((row) => {
+                return {
+                  fullName: row.FullName,
+                  carID: +row.CarID,
+                  pathID: +row.pathID,
+                  minTimestamp: new Date(row.min_timestamp),
+                  minLat: +row.min_lat,
+                  minLong: +row.min_long,
+                  maxLat: +row.max_lat,
+                  maxLong: +row.max_long,
+                  maxTimestamp: new Date(row.max_timestamp),
+                };
+              });
+          let cfPaths= crossfilter(paths);
+          //console.log(paths)
+          dPathsDay = cfPaths.dimension(d => { return d.minTimestamp.getDate()});
+          this.dataPaths = dPathsDay.filter(this.selectedDay).top(Infinity);
+        });
+
   },
 }
 
