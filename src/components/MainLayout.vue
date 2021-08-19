@@ -17,15 +17,16 @@
         </b-col>
         <b-col cols="5" class="right_viz">
           <b-row>
+            <div class="treemap">
+              <h5> TreeMap </h5>
+              <TreeMap></TreeMap>
+            </div>
+          </b-row>
+          <b-row>
             <div class="map">
               <h5> Map </h5>
               <AbilaMap :dataGPS="dataGPS"
                         :locations="locations"/>
-            </div>
-          </b-row>
-          <b-row>
-            <div class="filters">
-              <h5> Filters </h5>
             </div>
           </b-row>
         </b-col>
@@ -37,6 +38,7 @@
 
 <script>
 import AbilaMap from "./AbilaMap";
+import TreeMap from "./TreeMap";
 import ButtonsDay from "./ButtonsDay";
 import EventTimeline from "./EventTimeline";
 
@@ -60,6 +62,7 @@ export default {
     EventTimeline,
     ButtonsDay,
     AbilaMap,
+    TreeMap,
   },
   data(){
     return {
