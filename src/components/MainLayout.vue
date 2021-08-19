@@ -19,7 +19,8 @@
           <b-row>
             <div class="map">
               <h5> Map </h5>
-              <AbilaMap :dataGPS="dataGPS"/>
+              <AbilaMap :dataGPS="dataGPS"
+                        :locations="locations"/>
             </div>
           </b-row>
           <b-row>
@@ -48,7 +49,8 @@ var dEmpID;
 var dGPSCarID;
 var dGPSDay;
 var dLCDay;
-let dPathsDay
+let dPathsDay;
+let dGPSPathID;
 
 //let dSubject;
 
@@ -66,6 +68,7 @@ export default {
       dataCC: [],
       dataGPS: [],
       dataPaths: [],
+      locations: [],
       selectedDay: '6',
     }
   },
@@ -157,20 +160,27 @@ export default {
               .map((row) => {
                 return {
                   timestamp: new Date(row.Timestamp),
-                  carID: +row.id,
+                  carID: +row.CarID,
                   lat: row.lat,
                   long: row.long,
-                  fullName: row.fullName,
+                  fullName: row.FullName,
+                  pathID: +row.pathID,
                 };
               });
 
           let cfGPS = crossfilter(gps);
           dGPSCarID = cfGPS.dimension((d) => d.carID);
           dGPSDay = cfGPS.dimension((d) => d.timestamp.getDate());
+          dGPSPathID = cfGPS.dimension((d) => d.pathID);
           //var dGPSTime = cfGPS.dimension((d) => d.timestamp.getTime());
           //console.log(dGPSDay.top(Infinity));
           //console.log(dGPSTime.top(Infinity));
-          this.dataGPS = dGPSCarID.filter(this.selectedDay).top(Infinity);
+          dGPSPathID.filterAll();
+          dGPSDay.filter(this.selectedDay).top(Infinity);
+          console.log(dGPSCarID.filter('35').top(Infinity));
+          //console.log(dGPSPathID.group().top(Infinity));
+
+          this.dataGPS = dGPSDay.filter(this.selectedDay).top(Infinity);
         });
     d3.csv('/data/paths_united.csv')
         .then((rows) => {
@@ -194,13 +204,23 @@ export default {
           this.dataPaths = dPathsDay.filter(this.selectedDay).top(Infinity);
         });
 
+    d3.csv('/data/locations.csv')
+        .then((rows) => {
+          const location = rows
+              .map((row) => {
+                return {
+                  location: row.location,
+                  lat: +row.lat,
+                  long: +row.long,
+                };
+              });
+          this.locations = location;
+        });
+
   },
 }
 
 </script>
 
 <style scoped>
-.filters, .map, #userData {
-  background-color: beige;
- }
 </style>

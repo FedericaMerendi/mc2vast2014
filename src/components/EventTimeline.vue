@@ -15,16 +15,17 @@
           <g class="y-grid grid" :transform="`translate(${margin.left}, ${margin.top})`"></g>
         </g>
 
-        <g :transform="`translate(${margin.left}, ${margin.top})`">
+        <g :transform="`translate(${margin.left}, ${margin.top +r})`">
           <rect
               :transform="`translate(0, 0)`"
               v-for="(p, i) in dataPaths"
               :key="i"
-              :height="r"
-              fill="red"
+              :height="r/2"
+              fill="blue"
               :width="valueScaleX(p.maxTimestamp) - valueScaleX(p.minTimestamp)"
               :x="valueScaleX(p.minTimestamp)"
-              :y="valueScaleY(p.fullName)"></rect>
+              :y="valueScaleY(p.fullName)"
+              @click="getInfoPath(p)"/>
         </g>
 
         <!--  -->
@@ -38,10 +39,10 @@
               :x="valueScaleX(cc.timestamp)"
               :y="valueScaleY(cc.fullName)"
               fill="pink"
-              @click="getInfoCC(cc)"></rect>
+              @click="getInfoCC(cc)"/>
         </g>
 
-        <g :transform="`translate(${margin.left}, ${margin.top + r})`">
+       <!-- <g :transform="`translate(${margin.left}, ${margin.top + r})`">
           <circle
               :transform="`translate(0, 0)`"
               v-for="(lc, i) in dataLC"
@@ -52,7 +53,7 @@
               fill="blue"
               @click="getInfoCC(lc)"></circle>
         </g>
-
+-->
       </g>
     </svg>
   </div>
@@ -107,15 +108,14 @@ export default {
       return [new Date(init_time), new Date(end_time)]
     },
     scaleX() {
-      const x = d3.scaleTime()
+      return d3.scaleTime()
           .domain(this.getTimeDomain())
           .nice()
           .range(this.rangeX);
-      return x;
     },
     valueScaleX(d) {
       const x = this.scaleX();
-      return x(d) - this.r/2
+      return x(d)
     },
     getListEmployees() {
       var namesList = []
@@ -126,15 +126,14 @@ export default {
       return namesList;
     },
     scaleY() {
-      const y = d3.scalePoint()
+      return d3.scalePoint()
           .domain(this.namesList)
           .range(this.rangeY);
       //d3.axisTop(x).ticks(24).tickFormat( d3.utcFormat("%H:%M"));
-      return y
     },
     valueScaleY(d) {
       const y = this.scaleY();
-      return y(d) - this.r/2
+      return y(d)
     },
     renderAxes() {
       d3.select('.x-axis')
@@ -206,9 +205,12 @@ export default {
     getInfoCC(cc) {
       console.log(cc.fullName, cc.timestamp, cc.price, cc.location);
     },
+    getInfoPath(p) {
+      console.log(p.fullName, p.minTimestamp, p.maxTimestamp, p.pathID);
+    },
   },
   watch: {
-    dataCC:  function (){
+    dataEmployees: function (){
       this.namesList = this.getListEmployees() ;
       this.init();
     }
