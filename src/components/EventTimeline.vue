@@ -2,7 +2,6 @@
   <div>
     <svg
         class='timechart'
-        transform="translate(0,0)"
         :viewBox="viewBox">
       <g :transform="`translate(0, 0)`" >
         <g class="x-axis"
@@ -102,9 +101,9 @@ export default {
   },
   methods: {
     getTimeDomain() {
-      var day = new Date(2014,0,parseInt(this.selectedDay));
-      var init_time = day.setHours(0, 0, 0, 1);
-      var end_time = day.setHours(23, 59, 59, 59);
+      let day = new Date(2014,0,parseInt(this.selectedDay));
+      let init_time = day.setHours(0, 0, 0, 1);
+      let end_time = day.setHours(23, 59, 59, 59);
       return [new Date(init_time), new Date(end_time)]
     },
     scaleX() {
@@ -118,9 +117,9 @@ export default {
       return x(d)
     },
     getListEmployees() {
-      var namesList = []
+      let namesList = []
       for (let i = 0; i < this.dataEmployees.length; i++) {
-        var name = this.dataEmployees[i].fullName;
+        let name = this.dataEmployees[i].fullName;
         namesList.push(name)
       }
       return namesList;

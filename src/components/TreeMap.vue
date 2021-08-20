@@ -10,7 +10,8 @@
 </template>
 
 <script>
-import {Plotly} from 'vue-plotly'
+import {Plotly} from 'vue-plotly';
+
 export default {
   name:'TreeMap',
   components: {

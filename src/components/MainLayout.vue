@@ -46,11 +46,11 @@ const d3 = require('d3');
 import crossfilter from 'crossfilter2';
 
 
-var dCCDay;
-var dEmpID;
-var dGPSCarID;
-var dGPSDay;
-var dLCDay;
+let dCCDay;
+let dEmpID;
+let dGPSCarID;
+let dGPSDay;
+let dLCDay;
 let dPathsDay;
 let dGPSPathID;
 
@@ -94,7 +94,7 @@ export default {
     },
     getName(id){
       dEmpID.filter(id);
-      var personCarID = dEmpID.top(Infinity)[0]['carID'];
+      let personCarID = dEmpID.top(Infinity)[0]['carID'];
       this.getCarID(personCarID);
     },
   },
@@ -185,6 +185,7 @@ export default {
 
           this.dataGPS = dGPSDay.filter(this.selectedDay).top(Infinity);
         });
+
     d3.csv('/data/paths_united.csv')
         .then((rows) => {
           const paths = rows

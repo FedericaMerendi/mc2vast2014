@@ -5,6 +5,13 @@ import { BootstrapVue } from 'bootstrap-vue'
 // Import Bootstrap an BootstrapVue CSS files (order is important)
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+
+// Make BootstrapVue available throughout your project
+Vue.use(BootstrapVue)
+// Optionally install the BootstrapVue icon components plugin
+//Vue.use(IconsPlugin)
+
 import 'leaflet/dist/leaflet.css';
 
 import { Icon } from 'leaflet';
@@ -21,14 +28,6 @@ Vue.use(VueApexCharts)
 
 Vue.component('apexchart', VueApexCharts)
 
-import VueVega from 'vue-vega'
-
-Vue.use(VueVega)
-
-// Make BootstrapVue available throughout your project
-Vue.use(BootstrapVue)
-// Optionally install the BootstrapVue icon components plugin
-//Vue.use(IconsPlugin)
 
 Vue.config.productionTip = false
 
