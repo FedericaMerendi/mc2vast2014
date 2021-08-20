@@ -10,9 +10,9 @@
           <EventTimeline :dataCC="dataCC"
                          :dataEmployees="dataEmployees"
                          :dataLC="dataLC"
-                         :dataGPS="dataGPS"
                          :dataPaths="dataPaths"
-                         :selectedDay="selectedDay"></EventTimeline>
+                         :selectedDay="selectedDay"
+          @update-time="updateTime"></EventTimeline>
 
         </b-col>
         <b-col cols="5" class="right_viz">
@@ -76,6 +76,9 @@ export default {
     }
   },
   methods: {
+    updateTime(min) {
+      console.log('hello there', min)
+    },
     getSelectedDay(day) {
       console.log('Selected day:', day);
       this.selectedDay = day;
@@ -96,6 +99,12 @@ export default {
       dEmpID.filter(id);
       let personCarID = dEmpID.top(Infinity)[0]['carID'];
       this.getCarID(personCarID);
+    },
+    getUTCTime(timestamp) {
+      var date = new Date(timestamp)
+      var utcdate = Date.UTC(date.getFullYear(),date.getMonth(),date.getDay(), date.getHours(),date.getMinutes(), date.getSeconds());
+      console.log(utcdate, date) ;
+      return utcdate
     },
   },
   mounted() {
@@ -180,7 +189,7 @@ export default {
           //console.log(dGPSTime.top(Infinity));
           dGPSPathID.filterAll();
           dGPSDay.filter(this.selectedDay).top(Infinity);
-          console.log(dGPSCarID.filter('35').top(Infinity));
+          //console.log(dGPSCarID.filter('35').top(Infinity));
           //console.log(dGPSPathID.group().top(Infinity));
 
           this.dataGPS = dGPSDay.filter(this.selectedDay).top(Infinity);
