@@ -1,1415 +1,1394 @@
-FullName,location,timestamp_y,price
-Alcazar Lucas,Abila Zacharo,2014-01-09 13:41:00,29.41
-Alcazar Lucas,Abila Zacharo,2014-01-18 13:32:00,16.59
-Alcazar Lucas,Albert's Fine Clothing,2014-01-06 20:26:00,276.9
-Alcazar Lucas,Gelatogalore,2014-01-07 13:37:00,21.52
-Alcazar Lucas,Guy's Gyros,2014-01-16 13:28:00,10.27
-Alcazar Lucas,Hallowed Grounds,2014-01-06 07:55:00,8.05
-Alcazar Lucas,Hallowed Grounds,2014-01-07 07:46:00,4.44
-Alcazar Lucas,Hallowed Grounds,2014-01-09 07:50:00,14.45
-Alcazar Lucas,Hallowed Grounds,2014-01-16 08:05:00,12.19
-Alcazar Lucas,Hallowed Grounds,2014-01-17 08:04:00,9.4
-Alcazar Lucas,Hippokampos,2014-01-08 13:43:00,39.8
-Alcazar Lucas,Hippokampos,2014-01-12 14:06:00,31.99
-Alcazar Lucas,Hippokampos,2014-01-13 13:28:00,30.51
-Alcazar Lucas,Ouzeri Elian,2014-01-08 21:16:00,10.81
-Alcazar Lucas,Ouzeri Elian,2014-01-13 19:30:00,28.75
-Alcazar Lucas,Ouzeri Elian,2014-01-16 20:28:00,9.91
-Alcazar Lucas,Ouzeri Elian,2014-01-17 20:28:00,35.81
-Alcazar Lucas,Ouzeri Elian,2014-01-18 19:26:00,21.56
-Arpa Emile,Frydos Autosupply n' More,2014-01-11 20:22:00,236.25
-Arpa Emile,Frydos Autosupply n' More,2014-01-13 19:41:00,188.57
-Arpa Emile,Gelatogalore,2014-01-14 14:03:00,22.03
-Arpa Emile,General Grocer,2014-01-11 15:31:00,78.02
-Arpa Emile,Guy's Gyros,2014-01-10 13:57:00,16.34
-Arpa Emile,Guy's Gyros,2014-01-12 14:16:00,30.47
-Arpa Emile,Guy's Gyros,2014-01-13 14:33:00,36.87
-Arpa Emile,Hallowed Grounds,2014-01-06 07:47:00,16.53
-Arpa Emile,Hallowed Grounds,2014-01-07 07:37:00,8.91
-Arpa Emile,Hallowed Grounds,2014-01-08 07:40:00,5.85
-Arpa Emile,Hallowed Grounds,2014-01-09 07:46:00,15.24
-Arpa Emile,Hallowed Grounds,2014-01-10 07:34:00,16.75
-Arpa Emile,Hallowed Grounds,2014-01-14 07:44:00,16.67
-Arpa Emile,Hallowed Grounds,2014-01-16 07:45:00,17.92
-Arpa Emile,Hippokampos,2014-01-07 14:11:00,37.57
-Arpa Emile,Kalami Kafenion,2014-01-06 14:15:00,27.4
-Arpa Emile,Kalami Kafenion,2014-01-08 14:19:00,31.43
-Arpa Emile,Kalami Kafenion,2014-01-09 14:04:00,10.94
-Arpa Emile,Katerina’s Café,2014-01-06 19:08:00,26.46
-Arpa Emile,Katerina’s Café,2014-01-09 19:25:00,35.92
-Arpa Emile,Katerina’s Café,2014-01-12 20:04:00,39.3
-Arpa Emile,Katerina’s Café,2014-01-16 20:09:00,18.79
-Arpa Emile,Katerina’s Café,2014-01-17 19:57:00,14.93
-Arpa Emile,Ouzeri Elian,2014-01-15 13:51:00,26.61
-Arpa Emile,Ouzeri Elian,2014-01-17 14:32:00,26.1
-Awelon Varro,Albert's Fine Clothing,2014-01-07 20:10:00,78.91
-Awelon Varro,Albert's Fine Clothing,2014-01-09 20:21:00,224.52
-Awelon Varro,Albert's Fine Clothing,2014-01-15 20:46:00,228.15
-Awelon Varro,Albert's Fine Clothing,2014-01-16 20:08:00,283.38
-Awelon Varro,Coffee Shack,2014-01-06 12:00:00,11.51
-Awelon Varro,Coffee Shack,2014-01-07 12:00:00,16.63
-Awelon Varro,Coffee Shack,2014-01-08 12:00:00,13.13
-Awelon Varro,Coffee Shack,2014-01-09 12:00:00,5.01
-Awelon Varro,Coffee Shack,2014-01-13 12:00:00,4.09
-Awelon Varro,Coffee Shack,2014-01-14 12:00:00,3.63
-Awelon Varro,Coffee Shack,2014-01-16 12:00:00,10.48
-Awelon Varro,Coffee Shack,2014-01-17 12:00:00,19.16
-Awelon Varro,Gelatogalore,2014-01-09 14:18:00,36.75
-Awelon Varro,Gelatogalore,2014-01-15 13:46:00,24.96
-Awelon Varro,General Grocer,2014-01-12 15:46:00,159.3
-Awelon Varro,Guy's Gyros,2014-01-13 14:00:00,38.07
-Awelon Varro,Guy's Gyros,2014-01-17 14:05:00,21.1
-Awelon Varro,Hippokampos,2014-01-06 20:46:00,24.41
-Awelon Varro,Hippokampos,2014-01-08 20:28:00,16.75
-Awelon Varro,Hippokampos,2014-01-10 14:07:00,19.88
-Awelon Varro,Hippokampos,2014-01-10 19:56:00,19.88
-Awelon Varro,Hippokampos,2014-01-11 20:27:00,69.8
-Awelon Varro,Hippokampos,2014-01-12 13:35:00,29.2
-Awelon Varro,Hippokampos,2014-01-13 21:13:00,32.29
-Awelon Varro,Hippokampos,2014-01-17 19:40:00,19.76
-Awelon Varro,Hippokampos,2014-01-18 20:26:00,55.03
-Awelon Varro,Kalami Kafenion,2014-01-06 14:00:00,13.08
-Awelon Varro,Kalami Kafenion,2014-01-08 14:15:00,34.98
-Awelon Varro,Kalami Kafenion,2014-01-11 14:09:00,35.66
-Awelon Varro,Ouzeri Elian,2014-01-14 14:01:00,19.7
-Awelon Varro,Ouzeri Elian,2014-01-16 14:01:00,8.47
-Azada Lars,Abila Zacharo,2014-01-07 13:20:00,13.52
-Azada Lars,Abila Zacharo,2014-01-08 13:34:00,14.41
-Azada Lars,Bean There Done That,2014-01-06 12:00:00,10.28
-Azada Lars,Bean There Done That,2014-01-07 12:00:00,11.25
-Azada Lars,Bean There Done That,2014-01-08 12:00:00,17.45
-Azada Lars,Bean There Done That,2014-01-09 12:00:00,13.0
-Azada Lars,Bean There Done That,2014-01-10 12:00:00,15.39
-Azada Lars,Bean There Done That,2014-01-13 12:00:00,7.93
-Azada Lars,Bean There Done That,2014-01-14 12:00:00,7.28
-Azada Lars,Bean There Done That,2014-01-16 12:00:00,19.82
-Azada Lars,Bean There Done That,2014-01-17 12:00:00,19.67
-Azada Lars,Gelatogalore,2014-01-10 13:35:00,26.15
-Azada Lars,Gelatogalore,2014-01-13 13:41:00,36.93
-Azada Lars,Guy's Gyros,2014-01-06 13:24:00,15.44
-Azada Lars,Guy's Gyros,2014-01-09 13:43:00,14.91
-Azada Lars,Guy's Gyros,2014-01-15 13:22:00,14.37
-Azada Lars,Hippokampos,2014-01-06 20:46:00,21.33
-Azada Lars,Hippokampos,2014-01-07 20:02:00,11.56
-Azada Lars,Hippokampos,2014-01-08 19:21:00,10.52
-Azada Lars,Hippokampos,2014-01-10 19:46:00,28.22
-Azada Lars,Hippokampos,2014-01-11 20:23:00,70.23
-Azada Lars,Hippokampos,2014-01-12 19:29:00,66.63
-Azada Lars,Hippokampos,2014-01-13 20:42:00,31.59
-Azada Lars,Hippokampos,2014-01-14 19:44:00,39.64
-Azada Lars,Hippokampos,2014-01-16 13:36:00,31.14
-Azada Lars,Hippokampos,2014-01-18 20:11:00,72.5
-Azada Lars,Hippokampos,2014-01-19 20:16:00,78.96
-Balas Felix,Abila Zacharo,2014-01-13 13:42:00,11.99
-Balas Felix,Abila Zacharo,2014-01-15 13:45:00,8.83
-Balas Felix,Albert's Fine Clothing,2014-01-08 20:45:00,136.01
-Balas Felix,Albert's Fine Clothing,2014-01-14 20:50:00,228.72
-Balas Felix,Bean There Done That,2014-01-06 12:00:00,16.09
-Balas Felix,Bean There Done That,2014-01-08 12:00:00,12.07
-Balas Felix,Bean There Done That,2014-01-10 12:00:00,3.92
-Balas Felix,Bean There Done That,2014-01-13 12:00:00,18.02
-Balas Felix,Bean There Done That,2014-01-14 12:00:00,19.37
-Balas Felix,Bean There Done That,2014-01-15 12:00:00,5.34
-Balas Felix,Bean There Done That,2014-01-16 12:00:00,12.33
-Balas Felix,Bean There Done That,2014-01-17 12:00:00,8.21
-Balas Felix,Frank's Fuel,2014-01-18 18:39:00,52.66
-Balas Felix,Gelatogalore,2014-01-17 13:33:00,23.23
-Balas Felix,Guy's Gyros,2014-01-06 13:46:00,30.82
-Balas Felix,Guy's Gyros,2014-01-07 13:46:00,10.11
-Balas Felix,Guy's Gyros,2014-01-10 13:47:00,31.5
-Balas Felix,Hippokampos,2014-01-08 13:48:00,28.79
-Balas Felix,Hippokampos,2014-01-09 13:41:00,8.43
-Balas Felix,Hippokampos,2014-01-09 13:41:00,10.12
-Balas Felix,Hippokampos,2014-01-09 21:38:00,8.43
-Balas Felix,Hippokampos,2014-01-09 21:38:00,10.12
-Balas Felix,Hippokampos,2014-01-11 19:53:00,67.37
-Balas Felix,Hippokampos,2014-01-12 20:05:00,78.21
-Balas Felix,Hippokampos,2014-01-15 20:10:00,35.12
-Balas Felix,Hippokampos,2014-01-17 21:58:00,12.86
-Balas Felix,Hippokampos,2014-01-19 19:43:00,101.25
-Balas Felix,Kalami Kafenion,2014-01-14 13:24:00,17.38
-Balas Felix,Kalami Kafenion,2014-01-16 13:48:00,31.38
-Balas Felix,Kalami Kafenion,2014-01-18 19:39:00,11.14
-Barranco Ingrid,Abila Zacharo,2014-01-06 13:27:00,30.08
-Barranco Ingrid,Abila Zacharo,2014-01-07 13:33:00,12.72
-Barranco Ingrid,Abila Zacharo,2014-01-15 13:26:00,23.51
-Barranco Ingrid,Albert's Fine Clothing,2014-01-13 20:35:00,288.0
-Barranco Ingrid,Brewed Awakenings,2014-01-06 12:00:00,5.72
-Barranco Ingrid,Brewed Awakenings,2014-01-08 12:00:00,11.73
-Barranco Ingrid,Brewed Awakenings,2014-01-10 12:00:00,13.82
-Barranco Ingrid,Brewed Awakenings,2014-01-13 12:00:00,12.69
-Barranco Ingrid,Brewed Awakenings,2014-01-14 12:00:00,17.14
-Barranco Ingrid,Brewed Awakenings,2014-01-17 12:00:00,8.16
-Barranco Ingrid,Desafio Golf Course,2014-01-12 14:13:00,160.77
-Barranco Ingrid,Desafio Golf Course,2014-01-19 12:57:00,145.72
-Barranco Ingrid,Frydos Autosupply n' More,2014-01-11 16:09:00,52.73
-Barranco Ingrid,Guy's Gyros,2014-01-17 13:18:00,8.64
-Barranco Ingrid,Hippokampos,2014-01-06 20:52:00,17.27
-Barranco Ingrid,Hippokampos,2014-01-07 21:21:00,15.85
-Barranco Ingrid,Hippokampos,2014-01-08 20:53:00,26.31
-Barranco Ingrid,Hippokampos,2014-01-10 20:09:00,10.48
-Barranco Ingrid,Hippokampos,2014-01-11 13:47:00,20.87
-Barranco Ingrid,Hippokampos,2014-01-11 13:47:00,66.21
-Barranco Ingrid,Hippokampos,2014-01-11 19:26:00,20.87
-Barranco Ingrid,Hippokampos,2014-01-11 19:26:00,66.21
-Barranco Ingrid,Hippokampos,2014-01-12 20:38:00,63.32
-Barranco Ingrid,Hippokampos,2014-01-16 21:13:00,20.84
-Barranco Ingrid,Hippokampos,2014-01-17 20:54:00,11.93
-Barranco Ingrid,Katerina’s Café,2014-01-10 13:30:00,34.76
-Barranco Ingrid,Katerina’s Café,2014-01-16 13:19:00,27.82
-Barranco Ingrid,Katerina’s Café,2014-01-18 14:03:00,96.36
-Barranco Ingrid,Ouzeri Elian,2014-01-09 13:21:00,26.09
-Baza Isak,Abila Zacharo,2014-01-07 13:25:00,22.25
-Baza Isak,Abila Zacharo,2014-01-10 13:29:00,33.33
-Baza Isak,Gelatogalore,2014-01-09 13:23:00,8.6
-Baza Isak,Hippokampos,2014-01-15 13:24:00,13.0
-Baza Isak,Hippokampos,2014-01-16 13:26:00,36.17
-Baza Isak,Jack's Magical Beans,2014-01-06 12:00:00,11.03
-Baza Isak,Jack's Magical Beans,2014-01-07 12:00:00,3.68
-Baza Isak,Jack's Magical Beans,2014-01-08 12:00:00,3.96
-Baza Isak,Jack's Magical Beans,2014-01-09 12:00:00,10.11
-Baza Isak,Jack's Magical Beans,2014-01-10 12:00:00,15.69
-Baza Isak,Jack's Magical Beans,2014-01-13 12:00:00,18.31
-Baza Isak,Jack's Magical Beans,2014-01-16 12:00:00,9.12
-Baza Isak,Jack's Magical Beans,2014-01-17 12:00:00,7.57
-Baza Isak,Katerina’s Café,2014-01-06 13:46:00,18.56
-Baza Isak,Katerina’s Café,2014-01-08 13:28:00,8.53
-Baza Isak,Katerina’s Café,2014-01-13 13:34:00,26.15
-Baza Isak,Ouzeri Elian,2014-01-08 21:17:00,29.85
-Baza Isak,Ouzeri Elian,2014-01-10 18:52:00,19.92
-Baza Isak,Ouzeri Elian,2014-01-11 19:21:00,69.36
-Baza Isak,Ouzeri Elian,2014-01-12 19:59:00,55.55
-Baza Isak,Ouzeri Elian,2014-01-14 13:41:00,11.86
-Baza Isak,Ouzeri Elian,2014-01-14 20:32:00,11.86
-Baza Isak,Ouzeri Elian,2014-01-15 20:29:00,23.18
-Baza Isak,Ouzeri Elian,2014-01-16 20:25:00,23.89
-Baza Isak,Ouzeri Elian,2014-01-17 19:40:00,38.6
-Baza Isak,Ouzeri Elian,2014-01-18 19:21:00,57.63
-Baza Isak,Ouzeri Elian,2014-01-19 19:48:00,67.98
-Bergen Linnea,Abila Zacharo,2014-01-18 13:25:00,18.45
-Bergen Linnea,Coffee Cameleon,2014-01-06 07:42:00,8.73
-Bergen Linnea,Coffee Cameleon,2014-01-07 07:49:00,7.66
-Bergen Linnea,Coffee Cameleon,2014-01-08 07:51:00,6.59
-Bergen Linnea,Coffee Cameleon,2014-01-10 07:40:00,8.51
-Bergen Linnea,Coffee Cameleon,2014-01-13 08:02:00,4.88
-Bergen Linnea,Coffee Cameleon,2014-01-14 07:53:00,15.63
-Bergen Linnea,Coffee Cameleon,2014-01-15 07:56:00,5.49
-Bergen Linnea,Coffee Cameleon,2014-01-17 07:51:00,6.81
-Bergen Linnea,Gelatogalore,2014-01-06 13:19:00,12.74
-Bergen Linnea,Gelatogalore,2014-01-07 13:33:00,34.04
-Bergen Linnea,Guy's Gyros,2014-01-10 13:27:00,15.93
-Bergen Linnea,Hippokampos,2014-01-08 13:26:00,16.59
-Bergen Linnea,Hippokampos,2014-01-13 13:24:00,35.73
-Bergen Linnea,Hippokampos,2014-01-14 13:17:00,36.01
-Bergen Linnea,Hippokampos,2014-01-16 13:30:00,16.53
-Bergen Linnea,Kalami Kafenion,2014-01-17 13:16:00,140.78
-Bergen Linnea,Katerina’s Café,2014-01-06 20:07:00,23.63
-Bergen Linnea,Katerina’s Café,2014-01-07 20:09:00,19.49
-Bergen Linnea,Katerina’s Café,2014-01-09 13:03:00,17.02
-Bergen Linnea,Katerina’s Café,2014-01-12 19:21:00,11.81
-Bergen Linnea,Katerina’s Café,2014-01-15 21:05:00,13.77
-Bergen Linnea,Katerina’s Café,2014-01-17 20:20:00,19.09
-Bergen Linnea,Octavio's Office Supplies,2014-01-10 16:07:00,64.51
-Bergen Linnea,Ouzeri Elian,2014-01-15 13:10:00,8.93
-Bergen Linnea,Roberts and Sons,2014-01-18 15:41:00,62.47
-Bodrogi Loreto,Abila Zacharo,2014-01-13 13:48:00,36.32
-Bodrogi Loreto,Brew've Been Served,2014-01-06 08:06:00,18.24
-Bodrogi Loreto,Brew've Been Served,2014-01-08 07:48:00,12.92
-Bodrogi Loreto,Brew've Been Served,2014-01-10 08:09:00,14.45
-Bodrogi Loreto,Brew've Been Served,2014-01-14 07:48:00,6.45
-Bodrogi Loreto,Brew've Been Served,2014-01-15 08:02:00,15.58
-Bodrogi Loreto,Brew've Been Served,2014-01-16 08:02:00,5.82
-Bodrogi Loreto,Brew've Been Served,2014-01-17 08:15:00,3.09
-Bodrogi Loreto,Brewed Awakenings,2014-01-07 12:00:00,4.84
-Bodrogi Loreto,Frank's Fuel,2014-01-08 12:29:00,65.34
-Bodrogi Loreto,Frydos Autosupply n' More,2014-01-08 20:17:00,182.56
-Bodrogi Loreto,Frydos Autosupply n' More,2014-01-09 20:45:00,276.75
-Bodrogi Loreto,Gelatogalore,2014-01-15 13:55:00,31.21
-Bodrogi Loreto,Guy's Gyros,2014-01-07 20:14:00,22.33
-Bodrogi Loreto,Guy's Gyros,2014-01-08 13:40:00,17.9
-Bodrogi Loreto,Guy's Gyros,2014-01-12 19:32:00,34.41
-Bodrogi Loreto,Guy's Gyros,2014-01-15 20:59:00,21.43
-Bodrogi Loreto,Guy's Gyros,2014-01-17 13:38:00,8.54
-Bodrogi Loreto,Guy's Gyros,2014-01-17 13:38:00,39.14
-Bodrogi Loreto,Guy's Gyros,2014-01-17 20:24:00,8.54
-Bodrogi Loreto,Guy's Gyros,2014-01-17 20:24:00,39.14
-Bodrogi Loreto,Guy's Gyros,2014-01-19 20:25:00,20.94
-Bodrogi Loreto,Hippokampos,2014-01-07 13:53:00,31.69
-Bodrogi Loreto,Hippokampos,2014-01-14 13:37:00,19.07
-Bodrogi Loreto,Jack's Magical Beans,2014-01-09 12:00:00,6.0
-Bodrogi Loreto,Katerina’s Café,2014-01-06 13:59:00,39.41
-Bodrogi Loreto,Katerina’s Café,2014-01-09 13:35:00,10.42
-Bodrogi Loreto,Katerina’s Café,2014-01-18 20:13:00,9.72
-Bodrogi Loreto,Ouzeri Elian,2014-01-10 13:35:00,35.24
-Bodrogi Loreto,Ouzeri Elian,2014-01-16 13:45:00,12.47
-Bodrogi Loreto,Shoppers' Delight,2014-01-13 19:27:00,216.43
-Borrasca Isande,Abila Zacharo,2014-01-11 13:33:00,89.54
-Borrasca Isande,Abila Zacharo,2014-01-18 13:05:00,73.25
-Borrasca Isande,Albert's Fine Clothing,2014-01-19 20:02:00,254.29
-Borrasca Isande,Brewed Awakenings,2014-01-06 12:00:00,16.89
-Borrasca Isande,Brewed Awakenings,2014-01-07 12:00:00,11.59
-Borrasca Isande,Brewed Awakenings,2014-01-08 12:00:00,12.32
-Borrasca Isande,Brewed Awakenings,2014-01-09 12:00:00,13.16
-Borrasca Isande,Brewed Awakenings,2014-01-10 12:00:00,6.17
-Borrasca Isande,Brewed Awakenings,2014-01-13 12:00:00,16.4
-Borrasca Isande,Brewed Awakenings,2014-01-14 12:00:00,8.3
-Borrasca Isande,Brewed Awakenings,2014-01-15 12:00:00,11.62
-Borrasca Isande,Brewed Awakenings,2014-01-16 12:00:00,6.53
-Borrasca Isande,Brewed Awakenings,2014-01-17 12:00:00,8.69
-Borrasca Isande,Chostus Hotel,2014-01-08 12:56:00,107.51
-Borrasca Isande,Chostus Hotel,2014-01-14 13:17:00,109.54
-Borrasca Isande,Chostus Hotel,2014-01-17 13:54:00,119.62
-Borrasca Isande,Frydos Autosupply n' More,2014-01-15 19:52:00,18.91
-Borrasca Isande,Gelatogalore,2014-01-09 13:23:00,16.74
-Borrasca Isande,Guy's Gyros,2014-01-13 13:33:00,27.49
-Borrasca Isande,Hippokampos,2014-01-07 21:03:00,21.2
-Borrasca Isande,Hippokampos,2014-01-08 19:28:00,16.54
-Borrasca Isande,Hippokampos,2014-01-09 20:05:00,15.02
-Borrasca Isande,Hippokampos,2014-01-12 20:15:00,29.41
-Borrasca Isande,Hippokampos,2014-01-14 21:31:00,22.13
-Borrasca Isande,Hippokampos,2014-01-15 13:41:00,22.61
-Borrasca Isande,Hippokampos,2014-01-16 13:30:00,10.38
-Borrasca Isande,Hippokampos,2014-01-17 20:03:00,8.92
-Borrasca Isande,Kalami Kafenion,2014-01-12 13:52:00,26.04
-Borrasca Isande,Katerina’s Café,2014-01-11 19:40:00,57.36
-Borrasca Isande,Ouzeri Elian,2014-01-06 13:22:00,38.9
-Bramar Mat,Abila Zacharo,2014-01-15 14:04:00,26.82
-Bramar Mat,Abila Zacharo,2014-01-16 13:48:00,24.38
-Bramar Mat,Brew've Been Served,2014-01-06 07:43:00,9.6
-Bramar Mat,Brew've Been Served,2014-01-07 08:00:00,11.91
-Bramar Mat,Brew've Been Served,2014-01-08 07:42:00,3.09
-Bramar Mat,Brew've Been Served,2014-01-10 07:47:00,4.88
-Bramar Mat,Brew've Been Served,2014-01-13 07:56:00,9.53
-Bramar Mat,Brew've Been Served,2014-01-14 07:45:00,14.04
-Bramar Mat,Brew've Been Served,2014-01-15 07:58:00,3.14
-Bramar Mat,Brew've Been Served,2014-01-16 07:54:00,3.84
-Bramar Mat,Brew've Been Served,2014-01-17 07:50:00,8.07
-Bramar Mat,Frydos Autosupply n' More,2014-01-14 21:28:00,49.21
-Bramar Mat,Frydos Autosupply n' More,2014-01-15 20:57:00,276.88
-Bramar Mat,Frydos Autosupply n' More,2014-01-16 20:54:00,130.01
-Bramar Mat,Frydos Autosupply n' More,2014-01-17 19:57:00,124.52
-Bramar Mat,Gelatogalore,2014-01-08 14:17:00,39.94
-Bramar Mat,Hippokampos,2014-01-06 14:04:00,30.88
-Bramar Mat,Hippokampos,2014-01-13 14:21:00,26.96
-Bramar Mat,Kalami Kafenion,2014-01-09 13:56:00,19.84
-Bramar Mat,Kalami Kafenion,2014-01-14 13:50:00,27.65
-Bramar Mat,Katerina’s Café,2014-01-06 21:12:00,26.51
-Bramar Mat,Katerina’s Café,2014-01-09 20:06:00,26.6
-Bramar Mat,Katerina’s Café,2014-01-11 20:00:00,25.76
-Bramar Mat,Katerina’s Café,2014-01-12 20:35:00,40.25
-Bramar Mat,Katerina’s Café,2014-01-17 14:15:00,30.72
-Bramar Mat,Ouzeri Elian,2014-01-07 13:32:00,28.37
-Calixto Nils,Abila Zacharo,2014-01-15 13:22:00,31.0
-Calixto Nils,Gelatogalore,2014-01-06 13:41:00,22.64
-Calixto Nils,Gelatogalore,2014-01-08 13:42:00,35.29
-Calixto Nils,Guy's Gyros,2014-01-09 13:28:00,8.23
-Calixto Nils,Guy's Gyros,2014-01-09 13:28:00,13.59
-Calixto Nils,Guy's Gyros,2014-01-09 20:23:00,8.23
-Calixto Nils,Guy's Gyros,2014-01-09 20:23:00,13.59
-Calixto Nils,Guy's Gyros,2014-01-16 13:23:00,31.48
-Calixto Nils,Hallowed Grounds,2014-01-07 07:35:00,14.05
-Calixto Nils,Hallowed Grounds,2014-01-08 07:55:00,19.92
-Calixto Nils,Hallowed Grounds,2014-01-10 07:49:00,10.34
-Calixto Nils,Hallowed Grounds,2014-01-13 07:32:00,9.16
-Calixto Nils,Hallowed Grounds,2014-01-14 07:35:00,10.75
-Calixto Nils,Hallowed Grounds,2014-01-16 07:44:00,13.84
-Calixto Nils,Hallowed Grounds,2014-01-17 07:33:00,14.58
-Calixto Nils,Hippokampos,2014-01-12 13:54:00,8.54
-Calixto Nils,Hippokampos,2014-01-14 13:42:00,18.81
-Calixto Nils,Katerina’s Café,2014-01-07 13:33:00,14.75
-Calixto Nils,Katerina’s Café,2014-01-07 13:33:00,22.27
-Calixto Nils,Katerina’s Café,2014-01-07 20:13:00,14.75
-Calixto Nils,Katerina’s Café,2014-01-07 20:13:00,22.27
-Calixto Nils,Katerina’s Café,2014-01-08 20:31:00,36.6
-Calixto Nils,Katerina’s Café,2014-01-11 19:50:00,12.55
-Calixto Nils,Katerina’s Café,2014-01-12 19:18:00,12.64
-Calixto Nils,Katerina’s Café,2014-01-13 20:51:00,15.82
-Calixto Nils,Katerina’s Café,2014-01-13 20:51:00,37.88
-Calixto Nils,Katerina’s Café,2014-01-14 20:09:00,31.8
-Calixto Nils,Katerina’s Café,2014-01-16 19:39:00,10.93
-Calixto Nils,Katerina’s Café,2014-01-17 20:24:00,32.13
-Calixto Nils,Katerina’s Café,2014-01-18 19:30:00,8.14
-Calixto Nils,Katerina’s Café,2014-01-19 19:53:00,34.03
-Calzas Axel,Albert's Fine Clothing,2014-01-12 19:58:00,63.36
-Calzas Axel,Bean There Done That,2014-01-06 12:00:00,8.54
-Calzas Axel,Bean There Done That,2014-01-07 12:00:00,13.89
-Calzas Axel,Bean There Done That,2014-01-09 12:00:00,4.06
-Calzas Axel,Bean There Done That,2014-01-10 12:00:00,13.41
-Calzas Axel,Bean There Done That,2014-01-13 12:00:00,19.56
-Calzas Axel,Bean There Done That,2014-01-15 12:00:00,13.13
-Calzas Axel,Bean There Done That,2014-01-16 12:00:00,5.56
-Calzas Axel,Bean There Done That,2014-01-17 12:00:00,19.56
-Calzas Axel,Frydos Autosupply n' More,2014-01-18 15:51:00,103.55
-Calzas Axel,Gelatogalore,2014-01-14 13:49:00,10.98
-Calzas Axel,Guy's Gyros,2014-01-16 14:05:00,32.8
-Calzas Axel,Hippokampos,2014-01-06 13:57:00,8.64
-Calzas Axel,Hippokampos,2014-01-06 13:57:00,26.8
-Calzas Axel,Hippokampos,2014-01-06 20:36:00,8.64
-Calzas Axel,Hippokampos,2014-01-06 20:36:00,26.8
-Calzas Axel,Hippokampos,2014-01-07 20:01:00,20.17
-Calzas Axel,Hippokampos,2014-01-15 13:42:00,16.37
-Calzas Axel,Hippokampos,2014-01-15 13:42:00,32.4
-Calzas Axel,Hippokampos,2014-01-15 20:24:00,16.37
-Calzas Axel,Hippokampos,2014-01-15 20:24:00,32.4
-Calzas Axel,Hippokampos,2014-01-17 13:58:00,10.14
-Calzas Axel,Hippokampos,2014-01-18 13:21:00,20.11
-Calzas Axel,Hippokampos,2014-01-18 20:23:00,20.11
-Calzas Axel,Kalami Kafenion,2014-01-07 13:45:00,22.83
-Calzas Axel,Katerina’s Café,2014-01-09 14:06:00,8.01
-Calzas Axel,Ouzeri Elian,2014-01-10 13:50:00,15.25
-Calzas Axel,Ouzeri Elian,2014-01-13 14:06:00,29.75
-Calzas Axel,Shoppers' Delight,2014-01-16 20:45:00,100.69
-Campo-Corrente Ada,Abila Zacharo,2014-01-17 13:11:00,8.78
-Campo-Corrente Ada,Albert's Fine Clothing,2014-01-09 21:27:00,229.98
-Campo-Corrente Ada,Brewed Awakenings,2014-01-06 12:00:00,4.35
-Campo-Corrente Ada,Brewed Awakenings,2014-01-07 12:00:00,6.72
-Campo-Corrente Ada,Brewed Awakenings,2014-01-09 12:00:00,17.66
-Campo-Corrente Ada,Brewed Awakenings,2014-01-10 12:00:00,13.9
-Campo-Corrente Ada,Brewed Awakenings,2014-01-13 12:00:00,16.25
-Campo-Corrente Ada,Brewed Awakenings,2014-01-14 12:00:00,11.35
-Campo-Corrente Ada,Brewed Awakenings,2014-01-15 12:00:00,3.62
-Campo-Corrente Ada,Brewed Awakenings,2014-01-16 12:00:00,6.39
-Campo-Corrente Ada,Brewed Awakenings,2014-01-17 12:00:00,6.0
-Campo-Corrente Ada,Desafio Golf Course,2014-01-12 14:14:00,198.46
-Campo-Corrente Ada,Desafio Golf Course,2014-01-19 13:51:00,190.91
-Campo-Corrente Ada,Gelatogalore,2014-01-07 13:20:00,35.06
-Campo-Corrente Ada,Gelatogalore,2014-01-13 13:19:00,26.45
-Campo-Corrente Ada,Hippokampos,2014-01-06 21:52:00,20.61
-Campo-Corrente Ada,Hippokampos,2014-01-07 21:51:00,22.18
-Campo-Corrente Ada,Hippokampos,2014-01-08 13:12:00,15.64
-Campo-Corrente Ada,Hippokampos,2014-01-08 13:12:00,26.55
-Campo-Corrente Ada,Hippokampos,2014-01-08 20:49:00,15.64
-Campo-Corrente Ada,Hippokampos,2014-01-08 20:49:00,26.55
-Campo-Corrente Ada,Hippokampos,2014-01-10 20:50:00,17.21
-Campo-Corrente Ada,Hippokampos,2014-01-10 20:50:00,30.63
-Campo-Corrente Ada,Hippokampos,2014-01-11 19:45:00,63.21
-Campo-Corrente Ada,Hippokampos,2014-01-12 19:44:00,26.79
-Campo-Corrente Ada,Hippokampos,2014-01-13 21:12:00,31.47
-Campo-Corrente Ada,Hippokampos,2014-01-14 20:48:00,23.56
-Campo-Corrente Ada,Hippokampos,2014-01-15 13:12:00,36.7
-Campo-Corrente Ada,Hippokampos,2014-01-16 13:19:00,17.66
-Campo-Corrente Ada,Hippokampos,2014-01-16 20:58:00,17.66
-Campo-Corrente Ada,Hippokampos,2014-01-18 19:42:00,63.21
-Campo-Corrente Ada,Hippokampos,2014-01-19 19:43:00,48.23
-Campo-Corrente Ada,Kalami Kafenion,2014-01-14 13:24:00,15.15
-Campo-Corrente Ada,Ouzeri Elian,2014-01-12 13:03:00,38.55
-Campo-Corrente Ada,Shoppers' Delight,2014-01-15 20:10:00,102.0
-Cazar Gustav,Abila Zacharo,2014-01-13 13:34:00,27.3
-Cazar Gustav,Albert's Fine Clothing,2014-01-13 20:42:00,49.48
-Cazar Gustav,Albert's Fine Clothing,2014-01-17 19:44:00,39.41
-Cazar Gustav,Bean There Done That,2014-01-06 12:00:00,5.24
-Cazar Gustav,Bean There Done That,2014-01-07 12:00:00,8.03
-Cazar Gustav,Bean There Done That,2014-01-08 12:00:00,14.96
-Cazar Gustav,Bean There Done That,2014-01-10 12:00:00,18.67
-Cazar Gustav,Bean There Done That,2014-01-13 12:00:00,5.54
-Cazar Gustav,Bean There Done That,2014-01-14 12:00:00,7.82
-Cazar Gustav,Bean There Done That,2014-01-15 12:00:00,18.96
-Cazar Gustav,Bean There Done That,2014-01-17 12:00:00,18.72
-Cazar Gustav,Frydos Autosupply n' More,2014-01-09 20:21:00,60.65
-Cazar Gustav,Guy's Gyros,2014-01-10 13:52:00,31.05
-Cazar Gustav,Hippokampos,2014-01-06 20:20:00,35.34
-Cazar Gustav,Hippokampos,2014-01-07 20:34:00,10.19
-Cazar Gustav,Hippokampos,2014-01-08 13:31:00,37.89
-Cazar Gustav,Hippokampos,2014-01-09 13:37:00,9.12
-Cazar Gustav,Hippokampos,2014-01-12 19:22:00,27.15
-Cazar Gustav,Hippokampos,2014-01-15 20:23:00,10.35
-Cazar Gustav,Hippokampos,2014-01-16 13:43:00,14.89
-Cazar Gustav,Hippokampos,2014-01-16 13:43:00,29.13
-Cazar Gustav,Hippokampos,2014-01-16 20:13:00,14.89
-Cazar Gustav,Hippokampos,2014-01-16 20:13:00,29.13
-Cazar Gustav,Kalami Kafenion,2014-01-14 13:51:00,15.27
-Cazar Gustav,Kalami Kafenion,2014-01-18 13:58:00,24.14
-Cazar Gustav,Katerina’s Café,2014-01-11 13:50:00,23.45
-Cazar Gustav,Katerina’s Café,2014-01-17 13:48:00,13.11
-Cazar Gustav,Ouzeri Elian,2014-01-15 13:31:00,36.47
-Cocinaro Hideki,Abila Zacharo,2014-01-06 14:05:00,18.11
-Cocinaro Hideki,General Grocer,2014-01-08 21:00:00,265.84
-Cocinaro Hideki,General Grocer,2014-01-17 20:41:00,78.03
-Cocinaro Hideki,Guy's Gyros,2014-01-06 20:28:00,15.29
-Cocinaro Hideki,Guy's Gyros,2014-01-12 19:26:00,42.32
-Cocinaro Hideki,Guy's Gyros,2014-01-13 20:59:00,33.48
-Cocinaro Hideki,Guy's Gyros,2014-01-13 20:59:00,37.5
-Cocinaro Hideki,Guy's Gyros,2014-01-14 19:59:00,34.26
-Cocinaro Hideki,Guy's Gyros,2014-01-16 20:35:00,11.31
-Cocinaro Hideki,Guy's Gyros,2014-01-19 20:14:00,36.87
-Cocinaro Hideki,Hallowed Grounds,2014-01-06 07:34:00,12.22
-Cocinaro Hideki,Hallowed Grounds,2014-01-07 07:48:00,18.97
-Cocinaro Hideki,Hallowed Grounds,2014-01-09 07:42:00,16.77
-Cocinaro Hideki,Hallowed Grounds,2014-01-10 07:50:00,10.76
-Cocinaro Hideki,Hallowed Grounds,2014-01-13 07:54:00,19.18
-Cocinaro Hideki,Hallowed Grounds,2014-01-14 07:45:00,13.0
-Cocinaro Hideki,Hallowed Grounds,2014-01-15 07:44:00,12.17
-Cocinaro Hideki,Hallowed Grounds,2014-01-16 07:44:00,18.2
-Cocinaro Hideki,Kalami Kafenion,2014-01-07 13:46:00,22.14
-Cocinaro Hideki,Kalami Kafenion,2014-01-11 14:16:00,39.36
-Cocinaro Hideki,Kalami Kafenion,2014-01-11 20:30:00,39.36
-Cocinaro Hideki,Kalami Kafenion,2014-01-17 13:58:00,27.73
-Cocinaro Hideki,Katerina’s Café,2014-01-10 14:08:00,37.62
-Cocinaro Hideki,Ouzeri Elian,2014-01-09 14:04:00,32.89
-Cocinaro Hideki,Ouzeri Elian,2014-01-14 13:51:00,22.3
-Cocinaro Hideki,Ouzeri Elian,2014-01-15 13:42:00,22.86
-Coginian Dante,Brew've Been Served,2014-01-06 08:17:00,15.39
-Coginian Dante,Brew've Been Served,2014-01-07 07:58:00,17.4
-Coginian Dante,Brew've Been Served,2014-01-08 08:01:00,3.92
-Coginian Dante,Brew've Been Served,2014-01-09 07:56:00,18.25
-Coginian Dante,Brew've Been Served,2014-01-13 08:23:00,19.89
-Coginian Dante,Brew've Been Served,2014-01-14 07:53:00,9.53
-Coginian Dante,Brew've Been Served,2014-01-15 08:06:00,3.47
-Coginian Dante,Frydos Autosupply n' More,2014-01-06 20:12:00,80.85
-Coginian Dante,Frydos Autosupply n' More,2014-01-10 20:02:00,43.65
-Coginian Dante,Frydos Autosupply n' More,2014-01-12 20:43:00,161.96
-Coginian Dante,Gelatogalore,2014-01-10 14:11:00,32.19
-Coginian Dante,Gelatogalore,2014-01-13 14:00:00,36.24
-Coginian Dante,Guy's Gyros,2014-01-09 14:09:00,27.69
-Coginian Dante,Guy's Gyros,2014-01-15 13:46:00,16.58
-Coginian Dante,Guy's Gyros,2014-01-17 14:00:00,15.12
-Coginian Dante,Hippokampos,2014-01-06 13:58:00,38.25
-Coginian Dante,Hippokampos,2014-01-14 14:16:00,16.73
-Coginian Dante,Kalami Kafenion,2014-01-08 13:42:00,22.49
-Coginian Dante,Kalami Kafenion,2014-01-16 13:45:00,9.27
-Coginian Dante,Kalami Kafenion,2014-01-18 14:02:00,42.73
-Coginian Dante,Katerina’s Café,2014-01-07 13:57:00,25.02
-Coginian Dante,Katerina’s Café,2014-01-07 13:57:00,37.44
-Coginian Dante,Katerina’s Café,2014-01-07 20:13:00,25.02
-Coginian Dante,Katerina’s Café,2014-01-07 20:13:00,37.44
-Coginian Dante,Katerina’s Café,2014-01-08 20:35:00,16.93
-Coginian Dante,Katerina’s Café,2014-01-09 20:22:00,29.82
-Coginian Dante,Katerina’s Café,2014-01-11 20:06:00,52.45
-Coginian Dante,Katerina’s Café,2014-01-14 20:42:00,26.61
-Coginian Dante,Katerina’s Café,2014-01-15 20:26:00,21.61
-Coginian Dante,Katerina’s Café,2014-01-16 20:39:00,30.56
-Coginian Dante,Katerina’s Café,2014-01-17 20:19:00,36.12
-Dedos Lidelse,Abila Zacharo,2014-01-09 13:40:00,20.73
-Dedos Lidelse,Abila Zacharo,2014-01-10 13:59:00,8.22
-Dedos Lidelse,Bean There Done That,2014-01-13 12:00:00,10.37
-Dedos Lidelse,Frydos Autosupply n' More,2014-01-16 19:45:00,53.37
-Dedos Lidelse,Frydos Autosupply n' More,2014-01-18 15:32:00,281.54
-Dedos Lidelse,Gelatogalore,2014-01-07 13:52:00,31.77
-Dedos Lidelse,Gelatogalore,2014-01-16 13:48:00,32.4
-Dedos Lidelse,Guy's Gyros,2014-01-08 13:51:00,15.86
-Dedos Lidelse,Guy's Gyros,2014-01-14 13:44:00,16.35
-Dedos Lidelse,Guy's Gyros,2014-01-18 13:28:00,27.4
-Dedos Lidelse,Hallowed Grounds,2014-01-06 08:01:00,10.07
-Dedos Lidelse,Hallowed Grounds,2014-01-08 07:39:00,8.15
-Dedos Lidelse,Hallowed Grounds,2014-01-10 07:41:00,12.03
-Dedos Lidelse,Hallowed Grounds,2014-01-14 07:54:00,19.99
-Dedos Lidelse,Hallowed Grounds,2014-01-16 07:54:00,7.22
-Dedos Lidelse,Hallowed Grounds,2014-01-17 07:52:00,18.6
-Dedos Lidelse,Hippokampos,2014-01-12 14:04:00,12.57
-Dedos Lidelse,Kalami Kafenion,2014-01-15 13:35:00,26.17
-Dedos Lidelse,Kalami Kafenion,2014-01-17 13:51:00,20.02
-Dedos Lidelse,Katerina’s Café,2014-01-06 13:50:00,12.32
-Dedos Lidelse,Katerina’s Café,2014-01-06 13:50:00,13.59
-Dedos Lidelse,Katerina’s Café,2014-01-06 20:08:00,12.32
-Dedos Lidelse,Katerina’s Café,2014-01-06 20:08:00,13.59
-Dedos Lidelse,Katerina’s Café,2014-01-08 21:09:00,27.87
-Dedos Lidelse,Katerina’s Café,2014-01-11 20:46:00,17.6
-Dedos Lidelse,Katerina’s Café,2014-01-12 20:48:00,27.09
-Dedos Lidelse,Katerina’s Café,2014-01-13 13:40:00,8.29
-Dedos Lidelse,Katerina’s Café,2014-01-13 13:40:00,27.59
-Dedos Lidelse,Katerina’s Café,2014-01-13 21:00:00,8.29
-Dedos Lidelse,Katerina’s Café,2014-01-13 21:00:00,27.59
-Dedos Lidelse,Katerina’s Café,2014-01-14 20:26:00,12.65
-Dedos Lidelse,Katerina’s Café,2014-01-18 19:31:00,22.74
-Dedos Lidelse,Katerina’s Café,2014-01-19 20:05:00,33.79
-Ferro Inga,Abila Zacharo,2014-01-07 13:55:00,25.9
-Ferro Inga,Abila Zacharo,2014-01-09 14:15:00,14.37
-Ferro Inga,Abila Zacharo,2014-01-10 14:03:00,36.38
-Ferro Inga,Abila Zacharo,2014-01-13 13:51:00,17.41
-Ferro Inga,Albert's Fine Clothing,2014-01-16 20:25:00,91.71
-Ferro Inga,Brew've Been Served,2014-01-06 07:59:00,8.88
-Ferro Inga,Brew've Been Served,2014-01-08 08:01:00,17.13
-Ferro Inga,Brew've Been Served,2014-01-10 08:09:00,3.03
-Ferro Inga,Brew've Been Served,2014-01-13 08:22:00,6.69
-Ferro Inga,Brew've Been Served,2014-01-14 07:58:00,11.94
-Ferro Inga,Brew've Been Served,2014-01-15 07:48:00,6.58
-Ferro Inga,Brew've Been Served,2014-01-16 08:19:00,16.9
-Ferro Inga,Brew've Been Served,2014-01-17 08:22:00,15.46
-Ferro Inga,Gelatogalore,2014-01-06 14:00:00,23.41
-Ferro Inga,Gelatogalore,2014-01-08 13:48:00,36.72
-Ferro Inga,Gelatogalore,2014-01-15 13:58:00,39.4
-Ferro Inga,Gelatogalore,2014-01-17 13:51:00,34.59
-Ferro Inga,General Grocer,2014-01-15 19:56:00,106.2
-Ferro Inga,Guy's Gyros,2014-01-06 20:24:00,28.94
-Ferro Inga,Guy's Gyros,2014-01-07 19:45:00,14.87
-Ferro Inga,Guy's Gyros,2014-01-13 20:18:00,15.84
-Ferro Inga,Guy's Gyros,2014-01-14 20:29:00,25.28
-Ferro Inga,Guy's Gyros,2014-01-16 13:42:00,29.7
-Ferro Inga,Guy's Gyros,2014-01-17 20:21:00,8.31
-Ferro Inga,Kalami Kafenion,2014-01-11 19:17:00,23.86
-Ferro Inga,Katerina’s Café,2014-01-14 13:58:00,33.54
-Ferro Inga,Katerina’s Café,2014-01-18 14:06:00,37.21
-Ferro Inga,Katerina’s Café,2014-01-18 20:15:00,37.21
-Ferro Inga,Ouzeri Elian,2014-01-12 13:28:00,24.72
-Ferro Inga,Shoppers' Delight,2014-01-10 20:17:00,279.53
-Ferro Inga,Shoppers' Delight,2014-01-12 15:32:00,204.37
-Flecha Sven,Ahaggo Museum,2014-01-18 14:55:00,120.2
-Flecha Sven,Brew've Been Served,2014-01-06 07:37:00,4.24
-Flecha Sven,Brew've Been Served,2014-01-07 07:27:00,5.08
-Flecha Sven,Brew've Been Served,2014-01-08 08:01:00,3.42
-Flecha Sven,Brew've Been Served,2014-01-09 07:48:00,5.3
-Flecha Sven,Brew've Been Served,2014-01-10 07:54:00,3.44
-Flecha Sven,Brew've Been Served,2014-01-13 07:38:00,8.04
-Flecha Sven,Brew've Been Served,2014-01-14 07:53:00,8.24
-Flecha Sven,Brew've Been Served,2014-01-15 07:34:00,3.71
-Flecha Sven,Brew've Been Served,2014-01-16 07:50:00,7.31
-Flecha Sven,Brew've Been Served,2014-01-17 07:29:00,12.56
-Flecha Sven,Frydos Autosupply n' More,2014-01-10 20:15:00,217.08
-Flecha Sven,Gelatogalore,2014-01-14 13:32:00,27.26
-Flecha Sven,Guy's Gyros,2014-01-06 13:30:00,16.92
-Flecha Sven,Guy's Gyros,2014-01-06 13:30:00,39.29
-Flecha Sven,Guy's Gyros,2014-01-06 19:18:00,16.92
-Flecha Sven,Guy's Gyros,2014-01-06 19:18:00,39.29
-Flecha Sven,Guy's Gyros,2014-01-07 20:10:00,22.25
-Flecha Sven,Guy's Gyros,2014-01-08 13:32:00,28.81
-Flecha Sven,Guy's Gyros,2014-01-08 13:32:00,30.12
-Flecha Sven,Guy's Gyros,2014-01-08 20:07:00,28.81
-Flecha Sven,Guy's Gyros,2014-01-08 20:07:00,30.12
-Flecha Sven,Guy's Gyros,2014-01-09 20:39:00,35.05
-Flecha Sven,Guy's Gyros,2014-01-10 13:38:00,26.68
-Flecha Sven,Guy's Gyros,2014-01-11 20:06:00,33.65
-Flecha Sven,Guy's Gyros,2014-01-13 20:15:00,36.89
-Flecha Sven,Guy's Gyros,2014-01-14 20:19:00,12.96
-Flecha Sven,Guy's Gyros,2014-01-16 19:04:00,25.57
-Flecha Sven,Guy's Gyros,2014-01-18 13:27:00,31.48
-Flecha Sven,Guy's Gyros,2014-01-19 19:45:00,65.21
-Flecha Sven,Hippokampos,2014-01-13 13:50:00,31.97
-Flecha Sven,Kalami Kafenion,2014-01-09 13:38:00,18.14
-Flecha Sven,Kalami Kafenion,2014-01-16 13:49:00,8.86
-Flecha Sven,Ouzeri Elian,2014-01-19 14:08:00,45.32
-Flecha Sven,Shoppers' Delight,2014-01-12 19:26:00,211.03
-Flecha Sven,Shoppers' Delight,2014-01-17 20:05:00,155.01
-Forluniau Carla,Abila Zacharo,2014-01-06 13:18:00,26.93
-Forluniau Carla,Abila Zacharo,2014-01-07 13:44:00,32.4
-Forluniau Carla,Coffee Cameleon,2014-01-07 08:01:00,12.44
-Forluniau Carla,Coffee Cameleon,2014-01-08 08:22:00,16.17
-Forluniau Carla,Coffee Cameleon,2014-01-10 07:54:00,9.69
-Forluniau Carla,Coffee Cameleon,2014-01-13 07:55:00,17.49
-Forluniau Carla,Coffee Cameleon,2014-01-14 07:52:00,11.67
-Forluniau Carla,Coffee Cameleon,2014-01-15 08:05:00,16.31
-Forluniau Carla,Coffee Cameleon,2014-01-16 08:03:00,3.14
-Forluniau Carla,Coffee Cameleon,2014-01-17 08:07:00,7.49
-Forluniau Carla,Frydos Autosupply n' More,2014-01-08 20:07:00,214.07
-Forluniau Carla,Frydos Autosupply n' More,2014-01-13 21:11:00,202.05
-Forluniau Carla,Gelatogalore,2014-01-08 13:47:00,22.27
-Forluniau Carla,Hippokampos,2014-01-09 13:29:00,27.47
-Forluniau Carla,Hippokampos,2014-01-17 13:16:00,38.21
-Forluniau Carla,Katerina’s Café,2014-01-10 13:38:00,21.22
-Forluniau Carla,Katerina’s Café,2014-01-11 13:23:00,45.21
-Forluniau Carla,Katerina’s Café,2014-01-11 13:23:00,94.68
-Forluniau Carla,Katerina’s Café,2014-01-11 20:24:00,45.21
-Forluniau Carla,Katerina’s Café,2014-01-11 20:24:00,94.68
-Forluniau Carla,Katerina’s Café,2014-01-13 13:23:00,38.98
-Forluniau Carla,Katerina’s Café,2014-01-15 13:17:00,28.56
-Forluniau Carla,Katerina’s Café,2014-01-15 13:17:00,29.66
-Forluniau Carla,Katerina’s Café,2014-01-15 20:29:00,28.56
-Forluniau Carla,Katerina’s Café,2014-01-15 20:29:00,29.66
-Forluniau Carla,Katerina’s Café,2014-01-16 20:25:00,35.43
-Forluniau Carla,Katerina’s Café,2014-01-18 19:56:00,32.68
-Forluniau Carla,Ouzeri Elian,2014-01-16 14:00:00,8.52
-Forluniau Carla,Shoppers' Delight,2014-01-11 15:20:00,238.52
-Frente Birgitta,Abila Zacharo,2014-01-08 13:53:00,16.2
-Frente Birgitta,Bean There Done That,2014-01-13 12:00:00,15.24
-Frente Birgitta,Gelatogalore,2014-01-11 13:35:00,17.31
-Frente Birgitta,Guy's Gyros,2014-01-07 14:09:00,12.57
-Frente Birgitta,Guy's Gyros,2014-01-09 13:44:00,15.0
-Frente Birgitta,Guy's Gyros,2014-01-14 13:49:00,38.26
-Frente Birgitta,Guy's Gyros,2014-01-15 14:00:00,25.58
-Frente Birgitta,Guy's Gyros,2014-01-18 14:05:00,47.89
-Frente Birgitta,Hallowed Grounds,2014-01-06 07:36:00,16.72
-Frente Birgitta,Hallowed Grounds,2014-01-07 08:01:00,9.92
-Frente Birgitta,Hallowed Grounds,2014-01-08 07:43:00,3.4
-Frente Birgitta,Hallowed Grounds,2014-01-09 07:57:00,18.48
-Frente Birgitta,Hallowed Grounds,2014-01-10 07:41:00,8.34
-Frente Birgitta,Hallowed Grounds,2014-01-14 07:54:00,10.21
-Frente Birgitta,Hallowed Grounds,2014-01-15 07:36:00,5.28
-Frente Birgitta,Hallowed Grounds,2014-01-16 07:51:00,4.98
-Frente Birgitta,Hallowed Grounds,2014-01-17 07:39:00,15.98
-Frente Birgitta,Hippokampos,2014-01-13 14:04:00,25.09
-Frente Birgitta,Hippokampos,2014-01-16 13:48:00,29.93
-Frente Birgitta,Hippokampos,2014-01-17 13:52:00,28.35
-Frente Birgitta,Katerina’s Café,2014-01-06 13:50:00,32.64
-Frente Birgitta,Katerina’s Café,2014-01-06 21:03:00,32.64
-Frente Birgitta,Katerina’s Café,2014-01-07 20:33:00,17.26
-Frente Birgitta,Katerina’s Café,2014-01-11 19:08:00,55.67
-Frente Birgitta,Katerina’s Café,2014-01-14 21:10:00,18.35
-Frente Birgitta,Katerina’s Café,2014-01-15 20:05:00,11.45
-Frente Birgitta,Katerina’s Café,2014-01-16 20:23:00,13.91
-Frente Birgitta,Katerina’s Café,2014-01-19 20:22:00,38.9
-Frente Birgitta,Ouzeri Elian,2014-01-10 14:07:00,30.93
-Frente Birgitta,Roberts and Sons,2014-01-18 19:20:00,266.69
-Frente Vira,Albert's Fine Clothing,2014-01-07 20:04:00,228.36
-Frente Vira,Albert's Fine Clothing,2014-01-10 20:11:00,126.13
-Frente Vira,Albert's Fine Clothing,2014-01-18 15:20:00,35.66
-Frente Vira,Bean There Done That,2014-01-06 12:00:00,4.27
-Frente Vira,Bean There Done That,2014-01-07 12:00:00,6.25
-Frente Vira,Bean There Done That,2014-01-10 12:00:00,9.3
-Frente Vira,Bean There Done That,2014-01-13 12:00:00,18.59
-Frente Vira,Bean There Done That,2014-01-14 12:00:00,5.9
-Frente Vira,Bean There Done That,2014-01-15 12:00:00,15.24
-Frente Vira,Bean There Done That,2014-01-16 12:00:00,17.4
-Frente Vira,Bean There Done That,2014-01-17 12:00:00,5.77
-Frente Vira,Gelatogalore,2014-01-19 13:09:00,22.36
-Frente Vira,General Grocer,2014-01-19 15:03:00,70.22
-Frente Vira,Hippokampos,2014-01-06 20:29:00,25.5
-Frente Vira,Hippokampos,2014-01-08 20:02:00,32.66
-Frente Vira,Hippokampos,2014-01-09 21:01:00,24.96
-Frente Vira,Hippokampos,2014-01-12 19:35:00,49.23
-Frente Vira,Hippokampos,2014-01-15 21:08:00,21.14
-Frente Vira,Hippokampos,2014-01-16 20:42:00,34.0
-Frente Vira,Hippokampos,2014-01-18 19:35:00,27.21
-Frente Vira,Hippokampos,2014-01-19 19:44:00,46.32
-Frente Vira,Kalami Kafenion,2014-01-09 13:27:00,30.76
-Frente Vira,Kalami Kafenion,2014-01-15 13:45:00,27.86
-Frente Vira,Katerina’s Café,2014-01-08 13:42:00,37.04
-Frente Vira,Katerina’s Café,2014-01-10 13:47:00,25.62
-Frente Vira,Katerina’s Café,2014-01-11 13:32:00,29.1
-Frente Vira,Katerina’s Café,2014-01-14 13:22:00,10.03
-Frente Vira,Ouzeri Elian,2014-01-06 13:42:00,20.4
-Frente Vira,Ouzeri Elian,2014-01-07 13:34:00,24.84
-Frente Vira,Ouzeri Elian,2014-01-18 13:18:00,33.57
-Fusil Stenig,Abila Zacharo,2014-01-13 13:20:00,39.95
-Fusil Stenig,Abila Zacharo,2014-01-14 13:38:00,8.41
-Fusil Stenig,Brew've Been Served,2014-01-06 07:35:00,8.33
-Fusil Stenig,Brew've Been Served,2014-01-08 07:48:00,8.27
-Fusil Stenig,Brew've Been Served,2014-01-10 07:35:00,15.85
-Fusil Stenig,Brew've Been Served,2014-01-13 07:43:00,4.18
-Fusil Stenig,Brew've Been Served,2014-01-14 07:53:00,3.66
-Fusil Stenig,Brew've Been Served,2014-01-15 07:36:00,15.5
-Fusil Stenig,Brew've Been Served,2014-01-16 07:55:00,12.83
-Fusil Stenig,Coffee Cameleon,2014-01-17 07:52:00,9.16
-Fusil Stenig,Guy's Gyros,2014-01-06 20:15:00,37.82
-Fusil Stenig,Guy's Gyros,2014-01-07 13:33:00,11.31
-Fusil Stenig,Guy's Gyros,2014-01-09 19:52:00,29.96
-Fusil Stenig,Guy's Gyros,2014-01-10 13:25:00,23.61
-Fusil Stenig,Guy's Gyros,2014-01-10 13:25:00,26.76
-Fusil Stenig,Guy's Gyros,2014-01-10 19:45:00,23.61
-Fusil Stenig,Guy's Gyros,2014-01-10 19:45:00,26.76
-Fusil Stenig,Guy's Gyros,2014-01-11 19:34:00,55.69
-Fusil Stenig,Guy's Gyros,2014-01-15 20:08:00,36.35
-Fusil Stenig,Guy's Gyros,2014-01-16 13:44:00,13.48
-Fusil Stenig,Guy's Gyros,2014-01-16 13:44:00,30.76
-Fusil Stenig,Guy's Gyros,2014-01-16 20:17:00,13.48
-Fusil Stenig,Guy's Gyros,2014-01-16 20:17:00,30.76
-Fusil Stenig,Guy's Gyros,2014-01-17 19:29:00,19.68
-Fusil Stenig,Guy's Gyros,2014-01-19 19:49:00,40.36
-Fusil Stenig,Hippokampos,2014-01-17 13:31:00,15.77
-Fusil Stenig,Kalami Kafenion,2014-01-08 13:52:00,14.77
-Fusil Stenig,Ouzeri Elian,2014-01-06 13:37:00,20.56
-Fusil Stenig,Ouzeri Elian,2014-01-09 13:23:00,22.4
-Hafon Albina,Abila Airport,2014-01-06 08:23:00,777.06
-Hafon Albina,Abila Airport,2014-01-06 08:23:00,4540.08
-Hafon Albina,Abila Airport,2014-01-06 15:14:00,777.06
-Hafon Albina,Abila Airport,2014-01-06 15:14:00,4540.08
-Hafon Albina,Abila Airport,2014-01-13 08:15:00,3617.47
-Hafon Albina,Carlyle Chemical Inc.,2014-01-06 11:57:00,3959.66
-Hafon Albina,Carlyle Chemical Inc.,2014-01-13 12:00:00,1718.96
-Hafon Albina,Kronos Pipe and Irrigation,2014-01-06 09:06:00,242.21
-Hafon Albina,Kronos Pipe and Irrigation,2014-01-13 08:58:00,2852.74
-Hafon Albina,Maximum Iron and Steel,2014-01-06 10:18:00,2859.51
-Hafon Albina,Maximum Iron and Steel,2014-01-13 10:20:00,689.85
-Hafon Albina,Ouzeri Elian,2014-01-13 12:55:00,19.82
-Hawelon Benito,Abila Airport,2014-01-07 09:17:00,3840.37
-Hawelon Benito,Abila Airport,2014-01-09 09:26:00,2358.22
-Hawelon Benito,Abila Airport,2014-01-16 09:18:00,1676.53
-Hawelon Benito,Nationwide Refinery,2014-01-09 12:49:00,1420.39
-Hawelon Benito,Nationwide Refinery,2014-01-14 13:00:00,1301.01
-Hawelon Benito,Nationwide Refinery,2014-01-16 12:32:00,2047.28
-Hawelon Benito,Stewart and Sons Fabrication,2014-01-07 10:05:00,1200.9
-Hawelon Benito,Stewart and Sons Fabrication,2014-01-09 10:38:00,1015.65
-Hawelon Benito,Stewart and Sons Fabrication,2014-01-14 11:01:00,540.19
-Hawelon Benito,Stewart and Sons Fabrication,2014-01-16 11:06:00,860.3
-Hawelon Claudio,Carlyle Chemical Inc.,2014-01-10 09:09:00,227.81
-Hawelon Claudio,Nationwide Refinery,2014-01-10 10:40:00,2262.73
-Hawelon Claudio,Stewart and Sons Fabrication,2014-01-10 12:10:00,4195.49
-Herrero Kanon,Brew've Been Served,2014-01-06 08:16:00,14.97
-Herrero Kanon,Brew've Been Served,2014-01-07 07:54:00,11.92
-Herrero Kanon,Brew've Been Served,2014-01-08 08:16:00,7.26
-Herrero Kanon,Brew've Been Served,2014-01-09 08:14:00,17.64
-Herrero Kanon,Brew've Been Served,2014-01-10 08:01:00,5.89
-Herrero Kanon,Brew've Been Served,2014-01-13 08:07:00,11.49
-Herrero Kanon,Brew've Been Served,2014-01-14 08:03:00,3.21
-Herrero Kanon,Brew've Been Served,2014-01-15 07:49:00,11.23
-Herrero Kanon,Brew've Been Served,2014-01-16 07:52:00,12.67
-Herrero Kanon,Brew've Been Served,2014-01-17 08:23:00,11.04
-Herrero Kanon,Guy's Gyros,2014-01-09 20:24:00,18.26
-Herrero Kanon,Guy's Gyros,2014-01-13 20:42:00,28.57
-Herrero Kanon,Guy's Gyros,2014-01-15 21:05:00,27.01
-Herrero Kanon,Shoppers' Delight,2014-01-12 15:24:00,86.22
-Herrero Kanon,Shoppers' Delight,2014-01-16 20:50:00,16.84
-Herrero Kanon,Shoppers' Delight,2014-01-17 20:21:00,269.33
-Lagos Linda,Abila Zacharo,2014-01-14 13:35:00,31.09
-Lagos Linda,Brew've Been Served,2014-01-06 08:16:00,11.2
-Lagos Linda,Brew've Been Served,2014-01-07 08:09:00,15.66
-Lagos Linda,Brew've Been Served,2014-01-08 08:09:00,11.48
-Lagos Linda,Brew've Been Served,2014-01-10 08:20:00,14.36
-Lagos Linda,Brew've Been Served,2014-01-13 08:00:00,13.37
-Lagos Linda,Brew've Been Served,2014-01-14 08:13:00,11.53
-Lagos Linda,Brew've Been Served,2014-01-15 07:58:00,5.75
-Lagos Linda,Brew've Been Served,2014-01-16 08:23:00,11.21
-Lagos Linda,Brew've Been Served,2014-01-17 08:19:00,14.58
-Lagos Linda,Frydos Autosupply n' More,2014-01-13 19:59:00,64.6
-Lagos Linda,Gelatogalore,2014-01-08 13:27:00,32.79
-Lagos Linda,Gelatogalore,2014-01-09 13:35:00,23.23
-Lagos Linda,Guy's Gyros,2014-01-10 13:44:00,38.15
-Lagos Linda,Guy's Gyros,2014-01-13 13:51:00,21.03
-Lagos Linda,Kalami Kafenion,2014-01-15 13:36:00,37.15
-Lagos Linda,Kalami Kafenion,2014-01-17 13:53:00,24.21
-Lagos Linda,Katerina’s Café,2014-01-06 13:28:00,33.54
-Lagos Linda,Katerina’s Café,2014-01-06 13:28:00,38.65
-Lagos Linda,Katerina’s Café,2014-01-06 18:56:00,33.54
-Lagos Linda,Katerina’s Café,2014-01-06 18:56:00,38.65
-Lagos Linda,Katerina’s Café,2014-01-07 20:18:00,31.6
-Lagos Linda,Katerina’s Café,2014-01-08 20:00:00,13.83
-Lagos Linda,Katerina’s Café,2014-01-10 20:09:00,8.14
-Lagos Linda,Katerina’s Café,2014-01-12 20:17:00,16.34
-Lagos Linda,Katerina’s Café,2014-01-14 20:50:00,25.4
-Lagos Linda,Katerina’s Café,2014-01-15 20:17:00,29.33
-Lagos Linda,Katerina’s Café,2014-01-16 18:49:00,13.68
-Lagos Linda,Katerina’s Café,2014-01-18 14:00:00,37.26
-Lagos Linda,Katerina’s Café,2014-01-18 14:00:00,45.88
-Lagos Linda,Katerina’s Café,2014-01-18 20:04:00,37.26
-Lagos Linda,Katerina’s Café,2014-01-18 20:04:00,45.88
-Lagos Linda,Ouzeri Elian,2014-01-07 13:50:00,21.85
-Lagos Varja,Abila Zacharo,2014-01-09 13:24:00,8.16
-Lagos Varja,Albert's Fine Clothing,2014-01-14 20:05:00,50.77
-Lagos Varja,Brew've Been Served,2014-01-06 07:55:00,3.67
-Lagos Varja,Brew've Been Served,2014-01-07 07:55:00,9.06
-Lagos Varja,Brew've Been Served,2014-01-08 07:55:00,11.87
-Lagos Varja,Brew've Been Served,2014-01-09 08:01:00,12.12
-Lagos Varja,Brew've Been Served,2014-01-10 07:45:00,5.01
-Lagos Varja,Brew've Been Served,2014-01-13 07:57:00,18.23
-Lagos Varja,Brew've Been Served,2014-01-14 07:45:00,10.96
-Lagos Varja,Brew've Been Served,2014-01-15 07:58:00,14.06
-Lagos Varja,Brew've Been Served,2014-01-16 07:36:00,19.9
-Lagos Varja,Brew've Been Served,2014-01-17 08:03:00,13.66
-Lagos Varja,Frydos Autosupply n' More,2014-01-09 19:32:00,138.02
-Lagos Varja,Frydos Autosupply n' More,2014-01-19 15:26:00,56.09
-Lagos Varja,Gelatogalore,2014-01-08 13:39:00,39.75
-Lagos Varja,Guy's Gyros,2014-01-06 20:13:00,22.57
-Lagos Varja,Guy's Gyros,2014-01-07 19:48:00,31.23
-Lagos Varja,Guy's Gyros,2014-01-08 20:15:00,19.08
-Lagos Varja,Guy's Gyros,2014-01-15 19:53:00,18.04
-Lagos Varja,Guy's Gyros,2014-01-16 19:09:00,8.31
-Lagos Varja,Guy's Gyros,2014-01-17 13:21:00,22.18
-Lagos Varja,Guy's Gyros,2014-01-17 13:21:00,37.55
-Lagos Varja,Guy's Gyros,2014-01-17 20:16:00,22.18
-Lagos Varja,Guy's Gyros,2014-01-17 20:16:00,37.55
-Lagos Varja,Guy's Gyros,2014-01-18 19:08:00,39.68
-Lagos Varja,Guy's Gyros,2014-01-19 19:45:00,58.35
-Lagos Varja,Kalami Kafenion,2014-01-06 13:19:00,30.1
-Lagos Varja,Kalami Kafenion,2014-01-10 13:30:00,35.69
-Lagos Varja,Katerina’s Café,2014-01-07 13:41:00,31.41
-Lagos Varja,Katerina’s Café,2014-01-11 13:43:00,71.65
-Lagos Varja,Katerina’s Café,2014-01-16 13:27:00,34.02
-Lagos Varja,Katerina’s Café,2014-01-18 13:34:00,19.3
-Lagos Varja,Ouzeri Elian,2014-01-14 13:40:00,27.32
-Lagos Varja,Ouzeri Elian,2014-01-15 13:22:00,12.9
-Lagos Varja,Ouzeri Elian,2014-01-19 13:27:00,23.65
-Lagos Varja,U-Pump,2014-01-06 17:28:00,59.51
-Lais Cornelia,Abila Zacharo,2014-01-17 14:06:00,11.95
-Lais Cornelia,Brew've Been Served,2014-01-06 07:38:00,4.17
-Lais Cornelia,Brew've Been Served,2014-01-07 07:31:00,12.74
-Lais Cornelia,Brew've Been Served,2014-01-08 07:57:00,14.88
-Lais Cornelia,Brew've Been Served,2014-01-10 07:55:00,5.91
-Lais Cornelia,Brew've Been Served,2014-01-14 07:27:00,14.67
-Lais Cornelia,Brew've Been Served,2014-01-15 08:00:00,8.42
-Lais Cornelia,Brew've Been Served,2014-01-16 07:33:00,5.05
-Lais Cornelia,Brew've Been Served,2014-01-17 07:36:00,11.69
-Lais Cornelia,Frydos Autosupply n' More,2014-01-06 20:15:00,175.87
-Lais Cornelia,Frydos Autosupply n' More,2014-01-12 19:52:00,88.93
-Lais Cornelia,Frydos Autosupply n' More,2014-01-17 21:15:00,67.29
-Lais Cornelia,Frydos Autosupply n' More,2014-01-18 15:31:00,103.41
-Lais Cornelia,Gelatogalore,2014-01-14 13:57:00,35.97
-Lais Cornelia,Guy's Gyros,2014-01-07 20:34:00,23.12
-Lais Cornelia,Guy's Gyros,2014-01-09 20:38:00,8.23
-Lais Cornelia,Guy's Gyros,2014-01-10 21:13:00,25.81
-Lais Cornelia,Guy's Gyros,2014-01-11 19:57:00,36.2
-Lais Cornelia,Guy's Gyros,2014-01-13 21:08:00,19.77
-Lais Cornelia,Guy's Gyros,2014-01-14 20:17:00,35.12
-Lais Cornelia,Guy's Gyros,2014-01-15 20:06:00,24.91
-Lais Cornelia,Guy's Gyros,2014-01-18 19:21:00,28.07
-Lais Cornelia,Hippokampos,2014-01-09 13:41:00,19.22
-Lais Cornelia,Kalami Kafenion,2014-01-13 13:55:00,20.33
-Lais Cornelia,Kalami Kafenion,2014-01-18 13:19:00,30.12
-Lais Cornelia,Katerina’s Café,2014-01-16 13:43:00,38.32
-Lais Cornelia,Octavio's Office Supplies,2014-01-16 15:58:00,131.01
-Lais Cornelia,Ouzeri Elian,2014-01-06 13:48:00,20.74
-Lais Cornelia,Ouzeri Elian,2014-01-07 13:42:00,17.71
-Lais Cornelia,Ouzeri Elian,2014-01-08 13:47:00,24.92
-Lais Cornelia,Ouzeri Elian,2014-01-10 13:57:00,24.74
-Lais Cornelia,Ouzeri Elian,2014-01-15 13:40:00,25.7
-Mies Haber Ruscella,Abila Zacharo,2014-01-08 13:10:00,22.13
-Mies Haber Ruscella,Brew've Been Served,2014-01-06 08:00:00,4.27
-Mies Haber Ruscella,Brew've Been Served,2014-01-07 07:50:00,4.39
-Mies Haber Ruscella,Brew've Been Served,2014-01-08 07:58:00,8.4
-Mies Haber Ruscella,Brew've Been Served,2014-01-14 08:07:00,16.39
-Mies Haber Ruscella,Brew've Been Served,2014-01-17 08:12:00,18.15
-Mies Haber Ruscella,Frydos Autosupply n' More,2014-01-06 20:47:00,89.3
-Mies Haber Ruscella,Frydos Autosupply n' More,2014-01-18 18:51:00,234.53
-Mies Haber Ruscella,Gelatogalore,2014-01-09 13:12:00,19.2
-Mies Haber Ruscella,Kalami Kafenion,2014-01-06 13:28:00,8.64
-Mies Haber Ruscella,Kalami Kafenion,2014-01-07 13:24:00,11.64
-Mies Haber Ruscella,Kalami Kafenion,2014-01-10 13:45:00,27.48
-Mies Haber Ruscella,Kalami Kafenion,2014-01-14 13:40:00,33.13
-Mies Haber Ruscella,Kalami Kafenion,2014-01-15 13:37:00,38.5
-Mies Haber Ruscella,Katerina’s Café,2014-01-08 19:32:00,34.25
-Mies Haber Ruscella,Katerina’s Café,2014-01-09 20:27:00,13.78
-Mies Haber Ruscella,Katerina’s Café,2014-01-10 20:42:00,21.28
-Mies Haber Ruscella,Katerina’s Café,2014-01-12 19:43:00,40.94
-Mies Haber Ruscella,Katerina’s Café,2014-01-13 20:44:00,33.57
-Mies Haber Ruscella,Katerina’s Café,2014-01-14 20:19:00,31.94
-Mies Haber Ruscella,Katerina’s Café,2014-01-16 13:27:00,29.3
-Mies Haber Ruscella,Katerina’s Café,2014-01-16 13:27:00,39.74
-Mies Haber Ruscella,Katerina’s Café,2014-01-16 20:05:00,29.3
-Mies Haber Ruscella,Katerina’s Café,2014-01-16 20:05:00,39.74
-Mies Haber Ruscella,Katerina’s Café,2014-01-17 21:05:00,33.73
-Mies Haber Ruscella,Ouzeri Elian,2014-01-12 13:17:00,98.45
-Mies Henk,Abila Airport,2014-01-06 12:16:00,612.47
-Mies Henk,Abila Airport,2014-01-06 15:39:00,612.47
-Mies Henk,Abila Airport,2014-01-07 12:29:00,124.89
-Mies Henk,Abila Airport,2014-01-07 12:29:00,3411.29
-Mies Henk,Abila Airport,2014-01-07 15:41:00,124.89
-Mies Henk,Abila Airport,2014-01-07 15:41:00,3411.29
-Mies Henk,Abila Airport,2014-01-08 12:45:00,2723.18
-Mies Henk,Abila Airport,2014-01-08 12:45:00,2769.12
-Mies Henk,Abila Airport,2014-01-08 15:29:00,2723.18
-Mies Henk,Abila Airport,2014-01-08 15:29:00,2769.12
-Mies Henk,Abila Airport,2014-01-09 12:13:00,182.93
-Mies Henk,Abila Airport,2014-01-09 12:13:00,4538.52
-Mies Henk,Abila Airport,2014-01-09 15:50:00,182.93
-Mies Henk,Abila Airport,2014-01-09 15:50:00,4538.52
-Mies Henk,Abila Airport,2014-01-13 12:11:00,2228.08
-Mies Henk,Abila Airport,2014-01-13 12:11:00,4417.03
-Mies Henk,Abila Airport,2014-01-13 16:56:00,2228.08
-Mies Henk,Abila Airport,2014-01-13 16:56:00,4417.03
-Mies Henk,Abila Airport,2014-01-14 12:30:00,228.41
-Mies Henk,Abila Airport,2014-01-14 12:30:00,4898.39
-Mies Henk,Abila Airport,2014-01-14 15:32:00,228.41
-Mies Henk,Abila Airport,2014-01-14 15:32:00,4898.39
-Mies Henk,Abila Airport,2014-01-15 12:25:00,875.87
-Mies Henk,Abila Airport,2014-01-15 12:25:00,3152.41
-Mies Henk,Abila Airport,2014-01-15 15:40:00,875.87
-Mies Henk,Abila Airport,2014-01-15 15:40:00,3152.41
-Mies Henk,Abila Airport,2014-01-16 12:40:00,3032.97
-Mies Henk,Abila Airport,2014-01-16 12:40:00,3917.3
-Mies Minke,Abila Zacharo,2014-01-14 14:03:00,24.87
-Mies Minke,Albert's Fine Clothing,2014-01-06 21:03:00,121.76
-Mies Minke,Albert's Fine Clothing,2014-01-11 16:01:00,211.47
-Mies Minke,Brew've Been Served,2014-01-06 08:06:00,15.58
-Mies Minke,Brew've Been Served,2014-01-07 07:52:00,3.0
-Mies Minke,Brew've Been Served,2014-01-08 08:18:00,6.3
-Mies Minke,Brew've Been Served,2014-01-09 08:00:00,6.21
-Mies Minke,Brew've Been Served,2014-01-10 08:17:00,12.64
-Mies Minke,Brew've Been Served,2014-01-13 08:04:00,16.05
-Mies Minke,Brew've Been Served,2014-01-15 08:01:00,9.7
-Mies Minke,Brew've Been Served,2014-01-16 08:09:00,17.44
-Mies Minke,Frydos Autosupply n' More,2014-01-14 20:33:00,42.72
-Mies Minke,Gelatogalore,2014-01-16 17:07:00,10.62
-Mies Minke,General Grocer,2014-01-10 21:28:00,227.28
-Mies Minke,Guy's Gyros,2014-01-08 13:57:00,10.34
-Mies Minke,Guy's Gyros,2014-01-08 13:57:00,30.48
-Mies Minke,Guy's Gyros,2014-01-08 19:48:00,10.34
-Mies Minke,Guy's Gyros,2014-01-08 19:48:00,30.48
-Mies Minke,Guy's Gyros,2014-01-09 21:09:00,31.31
-Mies Minke,Guy's Gyros,2014-01-15 19:55:00,31.04
-Mies Minke,Guy's Gyros,2014-01-17 21:07:00,15.4
-Mies Minke,Guy's Gyros,2014-01-19 20:30:00,31.94
-Mies Minke,Hippokampos,2014-01-09 13:56:00,25.7
-Mies Minke,Hippokampos,2014-01-11 13:36:00,23.38
-Mies Minke,Hippokampos,2014-01-13 12:27:00,17.17
-Mies Minke,Hippokampos,2014-01-15 14:02:00,38.23
-Mies Minke,Kalami Kafenion,2014-01-06 13:52:00,22.31
-Mies Minke,Kalami Kafenion,2014-01-10 13:53:00,24.3
-Mies Minke,Katerina’s Café,2014-01-07 14:07:00,10.9
-Mies Minke,Katerina’s Café,2014-01-17 13:53:00,35.52
-Mies Minke,Katerina’s Café,2014-01-18 19:32:00,33.41
-Mies Minke,Katerina’s Café,2014-01-19 13:53:00,26.76
-Mies Minke,Roberts and Sons,2014-01-16 20:25:00,155.76
-Morlun Adan,Nationwide Refinery,2014-01-08 09:54:00,4513.16
-Morlun Adan,Stewart and Sons Fabrication,2014-01-08 11:28:00,1738.26
-Morlun Adan,Stewart and Sons Fabrication,2014-01-15 11:18:00,4485.38
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-07 14:34:00,3827.2
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-08 09:43:00,4901.88
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-08 14:26:00,4901.88
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-09 09:54:00,382.43
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-09 09:54:00,529.47
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-09 09:54:00,2176.2
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-09 14:26:00,382.43
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-09 14:26:00,529.47
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-09 14:26:00,2176.2
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-09 16:22:00,382.43
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-09 16:22:00,529.47
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-09 16:22:00,2176.2
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-14 09:34:00,794.88
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-14 09:34:00,3470.99
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-14 09:34:00,3630.57
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-14 14:21:00,794.88
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-14 14:21:00,3470.99
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-14 14:21:00,3630.57
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-14 16:16:00,794.88
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-14 16:16:00,3470.99
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-14 16:16:00,3630.57
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-15 09:34:00,1112.04
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-15 09:34:00,1392.73
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-15 09:34:00,3608.08
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-15 14:25:00,1112.04
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-15 14:25:00,1392.73
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-15 14:25:00,3608.08
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-15 17:01:00,1112.04
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-15 17:01:00,1392.73
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-15 17:01:00,3608.08
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-16 09:52:00,419.93
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-16 09:52:00,1814.24
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-16 17:17:00,419.93
-Morlun Valeria,Carlyle Chemical Inc.,2014-01-16 17:17:00,1814.24
-Morlun Valeria,Katerina’s Café,2014-01-07 13:08:00,19.07
-Morlun Valeria,Katerina’s Café,2014-01-08 13:19:00,29.26
-Morlun Valeria,Katerina’s Café,2014-01-09 13:23:00,16.98
-Morlun Valeria,Katerina’s Café,2014-01-15 13:13:00,24.15
-Morlun Valeria,Katerina’s Café,2014-01-16 13:23:00,34.9
-Morlun Valeria,Nationwide Refinery,2014-01-07 11:39:00,1562.66
-Morlun Valeria,Nationwide Refinery,2014-01-09 11:34:00,289.3
-Morlun Valeria,Nationwide Refinery,2014-01-14 11:45:00,570.95
-Morlun Valeria,Nationwide Refinery,2014-01-15 11:55:00,3004.98
-Morlun Valeria,Nationwide Refinery,2014-01-16 11:25:00,4742.67
-Morluniau Cecilia,Nationwide Refinery,2014-01-06 10:02:00,761.64
-Morluniau Cecilia,Nationwide Refinery,2014-01-07 10:11:00,1347.36
-Morluniau Cecilia,Nationwide Refinery,2014-01-08 10:14:00,3674.32
-Morluniau Cecilia,Nationwide Refinery,2014-01-09 10:16:00,674.28
-Morluniau Cecilia,Nationwide Refinery,2014-01-10 10:00:00,1552.82
-Morluniau Cecilia,Nationwide Refinery,2014-01-13 10:12:00,204.58
-Morluniau Cecilia,Nationwide Refinery,2014-01-14 10:03:00,965.72
-Morluniau Cecilia,Nationwide Refinery,2014-01-15 10:14:00,1391.24
-Morluniau Cecilia,Nationwide Refinery,2014-01-16 10:16:00,1494.44
-Morluniau Cecilia,Stewart and Sons Fabrication,2014-01-06 11:33:00,2144.62
-Morluniau Cecilia,Stewart and Sons Fabrication,2014-01-07 11:31:00,1783.33
-Morluniau Cecilia,Stewart and Sons Fabrication,2014-01-08 11:58:00,1673.77
-Morluniau Cecilia,Stewart and Sons Fabrication,2014-01-09 11:37:00,3544.0
-Morluniau Cecilia,Stewart and Sons Fabrication,2014-01-10 11:49:00,4074.1
-Morluniau Cecilia,Stewart and Sons Fabrication,2014-01-14 11:55:00,278.52
-Morluniau Cecilia,Stewart and Sons Fabrication,2014-01-16 11:45:00,4543.31
-Morluniau Cecilia,Stewart and Sons Fabrication,2014-01-17 11:32:00,1753.17
-Nant Irene,Carlyle Chemical Inc.,2014-01-08 13:03:00,4983.52
-Nant Irene,Carlyle Chemical Inc.,2014-01-09 11:21:00,732.82
-Nant Irene,Kronos Pipe and Irrigation,2014-01-07 14:19:00,3920.82
-Nant Irene,Kronos Pipe and Irrigation,2014-01-08 14:09:00,3615.61
-Nant Irene,Kronos Pipe and Irrigation,2014-01-09 14:28:00,423.14
-Nant Irene,Kronos Pipe and Irrigation,2014-01-15 14:12:00,2564.0
-Nant Irene,Maximum Iron and Steel,2014-01-07 15:20:00,3207.31
-Nant Irene,Maximum Iron and Steel,2014-01-08 15:18:00,3136.01
-Nant Irene,Maximum Iron and Steel,2014-01-09 15:16:00,1527.14
-Nant Irene,Maximum Iron and Steel,2014-01-15 15:11:00,4788.22
-Nubarron Adra,Abila Zacharo,2014-01-17 13:41:00,14.51
-Nubarron Adra,Albert's Fine Clothing,2014-01-12 15:49:00,195.81
-Nubarron Adra,Albert's Fine Clothing,2014-01-19 15:39:00,274.66
-Nubarron Adra,Coffee Cameleon,2014-01-06 07:54:00,11.86
-Nubarron Adra,Coffee Cameleon,2014-01-07 08:00:00,11.55
-Nubarron Adra,Coffee Cameleon,2014-01-08 07:59:00,15.71
-Nubarron Adra,Coffee Cameleon,2014-01-09 08:03:00,16.13
-Nubarron Adra,Coffee Cameleon,2014-01-13 08:12:00,17.76
-Nubarron Adra,Coffee Cameleon,2014-01-14 07:56:00,7.84
-Nubarron Adra,Coffee Cameleon,2014-01-15 07:45:00,19.93
-Nubarron Adra,Frydos Autosupply n' More,2014-01-06 21:23:00,197.32
-Nubarron Adra,Guy's Gyros,2014-01-13 13:39:00,37.37
-Nubarron Adra,Guy's Gyros,2014-01-15 13:44:00,15.89
-Nubarron Adra,Hippokampos,2014-01-12 13:25:00,12.55
-Nubarron Adra,Katerina’s Café,2014-01-07 20:11:00,10.07
-Nubarron Adra,Katerina’s Café,2014-01-08 13:41:00,26.45
-Nubarron Adra,Katerina’s Café,2014-01-08 13:41:00,33.31
-Nubarron Adra,Katerina’s Café,2014-01-08 20:27:00,26.45
-Nubarron Adra,Katerina’s Café,2014-01-08 20:27:00,33.31
-Nubarron Adra,Katerina’s Café,2014-01-10 13:47:00,24.33
-Nubarron Adra,Katerina’s Café,2014-01-11 14:17:00,26.02
-Nubarron Adra,Katerina’s Café,2014-01-11 14:17:00,33.18
-Nubarron Adra,Katerina’s Café,2014-01-11 19:31:00,26.02
-Nubarron Adra,Katerina’s Café,2014-01-11 19:31:00,33.18
-Nubarron Adra,Katerina’s Café,2014-01-13 20:24:00,35.7
-Nubarron Adra,Katerina’s Café,2014-01-16 20:36:00,19.44
-Nubarron Adra,Katerina’s Café,2014-01-17 20:58:00,38.21
-Nubarron Adra,Ouzeri Elian,2014-01-07 13:29:00,29.1
-Nubarron Adra,Shoppers' Delight,2014-01-19 19:56:00,30.39
-Onda Marin,Abila Zacharo,2014-01-10 13:36:00,36.73
-Onda Marin,Abila Zacharo,2014-01-11 13:32:00,54.82
-Onda Marin,Abila Zacharo,2014-01-14 13:37:00,10.24
-Onda Marin,Frydos Autosupply n' More,2014-01-06 21:32:00,274.98
-Onda Marin,Guy's Gyros,2014-01-06 13:39:00,11.22
-Onda Marin,Hallowed Grounds,2014-01-07 07:47:00,7.88
-Onda Marin,Hallowed Grounds,2014-01-09 07:37:00,17.56
-Onda Marin,Hallowed Grounds,2014-01-10 07:41:00,11.49
-Onda Marin,Hallowed Grounds,2014-01-14 07:42:00,4.59
-Onda Marin,Hallowed Grounds,2014-01-17 07:31:00,3.25
-Onda Marin,Hippokampos,2014-01-09 13:51:00,13.84
-Onda Marin,Katerina’s Café,2014-01-07 21:19:00,18.35
-Onda Marin,Katerina’s Café,2014-01-08 13:34:00,31.59
-Onda Marin,Katerina’s Café,2014-01-08 20:08:00,31.59
-Onda Marin,Katerina’s Café,2014-01-09 21:18:00,8.57
-Onda Marin,Katerina’s Café,2014-01-11 19:51:00,45.68
-Onda Marin,Katerina’s Café,2014-01-13 20:33:00,11.36
-Onda Marin,Katerina’s Café,2014-01-15 14:00:00,12.12
-Onda Marin,Katerina’s Café,2014-01-15 14:00:00,39.63
-Onda Marin,Katerina’s Café,2014-01-15 20:23:00,12.12
-Onda Marin,Katerina’s Café,2014-01-15 20:23:00,39.63
-Onda Marin,Katerina’s Café,2014-01-17 20:07:00,21.22
-Onda Marin,Katerina’s Café,2014-01-18 19:54:00,33.63
-Onda Marin,Ouzeri Elian,2014-01-12 13:30:00,72.32
-Onda Marin,Ouzeri Elian,2014-01-13 13:48:00,8.32
-Onda Marin,Shoppers' Delight,2014-01-12 15:10:00,135.78
-Orilla Elsa,Ahaggo Museum,2014-01-19 13:26:00,26.91
-Orilla Elsa,Frydos Autosupply n' More,2014-01-06 19:50:00,253.87
-Orilla Elsa,Jack's Magical Beans,2014-01-06 12:00:00,18.59
-Orilla Elsa,Jack's Magical Beans,2014-01-07 12:00:00,18.77
-Orilla Elsa,Jack's Magical Beans,2014-01-08 12:00:00,18.78
-Orilla Elsa,Jack's Magical Beans,2014-01-10 12:00:00,16.29
-Orilla Elsa,Jack's Magical Beans,2014-01-13 12:00:00,5.22
-Orilla Elsa,Jack's Magical Beans,2014-01-14 12:00:00,3.36
-Orilla Elsa,Jack's Magical Beans,2014-01-15 12:00:00,5.3
-Orilla Elsa,Jack's Magical Beans,2014-01-16 12:00:00,14.86
-Orilla Elsa,Jack's Magical Beans,2014-01-17 12:00:00,19.11
-Orilla Elsa,Kalami Kafenion,2014-01-10 13:35:00,101.5
-Orilla Elsa,Ouzeri Elian,2014-01-07 20:15:00,11.41
-Orilla Elsa,Ouzeri Elian,2014-01-15 19:18:00,28.86
-Orilla Elsa,Ouzeri Elian,2014-01-16 21:16:00,29.99
-Orilla Elsa,Ouzeri Elian,2014-01-17 20:07:00,10.21
-Orilla Kare,Abila Zacharo,2014-01-10 14:01:00,16.12
-Orilla Kare,Abila Zacharo,2014-01-15 14:02:00,24.53
-Orilla Kare,Gelatogalore,2014-01-06 13:52:00,36.33
-Orilla Kare,Gelatogalore,2014-01-17 13:57:00,21.62
-Orilla Kare,Hallowed Grounds,2014-01-06 07:48:00,10.66
-Orilla Kare,Hallowed Grounds,2014-01-07 07:50:00,9.61
-Orilla Kare,Hallowed Grounds,2014-01-08 07:47:00,3.11
-Orilla Kare,Hallowed Grounds,2014-01-13 07:43:00,13.68
-Orilla Kare,Hallowed Grounds,2014-01-15 07:59:00,14.33
-Orilla Kare,Hallowed Grounds,2014-01-16 07:44:00,17.74
-Orilla Kare,Hallowed Grounds,2014-01-17 08:03:00,18.22
-Orilla Kare,Hippokampos,2014-01-07 14:00:00,16.11
-Orilla Kare,Kalami Kafenion,2014-01-08 13:45:00,23.82
-Orilla Kare,Kalami Kafenion,2014-01-12 13:55:00,14.59
-Orilla Kare,Kalami Kafenion,2014-01-14 13:42:00,23.1
-Orilla Kare,Kalami Kafenion,2014-01-16 13:48:00,11.83
-Orilla Kare,Katerina’s Café,2014-01-06 20:59:00,26.1
-Orilla Kare,Katerina’s Café,2014-01-07 20:47:00,32.83
-Orilla Kare,Katerina’s Café,2014-01-09 20:08:00,19.02
-Orilla Kare,Katerina’s Café,2014-01-13 13:48:00,24.26
-Orilla Kare,Katerina’s Café,2014-01-14 20:34:00,11.89
-Orilla Kare,Katerina’s Café,2014-01-15 19:50:00,39.23
-Orilla Kare,Katerina’s Café,2014-01-16 20:51:00,34.58
-Orilla Kare,Katerina’s Café,2014-01-17 19:24:00,22.18
-Osvaldo Hennie,Abila Zacharo,2014-01-06 13:54:00,23.15
-Osvaldo Hennie,Abila Zacharo,2014-01-14 13:35:00,15.26
-Osvaldo Hennie,Brew've Been Served,2014-01-06 07:52:00,12.83
-Osvaldo Hennie,Brew've Been Served,2014-01-07 08:02:00,14.49
-Osvaldo Hennie,Brew've Been Served,2014-01-08 07:50:00,13.68
-Osvaldo Hennie,Brew've Been Served,2014-01-10 07:48:00,13.32
-Osvaldo Hennie,Brew've Been Served,2014-01-14 07:45:00,16.53
-Osvaldo Hennie,Brew've Been Served,2014-01-15 07:45:00,11.47
-Osvaldo Hennie,Brew've Been Served,2014-01-17 08:04:00,16.62
-Osvaldo Hennie,Frydos Autosupply n' More,2014-01-19 19:45:00,98.04
-Osvaldo Hennie,Gelatogalore,2014-01-07 13:39:00,17.21
-Osvaldo Hennie,Gelatogalore,2014-01-08 13:28:00,20.72
-Osvaldo Hennie,Gelatogalore,2014-01-09 13:40:00,11.94
-Osvaldo Hennie,Gelatogalore,2014-01-16 13:37:00,22.19
-Osvaldo Hennie,Hallowed Grounds,2014-01-09 07:57:00,10.25
-Osvaldo Hennie,Hallowed Grounds,2014-01-13 07:44:00,5.85
-Osvaldo Hennie,Hallowed Grounds,2014-01-16 08:03:00,12.61
-Osvaldo Hennie,Katerina’s Café,2014-01-06 20:29:00,17.92
-Osvaldo Hennie,Katerina’s Café,2014-01-07 21:01:00,33.29
-Osvaldo Hennie,Katerina’s Café,2014-01-10 20:08:00,15.76
-Osvaldo Hennie,Katerina’s Café,2014-01-11 20:13:00,9.78
-Osvaldo Hennie,Katerina’s Café,2014-01-12 20:12:00,15.37
-Osvaldo Hennie,Katerina’s Café,2014-01-13 13:36:00,33.11
-Osvaldo Hennie,Katerina’s Café,2014-01-13 21:16:00,33.11
-Osvaldo Hennie,Katerina’s Café,2014-01-16 20:28:00,10.84
-Osvaldo Hennie,Katerina’s Café,2014-01-17 21:06:00,27.49
-Osvaldo Hennie,Ouzeri Elian,2014-01-10 13:44:00,20.46
-Osvaldo Hennie,Roberts and Sons,2014-01-14 21:14:00,203.81
-Ovan Bertrand,Abila Zacharo,2014-01-15 13:58:00,33.8
-Ovan Bertrand,Abila Zacharo,2014-01-16 13:27:00,31.31
-Ovan Bertrand,Coffee Cameleon,2014-01-06 07:49:00,8.39
-Ovan Bertrand,Coffee Cameleon,2014-01-07 07:46:00,9.1
-Ovan Bertrand,Coffee Cameleon,2014-01-08 07:52:00,12.26
-Ovan Bertrand,Coffee Cameleon,2014-01-09 07:37:00,19.99
-Ovan Bertrand,Coffee Cameleon,2014-01-10 07:47:00,11.54
-Ovan Bertrand,Coffee Cameleon,2014-01-13 07:40:00,19.93
-Ovan Bertrand,Coffee Cameleon,2014-01-14 07:37:00,9.8
-Ovan Bertrand,Coffee Cameleon,2014-01-15 07:51:00,14.47
-Ovan Bertrand,Coffee Cameleon,2014-01-16 07:38:00,7.19
-Ovan Bertrand,Coffee Cameleon,2014-01-17 07:38:00,10.27
-Ovan Bertrand,Frydos Autosupply n' More,2014-01-11 20:15:00,54.98
-Ovan Bertrand,Gelatogalore,2014-01-07 13:54:00,8.97
-Ovan Bertrand,General Grocer,2014-01-18 15:31:00,177.6
-Ovan Bertrand,Guy's Gyros,2014-01-09 14:13:00,17.44
-Ovan Bertrand,Kalami Kafenion,2014-01-08 13:29:00,24.08
-Ovan Bertrand,Katerina’s Café,2014-01-06 20:33:00,15.52
-Ovan Bertrand,Katerina’s Café,2014-01-07 20:32:00,19.53
-Ovan Bertrand,Katerina’s Café,2014-01-08 20:42:00,32.83
-Ovan Bertrand,Katerina’s Café,2014-01-09 19:30:00,26.6
-Ovan Bertrand,Katerina’s Café,2014-01-10 19:56:00,21.89
-Ovan Bertrand,Katerina’s Café,2014-01-12 20:11:00,34.1
-Ovan Bertrand,Katerina’s Café,2014-01-12 20:11:00,67.14
-Ovan Bertrand,Katerina’s Café,2014-01-13 13:52:00,29.55
-Ovan Bertrand,Katerina’s Café,2014-01-13 13:52:00,29.83
-Ovan Bertrand,Katerina’s Café,2014-01-13 19:50:00,29.55
-Ovan Bertrand,Katerina’s Café,2014-01-13 19:50:00,29.83
-Ovan Bertrand,Katerina’s Café,2014-01-14 13:41:00,15.46
-Ovan Bertrand,Katerina’s Café,2014-01-14 13:41:00,36.95
-Ovan Bertrand,Katerina’s Café,2014-01-14 20:17:00,15.46
-Ovan Bertrand,Katerina’s Café,2014-01-14 20:17:00,36.95
-Ovan Bertrand,Katerina’s Café,2014-01-15 21:21:00,27.48
-Ovan Bertrand,Katerina’s Café,2014-01-16 19:47:00,14.34
-Ovan Bertrand,Katerina’s Café,2014-01-17 13:42:00,21.01
-Ovan Bertrand,Katerina’s Café,2014-01-18 19:53:00,76.1
-Ovan Bertrand,Katerina’s Café,2014-01-19 18:54:00,12.25
-Ovan Bertrand,Ouzeri Elian,2014-01-06 13:48:00,30.87
-Ovan Bertrand,Ouzeri Elian,2014-01-18 13:34:00,53.36
-Ovan Bertrand,Shoppers' Delight,2014-01-12 16:08:00,51.5
-Pantanal Rachel,Abila Zacharo,2014-01-08 13:46:00,28.25
-Pantanal Rachel,Abila Zacharo,2014-01-10 13:46:00,31.34
-Pantanal Rachel,Gelatogalore,2014-01-07 13:49:00,36.5
-Pantanal Rachel,Gelatogalore,2014-01-09 13:45:00,24.68
-Pantanal Rachel,Gelatogalore,2014-01-13 14:01:00,37.17
-Pantanal Rachel,Gelatogalore,2014-01-15 13:59:00,22.36
-Pantanal Rachel,Gelatogalore,2014-01-17 13:47:00,18.1
-Pantanal Rachel,Gelatogalore,2014-01-18 13:58:00,24.38
-Pantanal Rachel,Hallowed Grounds,2014-01-06 07:54:00,12.93
-Pantanal Rachel,Hallowed Grounds,2014-01-07 08:01:00,8.42
-Pantanal Rachel,Hallowed Grounds,2014-01-08 07:50:00,3.9
-Pantanal Rachel,Hallowed Grounds,2014-01-09 08:15:00,15.33
-Pantanal Rachel,Hallowed Grounds,2014-01-10 07:46:00,17.63
-Pantanal Rachel,Hallowed Grounds,2014-01-13 08:06:00,15.96
-Pantanal Rachel,Hallowed Grounds,2014-01-14 08:12:00,10.65
-Pantanal Rachel,Hallowed Grounds,2014-01-15 08:13:00,14.39
-Pantanal Rachel,Hallowed Grounds,2014-01-16 08:09:00,4.6
-Pantanal Rachel,Hippokampos,2014-01-06 13:35:00,36.54
-Pantanal Rachel,Ouzeri Elian,2014-01-07 20:49:00,20.53
-Pantanal Rachel,Ouzeri Elian,2014-01-13 20:43:00,21.83
-Pantanal Rachel,Ouzeri Elian,2014-01-14 13:53:00,20.95
-Pantanal Rachel,Ouzeri Elian,2014-01-14 13:53:00,33.67
-Pantanal Rachel,Ouzeri Elian,2014-01-14 20:46:00,20.95
-Pantanal Rachel,Ouzeri Elian,2014-01-14 20:46:00,33.67
-Pantanal Rachel,Ouzeri Elian,2014-01-15 21:05:00,8.57
-Pantanal Rachel,Ouzeri Elian,2014-01-16 20:25:00,22.65
-Pantanal Rachel,Ouzeri Elian,2014-01-16 20:25:00,31.21
-Pantanal Rachel,Ouzeri Elian,2014-01-17 20:35:00,26.4
-Pantanal Rachel,Ouzeri Elian,2014-01-18 19:46:00,14.9
-Pantanal Rachel,Shoppers' Delight,2014-01-09 21:13:00,258.43
-Resumir Felix,Abila Zacharo,2014-01-08 13:51:00,30.85
-Resumir Felix,Abila Zacharo,2014-01-11 14:19:00,45.2
-Resumir Felix,Abila Zacharo,2014-01-16 13:55:00,8.43
-Resumir Felix,Abila Zacharo,2014-01-19 14:20:00,47.8
-Resumir Felix,Ahaggo Museum,2014-01-12 16:27:00,120.2
-Resumir Felix,Brew've Been Served,2014-01-06 08:07:00,5.66
-Resumir Felix,Brew've Been Served,2014-01-07 08:18:00,7.74
-Resumir Felix,Brew've Been Served,2014-01-08 08:03:00,10.15
-Resumir Felix,Brew've Been Served,2014-01-09 07:58:00,19.47
-Resumir Felix,Brew've Been Served,2014-01-10 08:01:00,5.31
-Resumir Felix,Brew've Been Served,2014-01-14 08:13:00,12.31
-Resumir Felix,Brew've Been Served,2014-01-15 08:14:00,18.58
-Resumir Felix,Brew've Been Served,2014-01-17 08:17:00,5.29
-Resumir Felix,Frydos Autosupply n' More,2014-01-07 20:20:00,272.73
-Resumir Felix,Frydos Autosupply n' More,2014-01-11 20:26:00,261.0
-Resumir Felix,Frydos Autosupply n' More,2014-01-14 20:43:00,146.74
-Resumir Felix,General Grocer,2014-01-18 20:07:00,108.49
-Resumir Felix,Guy's Gyros,2014-01-06 20:09:00,11.94
-Resumir Felix,Guy's Gyros,2014-01-10 20:09:00,29.81
-Resumir Felix,Guy's Gyros,2014-01-12 13:31:00,34.74
-Resumir Felix,Guy's Gyros,2014-01-13 14:13:00,12.76
-Resumir Felix,Guy's Gyros,2014-01-16 20:09:00,28.27
-Resumir Felix,Guy's Gyros,2014-01-17 13:55:00,16.83
-Resumir Felix,Guy's Gyros,2014-01-17 19:46:00,16.83
-Resumir Felix,Guy's Gyros,2014-01-19 20:51:00,39.6
-Resumir Felix,Hippokampos,2014-01-10 13:58:00,39.89
-Resumir Felix,Hippokampos,2014-01-14 13:57:00,17.18
-Resumir Felix,Kalami Kafenion,2014-01-15 14:13:00,28.82
-Resumir Felix,Kalami Kafenion,2014-01-18 14:17:00,53.36
-Resumir Felix,Katerina’s Café,2014-01-06 14:17:00,19.65
-Resumir Felix,Ouzeri Elian,2014-01-07 14:09:00,19.51
-Resumir Felix,Shoppers' Delight,2014-01-13 20:45:00,144.4
-Ribera Anda,Abila Zacharo,2014-01-10 14:09:00,9.32
-Ribera Anda,Albert's Fine Clothing,2014-01-18 15:57:00,189.52
-Ribera Anda,Frydos Autosupply n' More,2014-01-08 20:28:00,268.89
-Ribera Anda,Gelatogalore,2014-01-07 13:57:00,15.4
-Ribera Anda,Guy's Gyros,2014-01-15 13:45:00,12.19
-Ribera Anda,Hallowed Grounds,2014-01-07 07:57:00,10.33
-Ribera Anda,Hallowed Grounds,2014-01-08 07:57:00,11.63
-Ribera Anda,Hallowed Grounds,2014-01-10 08:06:00,9.34
-Ribera Anda,Hallowed Grounds,2014-01-13 07:57:00,6.32
-Ribera Anda,Hallowed Grounds,2014-01-14 08:16:00,6.16
-Ribera Anda,Hallowed Grounds,2014-01-15 07:51:00,18.69
-Ribera Anda,Hallowed Grounds,2014-01-16 08:07:00,18.23
-Ribera Anda,Hallowed Grounds,2014-01-17 07:59:00,5.52
-Ribera Anda,Hippokampos,2014-01-06 13:20:00,34.03
-Ribera Anda,Hippokampos,2014-01-11 13:37:00,22.23
-Ribera Anda,Hippokampos,2014-01-16 13:35:00,13.05
-Ribera Anda,Kalami Kafenion,2014-01-09 14:03:00,35.99
-Ribera Anda,Katerina’s Café,2014-01-06 20:30:00,28.0
-Ribera Anda,Katerina’s Café,2014-01-07 20:33:00,25.54
-Ribera Anda,Katerina’s Café,2014-01-09 20:09:00,30.97
-Ribera Anda,Katerina’s Café,2014-01-11 19:32:00,20.71
-Ribera Anda,Katerina’s Café,2014-01-14 13:43:00,28.05
-Ribera Anda,Katerina’s Café,2014-01-14 13:43:00,31.69
-Ribera Anda,Katerina’s Café,2014-01-18 13:15:00,34.54
-Ribera Anda,Katerina’s Café,2014-01-18 19:36:00,34.54
-Sanjorge Jr. Sten,Abila Zacharo,2014-01-17 13:28:00,15.95
-Sanjorge Jr. Sten,Chostus Hotel,2014-01-18 12:03:00,600.0
-Sanjorge Jr. Sten,Desafio Golf Course,2014-01-19 15:46:00,148.22
-Sanjorge Jr. Sten,Guy's Gyros,2014-01-19 19:45:00,25.79
-Sanjorge Jr. Sten,Hallowed Grounds,2014-01-17 07:56:00,9.72
-Scozzese Dylan,Abila Airport,2014-01-09 13:18:00,4792.5
-Scozzese Dylan,Abila Airport,2014-01-14 13:06:00,3339.21
-Scozzese Dylan,Abila Airport,2014-01-16 13:22:00,3138.98
-Scozzese Dylan,Abila Scrapyard,2014-01-07 14:16:00,2149.28
-Scozzese Dylan,Abila Scrapyard,2014-01-09 14:12:00,1158.36
-Scozzese Dylan,Abila Scrapyard,2014-01-14 14:13:00,4277.4
-Scozzese Dylan,Abila Scrapyard,2014-01-16 16:56:00,1897.05
-Scozzese Dylan,Nationwide Refinery,2014-01-07 16:24:00,889.58
-Scozzese Dylan,Nationwide Refinery,2014-01-09 16:27:00,1322.5
-Scozzese Dylan,Nationwide Refinery,2014-01-14 16:28:00,4429.76
-Scozzese Dylan,Stewart and Sons Fabrication,2014-01-09 15:00:00,918.6
-Strum Orhan,Abila Zacharo,2014-01-18 13:04:00,111.93
-Strum Orhan,Albert's Fine Clothing,2014-01-11 19:27:00,105.33
-Strum Orhan,Albert's Fine Clothing,2014-01-18 18:59:00,226.49
-Strum Orhan,Desafio Golf Course,2014-01-19 12:41:00,150.07
-Strum Orhan,Gelatogalore,2014-01-13 13:03:00,32.83
-Strum Orhan,Gelatogalore,2014-01-17 13:17:00,15.84
-Strum Orhan,Guy's Gyros,2014-01-07 13:13:00,29.57
-Strum Orhan,Guy's Gyros,2014-01-10 13:12:00,36.44
-Strum Orhan,Hippokampos,2014-01-09 21:12:00,23.66
-Strum Orhan,Hippokampos,2014-01-12 19:51:00,52.21
-Strum Orhan,Hippokampos,2014-01-13 21:27:00,39.63
-Strum Orhan,Hippokampos,2014-01-15 21:42:00,37.16
-Strum Orhan,Jack's Magical Beans,2014-01-06 12:00:00,7.84
-Strum Orhan,Jack's Magical Beans,2014-01-07 12:00:00,19.61
-Strum Orhan,Jack's Magical Beans,2014-01-08 12:00:00,12.37
-Strum Orhan,Jack's Magical Beans,2014-01-10 12:00:00,5.46
-Strum Orhan,Jack's Magical Beans,2014-01-13 12:00:00,9.64
-Strum Orhan,Jack's Magical Beans,2014-01-14 12:00:00,15.7
-Strum Orhan,Jack's Magical Beans,2014-01-15 12:00:00,4.06
-Strum Orhan,Jack's Magical Beans,2014-01-16 12:00:00,12.56
-Strum Orhan,Kalami Kafenion,2014-01-15 13:08:00,22.39
-Strum Orhan,Katerina’s Café,2014-01-09 13:27:00,25.85
-Strum Orhan,Katerina’s Café,2014-01-11 13:19:00,45.22
-Strum Orhan,Katerina’s Café,2014-01-14 13:14:00,29.12
-Strum Orhan,Ouzeri Elian,2014-01-08 13:21:00,29.73
-Strum Orhan,Ouzeri Elian,2014-01-12 13:32:00,117.22
-Strum Orhan,Shoppers' Delight,2014-01-18 15:40:00,258.33
-Tempestad Brand,Abila Zacharo,2014-01-07 13:41:00,17.81
-Tempestad Brand,Abila Zacharo,2014-01-12 13:45:00,11.2
-Tempestad Brand,Abila Zacharo,2014-01-13 13:27:00,8.72
-Tempestad Brand,Ahaggo Museum,2014-01-11 17:16:00,32.14
-Tempestad Brand,Brew've Been Served,2014-01-06 07:43:00,16.9
-Tempestad Brand,Brew've Been Served,2014-01-07 07:56:00,18.53
-Tempestad Brand,Brew've Been Served,2014-01-08 07:48:00,19.17
-Tempestad Brand,Brew've Been Served,2014-01-09 07:36:00,10.71
-Tempestad Brand,Brew've Been Served,2014-01-13 07:40:00,8.0
-Tempestad Brand,Brew've Been Served,2014-01-14 07:40:00,5.87
-Tempestad Brand,Brew've Been Served,2014-01-15 07:40:00,19.87
-Tempestad Brand,Chostus Hotel,2014-01-08 13:19:00,111.89
-Tempestad Brand,Chostus Hotel,2014-01-10 13:08:00,113.25
-Tempestad Brand,Chostus Hotel,2014-01-14 13:21:00,113.08
-Tempestad Brand,Chostus Hotel,2014-01-17 13:49:00,114.22
-Tempestad Brand,Frydos Autosupply n' More,2014-01-15 20:04:00,235.27
-Tempestad Brand,Guy's Gyros,2014-01-08 20:17:00,18.24
-Tempestad Brand,Guy's Gyros,2014-01-16 20:14:00,31.31
-Tempestad Brand,Guy's Gyros,2014-01-17 20:59:00,29.71
-Tempestad Brand,Guy's Gyros,2014-01-19 20:16:00,37.48
-Tempestad Brand,Hippokampos,2014-01-09 13:36:00,27.93
-Tempestad Brand,Hippokampos,2014-01-11 19:27:00,32.63
-Tempestad Brand,Hippokampos,2014-01-15 13:12:00,38.89
-Tempestad Brand,Katerina’s Café,2014-01-16 13:17:00,11.08
-Vann Edvard,Abila Zacharo,2014-01-18 19:36:00,21.29
-Vann Edvard,Ahaggo Museum,2014-01-11 16:24:00,89.32
-Vann Edvard,Brew've Been Served,2014-01-06 07:28:00,11.34
-Vann Edvard,Brew've Been Served,2014-01-08 08:00:00,12.3
-Vann Edvard,Brew've Been Served,2014-01-09 07:48:00,5.13
-Vann Edvard,Brew've Been Served,2014-01-10 07:56:00,17.25
-Vann Edvard,Brew've Been Served,2014-01-13 07:43:00,18.71
-Vann Edvard,Brew've Been Served,2014-01-14 07:31:00,4.72
-Vann Edvard,Brew've Been Served,2014-01-15 07:57:00,4.92
-Vann Edvard,Brew've Been Served,2014-01-16 07:53:00,4.7
-Vann Edvard,Brew've Been Served,2014-01-17 07:59:00,19.39
-Vann Edvard,Frydos Autosupply n' More,2014-01-19 15:53:00,209.76
-Vann Edvard,Gelatogalore,2014-01-09 13:21:00,23.45
-Vann Edvard,General Grocer,2014-01-09 20:19:00,285.34
-Vann Edvard,Guy's Gyros,2014-01-10 19:54:00,27.78
-Vann Edvard,Guy's Gyros,2014-01-13 20:11:00,20.47
-Vann Edvard,Guy's Gyros,2014-01-14 20:01:00,23.59
-Vann Edvard,Guy's Gyros,2014-01-16 19:40:00,37.8
-Vann Edvard,Guy's Gyros,2014-01-17 19:53:00,35.1
-Vann Edvard,Hippokampos,2014-01-06 13:23:00,13.26
-Vann Edvard,Hippokampos,2014-01-08 13:15:00,9.03
-Vann Edvard,Hippokampos,2014-01-10 13:20:00,39.26
-Vann Edvard,Hippokampos,2014-01-11 19:29:00,63.21
-Vann Edvard,Hippokampos,2014-01-17 13:27:00,14.57
-Vann Edvard,Kalami Kafenion,2014-01-07 13:33:00,18.06
-Vann Edvard,Katerina’s Café,2014-01-14 13:34:00,29.1
-Vann Edvard,Katerina’s Café,2014-01-19 13:23:00,70.22
-Vann Edvard,Octavio's Office Supplies,2014-01-10 14:41:00,139.72
-Vann Edvard,Ouzeri Elian,2014-01-13 13:37:00,35.03
-Vann Isia,Abila Zacharo,2014-01-06 13:35:00,12.05
-Vann Isia,Abila Zacharo,2014-01-17 13:45:00,39.67
-Vann Isia,Brew've Been Served,2014-01-08 07:31:00,15.66
-Vann Isia,Brew've Been Served,2014-01-09 07:48:00,14.85
-Vann Isia,Brew've Been Served,2014-01-10 07:56:00,10.72
-Vann Isia,Brew've Been Served,2014-01-13 07:53:00,19.64
-Vann Isia,Brew've Been Served,2014-01-14 07:35:00,7.31
-Vann Isia,Brew've Been Served,2014-01-16 07:34:00,8.18
-Vann Isia,Brew've Been Served,2014-01-17 07:57:00,10.52
-Vann Isia,Guy's Gyros,2014-01-07 13:20:00,9.76
-Vann Isia,Guy's Gyros,2014-01-07 13:20:00,38.56
-Vann Isia,Guy's Gyros,2014-01-07 20:19:00,9.76
-Vann Isia,Guy's Gyros,2014-01-07 20:19:00,38.56
-Vann Isia,Guy's Gyros,2014-01-08 19:36:00,15.69
-Vann Isia,Guy's Gyros,2014-01-09 13:21:00,25.4
-Vann Isia,Guy's Gyros,2014-01-09 13:21:00,31.81
-Vann Isia,Guy's Gyros,2014-01-09 19:41:00,25.4
-Vann Isia,Guy's Gyros,2014-01-09 19:41:00,31.81
-Vann Isia,Guy's Gyros,2014-01-11 20:09:00,16.33
-Vann Isia,Guy's Gyros,2014-01-13 20:09:00,22.34
-Vann Isia,Guy's Gyros,2014-01-14 21:31:00,26.14
-Vann Isia,Guy's Gyros,2014-01-15 13:41:00,28.75
-Vann Isia,Guy's Gyros,2014-01-15 13:41:00,29.34
-Vann Isia,Guy's Gyros,2014-01-15 20:02:00,28.75
-Vann Isia,Guy's Gyros,2014-01-15 20:02:00,29.34
-Vann Isia,Guy's Gyros,2014-01-19 20:00:00,18.08
-Vann Isia,Hippokampos,2014-01-13 13:34:00,39.9
-Vann Isia,Hippokampos,2014-01-16 13:44:00,18.18
-Vann Isia,Kalami Kafenion,2014-01-08 13:44:00,31.96
-Vann Isia,Katerina’s Café,2014-01-10 13:36:00,25.36
-Vann Isia,Katerina’s Café,2014-01-14 13:32:00,20.95
-Vann Isia,Katerina’s Café,2014-01-18 20:09:00,19.31
-Vann Isia,Katerina’s Café,2014-01-19 13:00:00,35.01
-Vann Isia,Roberts and Sons,2014-01-16 20:52:00,240.66
-Vann Isia,Shoppers' Delight,2014-01-06 20:49:00,293.67
-Vasco-Pais Willem,Abila Zacharo,2014-01-08 13:23:00,36.85
-Vasco-Pais Willem,Abila Zacharo,2014-01-09 13:32:00,8.6
-Vasco-Pais Willem,Desafio Golf Course,2014-01-12 13:45:00,129.33
-Vasco-Pais Willem,Desafio Golf Course,2014-01-19 15:15:00,110.02
-Vasco-Pais Willem,Frydos Autosupply n' More,2014-01-18 15:53:00,120.67
-Vasco-Pais Willem,Gelatogalore,2014-01-07 13:35:00,8.98
-Vasco-Pais Willem,Gelatogalore,2014-01-14 13:33:00,39.17
-Vasco-Pais Willem,Gelatogalore,2014-01-15 13:39:00,9.61
-Vasco-Pais Willem,Gelatogalore,2014-01-16 13:33:00,12.33
-Vasco-Pais Willem,Guy's Gyros,2014-01-06 13:46:00,19.67
-Vasco-Pais Willem,Guy's Gyros,2014-01-13 13:40:00,29.25
-Vasco-Pais Willem,Hippokampos,2014-01-07 21:17:00,37.88
-Vasco-Pais Willem,Hippokampos,2014-01-08 21:32:00,18.99
-Vasco-Pais Willem,Hippokampos,2014-01-09 20:41:00,9.13
-Vasco-Pais Willem,Hippokampos,2014-01-10 13:40:00,32.01
-Vasco-Pais Willem,Hippokampos,2014-01-10 13:40:00,39.97
-Vasco-Pais Willem,Hippokampos,2014-01-10 22:21:00,32.01
-Vasco-Pais Willem,Hippokampos,2014-01-10 22:21:00,39.97
-Vasco-Pais Willem,Hippokampos,2014-01-13 20:35:00,29.22
-Vasco-Pais Willem,Hippokampos,2014-01-14 20:22:00,9.55
-Vasco-Pais Willem,Hippokampos,2014-01-17 21:29:00,38.19
-Vasco-Pais Willem,Hippokampos,2014-01-18 19:36:00,53.21
-Vasco-Pais Willem,Hippokampos,2014-01-19 19:56:00,63.17
-Vasco-Pais Willem,Jack's Magical Beans,2014-01-06 12:00:00,18.1
-Vasco-Pais Willem,Jack's Magical Beans,2014-01-07 12:00:00,9.84
-Vasco-Pais Willem,Jack's Magical Beans,2014-01-08 12:00:00,11.25
-Vasco-Pais Willem,Jack's Magical Beans,2014-01-09 12:00:00,17.43
-Vasco-Pais Willem,Jack's Magical Beans,2014-01-13 12:00:00,17.52
-Vasco-Pais Willem,Jack's Magical Beans,2014-01-15 12:00:00,19.54
-Vasco-Pais Willem,Jack's Magical Beans,2014-01-16 12:00:00,6.95
-Vasco-Pais Willem,Kalami Kafenion,2014-01-17 13:37:00,25.32
-Vasco-Pais Willem,Kalami Kafenion,2014-01-18 13:28:00,38.91
+FullName,location,price,timestamp
+Lais Cornelia,Brew've Been Served,4.17,1/6/2014 7:38
+Bramar Mat,Brew've Been Served,9.6,1/6/2014 7:43
+Arpa Emile,Hallowed Grounds,16.53,1/6/2014 7:47
+Mies Haber Ruscella,Brew've Been Served,4.27,1/6/2014 8:00
+Lagos Linda,Brew've Been Served,11.2,1/6/2014 8:16
+Coginian Dante,Brew've Been Served,15.39,1/6/2014 8:17
+Ribera Anda,Hippokampos,34.03,1/6/2014 13:20
+Mies Haber Ruscella,Kalami Kafenion,8.64,1/6/2014 13:28
+Lagos Linda,Katerina’s Café,33.54,1/6/2014 13:28
+Pantanal Rachel,Hippokampos,36.54,1/6/2014 13:35
+Lais Cornelia,Ouzeri Elian,20.74,1/6/2014 13:48
+Awelon Varro,Kalami Kafenion,13.08,1/6/2014 14:00
+Coginian Dante,Hippokampos,38.25,1/6/2014 13:58
+Bramar Mat,Hippokampos,30.88,1/6/2014 14:04
+Arpa Emile,Kalami Kafenion,27.4,1/6/2014 14:15
+Arpa Emile,Katerina’s Café,26.46,1/6/2014 19:08
+Coginian Dante,Frydos Autosupply n' More,80.85,1/6/2014 20:12
+Lais Cornelia,Frydos Autosupply n' More,175.87,1/6/2014 20:15
+Ribera Anda,Katerina’s Café,28.0,1/6/2014 20:30
+Awelon Varro,Hippokampos,24.41,1/6/2014 20:46
+Bramar Mat,Katerina’s Café,26.51,1/6/2014 21:12
+Lais Cornelia,Brew've Been Served,12.74,1/7/2014 7:31
+Arpa Emile,Hallowed Grounds,8.91,1/7/2014 7:37
+Awelon Varro,Coffee Shack,16.63,1/7/2014 12:00
+Mies Haber Ruscella,Brew've Been Served,4.39,1/7/2014 7:50
+Bramar Mat,Brew've Been Served,11.91,1/7/2014 8:00
+Coginian Dante,Brew've Been Served,17.4,1/7/2014 7:58
+Ribera Anda,Hallowed Grounds,10.33,1/7/2014 7:57
+Lagos Linda,Brew've Been Served,15.66,1/7/2014 8:09
+Mies Haber Ruscella,Kalami Kafenion,11.64,1/7/2014 13:24
+Bramar Mat,Ouzeri Elian,28.37,1/7/2014 13:32
+Forluniau Carla,Abila Zacharo,32.4,1/7/2014 13:44
+Pantanal Rachel,Gelatogalore,36.5,1/7/2014 13:49
+Lagos Linda,Ouzeri Elian,21.85,1/7/2014 13:50
+Coginian Dante,Katerina’s Café,37.44,1/7/2014 13:57
+Ribera Anda,Gelatogalore,15.4,1/7/2014 13:57
+Arpa Emile,Hippokampos,37.57,1/7/2014 14:11
+Awelon Varro,Albert's Fine Clothing,78.91,1/7/2014 20:10
+Lagos Linda,Katerina’s Café,31.6,1/7/2014 20:18
+Lais Cornelia,Guy's Gyros,23.12,1/7/2014 20:34
+Ribera Anda,Katerina’s Café,25.54,1/7/2014 20:33
+Pantanal Rachel,Ouzeri Elian,20.53,1/7/2014 20:49
+Arpa Emile,Hallowed Grounds,5.85,1/8/2014 7:40
+Bramar Mat,Brew've Been Served,3.09,1/8/2014 7:42
+Pantanal Rachel,Hallowed Grounds,3.9,1/8/2014 7:50
+Awelon Varro,Coffee Shack,13.13,1/8/2014 12:00
+Mies Haber Ruscella,Brew've Been Served,8.4,1/8/2014 7:58
+Coginian Dante,Brew've Been Served,3.92,1/8/2014 8:01
+Ribera Anda,Hallowed Grounds,11.63,1/8/2014 7:57
+Lagos Linda,Brew've Been Served,11.48,1/8/2014 8:09
+Forluniau Carla,Coffee Cameleon,16.17,1/8/2014 8:22
+Mies Haber Ruscella,Abila Zacharo,22.13,1/8/2014 13:10
+Lagos Linda,Gelatogalore,32.79,1/8/2014 13:27
+Coginian Dante,Kalami Kafenion,22.49,1/8/2014 13:42
+Pantanal Rachel,Abila Zacharo,28.25,1/8/2014 13:46
+Forluniau Carla,Gelatogalore,22.27,1/8/2014 13:47
+Awelon Varro,Kalami Kafenion,34.98,1/8/2014 14:15
+Bramar Mat,Gelatogalore,39.94,1/8/2014 14:17
+Arpa Emile,Kalami Kafenion,31.43,1/8/2014 14:19
+Mies Haber Ruscella,Katerina’s Café,34.25,1/8/2014 19:32
+Lagos Linda,Katerina’s Café,13.83,1/8/2014 20:00
+Forluniau Carla,Frydos Autosupply n' More,214.07,1/8/2014 20:07
+Ribera Anda,Frydos Autosupply n' More,268.89,1/8/2014 20:28
+Coginian Dante,Katerina’s Café,16.93,1/8/2014 20:35
+Awelon Varro,Coffee Shack,5.01,1/9/2014 12:00
+Pantanal Rachel,Hallowed Grounds,15.33,1/9/2014 8:15
+Mies Haber Ruscella,Gelatogalore,19.2,1/9/2014 13:12
+Forluniau Carla,Hippokampos,27.47,1/9/2014 13:29
+Lagos Linda,Gelatogalore,23.23,1/9/2014 13:35
+Pantanal Rachel,Gelatogalore,24.68,1/9/2014 13:45
+Bramar Mat,Kalami Kafenion,19.84,1/9/2014 13:56
+Arpa Emile,Kalami Kafenion,10.94,1/9/2014 14:04
+Ribera Anda,Kalami Kafenion,35.99,1/9/2014 14:03
+Coginian Dante,Guy's Gyros,27.69,1/9/2014 14:09
+Awelon Varro,Gelatogalore,36.75,1/9/2014 14:18
+Arpa Emile,Katerina’s Café,35.92,1/9/2014 19:25
+Bramar Mat,Katerina’s Café,26.6,1/9/2014 20:06
+Coginian Dante,Katerina’s Café,29.82,1/9/2014 20:22
+Awelon Varro,Albert's Fine Clothing,224.52,1/9/2014 20:21
+Lais Cornelia,Guy's Gyros,8.23,1/9/2014 20:38
+Pantanal Rachel,Shoppers' Delight,258.43,1/9/2014 21:13
+Arpa Emile,Hallowed Grounds,16.75,1/10/2014 7:34
+Pantanal Rachel,Hallowed Grounds,17.63,1/10/2014 7:46
+Forluniau Carla,Coffee Cameleon,9.69,1/10/2014 7:54
+Ribera Anda,Hallowed Grounds,9.34,1/10/2014 8:06
+Lagos Linda,Brew've Been Served,14.36,1/10/2014 8:20
+Forluniau Carla,Katerina’s Café,21.22,1/10/2014 13:38
+Pantanal Rachel,Abila Zacharo,31.34,1/10/2014 13:46
+Mies Haber Ruscella,Kalami Kafenion,27.48,1/10/2014 13:45
+Lagos Linda,Guy's Gyros,38.15,1/10/2014 13:44
+Lais Cornelia,Ouzeri Elian,24.74,1/10/2014 13:57
+Arpa Emile,Guy's Gyros,16.34,1/10/2014 13:57
+Ribera Anda,Abila Zacharo,9.32,1/10/2014 14:09
+Coginian Dante,Gelatogalore,32.19,1/10/2014 14:11
+Awelon Varro,Hippokampos,19.88,1/10/2014 19:56
+Coginian Dante,Frydos Autosupply n' More,43.65,1/10/2014 20:02
+Lagos Linda,Katerina’s Café,8.14,1/10/2014 20:09
+Mies Haber Ruscella,Katerina’s Café,21.28,1/10/2014 20:42
+Lais Cornelia,Guy's Gyros,25.81,1/10/2014 21:13
+Forluniau Carla,Katerina’s Café,45.21,1/11/2014 13:23
+Awelon Varro,Kalami Kafenion,35.66,1/11/2014 14:09
+Forluniau Carla,Shoppers' Delight,238.52,1/11/2014 15:20
+Arpa Emile,General Grocer,78.02,1/11/2014 15:31
+Ribera Anda,Katerina’s Café,20.71,1/11/2014 19:32
+Lais Cornelia,Guy's Gyros,36.2,1/11/2014 19:57
+Bramar Mat,Katerina’s Café,25.76,1/11/2014 20:00
+Coginian Dante,Katerina’s Café,52.45,1/11/2014 20:06
+Arpa Emile,Frydos Autosupply n' More,236.25,1/11/2014 20:22
+Awelon Varro,Hippokampos,69.8,1/11/2014 20:27
+Forluniau Carla,Katerina’s Café,94.68,1/11/2014 20:24
+Mies Haber Ruscella,Ouzeri Elian,98.45,1/12/2014 13:17
+Awelon Varro,Hippokampos,29.2,1/12/2014 13:35
+Arpa Emile,Guy's Gyros,30.47,1/12/2014 14:16
+Awelon Varro,General Grocer,159.3,1/12/2014 15:46
+Mies Haber Ruscella,Katerina’s Café,40.94,1/12/2014 19:43
+Lais Cornelia,Frydos Autosupply n' More,88.93,1/12/2014 19:52
+Arpa Emile,Katerina’s Café,39.3,1/12/2014 20:04
+Lagos Linda,Katerina’s Café,16.34,1/12/2014 20:17
+Bramar Mat,Katerina’s Café,40.25,1/12/2014 20:35
+Coginian Dante,Frydos Autosupply n' More,161.96,1/12/2014 20:43
+Bramar Mat,Brew've Been Served,9.53,1/13/2014 7:56
+Ribera Anda,Hallowed Grounds,6.32,1/13/2014 7:57
+Lagos Linda,Brew've Been Served,13.37,1/13/2014 8:00
+Forluniau Carla,Coffee Cameleon,17.49,1/13/2014 7:55
+Awelon Varro,Coffee Shack,4.09,1/13/2014 12:00
+Coginian Dante,Brew've Been Served,19.89,1/13/2014 8:23
+Forluniau Carla,Katerina’s Café,38.98,1/13/2014 13:23
+Lagos Linda,Guy's Gyros,21.03,1/13/2014 13:51
+Lais Cornelia,Kalami Kafenion,20.33,1/13/2014 13:55
+Coginian Dante,Gelatogalore,36.24,1/13/2014 14:00
+Awelon Varro,Guy's Gyros,38.07,1/13/2014 14:00
+Bramar Mat,Hippokampos,26.96,1/13/2014 14:21
+Arpa Emile,Frydos Autosupply n' More,188.57,1/13/2014 19:41
+Lagos Linda,Frydos Autosupply n' More,64.6,1/13/2014 19:59
+Pantanal Rachel,Ouzeri Elian,21.83,1/13/2014 20:43
+Lais Cornelia,Guy's Gyros,19.77,1/13/2014 21:08
+Awelon Varro,Hippokampos,32.29,1/13/2014 21:13
+Forluniau Carla,Frydos Autosupply n' More,202.05,1/13/2014 21:11
+Lais Cornelia,Brew've Been Served,14.67,1/14/2014 7:27
+Arpa Emile,Hallowed Grounds,16.67,1/14/2014 7:44
+Bramar Mat,Brew've Been Served,14.04,1/14/2014 7:45
+Coginian Dante,Brew've Been Served,9.53,1/14/2014 7:53
+Forluniau Carla,Coffee Cameleon,11.67,1/14/2014 7:52
+Pantanal Rachel,Hallowed Grounds,10.65,1/14/2014 8:12
+Mies Haber Ruscella,Brew've Been Served,16.39,1/14/2014 8:07
+Awelon Varro,Coffee Shack,3.63,1/14/2014 12:00
+Ribera Anda,Hallowed Grounds,6.16,1/14/2014 8:16
+Lagos Linda,Brew've Been Served,11.53,1/14/2014 8:13
+Lagos Linda,Abila Zacharo,31.09,1/14/2014 13:35
+Mies Haber Ruscella,Kalami Kafenion,33.13,1/14/2014 13:40
+Ribera Anda,Katerina’s Café,31.69,1/14/2014 13:43
+Pantanal Rachel,Ouzeri Elian,33.67,1/14/2014 13:53
+Bramar Mat,Kalami Kafenion,27.65,1/14/2014 13:50
+Lais Cornelia,Gelatogalore,35.97,1/14/2014 13:57
+Awelon Varro,Ouzeri Elian,19.7,1/14/2014 14:01
+Coginian Dante,Hippokampos,16.73,1/14/2014 14:16
+Lais Cornelia,Guy's Gyros,35.12,1/14/2014 20:17
+Mies Haber Ruscella,Katerina’s Café,31.94,1/14/2014 20:19
+Lagos Linda,Katerina’s Café,25.4,1/14/2014 20:50
+Bramar Mat,Frydos Autosupply n' More,49.21,1/14/2014 21:28
+Bramar Mat,Brew've Been Served,3.14,1/15/2014 7:58
+Lais Cornelia,Brew've Been Served,8.42,1/15/2014 8:00
+Lagos Linda,Brew've Been Served,5.75,1/15/2014 7:58
+Pantanal Rachel,Hallowed Grounds,14.39,1/15/2014 8:13
+Coginian Dante,Brew've Been Served,3.47,1/15/2014 8:06
+Mies Haber Ruscella,Kalami Kafenion,38.5,1/15/2014 13:37
+Lais Cornelia,Ouzeri Elian,25.7,1/15/2014 13:40
+Lagos Linda,Kalami Kafenion,37.15,1/15/2014 13:36
+Ribera Anda,Guy's Gyros,12.19,1/15/2014 13:45
+Awelon Varro,Gelatogalore,24.96,1/15/2014 13:46
+Arpa Emile,Ouzeri Elian,26.61,1/15/2014 13:51
+Coginian Dante,Guy's Gyros,16.58,1/15/2014 13:46
+Lagos Linda,Katerina’s Café,29.33,1/15/2014 20:17
+Forluniau Carla,Katerina’s Café,29.66,1/15/2014 20:29
+Awelon Varro,Albert's Fine Clothing,228.15,1/15/2014 20:46
+Bramar Mat,Frydos Autosupply n' More,276.88,1/15/2014 20:57
+Pantanal Rachel,Ouzeri Elian,8.57,1/15/2014 21:05
+Arpa Emile,Hallowed Grounds,17.92,1/16/2014 7:45
+Awelon Varro,Coffee Shack,10.48,1/16/2014 12:00
+Ribera Anda,Hallowed Grounds,18.23,1/16/2014 8:07
+Pantanal Rachel,Hallowed Grounds,4.6,1/16/2014 8:09
+Lagos Linda,Brew've Been Served,11.21,1/16/2014 8:23
+Mies Haber Ruscella,Katerina’s Café,39.74,1/16/2014 13:27
+Ribera Anda,Hippokampos,13.05,1/16/2014 13:35
+Bramar Mat,Abila Zacharo,24.38,1/16/2014 13:48
+Lais Cornelia,Katerina’s Café,38.32,1/16/2014 13:43
+Coginian Dante,Kalami Kafenion,9.27,1/16/2014 13:45
+Forluniau Carla,Ouzeri Elian,8.52,1/16/2014 14:00
+Awelon Varro,Ouzeri Elian,8.47,1/16/2014 14:01
+Lais Cornelia,Octavio's Office Supplies,131.01,1/16/2014 15:58
+Awelon Varro,Albert's Fine Clothing,283.38,1/16/2014 20:08
+Arpa Emile,Katerina’s Café,18.79,1/16/2014 20:09
+Pantanal Rachel,Ouzeri Elian,22.65,1/16/2014 20:25
+Forluniau Carla,Katerina’s Café,35.43,1/16/2014 20:25
+Coginian Dante,Katerina’s Café,30.56,1/16/2014 20:39
+Bramar Mat,Frydos Autosupply n' More,130.01,1/16/2014 20:54
+Lais Cornelia,Brew've Been Served,11.69,1/17/2014 7:36
+Bramar Mat,Brew've Been Served,8.07,1/17/2014 7:50
+Awelon Varro,Coffee Shack,19.16,1/17/2014 12:00
+Ribera Anda,Hallowed Grounds,5.52,1/17/2014 7:59
+Forluniau Carla,Coffee Cameleon,7.49,1/17/2014 8:07
+Mies Haber Ruscella,Brew've Been Served,18.15,1/17/2014 8:12
+Lagos Linda,Brew've Been Served,14.58,1/17/2014 8:19
+Forluniau Carla,Hippokampos,38.21,1/17/2014 13:16
+Pantanal Rachel,Gelatogalore,18.1,1/17/2014 13:47
+Lagos Linda,Kalami Kafenion,24.21,1/17/2014 13:53
+Coginian Dante,Guy's Gyros,15.12,1/17/2014 14:00
+Awelon Varro,Guy's Gyros,21.1,1/17/2014 14:05
+Arpa Emile,Ouzeri Elian,26.1,1/17/2014 14:32
+Awelon Varro,Hippokampos,19.76,1/17/2014 19:40
+Bramar Mat,Frydos Autosupply n' More,124.52,1/17/2014 19:57
+Coginian Dante,Katerina’s Café,36.12,1/17/2014 20:19
+Pantanal Rachel,Ouzeri Elian,26.4,1/17/2014 20:35
+Mies Haber Ruscella,Katerina’s Café,33.73,1/17/2014 21:05
+Lais Cornelia,Frydos Autosupply n' More,67.29,1/17/2014 21:15
+Ribera Anda,Katerina’s Café,34.54,1/18/2014 13:15
+Lais Cornelia,Kalami Kafenion,30.12,1/18/2014 13:19
+Coginian Dante,Kalami Kafenion,42.73,1/18/2014 14:02
+Lagos Linda,Katerina’s Café,37.26,1/18/2014 14:00
+Lais Cornelia,Frydos Autosupply n' More,103.41,1/18/2014 15:31
+Ribera Anda,Albert's Fine Clothing,189.52,1/18/2014 15:57
+Mies Haber Ruscella,Frydos Autosupply n' More,234.53,1/18/2014 18:51
+Lais Cornelia,Guy's Gyros,28.07,1/18/2014 19:21
+Pantanal Rachel,Ouzeri Elian,14.9,1/18/2014 19:46
+Forluniau Carla,Katerina’s Café,32.68,1/18/2014 19:56
+Lagos Linda,Katerina’s Café,45.88,1/18/2014 20:04
+Awelon Varro,Hippokampos,55.03,1/18/2014 20:26
+Alcazar Lucas,Albert's Fine Clothing,276.9,1/6/2014 20:26
+Alcazar Lucas,Hallowed Grounds,8.05,1/6/2014 7:55
+Azada Lars,Bean There Done That,10.28,1/6/2014 12:00
+Azada Lars,Guy's Gyros,15.44,1/6/2014 13:24
+Azada Lars,Hippokampos,21.33,1/6/2014 20:46
+Balas Felix,Bean There Done That,16.09,1/6/2014 12:00
+Balas Felix,Guy's Gyros,30.82,1/6/2014 13:46
+Barranco Ingrid,Abila Zacharo,30.08,1/6/2014 13:27
+Barranco Ingrid,Brewed Awakenings,5.72,1/6/2014 12:00
+Barranco Ingrid,Hippokampos,17.27,1/6/2014 20:52
+Baza Isak,Jack's Magical Beans,11.03,1/6/2014 12:00
+Baza Isak,Katerina’s Café,18.56,1/6/2014 13:46
+Bergen Linnea,Gelatogalore,12.74,1/6/2014 13:19
+Bergen Linnea,Katerina’s Café,23.63,1/6/2014 20:07
+Bodrogi Loreto,Brew've Been Served,18.24,1/6/2014 8:06
+Bodrogi Loreto,Katerina’s Café,39.41,1/6/2014 13:59
+Borrasca Isande,Brewed Awakenings,16.89,1/6/2014 12:00
+Borrasca Isande,Ouzeri Elian,38.9,1/6/2014 13:22
+Calixto Nils,Gelatogalore,22.64,1/6/2014 13:41
+Calzas Axel,Bean There Done That,8.54,1/6/2014 12:00
+Calzas Axel,Hippokampos,8.64,1/6/2014 13:57
+Calzas Axel,Hippokampos,26.8,1/6/2014 20:36
+Campo-Corrente Ada,Brewed Awakenings,4.35,1/6/2014 12:00
+Campo-Corrente Ada,Hippokampos,20.61,1/6/2014 21:52
+Cazar Gustav,Bean There Done That,5.24,1/6/2014 12:00
+Cazar Gustav,Hippokampos,35.34,1/6/2014 20:20
+Dedos Lidelse,Hallowed Grounds,10.07,1/6/2014 8:01
+Dedos Lidelse,Katerina’s Café,13.59,1/6/2014 13:50
+Dedos Lidelse,Katerina’s Café,12.32,1/6/2014 20:08
+Ferro Inga,Brew've Been Served,8.88,1/6/2014 7:59
+Ferro Inga,Gelatogalore,23.41,1/6/2014 14:00
+Ferro Inga,Guy's Gyros,28.94,1/6/2014 20:24
+Flecha Sven,Brew've Been Served,4.24,1/6/2014 7:37
+Flecha Sven,Guy's Gyros,16.92,1/6/2014 13:30
+Flecha Sven,Guy's Gyros,39.29,1/6/2014 19:18
+Frente Birgitta,Hallowed Grounds,16.72,1/6/2014 7:36
+Frente Birgitta,Katerina’s Café,32.64,1/6/2014 13:50
+Frente Vira,Bean There Done That,4.27,1/6/2014 12:00
+Frente Vira,Ouzeri Elian,20.4,1/6/2014 13:42
+Fusil Stenig,Brew've Been Served,8.33,1/6/2014 7:35
+Fusil Stenig,Ouzeri Elian,20.56,1/6/2014 13:37
+Hafon Albina,Carlyle Chemical Inc.,3959.66,1/6/2014 11:57
+Hafon Albina,Abila Airport,4540.08,1/6/2014 8:23
+Hafon Albina,Abila Airport,777.06,1/6/2014 15:14
+Hafon Albina,Kronos Pipe and Irrigation,242.21,1/6/2014 9:06
+Hafon Albina,Maximum Iron and Steel,2859.51,1/6/2014 10:18
+Herrero Kanon,Brew've Been Served,14.97,1/6/2014 8:16
+Lagos Varja,Brew've Been Served,3.67,1/6/2014 7:55
+Lagos Varja,Guy's Gyros,22.57,1/6/2014 20:13
+Lagos Varja,U-Pump,59.51,1/6/2014 17:28
+Mies Henk,Abila Airport,612.47,1/6/2014 15:39
+Mies Minke,Albert's Fine Clothing,121.76,1/6/2014 21:03
+Mies Minke,Brew've Been Served,15.58,1/6/2014 8:06
+Mies Minke,Kalami Kafenion,22.31,1/6/2014 13:52
+Morluniau Cecilia,Nationwide Refinery,761.64,1/6/2014 10:02
+Morluniau Cecilia,Stewart and Sons Fabrication,2144.62,1/6/2014 11:33
+Nubarron Adra,Coffee Cameleon,11.86,1/6/2014 7:54
+Nubarron Adra,Frydos Autosupply n' More,197.32,1/6/2014 21:23
+Onda Marin,Guy's Gyros,11.22,1/6/2014 13:39
+Orilla Elsa,Jack's Magical Beans,18.59,1/6/2014 12:00
+Orilla Kare,Gelatogalore,36.33,1/6/2014 13:52
+Orilla Kare,Hallowed Grounds,10.66,1/6/2014 7:48
+Orilla Kare,Katerina’s Café,26.1,1/6/2014 20:59
+Osvaldo Hennie,Abila Zacharo,23.15,1/6/2014 13:54
+Osvaldo Hennie,Katerina’s Café,17.92,1/6/2014 20:29
+Ovan Bertrand,Coffee Cameleon,8.39,1/6/2014 7:49
+Ovan Bertrand,Katerina’s Café,15.52,1/6/2014 20:33
+Ovan Bertrand,Ouzeri Elian,30.87,1/6/2014 13:48
+Resumir Felix,Brew've Been Served,5.66,1/6/2014 8:07
+Resumir Felix,Guy's Gyros,11.94,1/6/2014 20:09
+Resumir Felix,Katerina’s Café,19.65,1/6/2014 14:17
+Tempestad Brand,Brew've Been Served,16.9,1/6/2014 7:43
+Vann Edvard,Brew've Been Served,11.34,1/6/2014 7:28
+Vann Edvard,Hippokampos,13.26,1/6/2014 13:23
+Vann Isia,Shoppers' Delight,293.67,1/6/2014 20:49
+Vasco-Pais Willem,Jack's Magical Beans,18.1,1/6/2014 12:00
+Alcazar Lucas,Gelatogalore,21.52,1/7/2014 13:37
+Azada Lars,Abila Zacharo,13.52,1/7/2014 13:20
+Azada Lars,Hippokampos,11.56,1/7/2014 20:02
+Balas Felix,Guy's Gyros,10.11,1/7/2014 13:46
+Bergen Linnea,Gelatogalore,34.04,1/7/2014 13:33
+Bergen Linnea,Katerina’s Café,19.49,1/7/2014 20:09
+Borrasca Isande,Hippokampos,21.2,1/7/2014 21:03
+Calixto Nils,Hallowed Grounds,14.05,1/7/2014 7:35
+Calixto Nils,Katerina’s Café,22.27,1/7/2014 13:33
+Calzas Axel,Hippokampos,20.17,1/7/2014 20:01
+Calzas Axel,Kalami Kafenion,22.83,1/7/2014 13:45
+Campo-Corrente Ada,Brewed Awakenings,6.72,1/7/2014 12:00
+Campo-Corrente Ada,Gelatogalore,35.06,1/7/2014 13:20
+Campo-Corrente Ada,Hippokampos,22.18,1/7/2014 21:51
+Cazar Gustav,Bean There Done That,8.03,1/7/2014 12:00
+Cocinaro Hideki,Hallowed Grounds,18.97,1/7/2014 7:48
+Cocinaro Hideki,Kalami Kafenion,22.14,1/7/2014 13:46
+Ferro Inga,Guy's Gyros,14.87,1/7/2014 19:45
+Flecha Sven,Brew've Been Served,5.08,1/7/2014 7:27
+Frente Birgitta,Guy's Gyros,12.57,1/7/2014 14:09
+Frente Birgitta,Hallowed Grounds,9.92,1/7/2014 8:01
+Frente Birgitta,Katerina’s Café,17.26,1/7/2014 20:33
+Fusil Stenig,Guy's Gyros,11.31,1/7/2014 13:33
+Hawelon Benito,Abila Airport,3840.37,1/7/2014 9:17
+Hawelon Benito,Stewart and Sons Fabrication,1200.9,1/7/2014 10:05
+Herrero Kanon,Brew've Been Served,11.92,1/7/2014 7:54
+Lagos Varja,Guy's Gyros,31.23,1/7/2014 19:48
+Mies Henk,Abila Airport,124.89,1/7/2014 12:29
+Mies Henk,Abila Airport,3411.29,1/7/2014 15:41
+Mies Minke,Brew've Been Served,3.0,1/7/2014 7:52
+Mies Minke,Katerina’s Café,10.9,1/7/2014 14:07
+Morlun Valeria,Nationwide Refinery,1562.66,1/7/2014 11:39
+Morluniau Cecilia,Nationwide Refinery,1347.36,1/7/2014 10:11
+Nant Irene,Kronos Pipe and Irrigation,3920.82,1/7/2014 14:19
+Nant Irene,Maximum Iron and Steel,3207.31,1/7/2014 15:20
+Nubarron Adra,Coffee Cameleon,11.55,1/7/2014 8:00
+Nubarron Adra,Katerina’s Café,10.07,1/7/2014 20:11
+Nubarron Adra,Ouzeri Elian,29.1,1/7/2014 13:29
+Onda Marin,Hallowed Grounds,7.88,1/7/2014 7:47
+Onda Marin,Katerina’s Café,18.35,1/7/2014 21:19
+Orilla Elsa,Jack's Magical Beans,18.77,1/7/2014 12:00
+Orilla Elsa,Ouzeri Elian,11.41,1/7/2014 20:15
+Orilla Kare,Hallowed Grounds,9.61,1/7/2014 7:50
+Orilla Kare,Katerina’s Café,32.83,1/7/2014 20:47
+Osvaldo Hennie,Brew've Been Served,14.49,1/7/2014 8:02
+Osvaldo Hennie,Gelatogalore,17.21,1/7/2014 13:39
+Osvaldo Hennie,Katerina’s Café,33.29,1/7/2014 21:01
+Ovan Bertrand,Coffee Cameleon,9.1,1/7/2014 7:46
+Ovan Bertrand,Katerina’s Café,19.53,1/7/2014 20:32
+Scozzese Dylan,Abila Scrapyard,2149.28,1/7/2014 14:16
+Scozzese Dylan,Nationwide Refinery,889.58,1/7/2014 16:24
+Strum Orhan,Guy's Gyros,29.57,1/7/2014 13:13
+Strum Orhan,Jack's Magical Beans,19.61,1/7/2014 12:00
+Tempestad Brand,Abila Zacharo,17.81,1/7/2014 13:41
+Vann Edvard,Kalami Kafenion,18.06,1/7/2014 13:33
+Vann Isia,Guy's Gyros,38.56,1/7/2014 13:20
+Vasco-Pais Willem,Gelatogalore,8.98,1/7/2014 13:35
+Vasco-Pais Willem,Hippokampos,37.88,1/7/2014 21:17
+Alcazar Lucas,Hippokampos,39.8,1/8/2014 13:43
+Azada Lars,Abila Zacharo,14.41,1/8/2014 13:34
+Azada Lars,Bean There Done That,17.45,1/8/2014 12:00
+Azada Lars,Hippokampos,10.52,1/8/2014 19:21
+Balas Felix,Albert's Fine Clothing,136.01,1/8/2014 20:45
+Balas Felix,Bean There Done That,12.07,1/8/2014 12:00
+Balas Felix,Hippokampos,28.79,1/8/2014 13:48
+Barranco Ingrid,Brewed Awakenings,11.73,1/8/2014 12:00
+Barranco Ingrid,Hippokampos,26.31,1/8/2014 20:53
+Baza Isak,Jack's Magical Beans,3.96,1/8/2014 12:00
+Baza Isak,Katerina’s Café,8.53,1/8/2014 13:28
+Baza Isak,Ouzeri Elian,29.85,1/8/2014 21:17
+Bergen Linnea,Coffee Cameleon,6.59,1/8/2014 7:51
+Bergen Linnea,Hippokampos,16.59,1/8/2014 13:26
+Bodrogi Loreto,Frank's Fuel,65.34,1/8/2014 12:29
+Bodrogi Loreto,Frydos Autosupply n' More,182.56,1/8/2014 20:17
+Borrasca Isande,Brewed Awakenings,12.32,1/8/2014 12:00
+Borrasca Isande,Chostus Hotel,107.51,1/8/2014 12:56
+Borrasca Isande,Hippokampos,16.54,1/8/2014 19:28
+Calixto Nils,Gelatogalore,35.29,1/8/2014 13:42
+Calixto Nils,Katerina’s Café,36.6,1/8/2014 20:31
+Campo-Corrente Ada,Hippokampos,26.55,1/8/2014 13:12
+Campo-Corrente Ada,Hippokampos,15.64,1/8/2014 20:49
+Cazar Gustav,Hippokampos,37.89,1/8/2014 13:31
+Cocinaro Hideki,General Grocer,265.84,1/8/2014 21:00
+Dedos Lidelse,Guy's Gyros,15.86,1/8/2014 13:51
+Dedos Lidelse,Hallowed Grounds,8.15,1/8/2014 7:39
+Dedos Lidelse,Katerina’s Café,27.87,1/8/2014 21:09
+Ferro Inga,Brew've Been Served,17.13,1/8/2014 8:01
+Flecha Sven,Brew've Been Served,3.42,1/8/2014 8:01
+Flecha Sven,Guy's Gyros,30.12,1/8/2014 13:32
+Flecha Sven,Guy's Gyros,28.81,1/8/2014 20:07
+Frente Birgitta,Abila Zacharo,16.2,1/8/2014 13:53
+Frente Birgitta,Hallowed Grounds,3.4,1/8/2014 7:43
+Frente Vira,Hippokampos,32.66,1/8/2014 20:02
+Fusil Stenig,Brew've Been Served,8.27,1/8/2014 7:48
+Fusil Stenig,Kalami Kafenion,14.77,1/8/2014 13:52
+Herrero Kanon,Brew've Been Served,7.26,1/8/2014 8:16
+Mies Henk,Abila Airport,2723.18,1/8/2014 12:45
+Mies Henk,Abila Airport,2769.12,1/8/2014 15:29
+Mies Minke,Brew've Been Served,6.3,1/8/2014 8:18
+Mies Minke,Guy's Gyros,10.34,1/8/2014 13:57
+Mies Minke,Guy's Gyros,30.48,1/8/2014 19:48
+Morlun Adan,Nationwide Refinery,4513.16,1/8/2014 9:54
+Morlun Adan,Stewart and Sons Fabrication,1738.26,1/8/2014 11:28
+Morlun Valeria,Carlyle Chemical Inc.,4901.88,1/8/2014 14:26
+Morlun Valeria,Katerina’s Café,29.26,1/8/2014 13:19
+Morluniau Cecilia,Nationwide Refinery,3674.32,1/8/2014 10:14
+Morluniau Cecilia,Stewart and Sons Fabrication,1673.77,1/8/2014 11:58
+Nant Irene,Carlyle Chemical Inc.,4983.52,1/8/2014 13:03
+Nant Irene,Kronos Pipe and Irrigation,3615.61,1/8/2014 14:09
+Nant Irene,Maximum Iron and Steel,3136.01,1/8/2014 15:18
+Nubarron Adra,Coffee Cameleon,15.71,1/8/2014 7:59
+Nubarron Adra,Katerina’s Café,26.45,1/8/2014 13:41
+Nubarron Adra,Katerina’s Café,33.31,1/8/2014 20:27
+Onda Marin,Katerina’s Café,31.59,1/8/2014 20:08
+Orilla Elsa,Jack's Magical Beans,18.78,1/8/2014 12:00
+Orilla Kare,Hallowed Grounds,3.11,1/8/2014 7:47
+Orilla Kare,Kalami Kafenion,23.82,1/8/2014 13:45
+Osvaldo Hennie,Gelatogalore,20.72,1/8/2014 13:28
+Ovan Bertrand,Coffee Cameleon,12.26,1/8/2014 7:52
+Ovan Bertrand,Kalami Kafenion,24.08,1/8/2014 13:29
+Resumir Felix,Abila Zacharo,30.85,1/8/2014 13:51
+Resumir Felix,Brew've Been Served,10.15,1/8/2014 8:03
+Strum Orhan,Jack's Magical Beans,12.37,1/8/2014 12:00
+Tempestad Brand,Brew've Been Served,19.17,1/8/2014 7:48
+Tempestad Brand,Chostus Hotel,111.89,1/8/2014 13:19
+Tempestad Brand,Guy's Gyros,18.24,1/8/2014 20:17
+Vann Edvard,Hippokampos,9.03,1/8/2014 13:15
+Vann Isia,Brew've Been Served,15.66,1/8/2014 7:31
+Vann Isia,Guy's Gyros,15.69,1/8/2014 19:36
+Vann Isia,Kalami Kafenion,31.96,1/8/2014 13:44
+Vasco-Pais Willem,Abila Zacharo,36.85,1/8/2014 13:23
+Azada Lars,Bean There Done That,13.0,1/9/2014 12:00
+Balas Felix,Hippokampos,8.43,1/9/2014 13:41
+Balas Felix,Hippokampos,10.12,1/9/2014 21:38
+Barranco Ingrid,Ouzeri Elian,26.09,1/9/2014 13:21
+Baza Isak,Gelatogalore,8.6,1/9/2014 13:23
+Baza Isak,Jack's Magical Beans,10.11,1/9/2014 12:00
+Bergen Linnea,Katerina’s Café,17.02,1/9/2014 13:03
+Bodrogi Loreto,Frydos Autosupply n' More,276.75,1/9/2014 20:45
+Bodrogi Loreto,Jack's Magical Beans,6.0,1/9/2014 12:00
+Bodrogi Loreto,Katerina’s Café,10.42,1/9/2014 13:35
+Borrasca Isande,Brewed Awakenings,13.16,1/9/2014 12:00
+Borrasca Isande,Hippokampos,15.02,1/9/2014 20:05
+Calixto Nils,Guy's Gyros,13.59,1/9/2014 13:28
+Calixto Nils,Guy's Gyros,8.23,1/9/2014 20:23
+Calzas Axel,Bean There Done That,4.06,1/9/2014 12:00
+Calzas Axel,Katerina’s Café,8.01,1/9/2014 14:06
+Campo-Corrente Ada,Albert's Fine Clothing,229.98,1/9/2014 21:27
+Campo-Corrente Ada,Brewed Awakenings,17.66,1/9/2014 12:00
+Cazar Gustav,Hippokampos,9.12,1/9/2014 13:37
+Cocinaro Hideki,Ouzeri Elian,32.89,1/9/2014 14:04
+Dedos Lidelse,Abila Zacharo,20.73,1/9/2014 13:40
+Ferro Inga,Abila Zacharo,14.37,1/9/2014 14:15
+Flecha Sven,Brew've Been Served,5.3,1/9/2014 7:48
+Flecha Sven,Guy's Gyros,35.05,1/9/2014 20:39
+Flecha Sven,Kalami Kafenion,18.14,1/9/2014 13:38
+Frente Birgitta,Guy's Gyros,15.0,1/9/2014 13:44
+Frente Birgitta,Hallowed Grounds,18.48,1/9/2014 7:57
+Frente Vira,Hippokampos,24.96,1/9/2014 21:01
+Fusil Stenig,Guy's Gyros,29.96,1/9/2014 19:52
+Fusil Stenig,Ouzeri Elian,22.4,1/9/2014 13:23
+Hawelon Benito,Abila Airport,2358.22,1/9/2014 9:26
+Hawelon Benito,Stewart and Sons Fabrication,1015.65,1/9/2014 10:38
+Herrero Kanon,Brew've Been Served,17.64,1/9/2014 8:14
+Herrero Kanon,Guy's Gyros,18.26,1/9/2014 20:24
+Lagos Varja,Abila Zacharo,8.16,1/9/2014 13:24
+Lagos Varja,Frydos Autosupply n' More,138.02,1/9/2014 19:32
+Mies Henk,Abila Airport,4538.52,1/9/2014 15:50
+Mies Minke,Brew've Been Served,6.21,1/9/2014 8:00
+Mies Minke,Guy's Gyros,31.31,1/9/2014 21:09
+Morlun Valeria,Carlyle Chemical Inc.,529.47,1/9/2014 9:54
+Morlun Valeria,Carlyle Chemical Inc.,382.43,1/9/2014 14:26
+Morlun Valeria,Carlyle Chemical Inc.,2176.2,1/9/2014 16:22
+Morlun Valeria,Katerina’s Café,16.98,1/9/2014 13:23
+Morlun Valeria,Nationwide Refinery,289.3,1/9/2014 11:34
+Morluniau Cecilia,Nationwide Refinery,674.28,1/9/2014 10:16
+Morluniau Cecilia,Stewart and Sons Fabrication,3544.0,1/9/2014 11:37
+Nant Irene,Carlyle Chemical Inc.,732.82,1/9/2014 11:21
+Nant Irene,Kronos Pipe and Irrigation,423.14,1/9/2014 14:28
+Nant Irene,Maximum Iron and Steel,1527.14,1/9/2014 15:16
+Nubarron Adra,Coffee Cameleon,16.13,1/9/2014 8:03
+Onda Marin,Hallowed Grounds,17.56,1/9/2014 7:37
+Onda Marin,Hippokampos,13.84,1/9/2014 13:51
+Onda Marin,Katerina’s Café,8.57,1/9/2014 21:18
+Orilla Kare,Katerina’s Café,19.02,1/9/2014 20:08
+Osvaldo Hennie,Gelatogalore,11.94,1/9/2014 13:40
+Ovan Bertrand,Coffee Cameleon,19.99,1/9/2014 7:37
+Ovan Bertrand,Guy's Gyros,17.44,1/9/2014 14:13
+Ovan Bertrand,Katerina’s Café,26.6,1/9/2014 19:30
+Resumir Felix,Brew've Been Served,19.47,1/9/2014 7:58
+Scozzese Dylan,Abila Scrapyard,1158.36,1/9/2014 14:12
+Scozzese Dylan,Abila Airport,4792.5,1/9/2014 13:18
+Scozzese Dylan,Nationwide Refinery,1322.5,1/9/2014 16:27
+Scozzese Dylan,Stewart and Sons Fabrication,918.6,1/9/2014 15:00
+Strum Orhan,Hippokampos,23.66,1/9/2014 21:12
+Strum Orhan,Katerina’s Café,25.85,1/9/2014 13:27
+Tempestad Brand,Hippokampos,27.93,1/9/2014 13:36
+Vann Edvard,Brew've Been Served,5.13,1/9/2014 7:48
+Vann Edvard,Gelatogalore,23.45,1/9/2014 13:21
+Vann Edvard,General Grocer,285.34,1/9/2014 20:19
+Vann Isia,Guy's Gyros,31.81,1/9/2014 19:41
+Vasco-Pais Willem,Abila Zacharo,8.6,1/9/2014 13:32
+Vasco-Pais Willem,Hippokampos,9.13,1/9/2014 20:41
+Azada Lars,Bean There Done That,15.39,1/10/2014 12:00
+Azada Lars,Gelatogalore,26.15,1/10/2014 13:35
+Balas Felix,Bean There Done That,3.92,1/10/2014 12:00
+Balas Felix,Guy's Gyros,31.5,1/10/2014 13:47
+Barranco Ingrid,Brewed Awakenings,13.82,1/10/2014 12:00
+Barranco Ingrid,Katerina’s Café,34.76,1/10/2014 13:30
+Baza Isak,Jack's Magical Beans,15.69,1/10/2014 12:00
+Baza Isak,Ouzeri Elian,19.92,1/10/2014 18:52
+Bergen Linnea,Coffee Cameleon,8.51,1/10/2014 7:40
+Bergen Linnea,Guy's Gyros,15.93,1/10/2014 13:27
+Bergen Linnea,Octavio's Office Supplies,64.51,1/10/2014 16:07
+Bodrogi Loreto,Brew've Been Served,14.45,1/10/2014 8:09
+Bodrogi Loreto,Ouzeri Elian,35.24,1/10/2014 13:35
+Borrasca Isande,Brewed Awakenings,6.17,1/10/2014 12:00
+Calixto Nils,Hallowed Grounds,10.34,1/10/2014 7:49
+Calzas Axel,Bean There Done That,13.41,1/10/2014 12:00
+Calzas Axel,Ouzeri Elian,15.25,1/10/2014 13:50
+Campo-Corrente Ada,Brewed Awakenings,13.9,1/10/2014 12:00
+Campo-Corrente Ada,Hippokampos,17.21,1/10/2014 20:50
+Cazar Gustav,Bean There Done That,18.67,1/10/2014 12:00
+Cazar Gustav,Guy's Gyros,31.05,1/10/2014 13:52
+Cocinaro Hideki,Hallowed Grounds,10.76,1/10/2014 7:50
+Dedos Lidelse,Abila Zacharo,8.22,1/10/2014 13:59
+Dedos Lidelse,Hallowed Grounds,12.03,1/10/2014 7:41
+Ferro Inga,Abila Zacharo,36.38,1/10/2014 14:03
+Ferro Inga,Brew've Been Served,3.03,1/10/2014 8:09
+Ferro Inga,Shoppers' Delight,279.53,1/10/2014 20:17
+Flecha Sven,Guy's Gyros,26.68,1/10/2014 13:38
+Frente Birgitta,Hallowed Grounds,8.34,1/10/2014 7:41
+Frente Birgitta,Ouzeri Elian,30.93,1/10/2014 14:07
+Frente Vira,Albert's Fine Clothing,126.13,1/10/2014 20:11
+Frente Vira,Bean There Done That,9.3,1/10/2014 12:00
+Frente Vira,Katerina’s Café,25.62,1/10/2014 13:47
+Fusil Stenig,Brew've Been Served,15.85,1/10/2014 7:35
+Fusil Stenig,Guy's Gyros,26.76,1/10/2014 13:25
+Fusil Stenig,Guy's Gyros,23.61,1/10/2014 19:45
+Hawelon Claudio,Carlyle Chemical Inc.,227.81,1/10/2014 9:09
+Hawelon Claudio,Stewart and Sons Fabrication,4195.49,1/10/2014 12:10
+Herrero Kanon,Brew've Been Served,5.89,1/10/2014 8:01
+Lagos Varja,Brew've Been Served,5.01,1/10/2014 7:45
+Lagos Varja,Kalami Kafenion,35.69,1/10/2014 13:30
+Mies Minke,Brew've Been Served,12.64,1/10/2014 8:17
+Mies Minke,General Grocer,227.28,1/10/2014 21:28
+Mies Minke,Kalami Kafenion,24.3,1/10/2014 13:53
+Morluniau Cecilia,Nationwide Refinery,1552.82,1/10/2014 10:00
+Morluniau Cecilia,Stewart and Sons Fabrication,4074.1,1/10/2014 11:49
+Nubarron Adra,Katerina’s Café,24.33,1/10/2014 13:47
+Onda Marin,Abila Zacharo,36.73,1/10/2014 13:36
+Onda Marin,Hallowed Grounds,11.49,1/10/2014 7:41
+Orilla Elsa,Jack's Magical Beans,16.29,1/10/2014 12:00
+Orilla Elsa,Kalami Kafenion,101.5,1/10/2014 13:35
+Orilla Kare,Abila Zacharo,16.12,1/10/2014 14:01
+Osvaldo Hennie,Brew've Been Served,13.32,1/10/2014 7:48
+Osvaldo Hennie,Katerina’s Café,15.76,1/10/2014 20:08
+Osvaldo Hennie,Ouzeri Elian,20.46,1/10/2014 13:44
+Ovan Bertrand,Coffee Cameleon,11.54,1/10/2014 7:47
+Ovan Bertrand,Katerina’s Café,21.89,1/10/2014 19:56
+Resumir Felix,Brew've Been Served,5.31,1/10/2014 8:01
+Resumir Felix,Guy's Gyros,29.81,1/10/2014 20:09
+Resumir Felix,Hippokampos,39.89,1/10/2014 13:58
+Strum Orhan,Guy's Gyros,36.44,1/10/2014 13:12
+Strum Orhan,Jack's Magical Beans,5.46,1/10/2014 12:00
+Vann Edvard,Guy's Gyros,27.78,1/10/2014 19:54
+Vann Edvard,Octavio's Office Supplies,139.72,1/10/2014 14:41
+Vann Isia,Katerina’s Café,25.36,1/10/2014 13:36
+Vasco-Pais Willem,Hippokampos,32.01,1/10/2014 13:40
+Azada Lars,Hippokampos,70.23,1/11/2014 20:23
+Balas Felix,Hippokampos,67.37,1/11/2014 19:53
+Barranco Ingrid,Frydos Autosupply n' More,52.73,1/11/2014 16:09
+Barranco Ingrid,Hippokampos,66.21,1/11/2014 19:26
+Baza Isak,Ouzeri Elian,69.36,1/11/2014 19:21
+Borrasca Isande,Abila Zacharo,89.54,1/11/2014 13:33
+Borrasca Isande,Katerina’s Café,57.36,1/11/2014 19:40
+Calixto Nils,Katerina’s Café,12.55,1/11/2014 19:50
+Campo-Corrente Ada,Hippokampos,63.21,1/11/2014 19:45
+Cazar Gustav,Katerina’s Café,23.45,1/11/2014 13:50
+Cocinaro Hideki,Kalami Kafenion,39.36,1/11/2014 14:16
+Ferro Inga,Kalami Kafenion,23.86,1/11/2014 19:17
+Flecha Sven,Guy's Gyros,33.65,1/11/2014 20:06
+Frente Birgitta,Gelatogalore,17.31,1/11/2014 13:35
+Frente Birgitta,Katerina’s Café,55.67,1/11/2014 19:08
+Frente Vira,Katerina’s Café,29.1,1/11/2014 13:32
+Lagos Varja,Katerina’s Café,71.65,1/11/2014 13:43
+Mies Minke,Albert's Fine Clothing,211.47,1/11/2014 16:01
+Nubarron Adra,Katerina’s Café,26.02,1/11/2014 14:17
+Nubarron Adra,Katerina’s Café,33.18,1/11/2014 19:31
+Onda Marin,Abila Zacharo,54.82,1/11/2014 13:32
+Onda Marin,Katerina’s Café,45.68,1/11/2014 19:51
+Osvaldo Hennie,Katerina’s Café,9.78,1/11/2014 20:13
+Resumir Felix,Abila Zacharo,45.2,1/11/2014 14:19
+Resumir Felix,Frydos Autosupply n' More,261.0,1/11/2014 20:26
+Strum Orhan,Albert's Fine Clothing,105.33,1/11/2014 19:27
+Strum Orhan,Katerina’s Café,45.22,1/11/2014 13:19
+Tempestad Brand,Hippokampos,32.63,1/11/2014 19:27
+Vann Edvard,Ahaggo Museum,89.32,1/11/2014 16:24
+Vann Edvard,Hippokampos,63.21,1/11/2014 19:29
+Vann Isia,Guy's Gyros,16.33,1/11/2014 20:09
+Azada Lars,Hippokampos,66.63,1/12/2014 19:29
+Balas Felix,Hippokampos,78.21,1/12/2014 20:05
+Barranco Ingrid,Hippokampos,63.32,1/12/2014 20:38
+Baza Isak,Ouzeri Elian,55.55,1/12/2014 19:59
+Bergen Linnea,Katerina’s Café,11.81,1/12/2014 19:21
+Bodrogi Loreto,Guy's Gyros,34.41,1/12/2014 19:32
+Calixto Nils,Hippokampos,8.54,1/12/2014 13:54
+Calixto Nils,Katerina’s Café,12.64,1/12/2014 19:18
+Calzas Axel,Albert's Fine Clothing,63.36,1/12/2014 19:58
+Campo-Corrente Ada,Desafio Golf Course,198.46,1/12/2014 14:14
+Campo-Corrente Ada,Hippokampos,26.79,1/12/2014 19:44
+Campo-Corrente Ada,Ouzeri Elian,38.55,1/12/2014 13:03
+Cazar Gustav,Hippokampos,27.15,1/12/2014 19:22
+Cocinaro Hideki,Guy's Gyros,42.32,1/12/2014 19:26
+Dedos Lidelse,Hippokampos,12.57,1/12/2014 14:04
+Ferro Inga,Ouzeri Elian,24.72,1/12/2014 13:28
+Ferro Inga,Shoppers' Delight,204.37,1/12/2014 15:32
+Flecha Sven,Shoppers' Delight,211.03,1/12/2014 19:26
+Frente Vira,Hippokampos,49.23,1/12/2014 19:35
+Herrero Kanon,Shoppers' Delight,86.22,1/12/2014 15:24
+Nubarron Adra,Albert's Fine Clothing,195.81,1/12/2014 15:49
+Nubarron Adra,Hippokampos,12.55,1/12/2014 13:25
+Onda Marin,Ouzeri Elian,72.32,1/12/2014 13:30
+Onda Marin,Shoppers' Delight,135.78,1/12/2014 15:10
+Orilla Kare,Kalami Kafenion,14.59,1/12/2014 13:55
+Osvaldo Hennie,Katerina’s Café,15.37,1/12/2014 20:12
+Ovan Bertrand,Katerina’s Café,67.14,1/12/2014 20:11
+Ovan Bertrand,Shoppers' Delight,51.5,1/12/2014 16:08
+Resumir Felix,Ahaggo Museum,120.2,1/12/2014 16:27
+Resumir Felix,Guy's Gyros,34.74,1/12/2014 13:31
+Strum Orhan,Hippokampos,52.21,1/12/2014 19:51
+Strum Orhan,Ouzeri Elian,117.22,1/12/2014 13:32
+Tempestad Brand,Abila Zacharo,11.2,1/12/2014 13:45
+Vasco-Pais Willem,Desafio Golf Course,129.33,1/12/2014 13:45
+Alcazar Lucas,Hippokampos,30.51,1/13/2014 13:28
+Alcazar Lucas,Ouzeri Elian,28.75,1/13/2014 19:30
+Azada Lars,Bean There Done That,7.93,1/13/2014 12:00
+Azada Lars,Gelatogalore,36.93,1/13/2014 13:41
+Azada Lars,Hippokampos,31.59,1/13/2014 20:42
+Balas Felix,Abila Zacharo,11.99,1/13/2014 13:42
+Barranco Ingrid,Albert's Fine Clothing,288.0,1/13/2014 20:35
+Barranco Ingrid,Brewed Awakenings,12.69,1/13/2014 12:00
+Baza Isak,Jack's Magical Beans,18.31,1/13/2014 12:00
+Baza Isak,Katerina’s Café,26.15,1/13/2014 13:34
+Bergen Linnea,Coffee Cameleon,4.88,1/13/2014 8:02
+Bergen Linnea,Hippokampos,35.73,1/13/2014 13:24
+Bodrogi Loreto,Shoppers' Delight,216.43,1/13/2014 19:27
+Borrasca Isande,Guy's Gyros,27.49,1/13/2014 13:33
+Calixto Nils,Hallowed Grounds,9.16,1/13/2014 7:32
+Calzas Axel,Bean There Done That,19.56,1/13/2014 12:00
+Calzas Axel,Ouzeri Elian,29.75,1/13/2014 14:06
+Campo-Corrente Ada,Brewed Awakenings,16.25,1/13/2014 12:00
+Campo-Corrente Ada,Hippokampos,31.47,1/13/2014 21:12
+Cazar Gustav,Abila Zacharo,27.3,1/13/2014 13:34
+Cazar Gustav,Albert's Fine Clothing,49.48,1/13/2014 20:42
+Cazar Gustav,Bean There Done That,5.54,1/13/2014 12:00
+Cocinaro Hideki,Guy's Gyros,37.5,1/13/2014 20:59
+Cocinaro Hideki,Hallowed Grounds,19.18,1/13/2014 7:54
+Dedos Lidelse,Bean There Done That,10.37,1/13/2014 12:00
+Dedos Lidelse,Katerina’s Café,8.29,1/13/2014 13:40
+Dedos Lidelse,Katerina’s Café,27.59,1/13/2014 21:00
+Ferro Inga,Abila Zacharo,17.41,1/13/2014 13:51
+Ferro Inga,Brew've Been Served,6.69,1/13/2014 8:22
+Ferro Inga,Guy's Gyros,15.84,1/13/2014 20:18
+Flecha Sven,Brew've Been Served,8.04,1/13/2014 7:38
+Flecha Sven,Guy's Gyros,36.89,1/13/2014 20:15
+Frente Birgitta,Bean There Done That,15.24,1/13/2014 12:00
+Frente Birgitta,Hippokampos,25.09,1/13/2014 14:04
+Frente Vira,Bean There Done That,18.59,1/13/2014 12:00
+Hafon Albina,Carlyle Chemical Inc.,1718.96,1/13/2014 12:00
+Hafon Albina,Abila Airport,3617.47,1/13/2014 8:15
+Hafon Albina,Maximum Iron and Steel,689.85,1/13/2014 10:20
+Hafon Albina,Ouzeri Elian,19.82,1/13/2014 12:55
+Herrero Kanon,Brew've Been Served,11.49,1/13/2014 8:07
+Mies Henk,Abila Airport,4417.03,1/13/2014 12:11
+Mies Henk,Abila Airport,2228.08,1/13/2014 16:56
+Mies Minke,Brew've Been Served,16.05,1/13/2014 8:04
+Mies Minke,Hippokampos,17.17,1/13/2014 12:27
+Morluniau Cecilia,Nationwide Refinery,204.58,1/13/2014 10:12
+Nubarron Adra,Coffee Cameleon,17.76,1/13/2014 8:12
+Nubarron Adra,Guy's Gyros,37.37,1/13/2014 13:39
+Nubarron Adra,Katerina’s Café,35.7,1/13/2014 20:24
+Onda Marin,Ouzeri Elian,8.32,1/13/2014 13:48
+Orilla Elsa,Jack's Magical Beans,5.22,1/13/2014 12:00
+Orilla Kare,Hallowed Grounds,13.68,1/13/2014 7:43
+Orilla Kare,Katerina’s Café,24.26,1/13/2014 13:48
+Osvaldo Hennie,Hallowed Grounds,5.85,1/13/2014 7:44
+Osvaldo Hennie,Katerina’s Café,33.11,1/13/2014 21:16
+Ovan Bertrand,Coffee Cameleon,19.93,1/13/2014 7:40
+Ovan Bertrand,Katerina’s Café,29.55,1/13/2014 13:52
+Resumir Felix,Guy's Gyros,12.76,1/13/2014 14:13
+Resumir Felix,Shoppers' Delight,144.4,1/13/2014 20:45
+Strum Orhan,Gelatogalore,32.83,1/13/2014 13:03
+Strum Orhan,Jack's Magical Beans,9.64,1/13/2014 12:00
+Tempestad Brand,Abila Zacharo,8.72,1/13/2014 13:27
+Tempestad Brand,Brew've Been Served,8.0,1/13/2014 7:40
+Vann Edvard,Brew've Been Served,18.71,1/13/2014 7:43
+Vann Edvard,Guy's Gyros,20.47,1/13/2014 20:11
+Vann Isia,Brew've Been Served,19.64,1/13/2014 7:53
+Vann Isia,Guy's Gyros,22.34,1/13/2014 20:09
+Vasco-Pais Willem,Guy's Gyros,29.25,1/13/2014 13:40
+Vasco-Pais Willem,Hippokampos,29.22,1/13/2014 20:35
+Vasco-Pais Willem,Jack's Magical Beans,17.52,1/13/2014 12:00
+Azada Lars,Bean There Done That,7.28,1/14/2014 12:00
+Azada Lars,Hippokampos,39.64,1/14/2014 19:44
+Balas Felix,Albert's Fine Clothing,228.72,1/14/2014 20:50
+Balas Felix,Bean There Done That,19.37,1/14/2014 12:00
+Balas Felix,Kalami Kafenion,17.38,1/14/2014 13:24
+Barranco Ingrid,Brewed Awakenings,17.14,1/14/2014 12:00
+Baza Isak,Ouzeri Elian,11.86,1/14/2014 20:32
+Bergen Linnea,Coffee Cameleon,15.63,1/14/2014 7:53
+Bergen Linnea,Hippokampos,36.01,1/14/2014 13:17
+Bodrogi Loreto,Brew've Been Served,6.45,1/14/2014 7:48
+Bodrogi Loreto,Hippokampos,19.07,1/14/2014 13:37
+Borrasca Isande,Brewed Awakenings,8.3,1/14/2014 12:00
+Borrasca Isande,Chostus Hotel,109.54,1/14/2014 13:17
+Borrasca Isande,Hippokampos,22.13,1/14/2014 21:31
+Calixto Nils,Hallowed Grounds,10.75,1/14/2014 7:35
+Campo-Corrente Ada,Brewed Awakenings,11.35,1/14/2014 12:00
+Campo-Corrente Ada,Kalami Kafenion,15.15,1/14/2014 13:24
+Cazar Gustav,Kalami Kafenion,15.27,1/14/2014 13:51
+Cocinaro Hideki,Hallowed Grounds,13.0,1/14/2014 7:45
+Dedos Lidelse,Guy's Gyros,16.35,1/14/2014 13:44
+Dedos Lidelse,Hallowed Grounds,19.99,1/14/2014 7:54
+Dedos Lidelse,Katerina’s Café,12.65,1/14/2014 20:26
+Ferro Inga,Brew've Been Served,11.94,1/14/2014 7:58
+Ferro Inga,Guy's Gyros,25.28,1/14/2014 20:29
+Ferro Inga,Katerina’s Café,33.54,1/14/2014 13:58
+Flecha Sven,Brew've Been Served,8.24,1/14/2014 7:53
+Flecha Sven,Gelatogalore,27.26,1/14/2014 13:32
+Flecha Sven,Guy's Gyros,12.96,1/14/2014 20:19
+Frente Birgitta,Guy's Gyros,38.26,1/14/2014 13:49
+Frente Birgitta,Katerina’s Café,18.35,1/14/2014 21:10
+Frente Vira,Bean There Done That,5.9,1/14/2014 12:00
+Frente Vira,Katerina’s Café,10.03,1/14/2014 13:22
+Fusil Stenig,Abila Zacharo,8.41,1/14/2014 13:38
+Fusil Stenig,Brew've Been Served,3.66,1/14/2014 7:53
+Herrero Kanon,Brew've Been Served,3.21,1/14/2014 8:03
+Lagos Varja,Albert's Fine Clothing,50.77,1/14/2014 20:05
+Lagos Varja,Brew've Been Served,10.96,1/14/2014 7:45
+Mies Henk,Abila Airport,228.41,1/14/2014 12:30
+Mies Minke,Abila Zacharo,24.87,1/14/2014 14:03
+Mies Minke,Frydos Autosupply n' More,42.72,1/14/2014 20:33
+Morlun Valeria,Carlyle Chemical Inc.,3630.57,1/14/2014 9:34
+Morlun Valeria,Carlyle Chemical Inc.,3470.99,1/14/2014 16:16
+Morlun Valeria,Nationwide Refinery,570.95,1/14/2014 11:45
+Morluniau Cecilia,Nationwide Refinery,965.72,1/14/2014 10:03
+Morluniau Cecilia,Stewart and Sons Fabrication,278.52,1/14/2014 11:55
+Nubarron Adra,Coffee Cameleon,7.84,1/14/2014 7:56
+Onda Marin,Abila Zacharo,10.24,1/14/2014 13:37
+Onda Marin,Hallowed Grounds,4.59,1/14/2014 7:42
+Orilla Kare,Kalami Kafenion,23.1,1/14/2014 13:42
+Orilla Kare,Katerina’s Café,11.89,1/14/2014 20:34
+Osvaldo Hennie,Abila Zacharo,15.26,1/14/2014 13:35
+Osvaldo Hennie,Brew've Been Served,16.53,1/14/2014 7:45
+Ovan Bertrand,Coffee Cameleon,9.8,1/14/2014 7:37
+Ovan Bertrand,Katerina’s Café,36.95,1/14/2014 20:17
+Resumir Felix,Brew've Been Served,12.31,1/14/2014 8:13
+Resumir Felix,Frydos Autosupply n' More,146.74,1/14/2014 20:43
+Resumir Felix,Hippokampos,17.18,1/14/2014 13:57
+Scozzese Dylan,Abila Scrapyard,4277.4,1/14/2014 14:13
+Scozzese Dylan,Nationwide Refinery,4429.76,1/14/2014 16:28
+Strum Orhan,Katerina’s Café,29.12,1/14/2014 13:14
+Tempestad Brand,Brew've Been Served,5.87,1/14/2014 7:40
+Tempestad Brand,Chostus Hotel,113.08,1/14/2014 13:21
+Vann Edvard,Brew've Been Served,4.72,1/14/2014 7:31
+Vann Edvard,Guy's Gyros,23.59,1/14/2014 20:01
+Vann Edvard,Katerina’s Café,29.1,1/14/2014 13:34
+Vann Isia,Brew've Been Served,7.31,1/14/2014 7:35
+Vann Isia,Guy's Gyros,26.14,1/14/2014 21:31
+Vann Isia,Katerina’s Café,20.95,1/14/2014 13:32
+Vasco-Pais Willem,Gelatogalore,39.17,1/14/2014 13:33
+Vasco-Pais Willem,Hippokampos,9.55,1/14/2014 20:22
+Azada Lars,Guy's Gyros,14.37,1/15/2014 13:22
+Balas Felix,Bean There Done That,5.34,1/15/2014 12:00
+Balas Felix,Hippokampos,35.12,1/15/2014 20:10
+Barranco Ingrid,Abila Zacharo,23.51,1/15/2014 13:26
+Baza Isak,Hippokampos,13.0,1/15/2014 13:24
+Baza Isak,Ouzeri Elian,23.18,1/15/2014 20:29
+Bergen Linnea,Coffee Cameleon,5.49,1/15/2014 7:56
+Bergen Linnea,Katerina’s Café,13.77,1/15/2014 21:05
+Bergen Linnea,Ouzeri Elian,8.93,1/15/2014 13:10
+Bodrogi Loreto,Brew've Been Served,15.58,1/15/2014 8:02
+Bodrogi Loreto,Gelatogalore,31.21,1/15/2014 13:55
+Borrasca Isande,Frydos Autosupply n' More,18.91,1/15/2014 19:52
+Calixto Nils,Abila Zacharo,31.0,1/15/2014 13:22
+Calzas Axel,Hippokampos,32.4,1/15/2014 13:42
+Calzas Axel,Hippokampos,16.37,1/15/2014 20:24
+Campo-Corrente Ada,Brewed Awakenings,3.62,1/15/2014 12:00
+Campo-Corrente Ada,Hippokampos,36.7,1/15/2014 13:12
+Cazar Gustav,Bean There Done That,18.96,1/15/2014 12:00
+Cazar Gustav,Hippokampos,10.35,1/15/2014 20:23
+Cazar Gustav,Ouzeri Elian,36.47,1/15/2014 13:31
+Cocinaro Hideki,Hallowed Grounds,12.17,1/15/2014 7:44
+Cocinaro Hideki,Ouzeri Elian,22.86,1/15/2014 13:42
+Dedos Lidelse,Kalami Kafenion,26.17,1/15/2014 13:35
+Ferro Inga,Brew've Been Served,6.58,1/15/2014 7:48
+Ferro Inga,Gelatogalore,39.4,1/15/2014 13:58
+Flecha Sven,Brew've Been Served,3.71,1/15/2014 7:34
+Frente Birgitta,Guy's Gyros,25.58,1/15/2014 14:00
+Frente Birgitta,Hallowed Grounds,5.28,1/15/2014 7:36
+Frente Birgitta,Katerina’s Café,11.45,1/15/2014 20:05
+Frente Vira,Bean There Done That,15.24,1/15/2014 12:00
+Fusil Stenig,Brew've Been Served,15.5,1/15/2014 7:36
+Fusil Stenig,Guy's Gyros,36.35,1/15/2014 20:08
+Herrero Kanon,Brew've Been Served,11.23,1/15/2014 7:49
+Herrero Kanon,Guy's Gyros,27.01,1/15/2014 21:05
+Lagos Varja,Brew've Been Served,14.06,1/15/2014 7:58
+Lagos Varja,Ouzeri Elian,12.9,1/15/2014 13:22
+Mies Henk,Abila Airport,3152.41,1/15/2014 12:25
+Mies Henk,Abila Airport,875.87,1/15/2014 15:40
+Mies Minke,Guy's Gyros,31.04,1/15/2014 19:55
+Morlun Valeria,Carlyle Chemical Inc.,3608.08,1/15/2014 9:34
+Morlun Valeria,Carlyle Chemical Inc.,1112.04,1/15/2014 14:25
+Morlun Valeria,Carlyle Chemical Inc.,1392.73,1/15/2014 17:01
+Morlun Valeria,Katerina’s Café,24.15,1/15/2014 13:13
+Morlun Valeria,Nationwide Refinery,3004.98,1/15/2014 11:55
+Morluniau Cecilia,Nationwide Refinery,1391.24,1/15/2014 10:14
+Nant Irene,Kronos Pipe and Irrigation,2564.0,1/15/2014 14:12
+Nant Irene,Maximum Iron and Steel,4788.22,1/15/2014 15:11
+Nubarron Adra,Coffee Cameleon,19.93,1/15/2014 7:45
+Nubarron Adra,Guy's Gyros,15.89,1/15/2014 13:44
+Onda Marin,Katerina’s Café,12.12,1/15/2014 14:00
+Onda Marin,Katerina’s Café,39.63,1/15/2014 20:23
+Orilla Elsa,Jack's Magical Beans,5.3,1/15/2014 12:00
+Orilla Elsa,Ouzeri Elian,28.86,1/15/2014 19:18
+Orilla Kare,Abila Zacharo,24.53,1/15/2014 14:02
+Orilla Kare,Hallowed Grounds,14.33,1/15/2014 7:59
+Orilla Kare,Katerina’s Café,39.23,1/15/2014 19:50
+Osvaldo Hennie,Brew've Been Served,11.47,1/15/2014 7:45
+Ovan Bertrand,Abila Zacharo,33.8,1/15/2014 13:58
+Ovan Bertrand,Coffee Cameleon,14.47,1/15/2014 7:51
+Ovan Bertrand,Katerina’s Café,27.48,1/15/2014 21:21
+Resumir Felix,Brew've Been Served,18.58,1/15/2014 8:14
+Resumir Felix,Kalami Kafenion,28.82,1/15/2014 14:13
+Strum Orhan,Hippokampos,37.16,1/15/2014 21:42
+Strum Orhan,Kalami Kafenion,22.39,1/15/2014 13:08
+Tempestad Brand,Brew've Been Served,19.87,1/15/2014 7:40
+Tempestad Brand,Frydos Autosupply n' More,235.27,1/15/2014 20:04
+Vann Edvard,Brew've Been Served,4.92,1/15/2014 7:57
+Vann Isia,Guy's Gyros,28.75,1/15/2014 20:02
+Vasco-Pais Willem,Gelatogalore,9.61,1/15/2014 13:39
+Vasco-Pais Willem,Jack's Magical Beans,19.54,1/15/2014 12:00
+Alcazar Lucas,Guy's Gyros,10.27,1/16/2014 13:28
+Alcazar Lucas,Hallowed Grounds,12.19,1/16/2014 8:05
+Alcazar Lucas,Ouzeri Elian,9.91,1/16/2014 20:28
+Azada Lars,Bean There Done That,19.82,1/16/2014 12:00
+Azada Lars,Hippokampos,31.14,1/16/2014 13:36
+Balas Felix,Bean There Done That,12.33,1/16/2014 12:00
+Barranco Ingrid,Hippokampos,20.84,1/16/2014 21:13
+Barranco Ingrid,Katerina’s Café,27.82,1/16/2014 13:19
+Baza Isak,Hippokampos,36.17,1/16/2014 13:26
+Baza Isak,Jack's Magical Beans,9.12,1/16/2014 12:00
+Baza Isak,Ouzeri Elian,23.89,1/16/2014 20:25
+Bergen Linnea,Hippokampos,16.53,1/16/2014 13:30
+Bodrogi Loreto,Brew've Been Served,5.82,1/16/2014 8:02
+Bodrogi Loreto,Ouzeri Elian,12.47,1/16/2014 13:45
+Borrasca Isande,Brewed Awakenings,6.53,1/16/2014 12:00
+Borrasca Isande,Hippokampos,10.38,1/16/2014 13:30
+Calixto Nils,Guy's Gyros,31.48,1/16/2014 13:23
+Calixto Nils,Hallowed Grounds,13.84,1/16/2014 7:44
+Calixto Nils,Katerina’s Café,10.93,1/16/2014 19:39
+Calzas Axel,Bean There Done That,5.56,1/16/2014 12:00
+Calzas Axel,Guy's Gyros,32.8,1/16/2014 14:05
+Campo-Corrente Ada,Brewed Awakenings,6.39,1/16/2014 12:00
+Campo-Corrente Ada,Hippokampos,17.66,1/16/2014 13:19
+Cazar Gustav,Hippokampos,14.89,1/16/2014 13:43
+Cazar Gustav,Hippokampos,29.13,1/16/2014 20:13
+Cocinaro Hideki,Guy's Gyros,11.31,1/16/2014 20:35
+Cocinaro Hideki,Hallowed Grounds,18.2,1/16/2014 7:44
+Dedos Lidelse,Frydos Autosupply n' More,53.37,1/16/2014 19:45
+Dedos Lidelse,Gelatogalore,32.4,1/16/2014 13:48
+Dedos Lidelse,Hallowed Grounds,7.22,1/16/2014 7:54
+Ferro Inga,Albert's Fine Clothing,91.71,1/16/2014 20:25
+Ferro Inga,Brew've Been Served,16.9,1/16/2014 8:19
+Ferro Inga,Guy's Gyros,29.7,1/16/2014 13:42
+Flecha Sven,Brew've Been Served,7.31,1/16/2014 7:50
+Flecha Sven,Guy's Gyros,25.57,1/16/2014 19:04
+Flecha Sven,Kalami Kafenion,8.86,1/16/2014 13:49
+Frente Birgitta,Hippokampos,29.93,1/16/2014 13:48
+Frente Birgitta,Katerina’s Café,13.91,1/16/2014 20:23
+Frente Vira,Bean There Done That,17.4,1/16/2014 12:00
+Fusil Stenig,Brew've Been Served,12.83,1/16/2014 7:55
+Fusil Stenig,Guy's Gyros,13.48,1/16/2014 13:44
+Fusil Stenig,Guy's Gyros,30.76,1/16/2014 20:17
+Hawelon Benito,Abila Airport,1676.53,1/16/2014 9:18
+Hawelon Benito,Nationwide Refinery,2047.28,1/16/2014 12:32
+Herrero Kanon,Brew've Been Served,12.67,1/16/2014 7:52
+Herrero Kanon,Shoppers' Delight,16.84,1/16/2014 20:50
+Lagos Varja,Brew've Been Served,19.9,1/16/2014 7:36
+Lagos Varja,Guy's Gyros,8.31,1/16/2014 19:09
+Lagos Varja,Katerina’s Café,34.02,1/16/2014 13:27
+Mies Henk,Abila Airport,3917.3,1/16/2014 12:40
+Mies Minke,Brew've Been Served,17.44,1/16/2014 8:09
+Mies Minke,Gelatogalore,10.62,1/16/2014 17:07
+Mies Minke,Roberts and Sons,155.76,1/16/2014 20:25
+Morlun Valeria,Carlyle Chemical Inc.,419.93,1/16/2014 9:52
+Morlun Valeria,Carlyle Chemical Inc.,1814.24,1/16/2014 17:17
+Morlun Valeria,Katerina’s Café,34.9,1/16/2014 13:23
+Morlun Valeria,Nationwide Refinery,4742.67,1/16/2014 11:25
+Morluniau Cecilia,Nationwide Refinery,1494.44,1/16/2014 10:16
+Morluniau Cecilia,Stewart and Sons Fabrication,4543.31,1/16/2014 11:45
+Nubarron Adra,Katerina’s Café,19.44,1/16/2014 20:36
+Orilla Elsa,Jack's Magical Beans,14.86,1/16/2014 12:00
+Orilla Elsa,Ouzeri Elian,29.99,1/16/2014 21:16
+Orilla Kare,Hallowed Grounds,17.74,1/16/2014 7:44
+Orilla Kare,Kalami Kafenion,11.83,1/16/2014 13:48
+Orilla Kare,Katerina’s Café,34.58,1/16/2014 20:51
+Osvaldo Hennie,Gelatogalore,22.19,1/16/2014 13:37
+Ovan Bertrand,Abila Zacharo,31.31,1/16/2014 13:27
+Resumir Felix,Abila Zacharo,8.43,1/16/2014 13:55
+Resumir Felix,Guy's Gyros,28.27,1/16/2014 20:09
+Scozzese Dylan,Abila Scrapyard,1897.05,1/16/2014 16:56
+Scozzese Dylan,Abila Airport,3138.98,1/16/2014 13:22
+Strum Orhan,Jack's Magical Beans,12.56,1/16/2014 12:00
+Tempestad Brand,Katerina’s Café,11.08,1/16/2014 13:17
+Vann Edvard,Brew've Been Served,4.7,1/16/2014 7:53
+Vann Edvard,Guy's Gyros,37.8,1/16/2014 19:40
+Vann Isia,Brew've Been Served,8.18,1/16/2014 7:34
+Vann Isia,Hippokampos,18.18,1/16/2014 13:44
+Vann Isia,Roberts and Sons,240.66,1/16/2014 20:52
+Vasco-Pais Willem,Gelatogalore,12.33,1/16/2014 13:33
+Vasco-Pais Willem,Jack's Magical Beans,6.95,1/16/2014 12:00
+Alcazar Lucas,Hallowed Grounds,9.4,1/17/2014 8:04
+Alcazar Lucas,Ouzeri Elian,35.81,1/17/2014 20:28
+Azada Lars,Bean There Done That,19.67,1/17/2014 12:00
+Balas Felix,Bean There Done That,8.21,1/17/2014 12:00
+Balas Felix,Gelatogalore,23.23,1/17/2014 13:33
+Balas Felix,Hippokampos,12.86,1/17/2014 21:58
+Barranco Ingrid,Brewed Awakenings,8.16,1/17/2014 12:00
+Barranco Ingrid,Guy's Gyros,8.64,1/17/2014 13:18
+Barranco Ingrid,Hippokampos,11.93,1/17/2014 20:54
+Baza Isak,Jack's Magical Beans,7.57,1/17/2014 12:00
+Baza Isak,Ouzeri Elian,38.6,1/17/2014 19:40
+Bergen Linnea,Coffee Cameleon,6.81,1/17/2014 7:51
+Bergen Linnea,Kalami Kafenion,140.78,1/17/2014 13:16
+Bergen Linnea,Katerina’s Café,19.09,1/17/2014 20:20
+Bodrogi Loreto,Brew've Been Served,3.09,1/17/2014 8:15
+Bodrogi Loreto,Guy's Gyros,39.14,1/17/2014 13:38
+Bodrogi Loreto,Guy's Gyros,8.54,1/17/2014 20:24
+Borrasca Isande,Hippokampos,8.92,1/17/2014 20:03
+Calixto Nils,Hallowed Grounds,14.58,1/17/2014 7:33
+Calzas Axel,Bean There Done That,19.56,1/17/2014 12:00
+Campo-Corrente Ada,Brewed Awakenings,6.0,1/17/2014 12:00
+Cazar Gustav,Albert's Fine Clothing,39.41,1/17/2014 19:44
+Cazar Gustav,Bean There Done That,18.72,1/17/2014 12:00
+Cazar Gustav,Katerina’s Café,13.11,1/17/2014 13:48
+Cocinaro Hideki,Kalami Kafenion,27.73,1/17/2014 13:58
+Dedos Lidelse,Hallowed Grounds,18.6,1/17/2014 7:52
+Dedos Lidelse,Kalami Kafenion,20.02,1/17/2014 13:51
+Ferro Inga,Brew've Been Served,15.46,1/17/2014 8:22
+Ferro Inga,Gelatogalore,34.59,1/17/2014 13:51
+Ferro Inga,Guy's Gyros,8.31,1/17/2014 20:21
+Flecha Sven,Shoppers' Delight,155.01,1/17/2014 20:05
+Frente Birgitta,Hallowed Grounds,15.98,1/17/2014 7:39
+Frente Vira,Bean There Done That,5.77,1/17/2014 12:00
+Fusil Stenig,Coffee Cameleon,9.16,1/17/2014 7:52
+Fusil Stenig,Guy's Gyros,19.68,1/17/2014 19:29
+Fusil Stenig,Hippokampos,15.77,1/17/2014 13:31
+Lagos Varja,Brew've Been Served,13.66,1/17/2014 8:03
+Lagos Varja,Guy's Gyros,22.18,1/17/2014 13:21
+Lagos Varja,Guy's Gyros,37.55,1/17/2014 20:16
+Mies Minke,Katerina’s Café,35.52,1/17/2014 13:53
+Morluniau Cecilia,Stewart and Sons Fabrication,1753.17,1/17/2014 11:32
+Nubarron Adra,Abila Zacharo,14.51,1/17/2014 13:41
+Nubarron Adra,Katerina’s Café,38.21,1/17/2014 20:58
+Onda Marin,Hallowed Grounds,3.25,1/17/2014 7:31
+Onda Marin,Katerina’s Café,21.22,1/17/2014 20:07
+Orilla Elsa,Jack's Magical Beans,19.11,1/17/2014 12:00
+Orilla Kare,Gelatogalore,21.62,1/17/2014 13:57
+Orilla Kare,Katerina’s Café,22.18,1/17/2014 19:24
+Osvaldo Hennie,Brew've Been Served,16.62,1/17/2014 8:04
+Osvaldo Hennie,Katerina’s Café,27.49,1/17/2014 21:06
+Ovan Bertrand,Coffee Cameleon,10.27,1/17/2014 7:38
+Ovan Bertrand,Katerina’s Café,21.01,1/17/2014 13:42
+Resumir Felix,Brew've Been Served,5.29,1/17/2014 8:17
+Resumir Felix,Guy's Gyros,16.83,1/17/2014 19:46
+Sanjorge Jr. Sten,Abila Zacharo,15.95,1/17/2014 13:28
+Sanjorge Jr. Sten,Hallowed Grounds,9.72,1/17/2014 7:56
+Strum Orhan,Gelatogalore,15.84,1/17/2014 13:17
+Tempestad Brand,Chostus Hotel,114.22,1/17/2014 13:49
+Tempestad Brand,Guy's Gyros,29.71,1/17/2014 20:59
+Vann Edvard,Brew've Been Served,19.39,1/17/2014 7:59
+Vann Edvard,Guy's Gyros,35.1,1/17/2014 19:53
+Vann Edvard,Hippokampos,14.57,1/17/2014 13:27
+Vann Isia,Brew've Been Served,10.52,1/17/2014 7:57
+Vasco-Pais Willem,Hippokampos,38.19,1/17/2014 21:29
+Alcazar Lucas,Abila Zacharo,16.59,1/18/2014 13:32
+Azada Lars,Hippokampos,72.5,1/18/2014 20:11
+Balas Felix,Frank's Fuel,52.66,1/18/2014 18:39
+Barranco Ingrid,Katerina’s Café,96.36,1/18/2014 14:03
+Baza Isak,Ouzeri Elian,57.63,1/18/2014 19:21
+Bergen Linnea,Abila Zacharo,18.45,1/18/2014 13:25
+Bergen Linnea,Roberts and Sons,62.47,1/18/2014 15:41
+Bodrogi Loreto,Katerina’s Café,9.72,1/18/2014 20:13
+Calixto Nils,Katerina’s Café,8.14,1/18/2014 19:30
+Calzas Axel,Frydos Autosupply n' More,103.55,1/18/2014 15:51
+Campo-Corrente Ada,Hippokampos,63.21,1/18/2014 19:42
+Cazar Gustav,Kalami Kafenion,24.14,1/18/2014 13:58
+Dedos Lidelse,Guy's Gyros,27.4,1/18/2014 13:28
+Dedos Lidelse,Katerina’s Café,22.74,1/18/2014 19:31
+Ferro Inga,Katerina’s Café,37.21,1/18/2014 20:15
+Flecha Sven,Ahaggo Museum,120.2,1/18/2014 14:55
+Frente Birgitta,Guy's Gyros,47.89,1/18/2014 14:05
+Frente Birgitta,Roberts and Sons,266.69,1/18/2014 19:20
+Frente Vira,Albert's Fine Clothing,35.66,1/18/2014 15:20
+Frente Vira,Hippokampos,27.21,1/18/2014 19:35
+Frente Vira,Ouzeri Elian,33.57,1/18/2014 13:18
+Lagos Varja,Guy's Gyros,39.68,1/18/2014 19:08
+Lagos Varja,Katerina’s Café,19.3,1/18/2014 13:34
+Mies Minke,Katerina’s Café,33.41,1/18/2014 19:32
+Onda Marin,Katerina’s Café,33.63,1/18/2014 19:54
+Ovan Bertrand,General Grocer,177.6,1/18/2014 15:31
+Ovan Bertrand,Katerina’s Café,76.1,1/18/2014 19:53
+Resumir Felix,General Grocer,108.49,1/18/2014 20:07
+Resumir Felix,Kalami Kafenion,53.36,1/18/2014 14:17
+Sanjorge Jr. Sten,Chostus Hotel,600.0,1/18/2014 12:03
+Strum Orhan,Abila Zacharo,111.93,1/18/2014 13:04
+Strum Orhan,Albert's Fine Clothing,226.49,1/18/2014 18:59
+Strum Orhan,Shoppers' Delight,258.33,1/18/2014 15:40
+Vann Edvard,Abila Zacharo,21.29,1/18/2014 19:36
+Vann Isia,Katerina’s Café,19.31,1/18/2014 20:09
+Vasco-Pais Willem,Frydos Autosupply n' More,120.67,1/18/2014 15:53
+Vasco-Pais Willem,Hippokampos,53.21,1/18/2014 19:36
+Vasco-Pais Willem,Kalami Kafenion,38.91,1/18/2014 13:28
+Azada Lars,Hippokampos,78.96,1/19/2014 20:16
+Balas Felix,Hippokampos,101.25,1/19/2014 19:43
+Barranco Ingrid,Desafio Golf Course,145.72,1/19/2014 12:57
+Baza Isak,Ouzeri Elian,67.98,1/19/2014 19:48
+Bodrogi Loreto,Guy's Gyros,20.94,1/19/2014 20:25
+Borrasca Isande,Albert's Fine Clothing,254.29,1/19/2014 20:02
+Calixto Nils,Katerina’s Café,34.03,1/19/2014 19:53
+Campo-Corrente Ada,Desafio Golf Course,190.91,1/19/2014 13:51
+Campo-Corrente Ada,Hippokampos,48.23,1/19/2014 19:43
+Cocinaro Hideki,Guy's Gyros,36.87,1/19/2014 20:14
+Dedos Lidelse,Katerina’s Café,33.79,1/19/2014 20:05
+Flecha Sven,Guy's Gyros,65.21,1/19/2014 19:45
+Flecha Sven,Ouzeri Elian,45.32,1/19/2014 14:08
+Frente Birgitta,Katerina’s Café,38.9,1/19/2014 20:22
+Frente Vira,Gelatogalore,22.36,1/19/2014 13:09
+Frente Vira,General Grocer,70.22,1/19/2014 15:03
+Frente Vira,Hippokampos,46.32,1/19/2014 19:44
+Lagos Varja,Frydos Autosupply n' More,56.09,1/19/2014 15:26
+Lagos Varja,Guy's Gyros,58.35,1/19/2014 19:45
+Lagos Varja,Ouzeri Elian,23.65,1/19/2014 13:27
+Mies Minke,Guy's Gyros,31.94,1/19/2014 20:30
+Mies Minke,Katerina’s Café,26.76,1/19/2014 13:53
+Nubarron Adra,Albert's Fine Clothing,274.66,1/19/2014 15:39
+Nubarron Adra,Shoppers' Delight,30.39,1/19/2014 19:56
+Orilla Elsa,Ahaggo Museum,26.91,1/19/2014 13:26
+Osvaldo Hennie,Frydos Autosupply n' More,98.04,1/19/2014 19:45
+Resumir Felix,Abila Zacharo,47.8,1/19/2014 14:20
+Resumir Felix,Guy's Gyros,39.6,1/19/2014 20:51
+Sanjorge Jr. Sten,Desafio Golf Course,148.22,1/19/2014 15:46
+Sanjorge Jr. Sten,Guy's Gyros,25.79,1/19/2014 19:45
+Strum Orhan,Desafio Golf Course,150.07,1/19/2014 12:41
+Tempestad Brand,Guy's Gyros,37.48,1/19/2014 20:16
+Vann Edvard,Frydos Autosupply n' More,209.76,1/19/2014 15:53
+Vann Edvard,Katerina’s Café,70.22,1/19/2014 13:23
+Vann Isia,Guy's Gyros,18.08,1/19/2014 20:00
+Vann Isia,Katerina’s Café,35.01,1/19/2014 13:00
+Vasco-Pais Willem,Desafio Golf Course,110.02,1/19/2014 15:15
+Vasco-Pais Willem,Hippokampos,63.17,1/19/2014 19:56
+Awelon Varro,Coffee Shack,11.51,1/6/2014 12:00
+Pantanal Rachel,Hallowed Grounds,12.93,1/6/2014 7:54
+Forluniau Carla,Abila Zacharo,26.93,1/6/2014 13:18
+Lagos Linda,Katerina’s Café,38.65,1/6/2014 18:56
+Mies Haber Ruscella,Frydos Autosupply n' More,89.3,1/6/2014 20:47
+Pantanal Rachel,Hallowed Grounds,8.42,1/7/2014 8:01
+Forluniau Carla,Coffee Cameleon,12.44,1/7/2014 8:01
+Lais Cornelia,Ouzeri Elian,17.71,1/7/2014 13:42
+Coginian Dante,Katerina’s Café,25.02,1/7/2014 20:13
+Lais Cornelia,Brew've Been Served,14.88,1/8/2014 7:57
+Lais Cornelia,Ouzeri Elian,24.92,1/8/2014 13:47
+Awelon Varro,Hippokampos,16.75,1/8/2014 20:28
+Arpa Emile,Hallowed Grounds,15.24,1/9/2014 7:46
+Coginian Dante,Brew've Been Served,18.25,1/9/2014 7:56
+Lais Cornelia,Hippokampos,19.22,1/9/2014 13:41
+Ribera Anda,Katerina’s Café,30.97,1/9/2014 20:09
+Mies Haber Ruscella,Katerina’s Café,13.78,1/9/2014 20:27
+Bramar Mat,Brew've Been Served,4.88,1/10/2014 7:47
+Lais Cornelia,Brew've Been Served,5.91,1/10/2014 7:55
+Ribera Anda,Hippokampos,22.23,1/11/2014 13:37
+Pantanal Rachel,Hallowed Grounds,15.96,1/13/2014 8:06
+Pantanal Rachel,Gelatogalore,37.17,1/13/2014 14:01
+Arpa Emile,Guy's Gyros,36.87,1/13/2014 14:33
+Mies Haber Ruscella,Katerina’s Café,33.57,1/13/2014 20:44
+Arpa Emile,Gelatogalore,22.03,1/14/2014 14:03
+Coginian Dante,Katerina’s Café,26.61,1/14/2014 20:42
+Pantanal Rachel,Ouzeri Elian,20.95,1/14/2014 20:46
+Ribera Anda,Katerina’s Café,28.05,1/14/2014 13:43
+Ribera Anda,Hallowed Grounds,18.69,1/15/2014 7:51
+Forluniau Carla,Coffee Cameleon,16.31,1/15/2014 8:05
+Forluniau Carla,Katerina’s Café,28.56,1/15/2014 20:29
+Pantanal Rachel,Gelatogalore,22.36,1/15/2014 13:59
+Bramar Mat,Abila Zacharo,26.82,1/15/2014 14:04
+Lais Cornelia,Guy's Gyros,24.91,1/15/2014 20:06
+Coginian Dante,Katerina’s Café,21.61,1/15/2014 20:26
+Lais Cornelia,Brew've Been Served,5.05,1/16/2014 7:33
+Bramar Mat,Brew've Been Served,3.84,1/16/2014 7:54
+Forluniau Carla,Coffee Cameleon,3.14,1/16/2014 8:03
+Pantanal Rachel,Ouzeri Elian,31.21,1/16/2014 20:25
+Lagos Linda,Katerina’s Café,13.68,1/16/2014 18:49
+Mies Haber Ruscella,Katerina’s Café,29.3,1/16/2014 20:05
+Lais Cornelia,Abila Zacharo,11.95,1/17/2014 14:06
+Bramar Mat,Katerina’s Café,30.72,1/17/2014 14:15
+Arpa Emile,Katerina’s Café,14.93,1/17/2014 19:57
+Pantanal Rachel,Gelatogalore,24.38,1/18/2014 13:58
+Bergen Linnea,Coffee Cameleon,8.73,1/6/2014 7:42
+Cocinaro Hideki,Abila Zacharo,18.11,1/6/2014 14:05
+Cocinaro Hideki,Guy's Gyros,15.29,1/6/2014 20:28
+Cocinaro Hideki,Hallowed Grounds,12.22,1/6/2014 7:34
+Frente Vira,Hippokampos,25.5,1/6/2014 20:29
+Fusil Stenig,Guy's Gyros,37.82,1/6/2014 20:15
+Lagos Varja,Kalami Kafenion,30.1,1/6/2014 13:19
+Onda Marin,Frydos Autosupply n' More,274.98,1/6/2014 21:32
+Orilla Elsa,Frydos Autosupply n' More,253.87,1/6/2014 19:50
+Osvaldo Hennie,Brew've Been Served,12.83,1/6/2014 7:52
+Strum Orhan,Jack's Magical Beans,7.84,1/6/2014 12:00
+Vann Isia,Abila Zacharo,12.05,1/6/2014 13:35
+Vasco-Pais Willem,Guy's Gyros,19.67,1/6/2014 13:46
+Alcazar Lucas,Hallowed Grounds,4.44,1/7/2014 7:46
+Azada Lars,Bean There Done That,11.25,1/7/2014 12:00
+Barranco Ingrid,Abila Zacharo,12.72,1/7/2014 13:33
+Barranco Ingrid,Hippokampos,15.85,1/7/2014 21:21
+Baza Isak,Abila Zacharo,22.25,1/7/2014 13:25
+Baza Isak,Jack's Magical Beans,3.68,1/7/2014 12:00
+Bergen Linnea,Coffee Cameleon,7.66,1/7/2014 7:49
+Bodrogi Loreto,Brewed Awakenings,4.84,1/7/2014 12:00
+Bodrogi Loreto,Guy's Gyros,22.33,1/7/2014 20:14
+Bodrogi Loreto,Hippokampos,31.69,1/7/2014 13:53
+Borrasca Isande,Brewed Awakenings,11.59,1/7/2014 12:00
+Calixto Nils,Katerina’s Café,14.75,1/7/2014 20:13
+Calzas Axel,Bean There Done That,13.89,1/7/2014 12:00
+Cazar Gustav,Hippokampos,10.19,1/7/2014 20:34
+Dedos Lidelse,Gelatogalore,31.77,1/7/2014 13:52
+Ferro Inga,Abila Zacharo,25.9,1/7/2014 13:55
+Flecha Sven,Guy's Gyros,22.25,1/7/2014 20:10
+Frente Vira,Albert's Fine Clothing,228.36,1/7/2014 20:04
+Frente Vira,Bean There Done That,6.25,1/7/2014 12:00
+Frente Vira,Ouzeri Elian,24.84,1/7/2014 13:34
+Lagos Varja,Brew've Been Served,9.06,1/7/2014 7:55
+Lagos Varja,Katerina’s Café,31.41,1/7/2014 13:41
+Morlun Valeria,Carlyle Chemical Inc.,3827.2,1/7/2014 14:34
+Morlun Valeria,Katerina’s Café,19.07,1/7/2014 13:08
+Morluniau Cecilia,Stewart and Sons Fabrication,1783.33,1/7/2014 11:31
+Orilla Kare,Hippokampos,16.11,1/7/2014 14:00
+Ovan Bertrand,Gelatogalore,8.97,1/7/2014 13:54
+Resumir Felix,Brew've Been Served,7.74,1/7/2014 8:18
+Resumir Felix,Frydos Autosupply n' More,272.73,1/7/2014 20:20
+Resumir Felix,Ouzeri Elian,19.51,1/7/2014 14:09
+Tempestad Brand,Brew've Been Served,18.53,1/7/2014 7:56
+Vann Isia,Guy's Gyros,9.76,1/7/2014 20:19
+Vasco-Pais Willem,Jack's Magical Beans,9.84,1/7/2014 12:00
+Alcazar Lucas,Ouzeri Elian,10.81,1/8/2014 21:16
+Bodrogi Loreto,Brew've Been Served,12.92,1/8/2014 7:48
+Bodrogi Loreto,Guy's Gyros,17.9,1/8/2014 13:40
+Calixto Nils,Hallowed Grounds,19.92,1/8/2014 7:55
+Cazar Gustav,Bean There Done That,14.96,1/8/2014 12:00
+Ferro Inga,Gelatogalore,36.72,1/8/2014 13:48
+Frente Vira,Katerina’s Café,37.04,1/8/2014 13:42
+Lagos Varja,Brew've Been Served,11.87,1/8/2014 7:55
+Lagos Varja,Gelatogalore,39.75,1/8/2014 13:39
+Lagos Varja,Guy's Gyros,19.08,1/8/2014 20:15
+Osvaldo Hennie,Brew've Been Served,13.68,1/8/2014 7:50
+Ovan Bertrand,Katerina’s Café,32.83,1/8/2014 20:42
+Strum Orhan,Ouzeri Elian,29.73,1/8/2014 13:21
+Vann Edvard,Brew've Been Served,12.3,1/8/2014 8:00
+Vasco-Pais Willem,Hippokampos,18.99,1/8/2014 21:32
+Vasco-Pais Willem,Jack's Magical Beans,11.25,1/8/2014 12:00
+Alcazar Lucas,Abila Zacharo,29.41,1/9/2014 13:41
+Alcazar Lucas,Hallowed Grounds,14.45,1/9/2014 7:50
+Azada Lars,Guy's Gyros,14.91,1/9/2014 13:43
+Borrasca Isande,Gelatogalore,16.74,1/9/2014 13:23
+Cazar Gustav,Frydos Autosupply n' More,60.65,1/9/2014 20:21
+Cocinaro Hideki,Hallowed Grounds,16.77,1/9/2014 7:42
+Frente Vira,Kalami Kafenion,30.76,1/9/2014 13:27
+Hawelon Benito,Nationwide Refinery,1420.39,1/9/2014 12:49
+Lagos Varja,Brew've Been Served,12.12,1/9/2014 8:01
+Mies Henk,Abila Airport,182.93,1/9/2014 15:50
+Mies Minke,Hippokampos,25.7,1/9/2014 13:56
+Osvaldo Hennie,Hallowed Grounds,10.25,1/9/2014 7:57
+Tempestad Brand,Brew've Been Served,10.71,1/9/2014 7:36
+Vann Isia,Brew've Been Served,14.85,1/9/2014 7:48
+Vann Isia,Guy's Gyros,25.4,1/9/2014 19:41
+Vasco-Pais Willem,Jack's Magical Beans,17.43,1/9/2014 12:00
+Azada Lars,Hippokampos,28.22,1/10/2014 19:46
+Barranco Ingrid,Hippokampos,10.48,1/10/2014 20:09
+Baza Isak,Abila Zacharo,33.33,1/10/2014 13:29
+Campo-Corrente Ada,Hippokampos,30.63,1/10/2014 20:50
+Cocinaro Hideki,Katerina’s Café,37.62,1/10/2014 14:08
+Flecha Sven,Brew've Been Served,3.44,1/10/2014 7:54
+Flecha Sven,Frydos Autosupply n' More,217.08,1/10/2014 20:15
+Hawelon Claudio,Nationwide Refinery,2262.73,1/10/2014 10:40
+Tempestad Brand,Chostus Hotel,113.25,1/10/2014 13:08
+Vann Edvard,Brew've Been Served,17.25,1/10/2014 7:56
+Vann Edvard,Hippokampos,39.26,1/10/2014 13:20
+Vann Isia,Brew've Been Served,10.72,1/10/2014 7:56
+Vasco-Pais Willem,Hippokampos,39.97,1/10/2014 22:21
+Barranco Ingrid,Hippokampos,20.87,1/11/2014 19:26
+Dedos Lidelse,Katerina’s Café,17.6,1/11/2014 20:46
+Fusil Stenig,Guy's Gyros,55.69,1/11/2014 19:34
+Mies Minke,Hippokampos,23.38,1/11/2014 13:36
+Ovan Bertrand,Frydos Autosupply n' More,54.98,1/11/2014 20:15
+Tempestad Brand,Ahaggo Museum,32.14,1/11/2014 17:16
+Alcazar Lucas,Hippokampos,31.99,1/12/2014 14:06
+Barranco Ingrid,Desafio Golf Course,160.77,1/12/2014 14:13
+Borrasca Isande,Hippokampos,29.41,1/12/2014 20:15
+Borrasca Isande,Kalami Kafenion,26.04,1/12/2014 13:52
+Dedos Lidelse,Katerina’s Café,27.09,1/12/2014 20:48
+Ovan Bertrand,Katerina’s Café,34.1,1/12/2014 20:11
+Balas Felix,Bean There Done That,18.02,1/13/2014 12:00
+Bodrogi Loreto,Abila Zacharo,36.32,1/13/2014 13:48
+Borrasca Isande,Brewed Awakenings,16.4,1/13/2014 12:00
+Calixto Nils,Katerina’s Café,37.88,1/13/2014 20:51
+Calixto Nils,Katerina’s Café,15.82,1/13/2014 20:51
+Campo-Corrente Ada,Gelatogalore,26.45,1/13/2014 13:19
+Cocinaro Hideki,Guy's Gyros,33.48,1/13/2014 20:59
+Flecha Sven,Hippokampos,31.97,1/13/2014 13:50
+Fusil Stenig,Abila Zacharo,39.95,1/13/2014 13:20
+Fusil Stenig,Brew've Been Served,4.18,1/13/2014 7:43
+Hafon Albina,Kronos Pipe and Irrigation,2852.74,1/13/2014 8:58
+Herrero Kanon,Guy's Gyros,28.57,1/13/2014 20:42
+Lagos Varja,Brew've Been Served,18.23,1/13/2014 7:57
+Onda Marin,Katerina’s Café,11.36,1/13/2014 20:33
+Ovan Bertrand,Katerina’s Café,29.83,1/13/2014 19:50
+Strum Orhan,Hippokampos,39.63,1/13/2014 21:27
+Vann Edvard,Ouzeri Elian,35.03,1/13/2014 13:37
+Vann Isia,Hippokampos,39.9,1/13/2014 13:34
+Calixto Nils,Hippokampos,18.81,1/14/2014 13:42
+Calixto Nils,Katerina’s Café,31.8,1/14/2014 20:09
+Calzas Axel,Gelatogalore,10.98,1/14/2014 13:49
+Campo-Corrente Ada,Hippokampos,23.56,1/14/2014 20:48
+Cazar Gustav,Bean There Done That,7.82,1/14/2014 12:00
+Cocinaro Hideki,Guy's Gyros,34.26,1/14/2014 19:59
+Cocinaro Hideki,Ouzeri Elian,22.3,1/14/2014 13:51
+Frente Birgitta,Hallowed Grounds,10.21,1/14/2014 7:54
+Hawelon Benito,Nationwide Refinery,1301.01,1/14/2014 13:00
+Hawelon Benito,Stewart and Sons Fabrication,540.19,1/14/2014 11:01
+Lagos Varja,Ouzeri Elian,27.32,1/14/2014 13:40
+Mies Henk,Abila Airport,4898.39,1/14/2014 15:32
+Morlun Valeria,Carlyle Chemical Inc.,794.88,1/14/2014 16:16
+Orilla Elsa,Jack's Magical Beans,3.36,1/14/2014 12:00
+Osvaldo Hennie,Roberts and Sons,203.81,1/14/2014 21:14
+Ovan Bertrand,Katerina’s Café,15.46,1/14/2014 20:17
+Scozzese Dylan,Abila Airport,3339.21,1/14/2014 13:06
+Strum Orhan,Jack's Magical Beans,15.7,1/14/2014 12:00
+Balas Felix,Abila Zacharo,8.83,1/15/2014 13:45
+Bodrogi Loreto,Guy's Gyros,21.43,1/15/2014 20:59
+Borrasca Isande,Brewed Awakenings,11.62,1/15/2014 12:00
+Borrasca Isande,Hippokampos,22.61,1/15/2014 13:41
+Calzas Axel,Bean There Done That,13.13,1/15/2014 12:00
+Campo-Corrente Ada,Shoppers' Delight,102.0,1/15/2014 20:10
+Ferro Inga,General Grocer,106.2,1/15/2014 19:56
+Frente Vira,Hippokampos,21.14,1/15/2014 21:08
+Frente Vira,Kalami Kafenion,27.86,1/15/2014 13:45
+Lagos Varja,Guy's Gyros,18.04,1/15/2014 19:53
+Mies Minke,Brew've Been Served,9.7,1/15/2014 8:01
+Mies Minke,Hippokampos,38.23,1/15/2014 14:02
+Morlun Adan,Stewart and Sons Fabrication,4485.38,1/15/2014 11:18
+Strum Orhan,Jack's Magical Beans,4.06,1/15/2014 12:00
+Tempestad Brand,Hippokampos,38.89,1/15/2014 13:12
+Vann Isia,Guy's Gyros,29.34,1/15/2014 20:02
+Balas Felix,Kalami Kafenion,31.38,1/16/2014 13:48
+Calzas Axel,Shoppers' Delight,100.69,1/16/2014 20:45
+Frente Birgitta,Hallowed Grounds,4.98,1/16/2014 7:51
+Frente Vira,Hippokampos,34.0,1/16/2014 20:42
+Hawelon Benito,Stewart and Sons Fabrication,860.3,1/16/2014 11:06
+Mies Henk,Abila Airport,3032.97,1/16/2014 12:40
+Osvaldo Hennie,Hallowed Grounds,12.61,1/16/2014 8:03
+Osvaldo Hennie,Katerina’s Café,10.84,1/16/2014 20:28
+Ovan Bertrand,Coffee Cameleon,7.19,1/16/2014 7:38
+Ovan Bertrand,Katerina’s Café,14.34,1/16/2014 19:47
+Tempestad Brand,Guy's Gyros,31.31,1/16/2014 20:14
+Borrasca Isande,Brewed Awakenings,8.69,1/17/2014 12:00
+Borrasca Isande,Chostus Hotel,119.62,1/17/2014 13:54
+Calixto Nils,Katerina’s Café,32.13,1/17/2014 20:24
+Calzas Axel,Hippokampos,10.14,1/17/2014 13:58
+Campo-Corrente Ada,Abila Zacharo,8.78,1/17/2014 13:11
+Cocinaro Hideki,General Grocer,78.03,1/17/2014 20:41
+Flecha Sven,Brew've Been Served,12.56,1/17/2014 7:29
+Frente Birgitta,Hippokampos,28.35,1/17/2014 13:52
+Herrero Kanon,Brew've Been Served,11.04,1/17/2014 8:23
+Herrero Kanon,Shoppers' Delight,269.33,1/17/2014 20:21
+Mies Minke,Guy's Gyros,15.4,1/17/2014 21:07
+Orilla Elsa,Ouzeri Elian,10.21,1/17/2014 20:07
+Orilla Kare,Hallowed Grounds,18.22,1/17/2014 8:03
+Vann Isia,Abila Zacharo,39.67,1/17/2014 13:45
+Vasco-Pais Willem,Kalami Kafenion,25.32,1/17/2014 13:37
+Alcazar Lucas,Ouzeri Elian,21.56,1/18/2014 19:26
+Balas Felix,Kalami Kafenion,11.14,1/18/2014 19:39
+Borrasca Isande,Abila Zacharo,73.25,1/18/2014 13:05
+Calzas Axel,Hippokampos,20.11,1/18/2014 20:23
+Dedos Lidelse,Frydos Autosupply n' More,281.54,1/18/2014 15:32
+Flecha Sven,Guy's Gyros,31.48,1/18/2014 13:27
+Ovan Bertrand,Ouzeri Elian,53.36,1/18/2014 13:34
+Fusil Stenig,Guy's Gyros,40.36,1/19/2014 19:49
+Ovan Bertrand,Katerina’s Café,12.25,1/19/2014 18:54
+Ribera Anda,Kalami Kafenion,18.18,2014-01-08 00:00:00
+Ribera Anda,Hallowed Grounds,16.72,2014-01-09 00:00:00
+Forluniau Carla,Coffee Cameleon,4.88,2014-01-09 00:00:00
+Mies Haber Ruscella,Kronos Mart,147.3,2014-01-12 00:00:00
+Mies Haber Ruscella,Hippokampos,14.04,2014-01-13 00:00:00
+Forluniau Carla,Katerina’s Café,11.26,2014-01-14 00:00:00
+Awelon Varro,Coffee Shack,18.17,2014-01-15 00:00:00
+Ribera Anda,Katerina’s Café,36.8,2014-01-15 00:00:00
+Mies Haber Ruscella,Katerina’s Café,38.81,2014-01-15 00:00:00
+Arpa Emile,Guy's Gyros,36.48,2014-01-16 00:00:00
+Ribera Anda,Hippokampos,23.54,2014-01-17 00:00:00
+Forluniau Carla,Katerina’s Café,21.16,2014-01-17 00:00:00
+Hafon Albina,Ouzeri Elian,16.84,2014-01-06 00:00:00
+Orilla Elsa,Abila Zacharo,50.14,2014-01-06 00:00:00
+Tempestad Brand,Ouzeri Elian,34.71,2014-01-06 00:00:00
+Vann Isia,Brew've Been Served,10.68,2014-01-06 00:00:00
+Alcazar Lucas,Ouzeri Elian,25.27,2014-01-07 00:00:00
+Borrasca Isande,Guy's Gyros,34.09,2014-01-07 00:00:00
+Flecha Sven,Kalami Kafenion,25.9,2014-01-07 00:00:00
+Orilla Elsa,Kalami Kafenion,45.05,2014-01-07 00:00:00
+Scozzese Dylan,Abila Airport,1641.96,2014-01-07 00:00:00
+Vann Isia,Brewed Awakenings,12.59,2014-01-07 00:00:00
+Barranco Ingrid,Ouzeri Elian,32.61,2014-01-08 00:00:00
+Bergen Linnea,Katerina’s Café,19.12,2014-01-08 00:00:00
+Calzas Axel,Hippokampos,12.62,2014-01-08 00:00:00
+Frente Vira,Bean There Done That,16.18,2014-01-08 00:00:00
+Morlun Valeria,Nationwide Refinery,4367.43,2014-01-08 00:00:00
+Orilla Elsa,Gelatogalore,50.36,2014-01-08 00:00:00
+Orilla Elsa,Ouzeri Elian,62.2,2014-01-08 00:00:00
+Barranco Ingrid,Kronos Mart,203.91,2014-01-09 00:00:00
+Dedos Lidelse,Hallowed Grounds,17.84,2014-01-09 00:00:00
+Frente Birgitta,Katerina’s Café,26.0,2014-01-09 00:00:00
+Frente Vira,Bean There Done That,4.05,2014-01-09 00:00:00
+Fusil Stenig,Brew've Been Served,15.82,2014-01-09 00:00:00
+Orilla Elsa,Abila Zacharo,48.39,2014-01-09 00:00:00
+Alcazar Lucas,Hallowed Grounds,6.87,2014-01-10 00:00:00
+Calixto Nils,Ouzeri Elian,25.98,2014-01-10 00:00:00
+Nant Irene,Carlyle Chemical Inc.,3489.36,2014-01-10 00:00:00
+Ovan Bertrand,Gelatogalore,39.4,2014-01-10 00:00:00
+Bergen Linnea,Katerina’s Café,29.17,2014-01-11 00:00:00
+Orilla Elsa,Kalami Kafenion,50.2,2014-01-11 00:00:00
+Orilla Kare,Katerina’s Café,27.46,2014-01-11 00:00:00
+Fusil Stenig,Kronos Mart,159.06,2014-01-12 00:00:00
+Lagos Varja,Guy's Gyros,42.78,2014-01-12 00:00:00
+Orilla Elsa,Gelatogalore,36.2,2014-01-12 00:00:00
+Alcazar Lucas,Hallowed Grounds,14.11,2014-01-13 00:00:00
+Barranco Ingrid,Abila Zacharo,36.14,2014-01-13 00:00:00
+Bodrogi Loreto,Brew've Been Served,12.8,2014-01-13 00:00:00
+Frente Vira,Abila Zacharo,23.03,2014-01-13 00:00:00
+Mies Minke,Frydos Autosupply n' More,87.57,2014-01-13 00:00:00
+Morluniau Cecilia,Stewart and Sons Fabrication,4071.95,2014-01-13 00:00:00
+Orilla Elsa,Abila Zacharo,64.5,2014-01-13 00:00:00
+Alcazar Lucas,Kalami Kafenion,16.84,2014-01-14 00:00:00
+Alcazar Lucas,Ouzeri Elian,15.94,2014-01-14 00:00:00
+Baza Isak,Jack's Magical Beans,13.32,2014-01-14 00:00:00
+Calzas Axel,Hippokampos,10.71,2014-01-14 00:00:00
+Hawelon Benito,Abila Airport,2369.56,2014-01-14 00:00:00
+Mies Minke,Brewed Awakenings,12.74,2014-01-14 00:00:00
+Orilla Elsa,Guy's Gyros,50.4,2014-01-14 00:00:00
+Vasco-Pais Willem,Jack's Magical Beans,18.08,2014-01-14 00:00:00
+Alcazar Lucas,Hallowed Grounds,15.86,2014-01-15 00:00:00
+Alcazar Lucas,Ouzeri Elian,24.81,2014-01-15 00:00:00
+Alcazar Lucas,Ouzeri Elian,32.95,2014-01-15 00:00:00
+Barranco Ingrid,Brewed Awakenings,15.75,2014-01-15 00:00:00
+Cocinaro Hideki,Kronos Mart,258.83,2014-01-15 00:00:00
+Orilla Elsa,Katerina’s Café,55.6,2014-01-15 00:00:00
+Vann Edvard,General Grocer,137.65,2014-01-15 00:00:00
+Vann Edvard,Guy's Gyros,19.8,2014-01-15 00:00:00
+Vasco-Pais Willem,General Grocer,83.11,2014-01-15 00:00:00
+Azada Lars,Kronos Mart,286.24,2014-01-16 00:00:00
+Balas Felix,Hippokampos,10.55,2014-01-16 00:00:00
+Bergen Linnea,Coffee Cameleon,5.2,2014-01-16 00:00:00
+Bergen Linnea,Katerina’s Café,36.32,2014-01-16 00:00:00
+Frente Vira,Kalami Kafenion,26.32,2014-01-16 00:00:00
+Orilla Elsa,Abila Zacharo,64.71,2014-01-16 00:00:00
+Campo-Corrente Ada,Hippokampos,14.93,2014-01-17 00:00:00
+Frente Vira,Abila Zacharo,21.21,2014-01-17 00:00:00
+Nubarron Adra,Coffee Cameleon,14.57,2014-01-17 00:00:00
+Orilla Elsa,Hippokampos,52.31,2014-01-17 00:00:00
+Tempestad Brand,Brew've Been Served,12.3,2014-01-17 00:00:00
+Alcazar Lucas,Kronos Mart,194.51,2014-01-18 00:00:00
+Bodrogi Loreto,Kalami Kafenion,10.48,2014-01-18 00:00:00
+Borrasca Isande,Roberts and Sons,239.65,2014-01-18 00:00:00
+Campo-Corrente Ada,Kalami Kafenion,42.36,2014-01-18 00:00:00
+Campo-Corrente Ada,Kronos Mart,150.36,2014-01-18 00:00:00
+Lagos Varja,Kronos Mart,87.66,2014-01-18 00:00:00
+Orilla Elsa,Ahaggo Museum,55.55,2014-01-18 00:00:00
+Orilla Elsa,Hippokampos,49.21,2014-01-18 00:00:00
+Sanjorge Jr. Sten,Katerina’s Café,14.22,2014-01-18 00:00:00
+Calzas Axel,Hippokampos,11.56,2014-01-19 00:00:00
+Orilla Elsa,Guy's Gyros,23.21,2014-01-19 00:00:00
+Strum Orhan,Hippokampos,45.32,2014-01-19 00:00:00

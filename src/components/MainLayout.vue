@@ -8,10 +8,8 @@
           <ButtonsDay @get-day="getSelectedDay" ></ButtonsDay>
           <h5> Daily employees timeline</h5>
           <EventTimeline :dataCC="dataCC"
-                         :dataEmployees="dataEmployees"
                          :dataLC="dataLC"
                          :dataPaths="dataPaths"
-                         :selectedDay="selectedDay"
           @update-time="updateTime"></EventTimeline>
 
         </b-col>
@@ -53,7 +51,6 @@ let dGPSDay;
 let dLCDay;
 let dPathsDay;
 let dGPSPathID;
-
 //let dSubject;
 
 export default {
@@ -76,14 +73,17 @@ export default {
     }
   },
   methods: {
-    updateTime(min) {
-      console.log('hello there', min)
+    updateTime(dates) {
+      let min = new Date(dates[0]);
+      let max = new Date(dates[1]);
+      console.log('time range update', min, max)
+      //this.dataGPS = dGPSDay.filterRange([min,max]).top(Infinity);
+
     },
     getSelectedDay(day) {
       console.log('Selected day:', day);
       this.selectedDay = day;
       //console.log('app',dCCDay.filter(this.selectedDay).top(Infinity));
-
       this.dataCC = dCCDay.filter(this.selectedDay).top(Infinity);
       this.dataGPS = dGPSDay.filter(this.selectedDay).top(Infinity);
       this.dataPaths = dPathsDay.filter(this.selectedDay).top(Infinity);
@@ -99,12 +99,6 @@ export default {
       dEmpID.filter(id);
       let personCarID = dEmpID.top(Infinity)[0]['carID'];
       this.getCarID(personCarID);
-    },
-    getUTCTime(timestamp) {
-      var date = new Date(timestamp)
-      var utcdate = Date.UTC(date.getFullYear(),date.getMonth(),date.getDay(), date.getHours(),date.getMinutes(), date.getSeconds());
-      console.log(utcdate, date) ;
-      return utcdate
     },
   },
   mounted() {
@@ -129,7 +123,7 @@ export default {
           this.dataEmployees = employee //dEmpID.top(Infinity);
         });
 
-    d3.csv('/data/loyalty-data-fullname.csv')
+    d3.csv('/data/loyalty-fullname-time.csv')
         .then((rows) => {
           const loyalty_cards = rows
               .map((row) => {
@@ -141,6 +135,7 @@ export default {
                 };
               });
           let cfLC = crossfilter(loyalty_cards);
+          // console.log(loyalty_cards)
           //dLocationLC = cfLC.dimension((d) => {return d.location;});
           // console.log(dLocationLC.group().all());
           dLCDay = cfLC.dimension(d => { return d.timestamp.getDate()});
@@ -182,17 +177,16 @@ export default {
 
           let cfGPS = crossfilter(gps);
           dGPSCarID = cfGPS.dimension((d) => d.carID);
-          dGPSDay = cfGPS.dimension((d) => d.timestamp.getDate());
+          dGPSDay = cfGPS.dimension((d) => d.timestamp);
           dGPSPathID = cfGPS.dimension((d) => d.pathID);
           //var dGPSTime = cfGPS.dimension((d) => d.timestamp.getTime());
           //console.log(dGPSDay.top(Infinity));
           //console.log(dGPSTime.top(Infinity));
           dGPSPathID.filterAll();
-          dGPSDay.filter(this.selectedDay).top(Infinity);
+          //dGPSDay.filter(this.selectedDay).top(Infinity);
           //console.log(dGPSCarID.filter('35').top(Infinity));
           //console.log(dGPSPathID.group().top(Infinity));
-
-          this.dataGPS = dGPSDay.filter(this.selectedDay).top(Infinity);
+          this.dataGPS = dGPSDay.top(Infinity);
         });
 
     d3.csv('/data/paths_united.csv')
