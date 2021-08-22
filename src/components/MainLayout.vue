@@ -5,19 +5,22 @@
       <b-row id="firstRow" >
         <b-col cols="7" id="userData">
           <h5> Select a day </h5>
-          <ButtonsDay @get-day="getSelectedDay" ></ButtonsDay>
+          <ButtonsDay @get-day="getSelectedDay"/>
           <h5> Daily employees timeline</h5>
           <EventTimeline :dataCC="dataCC"
                          :dataLC="dataLC"
                          :dataPaths="dataPaths"
-          @update-time="updateTime"></EventTimeline>
+                         @update-time="updateTime"/>
 
         </b-col>
         <b-col cols="5" class="right_viz">
           <b-row>
             <div class="treemap">
               <h5> TreeMap </h5>
-              <TreeMap></TreeMap>
+              <TreeMap
+                  @get-employee="filterEmployee"
+                  @get-title="filterTitle"
+                  @get-type="filterType"/>
             </div>
           </b-row>
           <b-row>
@@ -44,14 +47,17 @@ const d3 = require('d3');
 import crossfilter from 'crossfilter2';
 
 
-let dCCDay;
-let dEmpID;
-let dGPSCarID;
-let dGPSDay;
-let dLCDay;
-let dPathsDay;
-let dGPSPathID;
-//let dSubject;
+let byDateCC;
+let byDateLC;
+let byDatePaths;
+
+let byEmpGPS1;
+let byDateGPS1;
+let byDateGPS2;
+
+let byEmpType;
+let byEmpTitle;
+let byEmpName;
 
 export default {
   name: "MainLayout",
@@ -69,36 +75,65 @@ export default {
       dataGPS: [],
       dataPaths: [],
       locations: [],
-      selectedDay: '6',
+      selectedDay: 6,
     }
   },
+  computed: {
+    rangeDate() {
+      var init_time = new Date(2014,0,this.selectedDay,0, 0, 0, 0);
+      var end_time = new Date(2014,0,this.selectedDay,23, 59, 59, 59);
+
+      console.log(this.selectedDay,init_time, end_time)
+      return [init_time, end_time]
+    },
+
+  },
   methods: {
+    filterEmployee(name){
+      console.log('filter by',name);
+      byEmpGPS1.filter(name);
+      byEmpName.filter(name).top(Infinity);
+      this.dataGPS = byEmpGPS1.top(Infinity);
+
+    },
+
+    filterTitle(title){
+      byEmpTitle.filter(title).top(Infinity);
+      console.log('filter by',title);
+    },
+
+    filterType(type){
+      byEmpType.filter(type).top(Infinity);
+      console.log('filter by',type);
+    },
     updateTime(dates) {
       let min = new Date(dates[0]);
       let max = new Date(dates[1]);
       console.log('time range update', min, max)
-      //this.dataGPS = dGPSDay.filterRange([min,max]).top(Infinity);
+      if (min.getDate() === 6 || min.getDate() === 7 ||min.getDate() === 8
+          ||min.getDate() === 9 ||min.getDate() === 10 || min.getDate() === 11 ||min.getDate() === 12) {
+        this.dataGPS = byDateGPS1.filterRange([min,max]).top(Infinity);
+      } else {
+        this.dataGPS = byDateGPS2.filterRange([min,max]).top(Infinity);
+      }
 
     },
     getSelectedDay(day) {
       console.log('Selected day:', day);
       this.selectedDay = day;
+      let range = this.rangeDate;
       //console.log('app',dCCDay.filter(this.selectedDay).top(Infinity));
-      this.dataCC = dCCDay.filter(this.selectedDay).top(Infinity);
-      this.dataGPS = dGPSDay.filter(this.selectedDay).top(Infinity);
-      this.dataPaths = dPathsDay.filter(this.selectedDay).top(Infinity);
+      this.dataCC = byDateCC.filterRange(range).top(Infinity);
+      this.dataPaths = byDatePaths.filterRange(range).top(Infinity);
+      this.dataLC = byDateLC.filterRange(range).top(Infinity);
 
-      //this.loyalty_card = dLCDay.filter(this.selectedDay).top(Infinity);
-    },
-    getCarID(id){
-      console.log('car', id)
-      dGPSCarID.filter(id.toString());
-      this.dataGPS = dGPSCarID.top(Infinity);
-    },
-    getName(id){
-      dEmpID.filter(id);
-      let personCarID = dEmpID.top(Infinity)[0]['carID'];
-      this.getCarID(personCarID);
+      if (day === '6' || day === '7' || day === '8' ||
+          day === '9' || day === '10' || day === '11' ||day === '12') {
+        this.dataGPS = byDateGPS1.filterRange(range).top(Infinity);
+      } else {
+        this.dataGPS = byDateGPS2.filterRange(range).top(Infinity);
+      }
+
     },
   },
   mounted() {
@@ -113,14 +148,12 @@ export default {
                   currentEmpTitle: row.CurrentEmploymentTitle
                 };
               });
-          //let cfEmp = crossfilter(employee);
-          //dEmployment = cfEmp.dimension((d) =>{ return d.currentEmploymentType});
-          //this.dEmployment = dEmployment;
+          let cfEmp = crossfilter(employee);
+          byEmpType = cfEmp.dimension((d) =>{ return d.currentEmpType});
+          byEmpTitle = cfEmp.dimension((d) =>{ return d.currentEmpType});
+          byEmpName = cfEmp.dimension((d) =>{ return d.fullName});
 
-          //dEmpID = cfEmp.dimension((d) => {return d.employeeID});
-
-          //console.log(dName.filter('Hennie Osvaldo').top(5))
-          this.dataEmployees = employee //dEmpID.top(Infinity);
+          this.dataEmployees = byEmpType.top(Infinity);
         });
 
     d3.csv('/data/loyalty-fullname-time.csv')
@@ -138,9 +171,9 @@ export default {
           // console.log(loyalty_cards)
           //dLocationLC = cfLC.dimension((d) => {return d.location;});
           // console.log(dLocationLC.group().all());
-          dLCDay = cfLC.dimension(d => { return d.timestamp.getDate()});
+          byDateLC = cfLC.dimension(d => {return d.timestamp});
 
-          this.dataLC = dLCDay.filter(this.selectedDay).top(Infinity);
+          this.dataLC = byDateLC.filterRange(this.rangeDate).top(Infinity);
         });
 
     d3.csv('/data/cc-data-fullname.csv')
@@ -155,38 +188,8 @@ export default {
                 };
               });
           let cfCC = crossfilter(credit_cards);
-          dCCDay = cfCC.dimension(d => { return d.timestamp.getDate()});
-
-          this.dataCC = dCCDay.filter(this.selectedDay).top(Infinity);
-
-        });
-
-    d3.csv('/data/gps-fullname.csv')
-        .then((rows) => {
-          const gps = rows
-              .map((row) => {
-                return {
-                  timestamp: new Date(row.Timestamp),
-                  carID: +row.CarID,
-                  lat: row.lat,
-                  long: row.long,
-                  fullName: row.FullName,
-                  pathID: +row.pathID,
-                };
-              });
-
-          let cfGPS = crossfilter(gps);
-          dGPSCarID = cfGPS.dimension((d) => d.carID);
-          dGPSDay = cfGPS.dimension((d) => d.timestamp);
-          dGPSPathID = cfGPS.dimension((d) => d.pathID);
-          //var dGPSTime = cfGPS.dimension((d) => d.timestamp.getTime());
-          //console.log(dGPSDay.top(Infinity));
-          //console.log(dGPSTime.top(Infinity));
-          dGPSPathID.filterAll();
-          //dGPSDay.filter(this.selectedDay).top(Infinity);
-          //console.log(dGPSCarID.filter('35').top(Infinity));
-          //console.log(dGPSPathID.group().top(Infinity));
-          this.dataGPS = dGPSDay.top(Infinity);
+          byDateCC = cfCC.dimension(d => { return d.timestamp});
+          this.dataCC = byDateCC.filterRange(this.rangeDate).top(Infinity);
         });
 
     d3.csv('/data/paths_united.csv')
@@ -207,8 +210,49 @@ export default {
               });
           let cfPaths= crossfilter(paths);
           //console.log(paths)
-          dPathsDay = cfPaths.dimension(d => { return d.minTimestamp.getDate()});
-          this.dataPaths = dPathsDay.filter(this.selectedDay).top(Infinity);
+          byDatePaths = cfPaths.dimension(d => { return d.minTimestamp});
+
+          this.dataPaths = byDatePaths.filterRange(this.rangeDate).top(Infinity);
+        });
+
+    d3.csv('/data/gps-fullname-6-12.csv')
+        .then((rows) => {
+          const gps1 = rows
+              .map((row) => {
+                return {
+                  timestamp: new Date(row.Timestamp),
+                  carID: +row.CarID,
+                  lat: row.lat,
+                  long: row.long,
+                  fullName: row.FullName,
+                  pathID: +row.pathID,
+                };
+              });
+
+          let cfGPS1 = crossfilter(gps1);
+          //byEmpGPS1 = cfGPS1.dimension((d) => d.fullName);
+          byDateGPS1 = cfGPS1.dimension((d) => d.timestamp);
+          this.dataGPS = byDateGPS1.filterRange(this.rangeDate).top(Infinity);
+        });
+
+    d3.csv('/data/gps-fullname-13-19.csv')
+        .then((rows) => {
+          const gps2 = rows
+              .map((row) => {
+                return {
+                  timestamp: new Date(row.Timestamp),
+                  carID: +row.CarID,
+                  lat: row.lat,
+                  long: row.long,
+                  fullName: row.FullName,
+                  pathID: +row.pathID,
+                };
+              });
+
+          let cfGPS = crossfilter(gps2);
+          //byEmpGPS2 = cfGPS.dimension((d) => d.fullName);
+          byDateGPS2 = cfGPS.dimension((d) => d.timestamp);
+          this.dataGPS = byDateGPS2.filterRange(this.rangeDate).top(Infinity);
         });
 
     d3.csv('/data/locations.csv')

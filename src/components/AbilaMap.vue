@@ -22,7 +22,7 @@
           v-for="(p,i) in this.pathsGPS"
           :key="i"
           ref='polyline'
-          :color="polyline.color"
+          :color="randomColor()"
           :lat-lngs="latLngLine(p, i)"
       >
           <l-tooltip>{{p[0].fullName}}, {{p[0].pathID}}</l-tooltip>
@@ -78,9 +78,9 @@ export default {
     ]),
       center: [36.0700, 24.8670],
       geojson: null,
-      polyline: {
-        color:this.randomColor,//,'red','pink','yellow','blue'],
-      },
+     /* polyline: {
+        color:,//,'red','pink','yellow','blue'],
+      },*/
       url: '/data/background.png'
     }
   },
@@ -96,6 +96,14 @@ export default {
       }
       return coor;
     },
+    randomColor() {
+      var letters = '0123456789ABCDEF'.split('');
+      var color = '#';
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.round(Math.random() * 15)];
+      }
+      return color;
+    },
   },
   computed: {
     pathsGPS() {
@@ -104,14 +112,6 @@ export default {
         r[a.pathID].push(a);
         return r;
       }, Object.create(null));
-    },
-    randomColor() {
-      var letters = '0123456789ABCDEF'.split('');
-      var color = '#';
-      for (var i = 0; i < 6; i++) {
-        color += letters[Math.round(Math.random() * 15)];
-      }
-      return color;
     },
     options() {
       return {

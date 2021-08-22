@@ -37,10 +37,12 @@ export default {
               this.getLocation(seriesIndex)
             },
             dataPointSelection: (event, chartContext, config) => {
-              console.log(event);
+              //console.log(event);
               console.log(chartContext);
               console.log(config);
+
               console.log(config.dataPointIndex);
+              console.log(config.seriesIndex)
               this.getDataPoint(config.dataPointIndex)
             },
           }
@@ -113,10 +115,14 @@ export default {
   },
   methods: {
     getLocation(index) {
-      console.log(this.locations[index])
+      let location = this.locations[index]
+      console.log(location)
+      //this.$emit('get-location', location);
     },
     getDataPoint(index) {
       console.log(this.dataCC[index]);
+      console.log(this.dataCC.length,this.dataLC.length, this.dataPaths.length);
+
     },
     updateTime(t) {
       this.$emit('update-time', [t.min,t.max]);
