@@ -10,7 +10,8 @@
           <EventTimeline :dataCC="dataCC"
                          :dataLC="dataLC"
                          :dataPaths="dataPaths"
-                         @update-time="updateTime"/>
+                         @update-time="updateTime"
+          @display-path="displayPath"/>
 
         </b-col>
         <b-col cols="5" class="right_viz">
@@ -53,7 +54,9 @@ let byDatePaths;
 
 let byEmpGPS1;
 let byDateGPS1;
+let byPathGPS1;
 let byDateGPS2;
+let byPathGPS2;
 
 let byEmpType;
 let byEmpTitle;
@@ -80,6 +83,7 @@ export default {
   },
   computed: {
     rangeDate() {
+      /* It returns the time range of the selected day*/
       var init_time = new Date(2014,0,this.selectedDay,0, 0, 0, 0);
       var end_time = new Date(2014,0,this.selectedDay,23, 59, 59, 59);
 
@@ -106,17 +110,40 @@ export default {
       byEmpType.filter(type).top(Infinity);
       console.log('filter by',type);
     },
-    updateTime(dates) {
-      let min = new Date(dates[0]);
-      let max = new Date(dates[1]);
-      console.log('time range update', min, max)
-      if (min.getDate() === 6 || min.getDate() === 7 ||min.getDate() === 8
-          ||min.getDate() === 9 ||min.getDate() === 10 || min.getDate() === 11 ||min.getDate() === 12) {
-        this.dataGPS = byDateGPS1.filterRange([min,max]).top(Infinity);
+
+    displayPath(pathID) {
+      console.log('path', pathID)
+      let day = this.selectedDay;
+      if (day === 6 || day === 7 || day === 8 ||
+          day === 9 || day === 10 || day === 11 ||day === 12) {
+        console.log('hi')
+        this.dataGPS = byPathGPS1.filterExact(pathID).top(Infinity);
       } else {
-        this.dataGPS = byDateGPS2.filterRange([min,max]).top(Infinity);
+        byDateGPS2.filterAll()
+        this.dataGPS = byPathGPS2.filterExact(pathID).top(Infinity);
       }
 
+    },
+    updateTime(dates) {
+      let min, max;
+      if (dates[0] == null && dates[1] == null){
+         let range = this.rangeDate
+         min = range[0];
+         max = range[1];
+      } else {
+        min = new Date(dates[0]);
+        max = new Date(dates[1]);
+      }
+      console.log('time range update', min, max)
+
+      if (min.getDate() === 6 || min.getDate() === 7 ||min.getDate() === 8
+          ||min.getDate() === 9 ||min.getDate() === 10 || min.getDate() === 11 ||min.getDate() === 12) {
+        byPathGPS1.filterAll()
+        this.dataGPS = byDateGPS1.filterRange([min,max]).top(Infinity);
+      } else {
+        byPathGPS1.filterAll()
+        this.dataGPS = byDateGPS2.filterRange([min,max]).top(Infinity);
+      }
     },
     getSelectedDay(day) {
       console.log('Selected day:', day);
@@ -127,10 +154,12 @@ export default {
       this.dataPaths = byDatePaths.filterRange(range).top(Infinity);
       this.dataLC = byDateLC.filterRange(range).top(Infinity);
 
-      if (day === '6' || day === '7' || day === '8' ||
-          day === '9' || day === '10' || day === '11' ||day === '12') {
+      if (day === 6 || day === 7 || day === 8 ||
+          day === 9 || day === 10 || day === 11 ||day === 12) {
+        byPathGPS1.filterAll()
         this.dataGPS = byDateGPS1.filterRange(range).top(Infinity);
       } else {
+        byPathGPS1.filterAll()
         this.dataGPS = byDateGPS2.filterRange(range).top(Infinity);
       }
 
@@ -211,7 +240,6 @@ export default {
           let cfPaths= crossfilter(paths);
           //console.log(paths)
           byDatePaths = cfPaths.dimension(d => { return d.minTimestamp});
-
           this.dataPaths = byDatePaths.filterRange(this.rangeDate).top(Infinity);
         });
 
@@ -231,6 +259,8 @@ export default {
 
           let cfGPS1 = crossfilter(gps1);
           //byEmpGPS1 = cfGPS1.dimension((d) => d.fullName);
+          byPathGPS1 = cfGPS1.dimension((d) => d.pathID);
+          byPathGPS1.filterAll()
           byDateGPS1 = cfGPS1.dimension((d) => d.timestamp);
           this.dataGPS = byDateGPS1.filterRange(this.rangeDate).top(Infinity);
         });
@@ -249,9 +279,11 @@ export default {
                 };
               });
 
-          let cfGPS = crossfilter(gps2);
+          let cfGPS2 = crossfilter(gps2);
           //byEmpGPS2 = cfGPS.dimension((d) => d.fullName);
-          byDateGPS2 = cfGPS.dimension((d) => d.timestamp);
+          byPathGPS2 = cfGPS2.dimension((d) => d.pathID);
+          byPathGPS2.filterAll()
+          byDateGPS2 = cfGPS2.dimension((d) => d.timestamp);
           this.dataGPS = byDateGPS2.filterRange(this.rangeDate).top(Infinity);
         });
 

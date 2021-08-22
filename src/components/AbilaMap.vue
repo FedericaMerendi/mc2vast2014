@@ -29,13 +29,13 @@
 
       </l-polyline>
 
-     <!--<l-marker
+     <l-marker
          v-for="(l,i) in locations"
-         :key="i"
+         :key="'L'+i"
          :lat-lng="latLong(l.lat,l.long)">
         <l-tooltip>{{l.location}}</l-tooltip>
 
-     </l-marker> -->
+     </l-marker>
     </l-map>
 
   </div>
@@ -44,7 +44,7 @@
 
 <script>
 import { latLngBounds, latLng } from "leaflet";
-import { LMap, LImageOverlay, LGeoJson, LPolyline, /*LMarker,*/  LTooltip} from 'vue2-leaflet';
+import { LMap, LImageOverlay, LGeoJson, LPolyline, LMarker,  LTooltip} from 'vue2-leaflet';
 
 export default {
   name: "AbilaMap",
@@ -57,7 +57,7 @@ export default {
     LPolyline,
     LImageOverlay,
     LGeoJson,
-    //LMarker,
+    LMarker,
     LTooltip,
   },
   data() {
@@ -78,9 +78,6 @@ export default {
     ]),
       center: [36.0700, 24.8670],
       geojson: null,
-     /* polyline: {
-        color:,//,'red','pink','yellow','blue'],
-      },*/
       url: '/data/background.png'
     }
   },

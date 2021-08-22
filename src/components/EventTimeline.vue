@@ -22,6 +22,7 @@ export default {
     return {
       //data: ,
       locations: [],
+      datalocations: [],
       chartOptions: {
         chart: {
           height: 800,
@@ -38,12 +39,11 @@ export default {
             },
             dataPointSelection: (event, chartContext, config) => {
               //console.log(event);
-              console.log(chartContext);
-              console.log(config);
+              let location = config.seriesIndex;
+              let item = config.dataPointIndex;
+              console.log(location, item)
+              this.getDataPoint(location,item)
 
-              console.log(config.dataPointIndex);
-              console.log(config.seriesIndex)
-              this.getDataPoint(config.dataPointIndex)
             },
           }
 
@@ -119,13 +119,24 @@ export default {
       console.log(location)
       //this.$emit('get-location', location);
     },
-    getDataPoint(index) {
-      console.log(this.dataCC[index]);
-      console.log(this.dataCC.length,this.dataLC.length, this.dataPaths.length);
-
+    getDataPoint(locationIndex, item) {
+      console.log(this.locations);
+      let location = this.locations[locationIndex];
+      console.log('item', item)
+      if (location == 'Driving') {
+        console.log(this.dataPaths[item].pathID);
+        this.$emit('display-path', this.dataPaths[item].pathID);
+      } else if (location == 'Loyalty Card') {
+        console.log(this.dataLC[item])
+      } else {
+        console.log(this.datalocations[location][item])
+      }
     },
     updateTime(t) {
       this.$emit('update-time', [t.min,t.max]);
+    },
+    resetChart() {
+      this.$emit('reset');
     },
     getInfoLoyalty(time,name){
       for (let i = 0; i < this.dataLC.length; i++) {
@@ -172,9 +183,9 @@ export default {
         r[a.location].push(a);
         return r;
       }, Object.create(null));
-
+      this.datalocations = cc;
       const location = Object.keys(cc);
-      this.locations = location;
+      location.sort();
       let series = []
       location.forEach((location) => {
         let obj = { name: location,
@@ -188,12 +199,12 @@ export default {
                   cc[location][i].timestamp.getTime() +4*60000,
                 ],
               };
-
           obj['data'].push(data);
         }
         series.push(obj);
       });
-
+      location.push('Loyalty Card', 'Driving');
+      this.locations = location;
       return series
     },
     lc() {
