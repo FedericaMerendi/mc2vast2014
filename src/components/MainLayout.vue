@@ -66,7 +66,7 @@
                                  :categories="loyaltyCategories"/>
                 </div>
 
-              </b-row>-->
+              </b-row>
             </b-col>
 
           </b-row>
