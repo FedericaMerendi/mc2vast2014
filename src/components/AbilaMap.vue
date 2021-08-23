@@ -12,6 +12,7 @@
       <l-image-overlay :url="url"
                        :bounds="bounds"
       pane="tilePane"></l-image-overlay>
+
       <l-geo-json
           v-if="show"
           :geojson="geojson"
@@ -52,6 +53,7 @@ export default {
     dataGPS: Array,
     locations: Array,
   },
+
   components: {
     LMap,
     LPolyline,
@@ -86,17 +88,17 @@ export default {
       return latLng(lat,lng)
     },
     latLngLine: function(gps) {
-      var coor = []
-      for (var i = 0; i < gps.length; i++) {
-        var arr = [gps[i].lat, gps[i].long]
+      let coor = []
+      for (let i = 0; i < gps.length; i++) {
+        let arr = [gps[i].lat, gps[i].long]
         coor.push(arr);
       }
       return coor;
     },
     randomColor() {
-      var letters = '0123456789ABCDEF'.split('');
-      var color = '#';
-      for (var i = 0; i < 6; i++) {
+      let letters = '0123456789ABCDEF'.split('');
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
         color += letters[Math.round(Math.random() * 15)];
       }
       return color;

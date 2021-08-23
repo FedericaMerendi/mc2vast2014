@@ -3,18 +3,32 @@
     <h2> GAStech employees analysis </h2>
     <b-container fluid>
       <b-row id="firstRow" >
-        <b-col cols="7" id="userData">
-          <h5> Select a day </h5>
-          <ButtonsDay @get-day="getSelectedDay"/>
-          <h5> Daily employees timeline</h5>
-          <EventTimeline :dataCC="dataCC"
-                         :dataLC="dataLC"
-                         :dataPaths="dataPaths"
-                         @update-time="updateTime"
-          @display-path="displayPath"/>
+        <b-col cols="5" id="userData">
+          <!-- Buttons to select the day -->
+          <b-row>
+            <div class="daySelection">
+              <h5> Select a day </h5>
+              <ButtonsDay @get-day="getSelectedDay"/>
+            </div>
+          </b-row>
+
+          <!-- Events timeline -->
+          <b-row>
+            <div class="eventTimeline">
+              <h5> Daily employees timeline</h5>
+              <EventTimeline :dataCC="dataCC"
+                             :dataLC="dataLC"
+                             :dataPaths="dataPaths"
+                             @update-time="updateTime"
+                             @display-path="displayPath"
+                             @update-expenses="getLocationExpenses"
+                             @update-loyalty-expenses="getLocationLoyalty"/>
+            </div>
+          </b-row>
 
         </b-col>
-        <b-col cols="5" class="right_viz">
+        <b-col cols="7" class="right_viz">
+          <!-- Employees treemap -->
           <b-row>
             <div class="treemap">
               <h5> TreeMap </h5>
@@ -24,16 +38,42 @@
                   @get-type="filterType"/>
             </div>
           </b-row>
+
           <b-row>
-            <div class="map">
-              <h5> Map </h5>
-              <AbilaMap :dataGPS="dataGPS"
-                        :locations="locations"/>
-            </div>
+            <b-col cols="8">
+              <!-- Map -->
+              <div class="map">
+                <h5> Map </h5>
+                <AbilaMap :dataGPS="dataGPS"
+                          :locations="locations"/>
+              </div>
+            </b-col>
+
+            <b-col cols="4">
+              <!-- Expenses Analysis  -->
+             <b-row>
+                <div class="expensesAnalysis" >
+                  <p> Spesa individuale vs media location sua e di altri </p>
+                  <ExpensesChart :expenses="locationExpenses"
+                                  :categories="locationCategories"/>
+                </div>
+              </b-row>
+
+             <b-row>
+                <div class="expensesAnalysis">
+                  <p> LC individuale vs spese totali sue e di altri </p>
+                  <ExpensesChart :expenses="loyaltyExpenses"
+                                 :categories="loyaltyCategories"/>
+                </div>
+
+              </b-row>-->
+            </b-col>
+
           </b-row>
         </b-col>
 
       </b-row>
+
     </b-container>
   </div>
 </template>
@@ -43,13 +83,19 @@ import AbilaMap from "./AbilaMap";
 import TreeMap from "./TreeMap";
 import ButtonsDay from "./ButtonsDay";
 import EventTimeline from "./EventTimeline";
+import ExpensesChart from "./ExpensesChart";
 
 const d3 = require('d3');
 import crossfilter from 'crossfilter2';
 
-
 let byDateCC;
+let byNameCC;
+let byLocationCC;
+
 let byDateLC;
+let byNameLC;
+let byLocationLC;
+
 let byDatePaths;
 
 let byEmpGPS1;
@@ -66,6 +112,7 @@ export default {
   name: "MainLayout",
   components: {
     EventTimeline,
+    ExpensesChart,
     ButtonsDay,
     AbilaMap,
     TreeMap,
@@ -78,14 +125,18 @@ export default {
       dataGPS: [],
       dataPaths: [],
       locations: [],
+      locationExpenses: [],
+      locationCategories: [],
+      loyaltyExpenses: [],
+      loyaltyCategories: [],
       selectedDay: 6,
     }
   },
   computed: {
     rangeDate() {
-      /* It returns the time range of the selected day*/
-      var init_time = new Date(2014,0,this.selectedDay,0, 0, 0, 0);
-      var end_time = new Date(2014,0,this.selectedDay,23, 59, 59, 59);
+      /* It returns the time range of the selected day */
+      let init_time = new Date(2014,0,this.selectedDay,0, 0, 0, 0);
+      let end_time = new Date(2014,0,this.selectedDay,23, 59, 59, 59);
 
       console.log(this.selectedDay,init_time, end_time)
       return [init_time, end_time]
@@ -111,12 +162,48 @@ export default {
       console.log('filter by',type);
     },
 
+    avgPrice(array) {
+      let sum = 0
+      for (let i = 0; i < array.length; i++) {
+        sum = sum + array[i].price;
+      }
+      return Math.round(( (sum / array.length)+ Number.EPSILON) * 100) / 100
+    },
+
+    getLocationExpenses(empData) {
+      console.log(empData.fullName, empData.timestamp, empData.price, empData.location)
+
+      //let categories = [empData.price]
+      byDateCC.filterAll().top(Infinity);
+      byLocationCC.filterExact(empData.location).top(Infinity);
+      let allLoc = this.avgPrice(byNameCC.filterAll().top(Infinity));
+      let empLoc = this.avgPrice(byNameCC.filterExact(empData.fullName).top(Infinity));
+      this.locationCategories = ['Expense', 'Average\n employee\n expenses', 'Average expenses  of all employees']
+      this.locationExpenses = [empData.price, empLoc, allLoc];
+      console.log(this.locationExpenses)
+      byNameCC.filterAll()
+      byLocationCC.filterAll()
+    },
+
+    getLocationLoyalty(empData) {
+      console.log(empData.fullName, empData.timestamp, empData.price, empData.location)
+
+      byDateLC.filterAll().top(Infinity);
+      byLocationLC.filterExact(empData.location).top(Infinity);
+      let allLoc = this.avgPrice(byNameLC.filterAll().top(Infinity));
+      let empLoc = this.avgPrice(byNameLC.filterExact(empData.fullName).top(Infinity));
+      this.loyaltyCategories = ['Expense', 'Average\n employee\n expenses', 'Average expenses  of all employees']
+      this.loyaltyExpenses = [empData.price, empLoc, allLoc];
+      console.log(this.locationExpenses)
+      byNameLC.filterAll()
+      byLocationLC.filterAll()
+    },
+
     displayPath(pathID) {
-      console.log('path', pathID)
+      /* Given the ID of the selected path it filters the GPS data to display only that path */
       let day = this.selectedDay;
       if (day === 6 || day === 7 || day === 8 ||
           day === 9 || day === 10 || day === 11 ||day === 12) {
-        console.log('hi')
         this.dataGPS = byPathGPS1.filterExact(pathID).top(Infinity);
       } else {
         byDateGPS2.filterAll()
@@ -125,6 +212,7 @@ export default {
 
     },
     updateTime(dates) {
+      /*Given a range of dates it updates the GPS data to display the current paths*/
       let min, max;
       if (dates[0] == null && dates[1] == null){
          let range = this.rangeDate
@@ -146,6 +234,7 @@ export default {
       }
     },
     getSelectedDay(day) {
+      /* given a day it filters all the visualization */
       console.log('Selected day:', day);
       this.selectedDay = day;
       let range = this.rangeDate;
@@ -166,6 +255,7 @@ export default {
     },
   },
   mounted() {
+    /* import of the employees data */
     d3.csv('/data/employees-fullname.csv')
         .then((rows) => {
           const employee = rows
@@ -177,6 +267,8 @@ export default {
                   currentEmpTitle: row.CurrentEmploymentTitle
                 };
               });
+
+          /* creating the dimension to filter the employees dataset */
           let cfEmp = crossfilter(employee);
           byEmpType = cfEmp.dimension((d) =>{ return d.currentEmpType});
           byEmpTitle = cfEmp.dimension((d) =>{ return d.currentEmpType});
@@ -185,6 +277,8 @@ export default {
           this.dataEmployees = byEmpType.top(Infinity);
         });
 
+
+    /* import of the loyalty card data */
     d3.csv('/data/loyalty-fullname-time.csv')
         .then((rows) => {
           const loyalty_cards = rows
@@ -196,15 +290,17 @@ export default {
                   fullName: row.FullName,
                 };
               });
+
           let cfLC = crossfilter(loyalty_cards);
-          // console.log(loyalty_cards)
-          //dLocationLC = cfLC.dimension((d) => {return d.location;});
-          // console.log(dLocationLC.group().all());
           byDateLC = cfLC.dimension(d => {return d.timestamp});
+          byNameLC = cfLC.dimension(d => {return d.fullName});
+          byLocationLC = cfLC.dimension(d => {return d.location});
 
           this.dataLC = byDateLC.filterRange(this.rangeDate).top(Infinity);
         });
 
+
+    /* import of the credit cards data */
     d3.csv('/data/cc-data-fullname.csv')
         .then((rows) => {
           const credit_cards = rows
@@ -216,11 +312,17 @@ export default {
                   fullName: row.FullName,
                 };
               });
+
           let cfCC = crossfilter(credit_cards);
           byDateCC = cfCC.dimension(d => { return d.timestamp});
+          byNameCC = cfCC.dimension(d => {return d.fullName});
+          byLocationCC = cfCC.dimension(d => {return d.location});
+
           this.dataCC = byDateCC.filterRange(this.rangeDate).top(Infinity);
         });
 
+
+    /* import of the paths data */
     d3.csv('/data/paths_united.csv')
         .then((rows) => {
           const paths = rows
@@ -243,6 +345,8 @@ export default {
           this.dataPaths = byDatePaths.filterRange(this.rangeDate).top(Infinity);
         });
 
+
+    /* import of the GPS data, first part */
     d3.csv('/data/gps-fullname-6-12.csv')
         .then((rows) => {
           const gps1 = rows
@@ -265,6 +369,8 @@ export default {
           this.dataGPS = byDateGPS1.filterRange(this.rangeDate).top(Infinity);
         });
 
+
+    /* import of the GPS data, second part */
     d3.csv('/data/gps-fullname-13-19.csv')
         .then((rows) => {
           const gps2 = rows
@@ -287,6 +393,8 @@ export default {
           this.dataGPS = byDateGPS2.filterRange(this.rangeDate).top(Infinity);
         });
 
+
+    /* import of the locations data */
     d3.csv('/data/locations.csv')
         .then((rows) => {
           const location = rows
@@ -297,7 +405,7 @@ export default {
                   long: +row.long,
                 };
               });
-          this.locations = location;
+          this.location = location;
         });
 
   },
@@ -306,4 +414,10 @@ export default {
 </script>
 
 <style scoped>
+.expensesAnalysis {
+  width: 100%;
+  height: 250px;
+  margin: 10px 2px 5px 2px;
+  padding: 5px;
+}
 </style>

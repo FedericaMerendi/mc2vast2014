@@ -71,7 +71,7 @@ export default {
           }
         },
         legend: {
-          position: 'left',
+          position: 'bottom',
           horizontalAlign: 'right',
           fontSize: '12px',
           markers: {
@@ -127,9 +127,10 @@ export default {
         console.log(this.dataPaths[item].pathID);
         this.$emit('display-path', this.dataPaths[item].pathID);
       } else if (location == 'Loyalty Card') {
+        this.$emit('update-loyalty-expenses', this.dataLC[item]);
         console.log(this.dataLC[item])
       } else {
-        console.log(this.datalocations[location][item])
+        this.$emit('update-expenses', this.datalocations[location][item]);
       }
     },
     updateTime(t) {
