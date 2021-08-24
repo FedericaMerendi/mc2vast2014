@@ -17,12 +17,13 @@
             <div class="eventTimeline">
               <h5> Daily employees timeline</h5>
               <event-timeline :data-c-c="dataCC"
-                             :data-l-c="dataLC"
-                             :data-paths="dataPaths"
-                             @update-time="updateTime"
-                             @display-path="displayPath"
-                             @update-expenses="getLocationExpenses"
-                             @update-loyalty-expenses="getLocationLoyalty"/>
+                              :data-l-c="dataLC"
+                              :data-paths="dataPaths"
+                              @update-time="updateTime"
+                              @display-path="displayPath"
+                              @update-expenses="getLocationExpenses"
+                              @update-loyalty-expenses="getLocationLoyalty"
+                              @get-location="getLocation"/>
             </div>
           </b-row>
 
@@ -33,7 +34,6 @@
             <div class="treemap">
               <h5> TreeMap </h5>
               <tree-map
-                  :reset="reset"
                   @get-employee="filterEmployee"
                   @get-title="filterTitle"
                   @get-type="filterType"/>
@@ -132,7 +132,11 @@ export default {
       expensesLC: [],
       categoriesLC: [],
       selectedDay: '6',
-      reset: false,
+      selectedLocation: null,
+      selectedEmployee: null,
+      selectedType: null,
+      selectedTitle:null,
+      selectedDateRange: this.rangeDate,
     }
   },
   computed: {
@@ -147,6 +151,15 @@ export default {
 
   },
   methods: {
+    getLocation(location) {
+      if (location !== 'Driving' && location !== 'Loyalty Card') {
+        this.selectedLocation = location;
+
+        this.filterChartPerEmployee(this.selectedEmployee, this.selectedLocation);
+        this.filterChartPerTitleType(this.selectedType, byEmpType, this.selectedLocation);
+        this.filterChartPerTitleType(this.selectedTitle, byEmpTitle, this.selectedLocation);
+      }
+    },
     sublistName(array) {
       /*  given an array it generates a list of names */
       let names = []
@@ -185,6 +198,7 @@ export default {
     },
 
     filterMapPerTitle(title){
+      /* given an employee title it displays only its members paths on the map */
       let day = this.selectedDay;
       this.resetFiltersEmployees()
 
@@ -208,6 +222,7 @@ export default {
     },
 
     filterMapPerType(type) {
+      /* given an employee type it displays only its members paths on the map */
       let day = this.selectedDay;
       this.resetFiltersEmployees();
 
@@ -235,15 +250,52 @@ export default {
           this.dataGPS = byEmpGPS2.top(Infinity);
         }
       }
-
     },
 
-    filterChartPerTitleType(secName, d) {
-
-      let range = this.rangeDate;
+    filterChartPerEmployee(name, location) {
+      /* given an employeee it creates the chart related to the CC expenses and the loyalty card*/
       this.resetFiltersEmployees();
-      byDateCC.filterRange(range).top(Infinity);
-      byDateLC.filterRange(range).top(Infinity);
+      byDateCC.filterRange(this.selectedDateRange).top(Infinity);
+      byDateLC.filterRange(this.selectedDateRange).top(Infinity);
+
+      if (location !== null){
+        byLocationCC.filterExact(location).top(Infinity);
+        byLocationLC.filterExact(location).top(Infinity);
+        this.categoriesCC = [['Average', 'expenses of', name, 'at', location],
+          ['Average', 'expenses of','the other' ,'employees at', location]];
+        this.categoriesLC = [['Average', 'loyalty card', 'value for', name, 'at', location],
+          ['Average', 'loyalty card', 'value for','the other','employees at', location]];
+      } else {
+        this.categoriesCC = [['Average', 'expenses of', name],
+          ['Average', 'expenses of','the other employees']];
+        this.categoriesLC = [['Average', 'loyalty card', 'value for', name],
+          ['Average', 'loyalty card', 'value for','the other employees']];
+      }
+
+
+      let allCC = this.avgPrice(byNameCC.filterFunction(function(d) { return d !== name; }).top(Infinity));
+      let empCC = this.avgPrice(byNameCC.filterExact(name).top(Infinity));
+      this.expensesCC = [empCC, allCC];
+
+      let allLC = this.avgPrice(byNameLC.filterFunction(function(d) { return d !== name; }).top(Infinity));
+      let empLC = this.avgPrice(byNameLC.filterExact(name).top(Infinity));
+      this.expensesLC = [empLC, allLC];
+      byNameCC.filterAll();
+      byNameLC.filterAll();
+      byLocationCC.filterAll();
+      byLocationLC.filterAll();
+    },
+
+    filterChartPerTitleType(secName, d , location) {
+      /*given a subset of employees it creates the charts related to the CC expenses and the Loyalty Card*/
+      this.resetFiltersEmployees();
+      byDateCC.filterRange(this.selectedDateRange).top(Infinity);
+      byDateLC.filterRange(this.selectedDateRange).top(Infinity);
+
+      if (location !== null){
+        byLocationCC.filterExact(location).top(Infinity);
+        byLocationLC.filterExact(location).top(Infinity);
+      }
 
       if (secName === undefined) {
         let allCC = this.avgPrice(byNameCC.filterAll().top(Infinity));
@@ -287,25 +339,36 @@ export default {
       console.log(this.expensesCC, this.expensesLC);
       byNameCC.filterAll();
       byNameLC.filterAll();
+      byLocationCC.filterAll();
+      byLocationLC.filterAll();
     },
 
     filterEmployee(name) {
       /*given an employee it updates the map and the chart with his/her data only */
       console.log('filter by',name);
+      this.selectedName = name;
+      this.selectedType = null;
+      this.selectedTitle = null;
       this.filterMapPerEmployee(name);
-    },
+      this.filterChartPerEmployee(name, this.selectedLocation);
+      },
 
     filterTitle(title){
       console.log('filter by',title);
+      this.selectedName = null;
+      this.selectedType = null;
+      this.selectedTitle = title;
       this.filterMapPerTitle(title);
-      this.filterChartPerTitleType(title, byEmpTitle);
+      this.filterChartPerTitleType(title, byEmpTitle, this.selectedLocation);
     },
-
 
     filterType(type){
       console.log('filter by',type);
+      this.selectedName = null;
+      this.selectedType = type;
+      this.selectedTitle = null;
       this.filterMapPerType(type);
-      this.filterChartPerTitleType(type, byEmpType);
+      this.filterChartPerTitleType(type, byEmpType, this.selectedLocation);
     },
 
     avgPrice(array) {
@@ -376,6 +439,7 @@ export default {
       }
 
     },
+
     updateTime(dates) {
       /*Given a range of dates it updates the GPS data to display the current paths*/
       let min, max;
@@ -388,6 +452,7 @@ export default {
         max = new Date(dates[1]);
       }
       console.log('time range update', min, max)
+      this.selectedDateRange = [min, max];
 
       if (min.getDate() === 6 || min.getDate() === 7 ||min.getDate() === 8
           ||min.getDate() === 9 ||min.getDate() === 10 || min.getDate() === 11 ||min.getDate() === 12) {
@@ -571,7 +636,6 @@ export default {
           byDateGPS1 = cfGPS1.dimension((d) => d.timestamp);
           this.dataGPS = byDateGPS1.filterRange(this.rangeDate).top(Infinity);
         });
-
 
   },
 }

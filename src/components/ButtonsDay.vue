@@ -1,10 +1,10 @@
 <template>
   <div>
-    <b-button-group size="sm"
-                    v-for="d in days_buttons"
-                    :key="d.day" >
-      <b-button variant="light"
-                @click="selectDay(d.day)"> {{d.weekday}} {{d.day}} </b-button>
+    <b-button-group size="sm">
+      <b-button  v-for="d in days_buttons"
+                 :key="d.day"
+                 :variant="getStatus(d.day)"
+                 @click="selectDay(d.day)"> {{d.weekday}} {{d.day}} </b-button>
     </b-button-group>
   </div>
 
@@ -31,14 +31,26 @@ export default {
         {weekday:'Sat', day: '18'},
         {weekday:'Sun', day: '19'},
       ],
+      currentlyActive: '6'
     }
   },
+  computed: {
+  },
   methods: {
+    getStatus(day) {
+      let status = 'light'
+      if (day === this.currentlyActive){
+        status = 'secondary'
+      }
+      return status
+    },
     selectDay(day) {
+      this.currentlyActive = day;
       this.$emit('get-day', day);
     },
   }
 }
+
 </script>
 
 <style scoped>

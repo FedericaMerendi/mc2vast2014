@@ -117,7 +117,7 @@ export default {
     getLocation(index) {
       let location = this.locations[index]
       console.log(location)
-      //this.$emit('get-location', location);
+      this.$emit('get-location', location);
     },
     getDataPoint(locationIndex, item) {
       console.log(this.locations);
