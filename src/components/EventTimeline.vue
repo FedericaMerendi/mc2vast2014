@@ -2,7 +2,7 @@
   <div>
     <apexchart id="timeline"
         type="rangeBar"
-        height="800"
+        height = '900'
         :options="chartOptions"
         :series="series()"></apexchart>
 
@@ -25,7 +25,7 @@ export default {
       datalocations: [],
       chartOptions: {
         chart: {
-          height: 800,
+          height: '100%',
           type: 'rangeBar',
           events: {
             zoomed: (chartContext, { xaxis })  => {
@@ -124,7 +124,7 @@ export default {
       let location = this.locations[locationIndex];
       console.log('item', item)
       if (location == 'Driving') {
-        console.log(this.dataPaths[item].pathID);
+        console.log('path', this.dataPaths[item].pathID);
         this.$emit('display-path', this.dataPaths[item].pathID);
       } else if (location == 'Loyalty Card') {
         this.$emit('update-loyalty-expenses', this.dataLC[item]);

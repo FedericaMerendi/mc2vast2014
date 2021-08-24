@@ -8,7 +8,7 @@
           <b-row>
             <div class="daySelection">
               <h5> Select a day </h5>
-              <ButtonsDay @get-day="getSelectedDay"/>
+              <buttons-day @get-day="getSelectedDay"/>
             </div>
           </b-row>
 
@@ -16,9 +16,9 @@
           <b-row>
             <div class="eventTimeline">
               <h5> Daily employees timeline</h5>
-              <EventTimeline :dataCC="dataCC"
-                             :dataLC="dataLC"
-                             :dataPaths="dataPaths"
+              <event-timeline :data-c-c="dataCC"
+                             :data-l-c="dataLC"
+                             :data-paths="dataPaths"
                              @update-time="updateTime"
                              @display-path="displayPath"
                              @update-expenses="getLocationExpenses"
@@ -32,7 +32,8 @@
           <b-row>
             <div class="treemap">
               <h5> TreeMap </h5>
-              <TreeMap
+              <tree-map
+                  :reset="reset"
                   @get-employee="filterEmployee"
                   @get-title="filterTitle"
                   @get-type="filterType"/>
@@ -40,30 +41,30 @@
           </b-row>
 
           <b-row>
-            <b-col cols="8">
+            <b-col cols="7">
               <!-- Map -->
               <div class="map">
                 <h5> Map </h5>
-                <AbilaMap :dataGPS="dataGPS"
+                <abila-map :dataGPS="dataGPS"
                           :locations="locations"/>
               </div>
             </b-col>
 
-            <b-col cols="4">
+            <b-col cols="5">
               <!-- Expenses Analysis  -->
              <b-row>
                 <div class="expensesAnalysis" >
                   <p> Spesa individuale vs media location sua e di altri </p>
-                  <ExpensesChart :expenses="locationExpenses"
-                                  :categories="locationCategories"/>
+                  <expenses-chart :expenses="expensesCC"
+                                  :categories="categoriesCC"/>
                 </div>
               </b-row>
 
              <b-row>
                 <div class="expensesAnalysis">
                   <p> LC individuale vs spese totali sue e di altri </p>
-                  <ExpensesChart :expenses="loyaltyExpenses"
-                                 :categories="loyaltyCategories"/>
+                  <expenses-chart :expenses="expensesLC"
+                                 :categories="categoriesLC"/>
                 </div>
 
               </b-row>
@@ -101,6 +102,7 @@ let byDatePaths;
 let byEmpGPS1;
 let byDateGPS1;
 let byPathGPS1;
+let byEmpGPS2;
 let byDateGPS2;
 let byPathGPS2;
 
@@ -125,11 +127,12 @@ export default {
       dataGPS: [],
       dataPaths: [],
       locations: [],
-      locationExpenses: [],
-      locationCategories: [],
-      loyaltyExpenses: [],
-      loyaltyCategories: [],
-      selectedDay: 6,
+      expensesCC: [],
+      categoriesCC: [],
+      expensesLC: [],
+      categoriesLC: [],
+      selectedDay: '6',
+      reset: false,
     }
   },
   computed: {
@@ -144,25 +147,170 @@ export default {
 
   },
   methods: {
-    filterEmployee(name){
-      console.log('filter by',name);
-      byEmpGPS1.filter(name);
-      byEmpName.filter(name).top(Infinity);
-      this.dataGPS = byEmpGPS1.top(Infinity);
+    sublistName(array) {
+      /*  given an array it generates a list of names */
+      let names = []
+      for (let i =0 ;i < array.length; i++) {
+        names.push(array[i].fullName)
+      }
+      return names
+    },
 
+    resetFiltersEmployees() {
+      /*It resets all the filters related to the employees data */
+      byEmpName.filterAll();
+      byEmpTitle.filterAll();
+      byEmpType.filterAll()
+      byEmpGPS1.filterAll();
+      byEmpGPS2.filterAll();
+      byPathGPS1.filterAll();
+      byPathGPS2.filterAll();
+
+    },
+    filterMapPerEmployee(name){
+      /* given an employee name it displays only his/her paths on the map */
+      let day = this.selectedDay;
+      this.resetFiltersEmployees();
+
+      byEmpName.filterExact(name);
+      byEmpGPS2.filterExact(name);
+      byEmpGPS1.filterExact(name);
+
+      if (day === '6' || day === '7' || day === '8' ||
+          day === '9' || day === '10' || day === '11' ||day === '12') {
+        this.dataGPS = byEmpGPS1.top(Infinity);
+      } else {
+        this.dataGPS = byEmpGPS2.top(Infinity);
+      }
+    },
+
+    filterMapPerTitle(title){
+      let day = this.selectedDay;
+      this.resetFiltersEmployees()
+
+      let titleEmp = byEmpTitle.filter(title).top(Infinity);
+      let names = this.sublistName(titleEmp);
+
+      byEmpGPS1.filter(function (d) {
+        return names.indexOf(d) > -1;
+      });
+      byEmpGPS2.filter(function (d) {
+        return names.indexOf(d) > -1;
+      });
+
+      if (day === '6' || day === '7' || day === '8' ||
+          day === '9' || day === '10' || day === '11' ||day === '12') {
+        console.log(byEmpGPS1.top(Infinity))
+        this.dataGPS = byEmpGPS1.top(Infinity);
+      } else {
+        this.dataGPS = byEmpGPS2.top(Infinity);
+      }
+    },
+
+    filterMapPerType(type) {
+      let day = this.selectedDay;
+      this.resetFiltersEmployees();
+
+      let typeEmp = byEmpType.filter(type).top(Infinity);
+      let names = this.sublistName(typeEmp);
+
+      byEmpGPS1.filter(function (d) {
+        return names.indexOf(d) > -1;
+      });
+      byEmpGPS2.filter(function (d) {
+        return names.indexOf(d) > -1;
+      });
+
+      if (day === '6' || day === '7' || day === '8' ||
+          day === '9' || day === '10' || day === '11' ||day === '12') {
+        if(type === undefined) {
+          this.dataGPS = byEmpGPS1.filterAll().top(Infinity);
+        } else {
+          this.dataGPS = byEmpGPS1.top(Infinity);
+        }
+      } else {
+        if(type === undefined) {
+          this.dataGPS = byEmpGPS2.filterAll().top(Infinity);
+        } else {
+          this.dataGPS = byEmpGPS2.top(Infinity);
+        }
+      }
+
+    },
+
+    filterChartPerTitleType(secName, d) {
+
+      let range = this.rangeDate;
+      this.resetFiltersEmployees();
+      byDateCC.filterRange(range).top(Infinity);
+      byDateLC.filterRange(range).top(Infinity);
+
+      if (secName === undefined) {
+        let allCC = this.avgPrice(byNameCC.filterAll().top(Infinity));
+        this.categoriesCC = ['Average expenses of all the employees']
+        this.expensesCC = [allCC]
+
+        let allLC = this.avgPrice(byNameLC.filterAll().top(Infinity));
+        this.categoriesLC = ['Average loyalty card value of all the employees']
+        this.expensesLC = [allLC]
+
+      } else {
+        let emp = d.filter(secName).top(Infinity);
+        let names = this.sublistName(emp);
+
+        //let categories = [empData.price]
+        byNameCC.filterAll();
+        byNameLC.filterAll();
+
+        let othersCC = this.avgPrice(byNameCC.filterFunction(function (d) {
+          return names.indexOf(d) === -1;
+        }).top(Infinity));
+        let sectionCC = this.avgPrice(byNameCC.filterFunction(function (d) {
+          return names.indexOf(d) > -1;
+        }).top(Infinity));
+        this.categoriesCC = [['Average', 'expenses of ', secName, 'employees'],
+          ['Average', 'expenses of', 'the other employees']]
+        this.expensesCC = [sectionCC, othersCC];
+
+        let othersLC = this.avgPrice(byNameLC.filterFunction(function (d) {
+          return names.indexOf(d) === -1;
+        }).top(Infinity));
+
+        let sectionLC = this.avgPrice(byNameLC.filterFunction(function (d) {
+          return names.indexOf(d) > -1;
+        }).top(Infinity));
+
+        this.categoriesLC = [['Average', 'loyalty card ', 'value of', secName, 'employees'],
+          ['Average','loyalty card ', 'value of the', 'other employees']]
+        this.expensesLC = [sectionLC, othersLC];
+      }
+      console.log(this.expensesCC, this.expensesLC);
+      byNameCC.filterAll();
+      byNameLC.filterAll();
+    },
+
+    filterEmployee(name) {
+      /*given an employee it updates the map and the chart with his/her data only */
+      console.log('filter by',name);
+      this.filterMapPerEmployee(name);
     },
 
     filterTitle(title){
-      byEmpTitle.filter(title).top(Infinity);
       console.log('filter by',title);
+      this.filterMapPerTitle(title);
+      this.filterChartPerTitleType(title, byEmpTitle);
     },
 
+
     filterType(type){
-      byEmpType.filter(type).top(Infinity);
       console.log('filter by',type);
+      this.filterMapPerType(type);
+      this.filterChartPerTitleType(type, byEmpType);
     },
 
     avgPrice(array) {
+      /*calculates the average price of an array of data */
+      console.log(array)
       let sum = 0
       for (let i = 0; i < array.length; i++) {
         sum = sum + array[i].price;
@@ -170,40 +318,57 @@ export default {
       return Math.round(( (sum / array.length)+ Number.EPSILON) * 100) / 100
     },
 
+
     getLocationExpenses(empData) {
+      /* Given a payment it aggregates the data based on the current selected payment,
+     * the average for the location at the employee, and the average at the location for all the employees */
+
       console.log(empData.fullName, empData.timestamp, empData.price, empData.location)
 
       //let categories = [empData.price]
       byDateCC.filterAll().top(Infinity);
       byLocationCC.filterExact(empData.location).top(Infinity);
-      let allLoc = this.avgPrice(byNameCC.filterAll().top(Infinity));
+      let allLoc = this.avgPrice(byNameCC.filterFunction(function(d) { return d !== empData.fullName; }).top(Infinity));
       let empLoc = this.avgPrice(byNameCC.filterExact(empData.fullName).top(Infinity));
-      this.locationCategories = ['Expense', 'Average\n employee\n expenses', 'Average expenses  of all employees']
-      this.locationExpenses = [empData.price, empLoc, allLoc];
-      console.log(this.locationExpenses)
+      this.categoriesCC = [['Paid price to', empData.location, 'at', empData.timestamp.toLocaleTimeString()],
+                                ['Average', 'expenses of', empData.fullName, 'at ' , empData.location ],
+                                ['Average', 'expenses of','the other employees', 'at ', empData.location ]]
+      this.expensesCC = [empData.price, empLoc, allLoc];
+
+      console.log(this.expensesCC)
       byNameCC.filterAll()
       byLocationCC.filterAll()
     },
 
     getLocationLoyalty(empData) {
+      /* Given a loyalty card it aggregates the data based on the current selected payment,
+      * the average for the location at the employee, and the average at the location for all the employees */
       console.log(empData.fullName, empData.timestamp, empData.price, empData.location)
 
       byDateLC.filterAll().top(Infinity);
       byLocationLC.filterExact(empData.location).top(Infinity);
-      let allLoc = this.avgPrice(byNameLC.filterAll().top(Infinity));
+      let allLoc = this.avgPrice(byNameLC.filterFunction(function(d) { return d !== empData.fullName; }).top(Infinity));
       let empLoc = this.avgPrice(byNameLC.filterExact(empData.fullName).top(Infinity));
-      this.loyaltyCategories = ['Expense', 'Average\n employee\n expenses', 'Average expenses  of all employees']
-      this.loyaltyExpenses = [empData.price, empLoc, allLoc];
-      console.log(this.locationExpenses)
+      this.categoriesLC = [['Loyalty card from', empData.location, 'used at', empData.timestamp.toLocaleTimeString()],
+                                ['Average', 'loyalty card','value for', empData.fullName, 'at ' , empData.location ],
+                                ['Average', 'loyalty card', 'value for the','other employees', 'at ', empData.location ]]
+      this.expensesLC = [empData.price, empLoc, allLoc];
+      console.log(this.expensesLC)
       byNameLC.filterAll()
       byLocationLC.filterAll()
     },
 
     displayPath(pathID) {
       /* Given the ID of the selected path it filters the GPS data to display only that path */
+      this.reset = true;
+      console.log(pathID)
+      byEmpGPS1.filterAll();
+      byEmpGPS2.filterAll();
+
       let day = this.selectedDay;
-      if (day === 6 || day === 7 || day === 8 ||
-          day === 9 || day === 10 || day === 11 ||day === 12) {
+      if (day === '6' || day === '7' || day === '8' ||
+          day === '9' || day === '10' || day === '11' ||day === '12') {
+        byDateGPS1.filterAll()
         this.dataGPS = byPathGPS1.filterExact(pathID).top(Infinity);
       } else {
         byDateGPS2.filterAll()
@@ -229,10 +394,11 @@ export default {
         byPathGPS1.filterAll()
         this.dataGPS = byDateGPS1.filterRange([min,max]).top(Infinity);
       } else {
-        byPathGPS1.filterAll()
+        byPathGPS2.filterAll()
         this.dataGPS = byDateGPS2.filterRange([min,max]).top(Infinity);
       }
     },
+
     getSelectedDay(day) {
       /* given a day it filters all the visualization */
       console.log('Selected day:', day);
@@ -242,16 +408,14 @@ export default {
       this.dataCC = byDateCC.filterRange(range).top(Infinity);
       this.dataPaths = byDatePaths.filterRange(range).top(Infinity);
       this.dataLC = byDateLC.filterRange(range).top(Infinity);
-
-      if (day === 6 || day === 7 || day === 8 ||
-          day === 9 || day === 10 || day === 11 ||day === 12) {
+      if (day === '6' || day === '7' || day === '8' ||
+          day === '9' || day === '10' || day === '11' ||day === '12') {
         byPathGPS1.filterAll()
         this.dataGPS = byDateGPS1.filterRange(range).top(Infinity);
       } else {
-        byPathGPS1.filterAll()
+        byPathGPS2.filterAll()
         this.dataGPS = byDateGPS2.filterRange(range).top(Infinity);
       }
-
     },
   },
   mounted() {
@@ -271,7 +435,7 @@ export default {
           /* creating the dimension to filter the employees dataset */
           let cfEmp = crossfilter(employee);
           byEmpType = cfEmp.dimension((d) =>{ return d.currentEmpType});
-          byEmpTitle = cfEmp.dimension((d) =>{ return d.currentEmpType});
+          byEmpTitle = cfEmp.dimension((d) =>{ return d.currentEmpTitle});
           byEmpName = cfEmp.dimension((d) =>{ return d.fullName});
 
           this.dataEmployees = byEmpType.top(Infinity);
@@ -345,30 +509,19 @@ export default {
           this.dataPaths = byDatePaths.filterRange(this.rangeDate).top(Infinity);
         });
 
-
-    /* import of the GPS data, first part */
-    d3.csv('/data/gps-fullname-6-12.csv')
+    /* import of the locations data */
+    d3.csv('/data/locations.csv')
         .then((rows) => {
-          const gps1 = rows
+          const location = rows
               .map((row) => {
                 return {
-                  timestamp: new Date(row.Timestamp),
-                  carID: +row.CarID,
-                  lat: row.lat,
-                  long: row.long,
-                  fullName: row.FullName,
-                  pathID: +row.pathID,
+                  location: row.location,
+                  lat: +row.lat,
+                  long: +row.long,
                 };
               });
-
-          let cfGPS1 = crossfilter(gps1);
-          //byEmpGPS1 = cfGPS1.dimension((d) => d.fullName);
-          byPathGPS1 = cfGPS1.dimension((d) => d.pathID);
-          byPathGPS1.filterAll()
-          byDateGPS1 = cfGPS1.dimension((d) => d.timestamp);
-          this.dataGPS = byDateGPS1.filterRange(this.rangeDate).top(Infinity);
+          this.locations = location;
         });
-
 
     /* import of the GPS data, second part */
     d3.csv('/data/gps-fullname-13-19.csv')
@@ -386,27 +539,39 @@ export default {
               });
 
           let cfGPS2 = crossfilter(gps2);
-          //byEmpGPS2 = cfGPS.dimension((d) => d.fullName);
+          byEmpGPS2 = cfGPS2.dimension((d) => d.fullName);
           byPathGPS2 = cfGPS2.dimension((d) => d.pathID);
-          byPathGPS2.filterAll()
+          byEmpGPS2.filterAll();
+          byPathGPS2.filterAll();
           byDateGPS2 = cfGPS2.dimension((d) => d.timestamp);
           this.dataGPS = byDateGPS2.filterRange(this.rangeDate).top(Infinity);
         });
 
 
-    /* import of the locations data */
-    d3.csv('/data/locations.csv')
+    /* import of the GPS data, first part */
+    d3.csv('/data/gps-fullname-6-12.csv')
         .then((rows) => {
-          const location = rows
+          const gps1 = rows
               .map((row) => {
                 return {
-                  location: row.location,
-                  lat: +row.lat,
-                  long: +row.long,
+                  timestamp: new Date(row.Timestamp),
+                  carID: +row.CarID,
+                  lat: row.lat,
+                  long: row.long,
+                  fullName: row.FullName,
+                  pathID: +row.pathID,
                 };
               });
-          this.location = location;
+
+          let cfGPS1 = crossfilter(gps1);
+          byEmpGPS1 = cfGPS1.dimension((d) => d.fullName);
+          byPathGPS1 = cfGPS1.dimension((d) => d.pathID);
+          byPathGPS1.filterAll();
+          byEmpGPS1.filterAll();
+          byDateGPS1 = cfGPS1.dimension((d) => d.timestamp);
+          this.dataGPS = byDateGPS1.filterRange(this.rangeDate).top(Infinity);
         });
+
 
   },
 }

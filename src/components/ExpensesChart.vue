@@ -35,6 +35,19 @@ export default {
         },
         xaxis: {
           categories: this.categories,
+          labels: {
+            rotate: 0,
+          },
+          title: {
+            text: 'Level of aggregation',
+          }
+
+        },
+        yaxis: {
+          title: {
+            text: 'Amount of money ($)'
+          }
+
         }
       },
     }
@@ -46,17 +59,27 @@ export default {
         data: this.expenses
       }]
     },
-    categories: function() {
-      this.chartOptions = {...this.chartOptions, ...{
+    categories: function () {
+      this.chartOptions = {
+        ...this.chartOptions, ...{
           xaxis: {
             categories: this.categories,
             labels: {
-              style: {
-                colors: ['red']
+              rotate: 0,
+              title: {
+                text: 'Level of aggregation',
+              }
+            }
+          },
+          yaxis: {
+            labels:{
+              title: {
+                text: 'Amount of money ($)'
               }
             }
           }
-        }}
+        }
+      }
     }
   }
 }

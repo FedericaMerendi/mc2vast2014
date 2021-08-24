@@ -35,10 +35,9 @@
          :key="'L'+i"
          :lat-lng="latLong(l.lat,l.long)">
         <l-tooltip>{{l.location}}</l-tooltip>
-
      </l-marker>
-    </l-map>
 
+    </l-map>
   </div>
 
 </template>
@@ -64,6 +63,7 @@ export default {
   },
   data() {
     return {
+      loc: this.locations,
       loading: false,
       show: true,
       enableTooltip: true,
@@ -87,6 +87,7 @@ export default {
     latLong(lat,lng) {
       return latLng(lat,lng)
     },
+
     latLngLine: function(gps) {
       let coor = []
       for (let i = 0; i < gps.length; i++) {
@@ -148,6 +149,8 @@ export default {
     const data = await response.json();
     this.geojson = data;
     this.loading = false;
+  }, watch: {
+
   }
 }
 </script>
