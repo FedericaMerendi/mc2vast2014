@@ -1708,11 +1708,6 @@
   resolved "https://registry.npm.taobao.org/@xtuc/long/download/@xtuc/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
   integrity sha1-0pHGpOl5ibXGHZrPOWrk/hM6cY0=
 
-Math@^0.0.1-security:
-  version "0.0.1-security"
-  resolved "https://registry.yarnpkg.com/Math/-/Math-0.0.1-security.tgz#04ddfc526214f3866614eb70d9e5889e70d0f419"
-  integrity sha1-BN38UmIU84ZmFOtw2eWInnDQ9Bk=
-
 a-big-triangle@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/a-big-triangle/-/a-big-triangle-1.0.3.tgz#eefd30b02a8f525e8b1f72bb6bb1b0c16751c794"

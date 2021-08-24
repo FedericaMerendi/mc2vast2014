@@ -1,13 +1,18 @@
 <template>
   <div>
-    <h2> GAStech employees analysis </h2>
+    <h3> GAStech employees analysis </h3>
+    <p> GAStech has been operating a natural gas production site in the island country of Kronos, in particular the city of Abila.
+      In January 2014 several employee go missing.
+    <br><span class="subtext">This visualization has the aim to help identify suspicious behaviors.</span></p>
     <b-container fluid>
       <b-row id="firstRow" >
         <b-col cols="5" id="userData">
           <!-- Buttons to select the day -->
           <b-row>
             <div class="daySelection">
-              <h5> Select a day </h5>
+              <h5>1. Select a day </h5>
+              <p>The available data are two weeks before the disappearance of the employees.
+                <br><span class="subtext">Select a day to analyze it:</span></p>
               <buttons-day @get-day="getSelectedDay"/>
             </div>
           </b-row>
@@ -15,7 +20,16 @@
           <!-- Events timeline -->
           <b-row>
             <div class="eventTimeline">
-              <h5> Daily employees timeline</h5>
+              <h5> 3. Analyze the employees daily timeline</h5>
+              <p> The timeline shows the daily schedule of each employee based on the GPS, the Credit Card and the Loyalty Card data.
+              <br> <span class="subtext"> The time zoom permits to highlight a certain time of the day.
+                  <br> It is also possible to click on the data point:
+                  if the data refers to the GPS it will show the path on the map;
+                  while if it refers to Credit Cards or Loyalty Card transactions it will show an insight of the expense in the barchart.
+                  Finally, the legend of the locations let you filter the barchart in conjunction to the company's structure TreeMap.
+                  To reset the timeline, click on the house icon at the top-right on the visualization.
+                  </span></p>
+
               <event-timeline :data-c-c="dataCC"
                               :data-l-c="dataLC"
                               :data-paths="dataPaths"
@@ -32,7 +46,10 @@
           <!-- Employees treemap -->
           <b-row>
             <div class="treemap">
-              <h5> TreeMap </h5>
+              <h5> 2. Company structure TreeMap  </h5>
+              <p>GAStech has 5 different branches, each employee has an employment type and an employment title. 35 of the employees use a company car.
+              <br><span class="subtext"> Select an employment type, title or a employee to show in the map and in the bar charts the relative subset of data.
+                To reset the chart, click on the main category 'All'. </span></p>
               <tree-map
                   @get-employee="filterEmployee"
                   @get-title="filterTitle"
@@ -44,7 +61,11 @@
             <b-col cols="7">
               <!-- Map -->
               <div class="map">
-                <h5> Map </h5>
+                <h5> 4. Map </h5>
+                <p>Abila is a city of the island of Kronos, it has a lot of restaurants, cafes and activities to do on the freetime.
+                <br><span class="subtext"> The colored lines represents the paths of the employees. Each path has a different color.
+                    Pass over the lines to see who drove that itinery.
+                  The locations are also shown. Pass over the locations to see their name. </span></p>
                 <abila-map :dataGPS="dataGPS"
                           :locations="locations"/>
               </div>
@@ -52,19 +73,22 @@
 
             <b-col cols="5">
               <!-- Expenses Analysis  -->
+             <h5> 5. Expenses charts </h5>
+              <p> The expenses charts are useful to compare the average expenses of a certain employee or company branch to the others.
+              <br><span class="subtext"> Filter the data using the treemap above, the location list and the timeline.</span></p>
              <b-row>
                 <div class="expensesAnalysis" >
-                  <p> Spesa individuale vs media location sua e di altri </p>
                   <expenses-chart :expenses="expensesCC"
-                                  :categories="categoriesCC"/>
+                                  :categories="categoriesCC"
+                                  title="Credit Card"/>
                 </div>
               </b-row>
 
              <b-row>
                 <div class="expensesAnalysis">
-                  <p> LC individuale vs spese totali sue e di altri </p>
                   <expenses-chart :expenses="expensesLC"
-                                 :categories="categoriesLC"/>
+                                 :categories="categoriesLC"
+                                  title="Loyalty Card"/>
                 </div>
 
               </b-row>
@@ -136,7 +160,7 @@ export default {
       selectedEmployee: null,
       selectedType: null,
       selectedTitle:null,
-      selectedDateRange: this.rangeDate,
+      selectedDateRange: null,
     }
   },
   computed: {
@@ -144,7 +168,6 @@ export default {
       /* It returns the time range of the selected day */
       let init_time = new Date(2014,0,this.selectedDay,0, 0, 0, 0);
       let end_time = new Date(2014,0,this.selectedDay,23, 59, 59, 59);
-
       console.log(this.selectedDay,init_time, end_time)
       return [init_time, end_time]
     },
@@ -255,8 +278,8 @@ export default {
     filterChartPerEmployee(name, location) {
       /* given an employeee it creates the chart related to the CC expenses and the loyalty card*/
       this.resetFiltersEmployees();
-      byDateCC.filterRange(this.selectedDateRange).top(Infinity);
-      byDateLC.filterRange(this.selectedDateRange).top(Infinity);
+      //byDateCC.filterRange(this.selectedDateRange).top(Infinity);
+      //byDateLC.filterRange(this.selectedDateRange).top(Infinity);
 
       if (location !== null){
         byLocationCC.filterExact(location).top(Infinity);
@@ -289,8 +312,8 @@ export default {
     filterChartPerTitleType(secName, d , location) {
       /*given a subset of employees it creates the charts related to the CC expenses and the Loyalty Card*/
       this.resetFiltersEmployees();
-      byDateCC.filterRange(this.selectedDateRange).top(Infinity);
-      byDateLC.filterRange(this.selectedDateRange).top(Infinity);
+      //byDateCC.filterRange(this.selectedDateRange).top(Infinity);
+      //byDateLC.filterRange(this.selectedDateRange).top(Infinity);
 
       if (location !== null){
         byLocationCC.filterExact(location).top(Infinity);
@@ -452,7 +475,16 @@ export default {
         max = new Date(dates[1]);
       }
       console.log('time range update', min, max)
-      this.selectedDateRange = [min, max];
+      byDateCC.filterRange([min,max]);
+      byDateLC.filterRange([min,max]);
+      if (this.selectedTitle !== null) {
+        this.filterTitle(this.selectedTitle);
+      } else if (this.selectedEmployee !== null){
+        this.filterEmployee(this.selectedEmployee);
+      } else if (this.selectedType === undefined || this.selectedType !== null) {
+        this.filterType(this.selectedType);    } else {
+        console.log('ABBIAMO UN PROBLEMA', this.selectedType, this.selectedTitle, this.selectedEmployee)
+      }
 
       if (min.getDate() === 6 || min.getDate() === 7 ||min.getDate() === 8
           ||min.getDate() === 9 ||min.getDate() === 10 || min.getDate() === 11 ||min.getDate() === 12) {
@@ -469,6 +501,7 @@ export default {
       console.log('Selected day:', day);
       this.selectedDay = day;
       let range = this.rangeDate;
+      this.selectedDateRange = range;
       //console.log('app',dCCDay.filter(this.selectedDay).top(Infinity));
       this.dataCC = byDateCC.filterRange(range).top(Infinity);
       this.dataPaths = byDatePaths.filterRange(range).top(Infinity);
@@ -648,5 +681,9 @@ export default {
   height: 250px;
   margin: 10px 2px 5px 2px;
   padding: 5px;
+}
+.subtext {
+  font-style: italic;
+  font-size: 70%;
 }
 </style>

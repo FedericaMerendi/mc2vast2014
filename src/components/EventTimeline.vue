@@ -55,11 +55,22 @@ export default {
             rangeBarGroupRows: true
           }
         },
-        colors: [
-          "#008FFB", "#00E396", "#FEB019", "#FF4560", "#775DD0",
-          "#3F51B5", "#546E7A", "#D4526E", "#8D5B4C", "#F86624",
-          "#D7263D", "#1B998B", "#2E294E", "#F46036", "#E2C044"
-        ],
+        colors: [ '#8cffde','#45b8b3','#839740','#c9ec85',
+                  '#ff94b3','#bd1f3f','#ec614a','#ffa468',
+                  '#5e96dd','#3953c0','#800c53','#c34b91',
+                  '#46c657','#158968','#2c5b6d','#222a5c',
+                  '#566a89','#8babbf','#cce2e1','#ffdba5',
+                  '#ccac68','#a36d3e','#683c34','#000000',
+                  '#38002c','#663b93', '#8b72de','#9cd8fc',
+                  '#fff6ae','#ffda70','#f4b03c',
+                    '#f9b857', '#f0c209', '#145041',
+                  '#8f4349', '#ffa686', '#5cac48', '#832121',
+                  '#8cce6c', '#c1ec48', '#060329', '#1c2833',
+                  '#ff804a', '#e16169', '#ee8095', '#7b3781',
+                  '#b64d75', '#a07385', '#44050b',
+                  '#962c52', '#e53366', '#6e5657', '#a7acba',
+                  '#accdec', '#1c5c83', '#2ba8b5', '#46dccd',
+                ],
         fill: {
           type: 'solid'
         },
@@ -72,7 +83,7 @@ export default {
         },
         legend: {
           position: 'bottom',
-          horizontalAlign: 'right',
+          horizontalAlign: 'left',
           fontSize: '12px',
           markers: {
             width: 7,
@@ -123,10 +134,10 @@ export default {
       console.log(this.locations);
       let location = this.locations[locationIndex];
       console.log('item', item)
-      if (location == 'Driving') {
+      if (location === 'Driving') {
         console.log('path', this.dataPaths[item].pathID);
         this.$emit('display-path', this.dataPaths[item].pathID);
-      } else if (location == 'Loyalty Card') {
+      } else if (location === 'Loyalty Card') {
         this.$emit('update-loyalty-expenses', this.dataLC[item]);
         console.log(this.dataLC[item])
       } else {
@@ -233,7 +244,10 @@ export default {
       this.cc()
     },
   },*/
-
+/*
+          "#008FFB", "#00E396", "#FEB019", "#FF4560", "#775DD0",
+          "#3F51B5", "#546E7A", "#D4526E", "#8D5B4C", "#F86624",
+          "#D7263D", "#1B998B", "#2E294E", "#F46036", "#E2C044"*/
 }
 </script>
 

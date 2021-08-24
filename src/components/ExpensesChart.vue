@@ -2,7 +2,8 @@
   <div id="chart">
       <apexchart type="bar"
                  :options="chartOptions"
-                 :series="series"></apexchart>
+                 :series="series"
+                 :title="title"></apexchart>
   </div>
 </template>
 
@@ -13,6 +14,7 @@ export default {
   props: {
     expenses: Array,
     categories: Array,
+    title: String,
   },
   data() {
     return {
@@ -47,8 +49,7 @@ export default {
           title: {
             text: 'Amount of money ($)'
           }
-
-        }
+        },
       },
     }
   },
