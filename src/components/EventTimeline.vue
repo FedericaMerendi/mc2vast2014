@@ -116,7 +116,7 @@ export default {
                let time = new Date(firstTime.getTime() + 4*60000);
                const price = this.getInfo(firstTime, name, loc);
                return (
-                   '<div><b> Credit Card</b> <br><b>Name</b>: ' + name + '<br><b>Value: </b>' + price + '$ <br><b>Location</b>:' + loc + '</div><b>Time</b>:' + time.toLocaleTimeString() + '</div>'
+                   '<div><b> Credit Card</b> <br><b>Name</b>: ' + name + '<br><b>Value: </b>' + price + '$ <br><b>Location</b>:' + loc + '</div><b>Time</b>: ' + time.toLocaleTimeString() + '</div>'
              )
              }
            }

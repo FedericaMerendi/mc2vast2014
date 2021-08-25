@@ -187,6 +187,9 @@ export default {
   },
   methods: {
     resetMap() {
+      this.selectedEmployee = null;
+      this.selectedTitle = null;
+      this.selectedType = undefined;
       this.updateTime([null, null]);
     },
     resetLocation() {
@@ -299,13 +302,10 @@ export default {
 
     filterChartPerEmployee(name, location) {
       /* given an employee it creates the chart related to the CC expenses and the loyalty card*/
-      //this.resetFiltersEmployees();
         byEmpName.filterAll();
         byEmpTitle.filterAll();
         byEmpType.filterAll()
 
-      //byDateCC.filterRange(this.selectedDateRange).top(Infinity);
-      //byDateLC.filterRange(this.selectedDateRange).top(Infinity);
 
       if (location !== null){
         byLocationCC.filterExact(location).top(Infinity);
@@ -313,12 +313,12 @@ export default {
         this.categoriesCC = [['Avg price by', name, 'at', location],
           ['Avg price by','the other' ,'employees at', location]];
         this.categoriesLC = [['Avg loyalty lard', 'value for', name, 'at', location],
-          ['Avg loyalty card', 'value for','the other','employees at', location]];
+          ['Avg loyalty card', 'value for the other','employees at', location]];
       } else {
-        this.categoriesCC = [['Average', 'expenses of', name],
+        this.categoriesCC = [['Avg', 'expenses of', name],
           ['Average', 'expenses of','the other employees']];
-        this.categoriesLC = [['Average', 'loyalty card', 'value for', name],
-          ['Average', 'loyalty card', 'value for','the other employees']];
+        this.categoriesLC = [['Avg loyalty card', 'value for', name],
+          ['Avg loyalty card', 'value for the' ,'other employees']];
       }
 
 
@@ -337,9 +337,7 @@ export default {
 
     filterChartPerTitleType(secName, d , location) {
       /*given a subset of employees it creates the charts related to the CC expenses and the Loyalty Card*/
-      //this.resetFiltersEmployees();
-      //byDateCC.filterRange(this.selectedDateRange).top(Infinity);
-      //byDateLC.filterRange(this.selectedDateRange).top(Infinity);
+
       byEmpName.filterAll();
       byEmpTitle.filterAll();
       byEmpType.filterAll()
@@ -356,18 +354,17 @@ export default {
         let allLC = this.avgPrice(byNameLC.filterAll().top(Infinity));
         this.expensesLC = [allLC]
         if (location !== null){
-          this.categoriesCC = ['Average expenses of all the employees at ' + location]
-          this.categoriesLC = ['Average loyalty card value of all the employees at '+ location]
+          this.categoriesCC = ['Avg expenses of all the employees at ' + location]
+          this.categoriesLC = ['Avg loyalty card value of all the employees at '+ location]
         } else{
-          this.categoriesCC = ['Average expenses of all the employees']
-          this.categoriesLC = ['Average loyalty card value of all the employees']
+          this.categoriesCC = ['Avg expenses of all the employees']
+          this.categoriesLC = ['Avg loyalty card value of all the employees']
         }
 
       } else {
         let emp = d.filter(secName).top(Infinity);
         let names = this.sublistName(emp);
 
-        //let categories = [empData.price]
         byNameCC.filterAll();
         byNameLC.filterAll();
 
@@ -389,16 +386,16 @@ export default {
         this.expensesLC = [sectionLC, othersLC];
 
         if (location != null) {
-          this.categoriesCC = [['Average', 'expenses of ', secName, 'employees at', location],
-            ['Average', 'expenses of','the other','employees at', location]]
-          this.categoriesLC = [['Average', 'loyalty card ', 'value of', secName, 'employees at', location ],
-            ['Average','loyalty card ', 'value of ', 'the other','employees at', location]]
+          this.categoriesCC = [['Avg expenses of ', secName, 'employees at', location],
+            ['Avg expenses','of the other','employees at', location]]
+          this.categoriesLC = [['Avg loyalty card ', 'value of', secName, 'employees at', location ],
+            ['Avg loyalty card ', 'value of the other','employees at', location]]
 
         } else {
-          this.categoriesCC = [['Average', 'expenses of ', secName, 'employees'],
-            ['Average', 'expenses of', 'the other employees']]
-          this.categoriesLC = [['Average loyalty', ' card value of', secName, 'employees'],
-            ['Average loyalty','card value of ','the other employees']]
+          this.categoriesCC = [['Avg expenses of ', secName, 'employees'],
+            ['Avg expenses of', 'the other employees']]
+          this.categoriesLC = [['Avg loyalty', ' card value of', secName, 'employees'],
+            ['Avg loyalty card','value of the',' other employees']]
 
         }
       }
