@@ -65,10 +65,12 @@
                 <p>Abila is a city of the island of Kronos, it has a lot of restaurants, cafes and activities to do on the freetime.
                 <br><span class="subtext"> The colored lines represents the paths of the employees. Each path has a different color.
                     Pass over the lines to see who drove that itinery.
-                  The locations are also shown. Pass over the locations to see their name. </span></p>
+                  The locations are also shown: Pass over the locations to see their name or click them to filter the barchart.
+                    It is possible to hide the locations or reset the map displaying all the paths of the current selected day.</span></p>
                 <abila-map :dataGPS="dataGPS"
-                          :locations="locations"
-                          @reset-map="resetMap"/>
+                           :locations="locations"
+                           @reset-map="resetMap"
+                           @get-location="getLocation"/>
               </div>
             </b-col>
 
@@ -524,11 +526,9 @@ export default {
         this.filterTitle(this.selectedTitle);
       } else if (this.selectedEmployee !== null){
         this.filterEmployee(this.selectedEmployee);
-      } else if (this.selectedType === undefined || this.selectedType !== null) {
-        this.filterType(this.selectedType);    } else {
-        console.log('ABBIAMO UN PROBLEMA', this.selectedType, this.selectedTitle, this.selectedEmployee)
+      } else{
+        this.filterType(this.selectedType);
       }
-
       if (min.getDate() === 6 || min.getDate() === 7 ||min.getDate() === 8
           ||min.getDate() === 9 ||min.getDate() === 10 || min.getDate() === 11 ||min.getDate() === 12) {
         byPathGPS1.filterAll()
@@ -556,6 +556,15 @@ export default {
       } else {
         byPathGPS2.filterAll()
         this.dataGPS = byDateGPS2.filterRange(range).top(Infinity);
+      }
+      byDateCC.filterRange(range);
+      byDateLC.filterRange(range);
+      if (this.selectedTitle !== null) {
+        this.filterTitle(this.selectedTitle);
+      } else if (this.selectedEmployee !== null){
+        this.filterEmployee(this.selectedEmployee);
+      } else{
+        this.filterType(this.selectedType);
       }
     },
   },

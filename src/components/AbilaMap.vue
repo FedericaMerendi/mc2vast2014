@@ -41,13 +41,14 @@
           :lat-lngs="latLngLine(p, i)"
       >
           <l-tooltip>{{p[0].fullName}}, {{p[0].pathID}}</l-tooltip>
-
       </l-polyline>
+
       <div v-if="showMarkers">
           <l-marker
               v-for="(l,i) in locations"
               :key="'L'+i"
-              :lat-lng="latLong(l.lat,l.long)">
+              :lat-lng="latLong(l.lat,l.long)"
+              @click="getLocation(l.location)">
             <l-tooltip>{{l.location}}</l-tooltip>
           </l-marker>
       </div>
@@ -102,6 +103,9 @@ export default {
   methods: {
     resetMap() {
       this.$emit('reset-map');
+    },
+    getLocation(location) {
+      this.$emit('get-location', location);
     },
     hideLocations() {
       this.showMarkers = !this.showMarkers
