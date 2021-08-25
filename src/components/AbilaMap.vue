@@ -1,5 +1,19 @@
 <template>
   <div class="row map">
+    <b-button-group size="sm">
+      <b-button
+            variant="light"
+            ref='btnToggle'
+            @click="hideLocations">
+        Hide locations
+      </b-button>
+      <b-button
+          variant="light"
+          ref='btnReset'
+          @click="resetMap">
+        Reset map
+      </b-button>
+    </b-button-group>
     <l-map
         class="abila"
         :zoom="zoom"
@@ -29,13 +43,14 @@
           <l-tooltip>{{p[0].fullName}}, {{p[0].pathID}}</l-tooltip>
 
       </l-polyline>
-
-     <l-marker
-         v-for="(l,i) in locations"
-         :key="'L'+i"
-         :lat-lng="latLong(l.lat,l.long)">
-        <l-tooltip>{{l.location}}</l-tooltip>
-     </l-marker>
+      <div v-if="showMarkers">
+          <l-marker
+              v-for="(l,i) in locations"
+              :key="'L'+i"
+              :lat-lng="latLong(l.lat,l.long)">
+            <l-tooltip>{{l.location}}</l-tooltip>
+          </l-marker>
+      </div>
 
     </l-map>
   </div>
@@ -63,12 +78,13 @@ export default {
   },
   data() {
     return {
+      showMarkers: true,
       loc: this.locations,
       loading: false,
       show: true,
       enableTooltip: true,
       zoom: 13,
-      minZoom:13,
+      minZoom:12,
       maxZoom:18,
       bounds: latLngBounds([
         [37.1102, 25.8250],
@@ -78,12 +94,19 @@ export default {
       [36.0964, 24.8191],
       [	36.0408, 24.9100]
     ]),
-      center: [36.0700, 24.8670],
+      center: [36.0650, 24.8670],//[36.0700, 24.8670],
       geojson: null,
       url: '/data/background.png'
     }
   },
   methods: {
+    resetMap() {
+      this.$emit('reset-map');
+    },
+    hideLocations() {
+      this.showMarkers = !this.showMarkers
+      this.$refs.btnToggle.innerText = this.showMarkers?'Hide locations':'Show locations';
+    },
     latLong(lat,lng) {
       return latLng(lat,lng)
     },
@@ -149,9 +172,7 @@ export default {
     const data = await response.json();
     this.geojson = data;
     this.loading = false;
-  }, watch: {
-
-  }
+  },
 }
 </script>
 

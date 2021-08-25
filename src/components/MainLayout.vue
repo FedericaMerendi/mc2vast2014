@@ -50,7 +50,7 @@
               <p>GAStech has 5 different branches, each employee has an employment type and an employment title. 35 of the employees use a company car.
               <br><span class="subtext"> Select an employment type, title or a employee to show in the map and in the bar charts the relative subset of data.
                 To reset the chart, click on the main category 'All'. </span></p>
-              <tree-map
+              <tree-map id="tmComponent"
                   @get-employee="filterEmployee"
                   @get-title="filterTitle"
                   @get-type="filterType"/>
@@ -67,7 +67,8 @@
                     Pass over the lines to see who drove that itinery.
                   The locations are also shown. Pass over the locations to see their name. </span></p>
                 <abila-map :dataGPS="dataGPS"
-                          :locations="locations"/>
+                          :locations="locations"
+                          @reset-map="resetMap"/>
               </div>
             </b-col>
 
@@ -75,12 +76,19 @@
               <!-- Expenses Analysis  -->
              <h5> 5. Expenses charts </h5>
               <p> The expenses charts are useful to compare the average expenses of a certain employee or company branch to the others.
-              <br><span class="subtext"> Filter the data using the treemap above, the location list and the timeline.</span></p>
+              <br><span class="subtext"> Filter the data using the treemap above, the location list and the timeline. To remove the locations filter click the button below.</span></p>
+              <b-row>
+                <b-button
+                    size="sm"
+                    variant="light"
+                    @click="resetLocation()"> All locations
+                </b-button>
+              </b-row>
              <b-row>
                 <div class="expensesAnalysis" >
                   <expenses-chart :expenses="expensesCC"
                                   :categories="categoriesCC"
-                                  title="Credit Card"/>
+                                  title="Credit Card data"/>
                 </div>
               </b-row>
 
@@ -88,7 +96,7 @@
                 <div class="expensesAnalysis">
                   <expenses-chart :expenses="expensesLC"
                                  :categories="categoriesLC"
-                                  title="Loyalty Card"/>
+                                  title="Loyalty Card data"/>
                 </div>
 
               </b-row>
@@ -158,9 +166,10 @@ export default {
       selectedDay: '6',
       selectedLocation: null,
       selectedEmployee: null,
-      selectedType: null,
+      selectedType: undefined,
       selectedTitle:null,
       selectedDateRange: null,
+      first: true,
     }
   },
   computed: {
@@ -174,13 +183,26 @@ export default {
 
   },
   methods: {
+    resetMap() {
+      console.log('map reset');
+      this.updateTime([null, null]);
+    },
+    resetLocation() {
+      this.location = null;
+      this.getLocation(null);
+    },
     getLocation(location) {
       if (location !== 'Driving' && location !== 'Loyalty Card') {
         this.selectedLocation = location;
+        console.log(this.selectedLocation, this.selectedEmployee, this.selectedType, this.selectedTitle)
+        if(this.selectedEmployee !== null){
+            this.filterChartPerEmployee(this.selectedEmployee, this.selectedLocation);
+        } else if (this.selectedTitle !== null) {
+          this.filterChartPerTitleType(this.selectedTitle, byEmpTitle, this.selectedLocation);
+        } else {
+          this.filterChartPerTitleType(this.selectedType, byEmpType, this.selectedLocation);
+        }
 
-        this.filterChartPerEmployee(this.selectedEmployee, this.selectedLocation);
-        this.filterChartPerTitleType(this.selectedType, byEmpType, this.selectedLocation);
-        this.filterChartPerTitleType(this.selectedTitle, byEmpTitle, this.selectedLocation);
       }
     },
     sublistName(array) {
@@ -277,7 +299,11 @@ export default {
 
     filterChartPerEmployee(name, location) {
       /* given an employeee it creates the chart related to the CC expenses and the loyalty card*/
-      this.resetFiltersEmployees();
+      //this.resetFiltersEmployees();
+        byEmpName.filterAll();
+        byEmpTitle.filterAll();
+        byEmpType.filterAll()
+
       //byDateCC.filterRange(this.selectedDateRange).top(Infinity);
       //byDateLC.filterRange(this.selectedDateRange).top(Infinity);
 
@@ -311,9 +337,12 @@ export default {
 
     filterChartPerTitleType(secName, d , location) {
       /*given a subset of employees it creates the charts related to the CC expenses and the Loyalty Card*/
-      this.resetFiltersEmployees();
+      //this.resetFiltersEmployees();
       //byDateCC.filterRange(this.selectedDateRange).top(Infinity);
       //byDateLC.filterRange(this.selectedDateRange).top(Infinity);
+      byEmpName.filterAll();
+      byEmpTitle.filterAll();
+      byEmpType.filterAll()
 
       if (location !== null){
         byLocationCC.filterExact(location).top(Infinity);
@@ -322,12 +351,17 @@ export default {
 
       if (secName === undefined) {
         let allCC = this.avgPrice(byNameCC.filterAll().top(Infinity));
-        this.categoriesCC = ['Average expenses of all the employees']
         this.expensesCC = [allCC]
 
         let allLC = this.avgPrice(byNameLC.filterAll().top(Infinity));
-        this.categoriesLC = ['Average loyalty card value of all the employees']
         this.expensesLC = [allLC]
+        if (location !== null){
+          this.categoriesCC = ['Average expenses of all the employees at ' + location]
+          this.categoriesLC = ['Average loyalty card value of all the employees at '+ location]
+        } else{
+          this.categoriesCC = ['Average expenses of all the employees']
+          this.categoriesLC = ['Average loyalty card value of all the employees']
+        }
 
       } else {
         let emp = d.filter(secName).top(Infinity);
@@ -343,8 +377,6 @@ export default {
         let sectionCC = this.avgPrice(byNameCC.filterFunction(function (d) {
           return names.indexOf(d) > -1;
         }).top(Infinity));
-        this.categoriesCC = [['Average', 'expenses of ', secName, 'employees'],
-          ['Average', 'expenses of', 'the other employees']]
         this.expensesCC = [sectionCC, othersCC];
 
         let othersLC = this.avgPrice(byNameLC.filterFunction(function (d) {
@@ -354,10 +386,21 @@ export default {
         let sectionLC = this.avgPrice(byNameLC.filterFunction(function (d) {
           return names.indexOf(d) > -1;
         }).top(Infinity));
-
-        this.categoriesLC = [['Average', 'loyalty card ', 'value of', secName, 'employees'],
-          ['Average','loyalty card ', 'value of the', 'other employees']]
         this.expensesLC = [sectionLC, othersLC];
+
+        if (location != null) {
+          this.categoriesCC = [['Average', 'expenses of ', secName, 'employees at', location],
+            ['Average', 'expenses of','the other','employees at', location]]
+          this.categoriesLC = [['Average', 'loyalty card ', 'value of', secName, 'employees at', location ],
+            ['Average','loyalty card ', 'value of ', 'the other','employees at', location]]
+
+        } else {
+          this.categoriesCC = [['Average', 'expenses of ', secName, 'employees'],
+            ['Average', 'expenses of', 'the other employees']]
+          this.categoriesLC = [['Average loyalty', ' card value of', secName, 'employees'],
+            ['Average loyalty','card value of ','the other employees']]
+
+        }
       }
       console.log(this.expensesCC, this.expensesLC);
       byNameCC.filterAll();
@@ -369,7 +412,7 @@ export default {
     filterEmployee(name) {
       /*given an employee it updates the map and the chart with his/her data only */
       console.log('filter by',name);
-      this.selectedName = name;
+      this.selectedEmployee = name;
       this.selectedType = null;
       this.selectedTitle = null;
       this.filterMapPerEmployee(name);
@@ -581,6 +624,8 @@ export default {
           byLocationCC = cfCC.dimension(d => {return d.location});
 
           this.dataCC = byDateCC.filterRange(this.rangeDate).top(Infinity);
+
+          this.filterChartPerTitleType(undefined, byEmpType, null);
         });
 
 
@@ -670,6 +715,7 @@ export default {
           this.dataGPS = byDateGPS1.filterRange(this.rangeDate).top(Infinity);
         });
 
+
   },
 }
 
@@ -684,6 +730,16 @@ export default {
 }
 .subtext {
   font-style: italic;
-  font-size: 70%;
+  font-size: 80%;
+}
+p {
+  font-size:90%;
+}
+.eventTimeline {
+  margin-top:20px;
+}
+
+#tmComponent {
+  margin-top: -20px;
 }
 </style>

@@ -3,7 +3,7 @@
       <apexchart type="bar"
                  :options="chartOptions"
                  :series="series"
-                 :title="title"></apexchart>
+                 ></apexchart>
   </div>
 </template>
 
@@ -42,13 +42,16 @@ export default {
           },
           title: {
             text: 'Level of aggregation',
+            align: 'center',
           }
-
         },
         yaxis: {
           title: {
             text: 'Amount of money ($)'
           }
+        },
+        title: {
+          text:this.title,
         },
       },
     }
@@ -78,7 +81,7 @@ export default {
                 text: 'Amount of money ($)'
               }
             }
-          }
+          },
         }
       }
     }
@@ -87,5 +90,7 @@ export default {
 </script>
 
 <style scoped>
-
+div {
+  padding: 5px;
+}
 </style>
