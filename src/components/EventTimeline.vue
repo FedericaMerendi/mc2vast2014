@@ -31,17 +31,12 @@ export default {
             zoomed: (chartContext, { xaxis })  => {
               this.updateTime(xaxis)
             },
-            legendClick: (chartContext, seriesIndex, config) => {
-              console.log(chartContext)
-              console.log(seriesIndex)
-              console.log(config)
+            legendClick: (chartContext, seriesIndex) => {
               this.getLocation(seriesIndex)
             },
             dataPointSelection: (event, chartContext, config) => {
-              //console.log(event);
               let location = config.seriesIndex;
               let item = config.dataPointIndex;
-              console.log(location, item)
               this.getDataPoint(location,item)
 
             },
@@ -134,19 +129,14 @@ export default {
   methods: {
     getLocation(index) {
       let location = this.locations[index]
-      console.log(location)
       this.$emit('get-location', location);
     },
     getDataPoint(locationIndex, item) {
-      console.log(this.locations);
       let location = this.locations[locationIndex];
-      console.log('item', item)
       if (location === 'Driving') {
-        console.log('path', this.dataPaths[item].pathID);
         this.$emit('display-path', this.dataPaths[item].pathID);
       } else if (location === 'Loyalty Card') {
         this.$emit('update-loyalty-expenses', this.dataLC[item]);
-        console.log(this.dataLC[item])
       } else {
         this.$emit('update-expenses', this.datalocations[location][item]);
       }

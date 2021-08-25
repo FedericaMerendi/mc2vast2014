@@ -172,7 +172,6 @@ export default {
       } else if (titleList.includes(d.points[0].label)) {
         this.$emit('get-title', d.points[0].label);
       } else {
-      console.log(d.points[0].label)
         this.$emit('get-employee', d.points[0].label);
       }
     }

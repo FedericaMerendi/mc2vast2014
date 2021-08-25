@@ -42,7 +42,7 @@
           :color="randomColor()"
           :lat-lngs="latLngLine(p, i)"
       >
-          <l-tooltip>{{p[0].fullName}}, {{p[0].pathID}}</l-tooltip>
+          <l-tooltip>{{p[0].fullName}} drove this route. (PathID: {{p[0].pathID}}) </l-tooltip>
       </l-polyline>
 
       <div v-if="showMarkers">

@@ -6,6 +6,8 @@
     <b-container fluid>
       <b-row id="firstRow" >
         <b-col cols="5" id="userData">
+          <div class="left-viz">
+
           <!-- Buttons to select the day -->
           <b-row>
             <div class="daySelection">
@@ -39,7 +41,7 @@
                               @get-location="getLocation"/>
             </div>
           </b-row>
-
+        </div>
         </b-col>
         <b-col cols="7" class="right_viz">
           <!-- Employees treemap -->
@@ -60,7 +62,7 @@
             <b-col cols="7">
               <!-- Map -->
               <div class="map">
-                <h5> 4. Map </h5>
+                <h5> 4. Abila map </h5>
                 <p>Abila is a city of the island of Kronos, it has a lot of restaurants, cafes and activities to do on the freetime.
                 <br><span class="subtext"> The colored lines represents the paths of the employees. Each path has a different color.
                     Pass over the lines to see who drove that itinerary.
@@ -179,14 +181,12 @@ export default {
       /* It returns the time range of the selected day */
       let init_time = new Date(2014,0,this.selectedDay,0, 0, 0, 0);
       let end_time = new Date(2014,0,this.selectedDay,23, 59, 59, 59);
-      console.log(this.selectedDay,init_time, end_time)
       return [init_time, end_time]
     },
 
   },
   methods: {
     resetMap() {
-      console.log('map reset');
       this.updateTime([null, null]);
     },
     resetLocation() {
@@ -196,7 +196,6 @@ export default {
     getLocation(location) {
       if (location !== 'Driving' && location !== 'Loyalty Card') {
         this.selectedLocation = location;
-        console.log(this.selectedLocation, this.selectedEmployee, this.selectedType, this.selectedTitle)
         if(this.selectedEmployee !== null){
             this.filterChartPerEmployee(this.selectedEmployee, this.selectedLocation);
         } else if (this.selectedTitle !== null) {
@@ -261,7 +260,6 @@ export default {
 
       if (day === '6' || day === '7' || day === '8' ||
           day === '9' || day === '10' || day === '11' ||day === '12') {
-        console.log(byEmpGPS1.top(Infinity))
         this.dataGPS = byEmpGPS1.top(Infinity);
       } else {
         this.dataGPS = byEmpGPS2.top(Infinity);
@@ -404,7 +402,6 @@ export default {
 
         }
       }
-      console.log(this.expensesCC, this.expensesLC);
       byNameCC.filterAll();
       byNameLC.filterAll();
       byLocationCC.filterAll();
@@ -441,7 +438,6 @@ export default {
 
     avgPrice(array) {
       /*calculates the average price of an array of data */
-      console.log(array)
       let sum = 0
       for (let i = 0; i < array.length; i++) {
         sum = sum + array[i].price;
@@ -454,9 +450,6 @@ export default {
       /* Given a payment it aggregates the data based on the current selected payment,
      * the average for the location at the employee, and the average at the location for all the employees */
 
-      console.log(empData.fullName, empData.timestamp, empData.price, empData.location)
-
-      //let categories = [empData.price]
       byDateCC.filterAll().top(Infinity);
       byLocationCC.filterExact(empData.location).top(Infinity);
       let allLoc = this.avgPrice(byNameCC.filterFunction(function(d) { return d !== empData.fullName; }).top(Infinity));
@@ -474,7 +467,6 @@ export default {
     getLocationLoyalty(empData) {
       /* Given a loyalty card it aggregates the data based on the current selected payment,
       * the average for the location at the employee, and the average at the location for all the employees */
-      console.log(empData.fullName, empData.timestamp, empData.price, empData.location)
 
       byDateLC.filterAll().top(Infinity);
       byLocationLC.filterExact(empData.location).top(Infinity);
@@ -484,7 +476,6 @@ export default {
                                 ['Average', 'loyalty card','value for', empData.fullName, 'at ' , empData.location ],
                                 ['Average', 'loyalty card', 'value for the','other employees', 'at ', empData.location ]]
       this.expensesLC = [empData.price, empLoc, allLoc];
-      console.log(this.expensesLC)
       byNameLC.filterAll()
       byLocationLC.filterAll()
     },
@@ -492,7 +483,6 @@ export default {
     displayPath(pathID) {
       /* Given the ID of the selected path it filters the GPS data to display only that path */
       this.reset = true;
-      console.log(pathID)
       byEmpGPS1.filterAll();
       byEmpGPS2.filterAll();
 
@@ -545,7 +535,6 @@ export default {
       this.selectedDay = day;
       let range = this.rangeDate;
       this.selectedDateRange = range;
-      //console.log('app',dCCDay.filter(this.selectedDay).top(Infinity));
       this.dataCC = byDateCC.filterRange(range).top(Infinity);
       this.dataPaths = byDatePaths.filterRange(range).top(Infinity);
       this.dataLC = byDateLC.filterRange(range).top(Infinity);
@@ -656,7 +645,6 @@ export default {
                 };
               });
           let cfPaths= crossfilter(paths);
-          //console.log(paths)
           byDatePaths = cfPaths.dimension(d => { return d.minTimestamp});
           this.dataPaths = byDatePaths.filterRange(this.rangeDate).top(Infinity);
         });

@@ -51,8 +51,11 @@ export default {
         },
         yaxis: {
           title: {
-            text: 'Amount of money ($)',
+            text: 'Avg price($)',
+            align: 'left',
             fontSize: '13px',
+            fontWeight: 400,
+            rotate: 0,
           }
         },
         title: {
@@ -100,8 +103,11 @@ export default {
           yaxis: {
             labels:{
               title: {
-                text: 'Amount of money ($)',
+                text: 'Avg price($)',
+                align: 'left',
                 fontSize: '13px',
+                fontWeight: 400,
+                rotate: 0,
               }
             }
           },
@@ -124,8 +130,11 @@ export default {
           yaxis: {
             labels:{
               title: {
-                text: 'Amount of money ($)',
+                text: 'Avg price($)',
+                align: 'left',
                 fontSize: '13px',
+                fontWeight: 400,
+                rotate: 0,
               }
             }
           },
