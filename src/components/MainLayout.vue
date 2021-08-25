@@ -1,9 +1,8 @@
 <template>
   <div>
-    <h3> GAStech employees analysis </h3>
-    <p> GAStech has been operating a natural gas production site in the island country of Kronos, in particular the city of Abila.
-      In January 2014 several employee go missing.
-    <br><span class="subtext">This visualization has the aim to help identify suspicious behaviors.</span></p>
+    <h3> GAStech International employees analysis </h3>
+    <p> GAStech International has been operating a natural gas production site in the island country of Kronos, in particular the city of Abila.
+      In January 2014 several employee go missing. This visualization has the aim to help identify suspicious behaviors.</p>
     <b-container fluid>
       <b-row id="firstRow" >
         <b-col cols="5" id="userData">
@@ -12,7 +11,7 @@
             <div class="daySelection">
               <h5>1. Select a day </h5>
               <p>The available data are two weeks before the disappearance of the employees.
-                <br><span class="subtext">Select a day to analyze it:</span></p>
+                <span class="subtext">Select a day to analyze it:</span></p>
               <buttons-day @get-day="getSelectedDay"/>
             </div>
           </b-row>
@@ -46,8 +45,8 @@
           <!-- Employees treemap -->
           <b-row>
             <div class="treemap">
-              <h5> 2. Company structure TreeMap  </h5>
-              <p>GAStech has 5 different branches, each employee has an employment type and an employment title. 35 of the employees use a company car.
+              <h5> 2. Company structure </h5>
+              <p id="treemap-p">GAStech International has 5 different branches, each employee has an employment type and an employment title. 35 of the employees use a company car.
               <br><span class="subtext"> Select an employment type, title or a employee to show in the map and in the bar charts the relative subset of data.
                 To reset the chart, click on the main category 'All'. </span></p>
               <tree-map id="tmComponent"
@@ -64,7 +63,7 @@
                 <h5> 4. Map </h5>
                 <p>Abila is a city of the island of Kronos, it has a lot of restaurants, cafes and activities to do on the freetime.
                 <br><span class="subtext"> The colored lines represents the paths of the employees. Each path has a different color.
-                    Pass over the lines to see who drove that itinery.
+                    Pass over the lines to see who drove that itinerary.
                   The locations are also shown: Pass over the locations to see their name or click them to filter the barchart.
                     It is possible to hide the locations or reset the map displaying all the paths of the current selected day.</span></p>
                 <abila-map :dataGPS="dataGPS"
@@ -76,32 +75,33 @@
 
             <b-col cols="5">
               <!-- Expenses Analysis  -->
-             <h5> 5. Expenses charts </h5>
-              <p> The expenses charts are useful to compare the average expenses of a certain employee or company branch to the others.
-              <br><span class="subtext"> Filter the data using the treemap above, the location list and the timeline. To remove the locations filter click the button below.</span></p>
-              <b-row>
-                <b-button
-                    size="sm"
-                    variant="light"
-                    @click="resetLocation()"> All locations
-                </b-button>
-              </b-row>
-             <b-row>
-                <div class="expensesAnalysis" >
-                  <expenses-chart :expenses="expensesCC"
-                                  :categories="categoriesCC"
-                                  title="Credit Card data"/>
-                </div>
-              </b-row>
+              <div class="barcharts">
+                <h5> 5. Expenses charts </h5>
+                <p> The expenses charts are useful to compare the average expenses of a certain employee or company branch to the others.
+                <br><span class="subtext"> Filter the data using the treemap above, the location list and the timeline. To remove the locations filter click the button below.</span></p>
+                <b-row>
+                  <b-button id="location-btn"
+                      size="sm"
+                      variant="light"
+                      @click="resetLocation()"> All locations
+                  </b-button>
+                </b-row>
+                <b-row>
+                  <div class="expensesAnalysis" >
+                    <expenses-chart :expenses="expensesCC"
+                                    :categories="categoriesCC"
+                                    title="Credit Card data"/>
+                  </div>
+                </b-row>
 
-             <b-row>
-                <div class="expensesAnalysis">
-                  <expenses-chart :expenses="expensesLC"
-                                 :categories="categoriesLC"
-                                  title="Loyalty Card data"/>
-                </div>
-
-              </b-row>
+                <b-row>
+                  <div class="expensesAnalysis">
+                    <expenses-chart :expenses="expensesLC"
+                                   :categories="categoriesLC"
+                                    title="Loyalty Card data"/>
+                 </div>
+                </b-row>
+              </div>
             </b-col>
 
           </b-row>
@@ -300,7 +300,7 @@ export default {
     },
 
     filterChartPerEmployee(name, location) {
-      /* given an employeee it creates the chart related to the CC expenses and the loyalty card*/
+      /* given an employee it creates the chart related to the CC expenses and the loyalty card*/
       //this.resetFiltersEmployees();
         byEmpName.filterAll();
         byEmpTitle.filterAll();
@@ -312,10 +312,10 @@ export default {
       if (location !== null){
         byLocationCC.filterExact(location).top(Infinity);
         byLocationLC.filterExact(location).top(Infinity);
-        this.categoriesCC = [['Average', 'expenses of', name, 'at', location],
-          ['Average', 'expenses of','the other' ,'employees at', location]];
-        this.categoriesLC = [['Average', 'loyalty card', 'value for', name, 'at', location],
-          ['Average', 'loyalty card', 'value for','the other','employees at', location]];
+        this.categoriesCC = [['Avg price by', name, 'at', location],
+          ['Avg price by','the other' ,'employees at', location]];
+        this.categoriesLC = [['Avg loyalty lard', 'value for', name, 'at', location],
+          ['Avg loyalty card', 'value for','the other','employees at', location]];
       } else {
         this.categoriesCC = [['Average', 'expenses of', name],
           ['Average', 'expenses of','the other employees']];
@@ -734,8 +734,7 @@ export default {
 .expensesAnalysis {
   width: 100%;
   height: 250px;
-  margin: 10px 2px 5px 2px;
-  padding: 5px;
+  margin: 10px auto auto auto;
 }
 .subtext {
   font-style: italic;
@@ -743,12 +742,35 @@ export default {
 }
 p {
   font-size:90%;
+  text-align: left;
 }
 .eventTimeline {
-  margin-top:20px;
+  margin-top:10px;
+}
+.daySelection{
+  padding: 0 15px 2px 5px;
+  margin: auto 10px 10px 5px;
 }
 
 #tmComponent {
+  width: 98%;
+  height: 90%;
   margin-top: -20px;
+  padding-bottom: 10px;
+  padding-top: -15px;
 }
+.treemap {
+  margin: 5px auto 5px auto;
+}
+.barcharts {
+  margin:5px auto auto auto;
+}
+.map {
+  margin-top:5px;
+}
+#location-btn {
+  width: 40%;
+  margin: auto auto auto auto;
+}
+
 </style>

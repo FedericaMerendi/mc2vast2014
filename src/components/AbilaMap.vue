@@ -1,19 +1,21 @@
 <template>
   <div class="row map">
-    <b-button-group size="sm">
       <b-button
+            class="map-btn"
+            size="sm"
             variant="light"
             ref='btnToggle'
             @click="hideLocations">
         Hide locations
       </b-button>
       <b-button
+          class="map-btn"
+          size="sm"
           variant="light"
           ref='btnReset'
           @click="resetMap">
         Reset map
       </b-button>
-    </b-button-group>
     <l-map
         class="abila"
         :zoom="zoom"
@@ -21,8 +23,8 @@
         :maxZoom="maxZoom"
         :maxBounds="maxBounds"
         :center="center"
-        style="height: 100%; width: 100%"
-            >
+        style="height: 100%; width: 100%">
+
       <l-image-overlay :url="url"
                        :bounds="bounds"
       pane="tilePane"></l-image-overlay>
@@ -182,8 +184,16 @@ export default {
 
 <style scoped>
 .map{
-  height: 450px;
+  height: 500px;
   width: 100%;
+  margin: auto auto auto auto;
 }
-
+.map-btn {
+  width: 40%;
+  margin:auto auto 5px auto;
+}
+.abila{
+  border: 1px solid gainsboro;
+  margin-bottom: 5px;
+}
 </style>

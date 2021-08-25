@@ -55,22 +55,28 @@ export default {
             rangeBarGroupRows: true
           }
         },
-        colors: [ '#8cffde','#45b8b3','#839740','#c9ec85',
-                  '#ff94b3','#bd1f3f','#ec614a','#ffa468',
-                  '#5e96dd','#3953c0','#800c53','#c34b91',
-                  '#46c657','#158968','#2c5b6d','#222a5c',
-                  '#566a89','#8babbf','#cce2e1','#ffdba5',
-                  '#ccac68','#a36d3e','#683c34','#000000',
-                  '#38002c','#663b93', '#8b72de','#9cd8fc',
-                  '#fff6ae','#ffda70','#f4b03c',
-                    '#f9b857', '#f0c209', '#145041',
-                  '#8f4349', '#ffa686', '#5cac48', '#832121',
-                  '#8cce6c', '#c1ec48', '#060329', '#1c2833',
-                  '#ff804a', '#e16169', '#ee8095', '#7b3781',
-                  '#b64d75', '#a07385', '#44050b',
-                  '#962c52', '#e53366', '#6e5657', '#a7acba',
-                  '#accdec', '#1c5c83', '#2ba8b5', '#46dccd',
-                ],
+        colors: [
+          function ({ seriesIndex, w }) {
+           let colors = ['#003D30', '#005745', '#00735C', '#009175',
+             '#00AF8E', '#00CBA7', '#00EBC1', '#86FFDE',
+             '#00306F', '#00489E', '#005FCC', '#009FFA',
+             '#00C2F9', '#00E5F8', '#7CFFFA', '#004002',
+             '#005A01', '#007702', '#009503', '#AFFF2A',
+             '#00D302', '#00F407', '#fde725', '#dce319ff',
+             '#450d54','#482677', '#453781ff', '#404788ff']
+            let len =w.config.series.length
+            if(seriesIndex === len-1){ //gps
+              return '#0079FA'
+            } else if (seriesIndex === len-2) { ///loyaltyCard
+              return '#00B408'
+            } else {
+                return colors[seriesIndex]
+            }
+
+          }
+        ],
+
+
         fill: {
           type: 'solid'
         },
@@ -85,10 +91,10 @@ export default {
           position: 'bottom',
           horizontalAlign: 'left',
           fontSize: '12px',
-          markers: {
+          /*markers: {
             width: 7,
             height: 7,
-          },
+          },*/
         },
         tooltip: {
            custom: (opts) => {
@@ -100,22 +106,23 @@ export default {
              if (loc === 'Driving') {
                let diff = Math.abs(lastTime - firstTime);
                let minutes = Math.floor((diff / 1000) / 60);
-               return '<div><b-card><b-card-text>' + name + ' <br> drove for ' + minutes + 'minutes' +
-                   '</b-card-text></b-card></div>'
+               return (
+                   '<div><b>Driving</b> <br><b> Name</b>: ' + name + ' </b><br> <b>Driving</b>: <br>' + minutes + 'minutes </div>'
+               )
              } else if (loc === 'Loyalty Card'){
                //let time = new Date(firstTime.getTime() + 2*60000);
                const data = this.getInfoLoyalty(firstTime, name);
                let price = data[0];
                let location = data[1];
                return (
-                   '<div class="arrow_box">' + name + ' <br> used the loyalty card  <br> of value: ' + price + '$ <br> at ' + location + '</div>'
+                   '<div><b>Loyalty Card</b><br><b>Name</b>:' + name + '<br> <b>Value: </b>' + price + '$ <br><b>Location</b>:' + location + '</div>'
                )
              } else {
                let time = new Date(firstTime.getTime() + 4*60000);
                const price = this.getInfo(firstTime, name, loc);
                return (
-                   '<div class="arrow_box">' + 'At ' + time.toLocaleTimeString() + ' <br> ' + name + ' spent  <br>' + price + '$ at ' + loc + '</div>'
-               )
+                   '<div><b> Credit Card</b> <br><b>Name</b>: ' + name + '<br><b>Value: </b>' + price + '$ <br><b>Location</b>:' + loc + '</div><b>Time</b>:' + time.toLocaleTimeString() + '</div>'
+             )
              }
            }
         }
@@ -234,20 +241,7 @@ export default {
       }
       return obj
     },
-
   },
-/*  watch: {
-    paths: function () {
-      this.gps()
-    },
-    dataCC: function () {
-      this.cc()
-    },
-  },*/
-/*
-          "#008FFB", "#00E396", "#FEB019", "#FF4560", "#775DD0",
-          "#3F51B5", "#546E7A", "#D4526E", "#8D5B4C", "#F86624",
-          "#D7263D", "#1B998B", "#2E294E", "#F46036", "#E2C044"*/
 }
 </script>
 

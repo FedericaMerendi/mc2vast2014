@@ -29,6 +29,8 @@ export default {
           t: 30,
           pad: 4
         },
+        treemapcolorway: ['#3765DC', '#88CCEE', "#44AA99","#11943C",
+                          '#D1DC22'],
       },
       data: [{
         type: "treemap",
