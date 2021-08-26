@@ -1,8 +1,8 @@
 <template>
   <div>
     <h3> GAStech International employees analysis </h3>
-    <p> GAStech International has been operating a natural gas production site in the island country of Kronos, in particular the city of Abila.
-      In January 2014 several employee go missing. This visualization has the aim to help identify suspicious behaviors.</p>
+    <p id="subtitle"> GAStech International has been operating a natural gas production site in the island country of Kronos, in particular the city of Abila.
+      In January 2014 several employee go missing after the initial public offering of the company. This visualization has the aim to help identify suspicious behaviors.</p>
     <b-container fluid>
       <b-row id="firstRow" >
         <b-col cols="5" id="userData">
@@ -12,7 +12,7 @@
           <b-row>
             <div class="daySelection">
               <h5>1. Select a day </h5>
-              <p>The available data are two weeks before the disappearance of the employees.
+              <p>The available data are two weeks before the disappearance of the employees. <br>
                 <span class="subtext">Select a day to analyze it:</span></p>
               <buttons-day @get-day="getSelectedDay"/>
             </div>
@@ -21,14 +21,14 @@
           <!-- Events timeline -->
           <b-row>
             <div class="eventTimeline">
-              <h5> 3. Analyze the employees daily timeline</h5>
-              <p> The timeline shows the daily schedule of each employee based on the GPS, the Credit Card and the Loyalty Card data.
+              <h5> 3. Analyze the employees daily routine </h5>
+              <p> The timeline shows the daily schedule of each employee based on the GPS, the Credit Card, and the Loyalty Card data.
               <br> <span class="subtext"> The time zoom permits to highlight a certain time of the day.
                   <br> It is also possible to click on the data point:
                   if the data refers to the GPS it will show the path on the map;
-                  while if it refers to Credit Cards or Loyalty Card transactions it will show an insight of the expense in the barchart.
-                  Finally, the legend of the locations let you filter the barchart in conjunction to the company's structure TreeMap.
-                  To reset the timeline, click on the house icon at the top-right on the visualization.
+                  while if it refers to Credit Cards or Loyalty Card transactions it will show an insight of the expense in the respective bar chart.
+                  <br>Finally, the legend of the locations, at the bottom of the chart, lets you filter the bar chart in conjunction to the company's structure TreeMap.
+                  <br>To reset the timeline, click on the house icon at the top-right on the visualization.
                   </span></p>
 
               <event-timeline :data-c-c="dataCC"
@@ -63,11 +63,11 @@
               <!-- Map -->
               <div class="map">
                 <h5> 4. Abila map </h5>
-                <p>Abila is a city of the island of Kronos, it has a lot of restaurants, cafes and activities to do on the freetime.
-                <br><span class="subtext"> The colored lines represents the paths of the employees. Each path has a different color.
+                <p>Abila is the city on the island of Kronos where GAStech International is located.
+                <br><span class="subtext"> The colored lines represent the paths of the employees. Each path has a different color.
                     Pass over the lines to see who drove that itinerary.
-                  The locations are also shown: Pass over the locations to see their name or click them to filter the barchart.
-                    It is possible to hide the locations or reset the map displaying all the paths of the current selected day.</span></p>
+                 <br>The locations are also shown: pass over their icons to see their name or click them to filter the bar chart.
+                    It is possible to hide the locations or reset the map displaying all the paths of the selected day.</span></p>
                 <abila-map :dataGPS="dataGPS"
                            :locations="locations"
                            @reset-map="resetMap"
@@ -78,9 +78,9 @@
             <b-col cols="5">
               <!-- Expenses Analysis  -->
               <div class="barcharts">
-                <h5> 5. Expenses charts </h5>
+                <h5> 5. Compare the expenses </h5>
                 <p> The expenses charts are useful to compare the average expenses of a certain employee or company branch to the others.
-                <br><span class="subtext"> Filter the data using the treemap above, the location list and the timeline. To remove the locations filter click the button below.</span></p>
+                <br><span class="subtext"> Filter the data using the treemap above, the locations in the map and the timeline. To remove the locations filter click the button below.</span></p>
                 <b-row>
                   <b-button id="location-btn"
                       size="sm"
@@ -187,16 +187,19 @@ export default {
   },
   methods: {
     resetMap() {
+      /* to reset the map*/
       this.selectedEmployee = null;
       this.selectedTitle = null;
       this.selectedType = undefined;
       this.updateTime([null, null]);
     },
     resetLocation() {
+      /* to reset the locations*/
       this.location = null;
       this.getLocation(null);
     },
     getLocation(location) {
+      /*it returns the charts filtered by the location*/
       if (location !== 'Driving' && location !== 'Loyalty Card') {
         this.selectedLocation = location;
         if(this.selectedEmployee !== null){
@@ -407,7 +410,7 @@ export default {
 
     filterEmployee(name) {
       /*given an employee it updates the map and the chart with his/her data only */
-      console.log('filter by',name);
+      //console.log('filter by',name);
       this.selectedEmployee = name;
       this.selectedType = null;
       this.selectedTitle = null;
@@ -416,7 +419,8 @@ export default {
       },
 
     filterTitle(title){
-      console.log('filter by',title);
+      /*given a title it updates the map and the charts with their data */
+      //console.log('filter by',title);
       this.selectedName = null;
       this.selectedType = null;
       this.selectedTitle = title;
@@ -425,7 +429,8 @@ export default {
     },
 
     filterType(type){
-      console.log('filter by',type);
+      /*given a type it updates the map and the charts with their data */
+      //console.log('filter by',type);
       this.selectedName = null;
       this.selectedType = type;
       this.selectedTitle = null;
@@ -452,11 +457,10 @@ export default {
       let allLoc = this.avgPrice(byNameCC.filterFunction(function(d) { return d !== empData.fullName; }).top(Infinity));
       let empLoc = this.avgPrice(byNameCC.filterExact(empData.fullName).top(Infinity));
       this.categoriesCC = [['Paid price to', empData.location, 'at', empData.timestamp.toLocaleTimeString()],
-                                ['Average', 'expenses of', empData.fullName, 'at ' , empData.location ],
-                                ['Average', 'expenses of','the other employees', 'at ', empData.location ]]
+                                ['Avg expenses of', empData.fullName, 'at ' , empData.location ],
+                                ['Avg expenses of the', 'other employees at ', empData.location ]]
       this.expensesCC = [empData.price, empLoc, allLoc];
 
-      console.log(this.expensesCC)
       byNameCC.filterAll()
       byLocationCC.filterAll()
     },
@@ -469,9 +473,9 @@ export default {
       byLocationLC.filterExact(empData.location).top(Infinity);
       let allLoc = this.avgPrice(byNameLC.filterFunction(function(d) { return d !== empData.fullName; }).top(Infinity));
       let empLoc = this.avgPrice(byNameLC.filterExact(empData.fullName).top(Infinity));
-      this.categoriesLC = [['Loyalty card from', empData.location, 'used at', empData.timestamp.toLocaleTimeString()],
-                                ['Average', 'loyalty card','value for', empData.fullName, 'at ' , empData.location ],
-                                ['Average', 'loyalty card', 'value for the','other employees', 'at ', empData.location ]]
+      this.categoriesLC = [['Loyalty card of', empData.fullName, 'from', empData.location, 'used at ' + empData.timestamp.toLocaleTimeString()],
+                                ['Avg loyalty card','value for', empData.fullName, 'at ' , empData.location ],
+                                ['Avg loyalty card', 'value for the','other employees at ', empData.location ]]
       this.expensesLC = [empData.price, empLoc, allLoc];
       byNameLC.filterAll()
       byLocationLC.filterAll()
@@ -506,7 +510,7 @@ export default {
         min = new Date(dates[0]);
         max = new Date(dates[1]);
       }
-      console.log('time range update', min, max)
+      //console.log('time range update', min, max)
       byDateCC.filterRange([min,max]);
       byDateLC.filterRange([min,max]);
       if (this.selectedTitle !== null) {
@@ -528,7 +532,7 @@ export default {
 
     getSelectedDay(day) {
       /* given a day it filters all the visualization */
-      console.log('Selected day:', day);
+      //console.log('Selected day:', day);
       this.selectedDay = day;
       let range = this.rangeDate;
       this.selectedDateRange = range;
@@ -722,7 +726,6 @@ export default {
   margin: 10px auto auto auto;
 }
 .subtext {
-  font-style: italic;
   font-size: 80%;
 }
 p {
@@ -745,7 +748,7 @@ p {
   padding-top: -15px;
 }
 .treemap {
-  margin: 5px auto 5px auto;
+  margin: auto auto 5px auto;
 }
 .barcharts {
   margin:5px auto auto auto;
@@ -758,4 +761,7 @@ p {
   margin: auto auto auto auto;
 }
 
+#subtitle{
+  margin: auto auto auto 10px;
+}
 </style>

@@ -42,7 +42,9 @@
           :color="randomColor()"
           :lat-lngs="latLngLine(p, i)"
       >
-          <l-tooltip>{{p[0].fullName}} drove this route. (PathID: {{p[0].pathID}}) </l-tooltip>
+        <l-tooltip><div class="tooltip-path"><span class="titlep">Driver</span>: {{p[0].fullName}}
+                                        <br> <span class="titlep">Starting time</span>: {{p[0].timestamp.toLocaleTimeString()}}
+                                        <br> <span class="titlep">PathID </span>: {{p[0].pathID}}</div></l-tooltip>
       </l-polyline>
 
       <div v-if="showMarkers">
@@ -131,7 +133,7 @@ export default {
       for (let i = 0; i < 6; i++) {
         color += letters[Math.round(Math.random() * 15)];
       }
-      return color;
+      return color
     },
   },
   computed: {
@@ -148,7 +150,6 @@ export default {
       };
     },
     styleFunction() {
-     // const fillColor = this.fillColor; // important! need touch fillColor in computed for re-calculate when change fillColor
       return () => {
         return {
           weight: 1,
@@ -195,5 +196,11 @@ export default {
 .abila{
   border: 1px solid gainsboro;
   margin-bottom: 5px;
+}
+.titlep{
+  font-weight: bold;
+}
+.tooltip-path {
+  padding: 1px;
 }
 </style>

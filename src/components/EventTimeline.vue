@@ -53,12 +53,12 @@ export default {
         colors: [
           function ({ seriesIndex, w }) {
            let colors = ['#003D30', '#005745', '#00735C', '#009175',
-             '#00AF8E', '#00CBA7', '#00EBC1', '#86FFDE',
-             '#00306F', '#00489E', '#005FCC', '#009FFA',
-             '#00C2F9', '#00E5F8', '#7CFFFA', '#004002',
-             '#005A01', '#007702', '#009503', '#AFFF2A',
-             '#00D302', '#00F407', '#fde725', '#dce319ff',
-             '#450d54','#482677', '#453781ff', '#404788ff']
+                         '#00AF8E', '#00CBA7', '#00EBC1', '#453781ff',
+                         '#00306F', '#00489E', '#005FCC', '#009FFA',
+                         '#00C2F9', '#00E5F8', '#404788ff', '#7CFFFA',
+                         '#005A01', '#007702', '#009503', '#004002',
+                         '#00D302', '#00F407', '#fde725', '#86FFDE',
+                         '#450d54', '#482677', '#dce319ff', '#AFFF2A',]
             let len =w.config.series.length
             if(seriesIndex === len-1){ //gps
               return '#0079FA'
@@ -86,10 +86,6 @@ export default {
           position: 'bottom',
           horizontalAlign: 'left',
           fontSize: '12px',
-          /*markers: {
-            width: 7,
-            height: 7,
-          },*/
         },
         tooltip: {
            custom: (opts) => {
@@ -102,7 +98,7 @@ export default {
                let diff = Math.abs(lastTime - firstTime);
                let minutes = Math.floor((diff / 1000) / 60);
                return (
-                   '<div><b>Driving</b> <br><b> Name</b>: ' + name + ' </b><br> <b>Driving</b>: <br>' + minutes + 'minutes </div>'
+                   '<div><b>Driving</b> <br><b> Name</b>: ' + name + ' </b><br> <b>Driving</b>:' + minutes + 'minutes </div>'
                )
              } else if (loc === 'Loyalty Card'){
                //let time = new Date(firstTime.getTime() + 2*60000);
@@ -116,7 +112,7 @@ export default {
                let time = new Date(firstTime.getTime() + 4*60000);
                const price = this.getInfo(firstTime, name, loc);
                return (
-                   '<div><b> Credit Card</b> <br><b>Name</b>: ' + name + '<br><b>Value: </b>' + price + '$ <br><b>Location</b>:' + loc + '</div><b>Time</b>: ' + time.toLocaleTimeString() + '</div>'
+                   '<div><b> Credit Card</b> <br><b>Name</b>: ' + name + '<br><b>Value: </b>' + price + '$ <br><b>Location</b>:' + loc + '</div><b>Time</b> ' + time.toLocaleTimeString() + '</div>'
              )
              }
            }
