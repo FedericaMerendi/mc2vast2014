@@ -444,7 +444,11 @@ export default {
       for (let i = 0; i < array.length; i++) {
         sum = sum + array[i].price;
       }
-      return Math.round(( (sum / array.length)+ Number.EPSILON) * 100) / 100
+      let avg = Math.round(( (sum / array.length)+ Number.EPSILON) * 100) / 100
+      if (isNaN(avg)) {
+        return 0
+      }
+      return avg
     },
 
 
@@ -737,7 +741,7 @@ p {
 }
 .daySelection{
   padding: 0 15px 2px 5px;
-  margin: auto 10px 10px 5px;
+  margin: 3px 10px 10px 5px;
 }
 
 #tmComponent {
@@ -748,13 +752,13 @@ p {
   padding-top: -15px;
 }
 .treemap {
-  margin: auto auto 5px auto;
+  margin: 3px auto 2px auto;
 }
 .barcharts {
-  margin:5px auto auto auto;
+  margin:4px auto auto auto;
 }
 .map {
-  margin-top:5px;
+  margin-top:4px;
 }
 #location-btn {
   width: 40%;

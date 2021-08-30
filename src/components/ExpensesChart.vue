@@ -24,7 +24,7 @@ export default {
       chartOptions: {
         chart: {
           type: 'bar',
-          height: '90%'
+          height: '100%'
         },
         plotOptions: {
           bar: {
@@ -148,6 +148,6 @@ export default {
 
 <style scoped>
 div {
-  padding: 5px;
+  padding: 1px;
 }
 </style>
